@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://xm2tk73hak5"]
+
+[ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_lqkpk"]
+
+[node name="NodoDePrueba3d" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_lqkpk")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.28104)
