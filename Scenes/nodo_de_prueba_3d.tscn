@@ -37,3 +37,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2.76332)
 
 [node name="XROrigin3D" parent="." instance=ExtResource("2_r28nf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.79111)
+visible = false

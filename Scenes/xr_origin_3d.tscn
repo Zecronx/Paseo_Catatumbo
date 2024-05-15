@@ -44,6 +44,7 @@ tracker = &"right_hand"
 [node name="_CollisionShape3D_17479" type="CollisionShape3D" parent="PlayerBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
 shape = SubResource("CapsuleShape3D_bcaqd")
+disabled = true
 
 [node name="_ShapeCast3D_17480" type="ShapeCast3D" parent="PlayerBody"]
 enabled = false
