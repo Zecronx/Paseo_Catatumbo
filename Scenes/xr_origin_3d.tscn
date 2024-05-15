@@ -1,0 +1,65 @@
+[gd_scene load_steps=11 format=3 uid="uid://de3aot6ajmgeo"]
+
+[ext_resource type="Script" path="res://Scripts/XROrigin3D.gd" id="1_qx2sb"]
+[ext_resource type="PackedScene" path="res://addons/godot-xr-tools/misc/vr_common_shader_cache.tscn" id="2_ajnxf"]
+[ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="3_tdxrh"]
+[ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="5_vbseq"]
+[ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="6_kqtqy"]
+[ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="7_hgwt6"]
+[ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="8_1tolo"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_efn6m"]
+radius = 0.1
+height = 0.5
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bcaqd"]
+radius = 0.2
+height = 1.4
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tyxej"]
+radius = 0.2
+
+[node name="XROrigin3D" type="XROrigin3D"]
+script = ExtResource("1_qx2sb")
+
+[node name="XRCamera3D" type="XRCamera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+
+[node name="VRCommonShaderCache" parent="XRCamera3D" instance=ExtResource("2_ajnxf")]
+
+[node name="LeftHand" type="XRController3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, -0.5)
+tracker = &"left_hand"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LeftHand"]
+visible = false
+mesh = SubResource("CapsuleMesh_efn6m")
+
+[node name="LeftHand" parent="LeftHand" instance=ExtResource("3_tdxrh")]
+
+[node name="RightHand" type="XRController3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.970771, -0.240008, 0, 0.240008, 0.970771, 0.5, 1, -0.5)
+tracker = &"right_hand"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RightHand"]
+visible = false
+mesh = SubResource("CapsuleMesh_efn6m")
+
+[node name="RightHand" parent="RightHand" instance=ExtResource("5_vbseq")]
+
+[node name="MovementDirect" parent="RightHand" instance=ExtResource("6_kqtqy")]
+
+[node name="MovementTurn" parent="RightHand" instance=ExtResource("7_hgwt6")]
+
+[node name="PlayerBody" parent="." instance=ExtResource("8_1tolo")]
+
+[node name="_CollisionShape3D_17479" type="CollisionShape3D" parent="PlayerBody"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+shape = SubResource("CapsuleShape3D_bcaqd")
+
+[node name="_ShapeCast3D_17480" type="ShapeCast3D" parent="PlayerBody"]
+enabled = false
+shape = SubResource("SphereShape3D_tyxej")
+margin = 0.01
+max_results = 1
+collision_mask = 1023

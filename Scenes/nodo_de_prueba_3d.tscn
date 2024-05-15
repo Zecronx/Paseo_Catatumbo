@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://xm2tk73hak5"]
+[gd_scene load_steps=3 format=3 uid="uid://xm2tk73hak5"]
 
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_lqkpk"]
+[ext_resource type="PackedScene" uid="uid://de3aot6ajmgeo" path="res://Scenes/xr_origin_3d.tscn" id="2_r28nf"]
 
 [node name="NodoDePrueba3d" type="Node3D"]
 
@@ -9,3 +10,6 @@ texture = ExtResource("1_lqkpk")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.28104)
+
+[node name="XROrigin3D" parent="." instance=ExtResource("2_r28nf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.79111)
