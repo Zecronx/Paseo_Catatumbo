@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://xm2tk73hak5"]
 
-[ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_lqkpk"]
-[ext_resource type="PackedScene" uid="uid://de3aot6ajmgeo" path="res://Scenes/xr_origin_3d.tscn" id="2_r28nf"]
-[ext_resource type="PackedScene" uid="uid://bxirrhdpsfqms" path="res://Scenes/character_body_3d.tscn" id="3_dll3o"]
+[ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_oq64d"]
+[ext_resource type="PackedScene" uid="uid://bxirrhdpsfqms" path="res://Scenes/character_body_3d.tscn" id="2_m8oyy"]
+[ext_resource type="PackedScene" uid="uid://de3aot6ajmgeo" path="res://Scenes/xr_origin_3d.tscn" id="3_57mqn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ibkgf"]
 albedo_color = Color(0.1058, 0.235673, 0.46, 1)
@@ -14,11 +14,11 @@ size = Vector2(10, 10)
 size = Vector3(10, 0.1, 10)
 
 [node name="NodoDePrueba3d" type="Node3D"]
-transform = Transform3D(1.055, 0, 0, 0, 1.055, 0, 0, 0, 1.055, 0, 0, 0)
+transform = Transform3D(1.055, 0, 0, 0, 1.055, 0, 0, 0, 1.055, -0.105097, -0.0374613, -0.0464263)
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.46708, 0)
-texture = ExtResource("1_lqkpk")
+texture = ExtResource("1_oq64d")
 
 [node name="Floor" type="StaticBody3D" parent="."]
 
@@ -33,9 +33,9 @@ shape = SubResource("BoxShape3D_v52hi")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.742806, 0.669507, 0, -0.669507, 0.742806, 0, 5.02649, 5.98302)
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("3_dll3o")]
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_m8oyy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2.76332)
 
-[node name="XROrigin3D" parent="." instance=ExtResource("2_r28nf")]
+[node name="XROrigin3D" parent="." instance=ExtResource("3_57mqn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.79111)
 visible = false
