@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1qcuxwxbetkf"]
+
+[ext_resource type="PackedScene" uid="uid://bgli0ar4pci3l" path="res://Assets/ParedAlta/paredAlta.glb" id="1_dexqh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_chwpt"]
+size = Vector3(3.99582, 6.4615, 0.206543)
+
+[node name="Pared" type="StaticBody3D"]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -10.5, -0.1, 22.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 3.28361, -0.0256348)
+shape = SubResource("BoxShape3D_chwpt")
+
+[node name="paredAlta" parent="." instance=ExtResource("1_dexqh")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0)

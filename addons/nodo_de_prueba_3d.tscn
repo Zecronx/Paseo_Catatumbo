@@ -1,13 +1,14 @@
-[gd_scene load_steps=8 format=3 uid="uid://xm2tk73hak5"]
+[gd_scene load_steps=9 format=3 uid="uid://xm2tk73hak5"]
 
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_oq64d"]
 [ext_resource type="PackedScene" uid="uid://bxirrhdpsfqms" path="res://Scenes/character_body_3d.tscn" id="2_m8oyy"]
 [ext_resource type="PackedScene" uid="uid://dswb3gd2fq0xw" path="res://Assets/Suelo/piso.glb" id="2_nb45b"]
 [ext_resource type="PackedScene" uid="uid://de3aot6ajmgeo" path="res://Scenes/xr_origin_3d.tscn" id="3_57mqn"]
+[ext_resource type="PackedScene" uid="uid://d1qcuxwxbetkf" path="res://Assets/Pared/pared.tscn" id="3_l0ok4"]
 [ext_resource type="PackedScene" uid="uid://cpt5esmko8hu7" path="res://Assets/Pared/pared.glb" id="5_x1hey"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v52hi"]
-size = Vector3(34.8633, 0.1, 48.8758)
+size = Vector3(20.997, 0.1, 48.876)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_chwpt"]
 size = Vector3(3.99582, 4.02252, 0.206543)
@@ -23,131 +24,10 @@ texture = ExtResource("1_oq64d")
 [node name="Suelo" type="StaticBody3D" parent="."]
 
 [node name="piso" parent="Suelo" instance=ExtResource("2_nb45b")]
-transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 7, 0, -0.01, 0)
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 7, 0, -0.01, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Suelo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.154297, 0, 0.000297766)
 shape = SubResource("BoxShape3D_v52hi")
-
-[node name="Pared" type="StaticBody3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17.3, -0.01, 22.5)
-
-[node name="pared" parent="Pared" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared3" type="StaticBody3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17.301, -0.01, 18.52)
-
-[node name="pared" parent="Pared3" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared3"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared4" type="StaticBody3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17.301, -0.01, 14.52)
-
-[node name="pared" parent="Pared4" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared4"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared5" type="StaticBody3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17.301, -0.01, 10.52)
-
-[node name="pared" parent="Pared5" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared5"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared6" type="StaticBody3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17.301, -0.01, 6.52)
-
-[node name="pared" parent="Pared6" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared6"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared7" type="StaticBody3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17.301, -0.01, 2.52)
-
-[node name="pared" parent="Pared7" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared7"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared8" type="StaticBody3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17.301, -0.01, -1.48)
-
-[node name="pared" parent="Pared8" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared8"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared9" type="StaticBody3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17.301, -0.01, -5.48)
-
-[node name="pared" parent="Pared9" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared9"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared10" type="StaticBody3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17.301, -0.01, -9.48)
-
-[node name="pared" parent="Pared10" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared10"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared11" type="StaticBody3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17.301, -0.01, -13.48)
-
-[node name="pared" parent="Pared11" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared11"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared12" type="StaticBody3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17.301, -0.01, -17.48)
-
-[node name="pared" parent="Pared12" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared12"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared13" type="StaticBody3D" parent="."]
-transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17.301, -0.01, -21.48)
-
-[node name="pared" parent="Pared13" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared13"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
 
 [node name="Pared2" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, 22.5)
@@ -269,12 +149,98 @@ transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
 transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
 shape = SubResource("BoxShape3D_chwpt")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.742806, 0.669507, 0, -0.669507, 0.742806, 0, 5.02649, 5.98302)
-
 [node name="CharacterBody3D" parent="." instance=ExtResource("2_m8oyy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2.76332)
 
 [node name="XROrigin3D" parent="." instance=ExtResource("3_57mqn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.79111)
 visible = false
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.79147, 0)
+omni_range = 1902.08
+omni_attenuation = 0.0384733
+
+[node name="Paredes1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -0.1, 0)
+
+[node name="Pared11" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 22.5)
+
+[node name="Pared9" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 2.5)
+
+[node name="Pared10" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 6.5)
+
+[node name="Pared25" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 10.5)
+
+[node name="Pared12" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 14.5)
+
+[node name="Pared13" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 18.5)
+
+[node name="Pared0" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -1.5)
+
+[node name="Pared1" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -5.5)
+
+[node name="Pared3" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -13.5)
+
+[node name="Pared4" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -17.5)
+
+[node name="Pared5" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -21.5)
+
+[node name="Pared6" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -25.5)
+
+[node name="Pared8" parent="Paredes1" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -9.5)
+
+[node name="Paredes2" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.5, -0.1, 0)
+
+[node name="Pared11" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 22.5)
+
+[node name="Pared9" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 2.5)
+
+[node name="Pared10" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 6.5)
+
+[node name="Pared25" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 10.5)
+
+[node name="Pared12" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 14.5)
+
+[node name="Pared13" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 18.5)
+
+[node name="Pared0" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -1.5)
+
+[node name="Pared1" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -5.5)
+
+[node name="Pared3" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -13.5)
+
+[node name="Pared4" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -17.5)
+
+[node name="Pared5" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -21.5)
+
+[node name="Pared6" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -25.5)
+
+[node name="Pared8" parent="Paredes2" instance=ExtResource("3_l0ok4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, -9.5)
