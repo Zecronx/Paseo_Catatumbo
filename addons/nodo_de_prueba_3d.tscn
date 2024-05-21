@@ -1,17 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://xm2tk73hak5"]
+[gd_scene load_steps=7 format=3 uid="uid://xm2tk73hak5"]
 
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_oq64d"]
 [ext_resource type="PackedScene" uid="uid://bxirrhdpsfqms" path="res://Scenes/character_body_3d.tscn" id="2_m8oyy"]
 [ext_resource type="PackedScene" uid="uid://dswb3gd2fq0xw" path="res://Assets/Suelo/piso.glb" id="2_nb45b"]
 [ext_resource type="PackedScene" uid="uid://de3aot6ajmgeo" path="res://Scenes/xr_origin_3d.tscn" id="3_57mqn"]
 [ext_resource type="PackedScene" uid="uid://d1qcuxwxbetkf" path="res://Assets/Pared/pared.tscn" id="3_l0ok4"]
-[ext_resource type="PackedScene" uid="uid://cpt5esmko8hu7" path="res://Assets/Pared/pared.glb" id="5_x1hey"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v52hi"]
 size = Vector3(20.997, 0.1, 48.876)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_chwpt"]
-size = Vector3(3.99582, 4.02252, 0.206543)
 
 [node name="NodoDePrueba3d" type="Node3D"]
 transform = Transform3D(1.055, 0, 0, 0, 1.055, 0, 0, 0, 1.055, -0.105097, -0.0374613, -0.0464263)
@@ -28,126 +24,6 @@ transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 7, 0, -0.01, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Suelo"]
 shape = SubResource("BoxShape3D_v52hi")
-
-[node name="Pared2" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, 22.5)
-
-[node name="pared" parent="Pared2" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared2"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared14" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, 18.52)
-
-[node name="pared" parent="Pared14" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared14"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared15" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, 14.52)
-
-[node name="pared" parent="Pared15" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared15"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared16" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, 10.52)
-
-[node name="pared" parent="Pared16" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared16"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared17" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, 6.52)
-
-[node name="pared" parent="Pared17" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared17"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared18" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, 2.52)
-
-[node name="pared" parent="Pared18" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared18"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared19" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, -1.5)
-
-[node name="pared" parent="Pared19" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2.0491, 0, -3.55271e-15, 0, 2, 0, -1.42109e-14, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared19"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared20" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, -5.5)
-
-[node name="pared" parent="Pared20" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared20"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared21" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, -9.5)
-
-[node name="pared" parent="Pared21" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared21"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared22" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, -13.5)
-
-[node name="pared" parent="Pared22" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared22"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared23" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, -17.5)
-
-[node name="pared" parent="Pared23" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared23"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
-
-[node name="Pared24" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.3, -0.01, -21.5)
-
-[node name="pared" parent="Pared24" instance=ExtResource("5_x1hey")]
-transform = Transform3D(2, 0, -3.55271e-15, 0, 2, 0, 7.10543e-15, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pared24"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -0.00460815, 2.06412, -0.0256348)
-shape = SubResource("BoxShape3D_chwpt")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("2_m8oyy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2.76332)
