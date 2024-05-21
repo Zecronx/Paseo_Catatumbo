@@ -25,7 +25,7 @@ project/assembly_name="Paseo Catatumbo"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg")
+enabled=PackedStringArray()
 
 [file_customization]
 
