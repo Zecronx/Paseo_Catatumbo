@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://drdaey0naroyb"]
+
+[ext_resource type="PackedScene" uid="uid://ddkpwki1v0iv" path="res://Scenes/Mapa/mapa.tscn" id="1_alcmt"]
+[ext_resource type="Script" path="res://Scenes/juego.gd" id="1_tb02s"]
+
+[node name="Juego" type="Node3D"]
+script = ExtResource("1_tb02s")
+
+[node name="Mapa" parent="." instance=ExtResource("1_alcmt")]
