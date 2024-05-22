@@ -1,22 +1,34 @@
 extends Node3D
 
+@export var player: PackedScene
 @onready var canvas_layer = $CanvasLayer
+var peer: ENetMultiplayerPeer
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
+	peer = ENetMultiplayerPeer.new()
 
 func _on_host_pressed():
+	peer.create_server(1027, 10)
+	multiplayer.multiplayer_peer = peer
+	multiplayer.peer_connected.connect(add_player)
+	multiplayer.peer_disconnected.connect(delete_player)
+	add_player(multiplayer.get_unique_id())
 	canvas_layer.hide()
-	pass # Replace with function body.
-
 
 func _on_join_pressed():
+	peer.create_client("127.0.0.1", 1027)
+	multiplayer.multiplayer_peer = peer
 	canvas_layer.hide()
-	pass # Replace with function body.
+
+func add_player(id = 1):
+	var jugador = player.instantiate()
+	jugador.name = str(id)
+	call_deferred("add_child",jugador)
+
+func delete_player(id):
+	rpc("_delete_player", id)
+
+@rpc("any_peer", "call_local")
+func _delete_player(id):
+	if get_node_or_null(str(id)):
+		get_node(str(id)).queue_free()
