@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://pupubv54w2kn"]
+
+[ext_resource type="PackedScene" uid="uid://76to7o06ftmk" path="res://Assets/Vallas/tubo.glb" id="1_er1hv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rm7me"]
+size = Vector3(42.6448, 4.04956, 0.602997)
+
+[node name="Vallas" type="StaticBody3D"]
+
+[node name="tubo" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0, 0, 0)
+
+[node name="tubo2" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3, 0, 0)
+
+[node name="tubo3" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 6, 0, 0)
+
+[node name="tubo4" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 9, 0, 0)
+
+[node name="tubo5" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 12, 0, 0)
+
+[node name="tubo6" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 15, 0, 0)
+
+[node name="tubo7" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 18, 0, 0)
+
+[node name="tubo8" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 21, 0, 0)
+
+[node name="tubo9" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -3, 0, 0)
+
+[node name="tubo10" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -6, 0, 0)
+
+[node name="tubo11" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -9, 0, 0)
+
+[node name="tubo12" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -12, 0, 0)
+
+[node name="tubo13" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -15, 0, 0)
+
+[node name="tubo14" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -18, 0, 0)
+
+[node name="tubo15" parent="." instance=ExtResource("1_er1hv")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -21, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000190735, 1.95771, 0)
+shape = SubResource("BoxShape3D_rm7me")
