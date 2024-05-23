@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=12 format=3 uid="uid://ddkpwki1v0iv"]
+=======
+[gd_scene load_steps=7 format=3 uid="uid://ddkpwki1v0iv"]
+>>>>>>> a00d6d60fad5496293eac1a2672814a42eb6b3cc
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -31,7 +35,11 @@ func _process(delta):
 script = ExtResource("1_44um2")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.467, -24.357)
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.46708, 0)
+>>>>>>> a00d6d60fad5496293eac1a2672814a42eb6b3cc
 texture = ExtResource("1_l2o5v")
 
 [node name="Guernica" type="Sprite3D" parent="."]
@@ -180,6 +188,7 @@ transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -7.5, -0
 
 [node name="Pared18" parent="Paredes4" instance=ExtResource("3_7x5jj")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 8.5, -0.1, 0)
+<<<<<<< HEAD
 
 [node name="Vallas" type="Node3D" parent="."]
 
@@ -229,3 +238,5 @@ metadata/_edit_group_ = true
 
 [node name="techo" parent="." instance=ExtResource("6_mjwhd")]
 transform = Transform3D(3.43065, 0, 0, 0, 1, 0, 0, 0, 8.10616, -0.118598, 6.73546, 0.466257)
+=======
+>>>>>>> a00d6d60fad5496293eac1a2672814a42eb6b3cc
