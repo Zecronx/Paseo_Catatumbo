@@ -1,18 +1,50 @@
-[gd_scene load_steps=5 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=12 format=3 uid="uid://ddkpwki1v0iv"]
 
+[ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
 [ext_resource type="PackedScene" uid="uid://dswb3gd2fq0xw" path="res://Assets/Suelo/piso.glb" id="2_xsiqy"]
 [ext_resource type="PackedScene" uid="uid://d1qcuxwxbetkf" path="res://Assets/Pared/pared.tscn" id="3_7x5jj"]
+[ext_resource type="Texture2D" uid="uid://c6051pxo7pb6n" path="res://Assets/Pinturas/guernica.jpg" id="3_gw33n"]
+[ext_resource type="Texture2D" uid="uid://skpwp0qagxwj" path="res://Assets/Pinturas/pintura_zuliana.webp" id="4_yo23r"]
+[ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
+[ext_resource type="Texture2D" uid="uid://bjrj554y36ic1" path="res://Assets/Pinturas/la-noche-estrellada.jpg" id="5_w2mx8"]
+[ext_resource type="PackedScene" uid="uid://b3jmv2d1v5te7" path="res://Assets/Techo/techo.glb" id="6_mjwhd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v52hi"]
 size = Vector3(20.997, 0.1, 48.876)
 
+[sub_resource type="GDScript" id="GDScript_6uedx"]
+script/source = "extends StaticBody3D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
 [node name="Mapa" type="Node3D"]
+script = ExtResource("1_44um2")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.46708, 0)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.467, -24.357)
 texture = ExtResource("1_l2o5v")
+
+[node name="Guernica" type="Sprite3D" parent="."]
+transform = Transform3D(-1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, -10.37, 3.3, 17)
+texture = ExtResource("3_gw33n")
+
+[node name="Pintura_Zuliana" type="Sprite3D" parent="."]
+transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, -10.37, 3.3, 8.77176)
+texture = ExtResource("4_yo23r")
+
+[node name="La Noche Estrellada" type="Sprite3D" parent="."]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -10.37, 3.3, 2.27233)
+texture = ExtResource("5_w2mx8")
 
 [node name="Suelo" type="StaticBody3D" parent="."]
 
@@ -21,42 +53,6 @@ transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 7, 0, -0.01, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Suelo"]
 shape = SubResource("BoxShape3D_v52hi")
-
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 6, 0)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 6, 16.086)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
-[node name="OmniLight3D3" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 6, -16.3468)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
-[node name="OmniLight3D4" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6, 0)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
-[node name="OmniLight3D5" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6, 16.086)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
-[node name="OmniLight3D6" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6, -16.3468)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
 
 [node name="Paredes1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -0.1, 0)
@@ -167,7 +163,8 @@ transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -11.5, -
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -24.5)
 
 [node name="Pared7" parent="Paredes4" instance=ExtResource("3_7x5jj")]
-transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 8.5, -0.1, 0)
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -11.5, -0.1, 0)
+script = SubResource("GDScript_6uedx")
 
 [node name="Pared14" parent="Paredes4" instance=ExtResource("3_7x5jj")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 4.5, -0.1, 0)
@@ -182,4 +179,53 @@ transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -3.5, -0
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -7.5, -0.1, 1.90735e-06)
 
 [node name="Pared18" parent="Paredes4" instance=ExtResource("3_7x5jj")]
-transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -11.5, -0.1, 1.90735e-06)
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 8.5, -0.1, 0)
+
+[node name="Vallas" type="Node3D" parent="."]
+
+[node name="Vallas" parent="Vallas" instance=ExtResource("5_nollw")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.50999, 0, 0)
+
+[node name="Vallas2" parent="Vallas" instance=ExtResource("5_nollw")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.51, 0, 0)
+
+[node name="Luces" type="Node3D" parent="."]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 6, 0)
+omni_range = 80.0
+omni_attenuation = 0.4
+metadata/_edit_group_ = true
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 6, 16.086)
+omni_range = 80.0
+omni_attenuation = 0.4
+metadata/_edit_group_ = true
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 6, -16.3468)
+omni_range = 80.0
+omni_attenuation = 0.4
+metadata/_edit_group_ = true
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6, 0)
+omni_range = 80.0
+omni_attenuation = 0.4
+metadata/_edit_group_ = true
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6, 16.086)
+omni_range = 80.0
+omni_attenuation = 0.4
+metadata/_edit_group_ = true
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6, -16.3468)
+omni_range = 80.0
+omni_attenuation = 0.4
+metadata/_edit_group_ = true
+
+[node name="techo" parent="." instance=ExtResource("6_mjwhd")]
+transform = Transform3D(3.43065, 0, 0, 0, 1, 0, 0, 0, 8.10616, -0.118598, 6.73546, 0.466257)
