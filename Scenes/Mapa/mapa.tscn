@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=12 format=3 uid="uid://ddkpwki1v0iv"]
-=======
-[gd_scene load_steps=7 format=3 uid="uid://ddkpwki1v0iv"]
->>>>>>> a00d6d60fad5496293eac1a2672814a42eb6b3cc
+[gd_scene load_steps=13 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -13,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
 [ext_resource type="Texture2D" uid="uid://bjrj554y36ic1" path="res://Assets/Pinturas/la-noche-estrellada.jpg" id="5_w2mx8"]
 [ext_resource type="PackedScene" uid="uid://b3jmv2d1v5te7" path="res://Assets/Techo/techo.glb" id="6_mjwhd"]
+[ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Assets/Marco/marco.tscn" id="10_chpvt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v52hi"]
 size = Vector3(20.997, 0.1, 48.876)
@@ -35,11 +32,7 @@ func _process(delta):
 script = ExtResource("1_44um2")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.467, -24.357)
-=======
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.46708, 0)
->>>>>>> a00d6d60fad5496293eac1a2672814a42eb6b3cc
 texture = ExtResource("1_l2o5v")
 
 [node name="Guernica" type="Sprite3D" parent="."]
@@ -47,7 +40,7 @@ transform = Transform3D(-1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, 
 texture = ExtResource("3_gw33n")
 
 [node name="Pintura_Zuliana" type="Sprite3D" parent="."]
-transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, -10.37, 3.3, 8.77176)
+transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, -10.39, 3.3, 8.772)
 texture = ExtResource("4_yo23r")
 
 [node name="La Noche Estrellada" type="Sprite3D" parent="."]
@@ -188,7 +181,6 @@ transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -7.5, -0
 
 [node name="Pared18" parent="Paredes4" instance=ExtResource("3_7x5jj")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 8.5, -0.1, 0)
-<<<<<<< HEAD
 
 [node name="Vallas" type="Node3D" parent="."]
 
@@ -238,5 +230,9 @@ metadata/_edit_group_ = true
 
 [node name="techo" parent="." instance=ExtResource("6_mjwhd")]
 transform = Transform3D(3.43065, 0, 0, 0, 1, 0, 0, 0, 8.10616, -0.118598, 6.73546, 0.466257)
-=======
->>>>>>> a00d6d60fad5496293eac1a2672814a42eb6b3cc
+
+[node name="Marco" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(5.8923e-08, 0.962, -2.28377e-07, 1.348, -4.20504e-08, 5.53233e-21, -8.89711e-15, -1.45258e-07, -1.51247, -10.33, 3.3, 16.9339)
+
+[node name="Marco2" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(-3.94449e-08, 1, 2.80436e-15, -3.94449e-08, 1.91069e-15, -0.733863, -0.902394, -4.37114e-08, 3.20782e-08, -10.33, 3.13628, 8.77845)
