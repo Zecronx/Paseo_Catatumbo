@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=17 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -10,6 +10,18 @@
 [ext_resource type="Texture2D" uid="uid://bjrj554y36ic1" path="res://Assets/Pinturas/la-noche-estrellada.jpg" id="5_w2mx8"]
 [ext_resource type="PackedScene" uid="uid://b3jmv2d1v5te7" path="res://Assets/Techo/techo.glb" id="6_mjwhd"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Assets/Marco/marco.tscn" id="10_chpvt"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_rj56e"]
+sky_material = SubResource("ProceduralSkyMaterial_ucfuj")
+
+[sub_resource type="Environment" id="Environment_tvsch"]
+background_mode = 2
+sky = SubResource("Sky_rj56e")
+ssao_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v52hi"]
 size = Vector3(20.997, 0.1, 48.876)
@@ -28,8 +40,15 @@ func _process(delta):
 	pass
 "
 
+[sub_resource type="TextMesh" id="TextMesh_f4dp7"]
+text = "PONGAN EL TECHO "
+font_size = 100
+
 [node name="Mapa" type="Node3D"]
 script = ExtResource("1_44um2")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_tvsch")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.467, -24.357)
@@ -50,7 +69,7 @@ texture = ExtResource("5_w2mx8")
 [node name="Suelo" type="StaticBody3D" parent="."]
 
 [node name="piso" parent="Suelo" instance=ExtResource("2_xsiqy")]
-transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 7, 0, -0.01, 0)
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 7, -0.0711722, -0.00806463, -0.216432)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Suelo"]
 shape = SubResource("BoxShape3D_v52hi")
@@ -236,3 +255,7 @@ transform = Transform3D(5.8923e-08, 0.962, -2.28377e-07, 1.348, -4.20504e-08, 5.
 
 [node name="Marco2" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-3.94449e-08, 1, 2.80436e-15, -3.94449e-08, 1.91069e-15, -0.733863, -0.902394, -4.37114e-08, 3.20782e-08, -10.33, 3.13628, 8.77845)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0778327, 0, -0.996967, 0, 1, 0, 0.996967, 0, -0.0778327, 10.0378, 3.97344, 0)
+mesh = SubResource("TextMesh_f4dp7")
