@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://lx6urf45rro5"]
+
+[ext_resource type="PackedScene" uid="uid://dfjjeplgku7b6" path="res://Assets/Pedestal/pedestal.glb" id="1_ilqgh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xjbqv"]
+size = Vector3(1, 1.41287, 0.687744)
+
+[node name="Pedestal" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+
+[node name="pedestal" parent="." instance=ExtResource("1_ilqgh")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.401108, -0.0152588)
+shape = SubResource("BoxShape3D_xjbqv")
