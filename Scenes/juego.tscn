@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://drdaey0naroyb"]
+[gd_scene load_steps=10 format=3 uid="uid://drdaey0naroyb"]
 
 [ext_resource type="PackedScene" uid="uid://ddkpwki1v0iv" path="res://Scenes/Mapa/mapa.tscn" id="1_alcmt"]
 [ext_resource type="Script" path="res://Scenes/juego.gd" id="1_tb02s"]
 [ext_resource type="PackedScene" uid="uid://bxirrhdpsfqms" path="res://Scenes/Player/character_body_3d.tscn" id="2_mgdjp"]
 [ext_resource type="Texture2D" uid="uid://bxuf2gq7qcpi3" path="res://Assets/Pinturas/puente.jpg" id="4_5ep34"]
+[ext_resource type="Texture2D" uid="uid://cwcyjkoaljumj" path="res://Assets/iwana.png" id="4_sal04"]
+[ext_resource type="Texture2D" uid="uid://dhiqrjso8d6ug" path="res://Assets/mango.png" id="5_3e02x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bsfgx"]
 bg_color = Color(0.803922, 0.411765, 0.403922, 1)
@@ -30,6 +32,19 @@ player = ExtResource("2_mgdjp")
 [node name="Mapa" parent="." instance=ExtResource("1_alcmt")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Iwana" type="Sprite2D" parent="CanvasLayer"]
+visible = false
+z_index = 1
+position = Vector2(204, 488)
+scale = Vector2(0.263043, 0.421444)
+texture = ExtResource("4_sal04")
+
+[node name="Mango" type="Sprite2D" parent="CanvasLayer"]
+visible = false
+z_index = 1
+position = Vector2(951, 471)
+texture = ExtResource("5_3e02x")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(585, 305)

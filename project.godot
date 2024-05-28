@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+CyclopsAutoload="*res://addons/cyclops_level_builder/cyclops_global_scene.tscn"
 XRToolsUserSettings="*res://addons/godot-xr-tools/user_settings/user_settings.gd"
 
 [dotnet]
@@ -25,7 +26,7 @@ project/assembly_name="Paseo Catatumbo"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/cyclops_level_builder/plugin.cfg")
 
 [file_customization]
 

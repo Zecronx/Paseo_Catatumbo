@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=18 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bjrj554y36ic1" path="res://Assets/Pinturas/la-noche-estrellada.jpg" id="5_w2mx8"]
 [ext_resource type="PackedScene" uid="uid://b3jmv2d1v5te7" path="res://Assets/Techo/techo.glb" id="6_mjwhd"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Assets/Marco/marco.tscn" id="10_chpvt"]
+[ext_resource type="PackedScene" uid="uid://lx6urf45rro5" path="res://Assets/Pedestal/pedestal.tscn" id="11_gl7h4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -50,8 +51,8 @@ script = ExtResource("1_44um2")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_tvsch")
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.467, -24.357)
+[node name="Logo Urbe" type="Sprite3D" parent="."]
+transform = Transform3D(0.582324, 0, 0, 0, 0.582497, 0, 0, 0, 1, 0, 3.7814, -24.357)
 texture = ExtResource("1_l2o5v")
 
 [node name="Guernica" type="Sprite3D" parent="."]
@@ -256,6 +257,21 @@ transform = Transform3D(5.8923e-08, 0.962, -2.28377e-07, 1.348, -4.20504e-08, 5.
 [node name="Marco2" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-3.94449e-08, 1, 2.80436e-15, -3.94449e-08, 1.91069e-15, -0.733863, -0.902394, -4.37114e-08, 3.20782e-08, -10.33, 3.13628, 8.77845)
 
+[node name="Marco3" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(0.902394, 0, 0, 0, -4.37114e-08, -0.58709, 0, 1, -2.56625e-08, 0, 3.63857, -24.3243)
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.0778327, 0, -0.996967, 0, 1, 0, 0.996967, 0, -0.0778327, 10.0378, 3.97344, 0)
 mesh = SubResource("TextMesh_f4dp7")
+
+[node name="Pedestal" parent="." instance=ExtResource("11_gl7h4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.3, 23.5)
+
+[node name="Pedestal4" parent="." instance=ExtResource("11_gl7h4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.3, -23.5)
+
+[node name="Pedestal2" parent="." instance=ExtResource("11_gl7h4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.3, 23.5)
+
+[node name="Pedestal3" parent="." instance=ExtResource("11_gl7h4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.3, -23.5)
