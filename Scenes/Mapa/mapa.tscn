@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=21 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -11,7 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://b3jmv2d1v5te7" path="res://Assets/Techo/techo.glb" id="6_mjwhd"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Assets/Marco/marco.tscn" id="10_chpvt"]
 [ext_resource type="PackedScene" uid="uid://lx6urf45rro5" path="res://Assets/Pedestal/pedestal.tscn" id="11_gl7h4"]
-[ext_resource type="Script" path="res://Textos.gd" id="12_xaw5s"]
+[ext_resource type="PackedScene" uid="uid://cq7byw7kdekl5" path="res://Assets/TechoArco/Cerrado/techoCerrado.glb" id="12_7gn4i"]
+[ext_resource type="PackedScene" uid="uid://df8x2mtyx5u13" path="res://Assets/TechoArco/Abierto/techoAbierto2.glb" id="14_wrir7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -253,6 +254,7 @@ metadata/_edit_group_ = true
 
 [node name="techo" parent="." instance=ExtResource("6_mjwhd")]
 transform = Transform3D(3.43065, 0, 0, 0, 1, 0, 0, 0, 8.10616, -0.118598, 6.73546, 0.466257)
+visible = false
 
 [node name="Marco" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(5.8923e-08, 0.962, -2.28377e-07, 1.348, -4.20504e-08, 5.53233e-21, -8.89711e-15, -1.45258e-07, -1.51247, -10.33, 3.3, 16.9339)
@@ -280,15 +282,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.3, 23.5)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.3, -23.5)
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-process_mode = 4
 transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, -0.478043, 2.86999, 0.0259175)
 modulate = Color(0, 0, 0, 0.290196)
 pixel_size = 4.8861
+billboard = 1
 texture = SubResource("CanvasTexture_20ic3")
-script = ExtResource("12_xaw5s")
 
 [node name="Label3D" type="Label3D" parent="Sprite3D"]
 transform = Transform3D(1.11732, 0, 0, 0, 1.18343, 0, 0, 0, 1, 0, 0, 0)
+billboard = 1
 text = "PONGAN EL TECHO COÑO
 Esto es una prueba para que
 pongan el marpario techo chamo
@@ -296,10 +298,19 @@ otra prueba de texto que tendra
 un cuadro generico, pongan el techo coño"
 font_size = 40
 
-[node name="Timer" type="Timer" parent="."]
-process_mode = 4
-wait_time = 10.0
-one_shot = true
-autostart = true
+[node name="Techos" type="Node3D" parent="."]
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="techoCerrado2" parent="Techos" instance=ExtResource("12_7gn4i")]
+transform = Transform3D(-9.61651e-08, 0, 1.94, 0, 1, 0, -2.2, 0, -8.48001e-08, 0, 6.41, -19.6)
+
+[node name="techoAbierto3" parent="Techos" instance=ExtResource("14_wrir7")]
+transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, -9.7)
+
+[node name="techoAbierto5" parent="Techos" instance=ExtResource("14_wrir7")]
+transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, 0)
+
+[node name="techoAbierto4" parent="Techos" instance=ExtResource("14_wrir7")]
+transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, 9.7)
+
+[node name="techoCerrado" parent="Techos" instance=ExtResource("12_7gn4i")]
+transform = Transform3D(-9.6165e-08, 0, -1.94, 0, 1, 0, 2.2, 0, -8.48001e-08, 0, 6.41, 19.6)

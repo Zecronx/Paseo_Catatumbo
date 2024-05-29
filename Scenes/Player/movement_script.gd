@@ -33,6 +33,7 @@ func _unhandled_input(event):
 	
 func _physics_process(delta):
 	player_position = global_position
+	
 	if is_multiplayer_authority():
 		
 		# Add the gravity.
