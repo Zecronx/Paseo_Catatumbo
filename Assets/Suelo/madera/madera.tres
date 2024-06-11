@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://doca53xw2m5js"]
+
+[ext_resource type="Texture2D" uid="uid://f885f8dbaq0k" path="res://Assets/Suelo/madera/WoodFloor041_2K-JPG_Color.jpg" id="1_wlcdf"]
+[ext_resource type="Texture2D" uid="uid://da5vqrcvqwkyl" path="res://Assets/Suelo/madera/WoodFloor041_2K-JPG_NormalGL.jpg" id="2_nd2of"]
+[ext_resource type="Texture2D" uid="uid://btf23utobyls1" path="res://Assets/Suelo/madera/WoodFloor041_2K-JPG_Roughness.jpg" id="3_0scmm"]
+
+[resource]
+albedo_texture = ExtResource("1_wlcdf")
+roughness_texture = ExtResource("3_0scmm")
+normal_enabled = true
+normal_texture = ExtResource("2_nd2of")
