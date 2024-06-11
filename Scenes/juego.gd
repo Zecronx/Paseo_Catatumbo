@@ -22,7 +22,7 @@ func _on_join_pressed():
 
 func add_player(id = 1):
 	var jugador = player.instantiate()
-	jugador.name = str(id)
+	jugador.name = "player"+str(id)
 	call_deferred("add_child",jugador)
 
 func delete_player(id):
