@@ -1,5 +1,5 @@
 extends CharacterBody3D
-
+class_name Player
 var speed
 const WALK_SPEED = 5.0
 const SPRINT_SPEED = 7.0
@@ -19,7 +19,7 @@ var gravity = 9.8
 
 @onready var neck = $Neck
 @onready var camera = $Neck/Camera3D
-
+static var player_position
 
 func _ready():
 	camera.current = is_multiplayer_authority()
@@ -32,6 +32,8 @@ func _unhandled_input(event):
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-50),deg_to_rad(60))
 	
 func _physics_process(delta):
+	player_position = global_position
+	
 	if is_multiplayer_authority():
 		
 		# Add the gravity.

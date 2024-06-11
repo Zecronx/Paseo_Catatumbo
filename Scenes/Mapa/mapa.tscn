@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=33 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -11,6 +11,14 @@
 [ext_resource type="PackedScene" uid="uid://b3jmv2d1v5te7" path="res://Assets/Techo/techo.glb" id="6_mjwhd"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Assets/Marco/marco.tscn" id="10_chpvt"]
 [ext_resource type="PackedScene" uid="uid://lx6urf45rro5" path="res://Assets/Pedestal/pedestal.tscn" id="11_gl7h4"]
+[ext_resource type="PackedScene" uid="uid://cq7byw7kdekl5" path="res://Assets/TechoArco/Cerrado/techoCerrado.glb" id="12_7gn4i"]
+[ext_resource type="AudioStream" uid="uid://kd4cknaymymi" path="res://Stream Loops 2024-02-07.ogg" id="12_g8n3c"]
+[ext_resource type="PackedScene" uid="uid://rn0nrswdx7vl" path="res://Assets/Tranvia/Trenvia.glb" id="14_bn6ju"]
+[ext_resource type="PackedScene" uid="uid://df8x2mtyx5u13" path="res://Assets/TechoArco/Abierto/techoAbierto2.glb" id="14_wrir7"]
+[ext_resource type="PackedScene" uid="uid://cwf0bxlovt2yi" path="res://Assets/Puente/puente.glb" id="15_71uor"]
+[ext_resource type="PackedScene" uid="uid://b6ywtsg5r0lxf" path="res://Assets/Estatua/Rafael Urdaneta.glb" id="16_6h83q"]
+[ext_resource type="Script" path="res://Scenes/Mapa/Trenvia.gd" id="16_eyecq"]
+[ext_resource type="AudioStream" uid="uid://dqm73hgps8dp1" path="res://Stream Loops 2023-11-29.ogg" id="18_fc8dd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -41,9 +49,57 @@ func _process(delta):
 	pass
 "
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_xi7ur"]
+size = Vector3(1.26904, 1, 1.57642)
+
 [sub_resource type="TextMesh" id="TextMesh_f4dp7"]
 text = "PONGAN EL TECHO "
 font_size = 100
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_20ic3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hw2wc"]
+size = Vector3(5.31839, 1.69922, 14.0466)
+
+[sub_resource type="Animation" id="Animation_dsluy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Trenvia:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-3.8498, 0, -6.99819)]
+}
+
+[sub_resource type="Animation" id="Animation_k7owd"]
+resource_name = "tranvia_move"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Trenvia:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-3.8498, 0, -6.99819), Vector3(-3.85, 0, -0.538)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cpvv5"]
+_data = {
+"RESET": SubResource("Animation_dsluy"),
+"tranvia_move": SubResource("Animation_k7owd")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b1mbg"]
+size = Vector3(2.50684, 4.28247, 0.87439)
 
 [node name="Mapa" type="Node3D"]
 script = ExtResource("1_44um2")
@@ -250,15 +306,25 @@ metadata/_edit_group_ = true
 
 [node name="techo" parent="." instance=ExtResource("6_mjwhd")]
 transform = Transform3D(3.43065, 0, 0, 0, 1, 0, 0, 0, 8.10616, -0.118598, 6.73546, 0.466257)
+visible = false
 
 [node name="Marco" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(5.8923e-08, 0.962, -2.28377e-07, 1.348, -4.20504e-08, 5.53233e-21, -8.89711e-15, -1.45258e-07, -1.51247, -10.33, 3.3, 16.9339)
 
+[node name="Area3D2" type="Area3D" parent="Marco"]
+transform = Transform3D(1, 1.42109e-14, 0, 1.3965e-21, 1, 4.26326e-14, -1.27055e-21, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco/Area3D2"]
+transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
+shape = SubResource("BoxShape3D_xi7ur")
+
 [node name="Marco2" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-3.94449e-08, 1, 2.80436e-15, -3.94449e-08, 1.91069e-15, -0.733863, -0.902394, -4.37114e-08, 3.20782e-08, -10.33, 3.13628, 8.77845)
+transform = Transform3D(-3.94449e-08, 1, -3.20782e-08, 0, -4.37114e-08, -0.733863, -0.902394, -4.37114e-08, 1.40218e-15, -10.3353, 3.13628, 8.80713)
+audio = ExtResource("18_fc8dd")
 
 [node name="Marco3" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(0.902394, 0, 0, 0, -4.37114e-08, -0.58709, 0, 1, -2.56625e-08, 0, 3.63857, -24.3243)
+audio = ExtResource("12_g8n3c")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.0778327, 0, -0.996967, 0, 1, 0, 0.996967, 0, -0.0778327, 10.0378, 3.97344, 0)
@@ -275,3 +341,78 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.3, 23.5)
 
 [node name="Pedestal3" parent="." instance=ExtResource("11_gl7h4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.3, -23.5)
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, -0.478043, 2.86999, 0.0259175)
+modulate = Color(0, 0, 0, 0.290196)
+pixel_size = 4.8861
+billboard = 1
+texture = SubResource("CanvasTexture_20ic3")
+
+[node name="Label3D" type="Label3D" parent="Sprite3D"]
+transform = Transform3D(1.11732, 0, 0, 0, 1.18343, 0, 0, 0, 1, 0, 0, 0)
+billboard = 1
+text = "PONGAN EL TECHO COÑO
+Esto es una prueba para que
+pongan el marpario techo chamo
+otra prueba de texto que tendra
+un cuadro generico, pongan el techo coño"
+font_size = 40
+
+[node name="Techos" type="Node3D" parent="."]
+
+[node name="techoCerrado2" parent="Techos" instance=ExtResource("12_7gn4i")]
+transform = Transform3D(-9.61651e-08, 0, 1.94, 0, 1, 0, -2.2, 0, -8.48001e-08, 0, 6.41, -19.6)
+
+[node name="techoAbierto3" parent="Techos" instance=ExtResource("14_wrir7")]
+transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, -9.7)
+
+[node name="techoAbierto5" parent="Techos" instance=ExtResource("14_wrir7")]
+transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, 0)
+
+[node name="techoAbierto4" parent="Techos" instance=ExtResource("14_wrir7")]
+transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, 9.7)
+
+[node name="techoCerrado" parent="Techos" instance=ExtResource("12_7gn4i")]
+transform = Transform3D(-9.6165e-08, 0, -1.94, 0, 1, 0, 2.2, 0, -8.48001e-08, 0, 6.41, 19.6)
+
+[node name="puente" parent="." instance=ExtResource("15_71uor")]
+transform = Transform3D(-2.19774e-10, 0, 0.015, 0, 0.015, 0, -0.00502785, 0, -6.55671e-10, 3.16, 0, 19.309)
+
+[node name="Trenvia" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8498, 0, -6.99819)
+script = ExtResource("16_eyecq")
+
+[node name="Trenvia" parent="Trenvia" instance=ExtResource("14_bn6ju")]
+transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Trenvia"]
+transform = Transform3D(0.115, 0, 0, 0, 0.345, 0, 0, 0, 0.115, -0.0292511, 0.349609, 0.0953364)
+shape = SubResource("BoxShape3D_hw2wc")
+
+[node name="RayCast3D" type="RayCast3D" parent="Trenvia"]
+transform = Transform3D(16.145, 0, 0, 0, -1.37, 0, 0, 0, 19.97, 0, 0, 0)
+collide_with_areas = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_cpvv5")
+}
+autoplay = "tranvia_move"
+speed_scale = 0.411
+
+[node name="Estatua" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21.738)
+
+[node name="Rafael Urdaneta2" parent="Estatua" instance=ExtResource("16_6h83q")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Estatua"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0180664, 1.64124, 1.43393)
+shape = SubResource("BoxShape3D_b1mbg")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_fc8dd")
+
+[connection signal="body_entered" from="Marco/Area3D2" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Marco/Area3D2" to="." method="_on_area_3d_body_exited"]
