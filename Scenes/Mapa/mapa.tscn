@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=33 format=3 uid="uid://ddkpwki1v0iv"]
+=======
+[gd_scene load_steps=30 format=3 uid="uid://ddkpwki1v0iv"]
+>>>>>>> 66636fafee9ff6a924e63b41d5c289407ac97aa2
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -12,13 +16,19 @@
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Assets/Marco/marco.tscn" id="10_chpvt"]
 [ext_resource type="PackedScene" uid="uid://lx6urf45rro5" path="res://Assets/Pedestal/pedestal.tscn" id="11_gl7h4"]
 [ext_resource type="PackedScene" uid="uid://cq7byw7kdekl5" path="res://Assets/TechoArco/Cerrado/techoCerrado.glb" id="12_7gn4i"]
+<<<<<<< HEAD
 [ext_resource type="AudioStream" uid="uid://kd4cknaymymi" path="res://Stream Loops 2024-02-07.ogg" id="12_g8n3c"]
+=======
+>>>>>>> 66636fafee9ff6a924e63b41d5c289407ac97aa2
 [ext_resource type="PackedScene" uid="uid://rn0nrswdx7vl" path="res://Assets/Tranvia/Trenvia.glb" id="14_bn6ju"]
 [ext_resource type="PackedScene" uid="uid://df8x2mtyx5u13" path="res://Assets/TechoArco/Abierto/techoAbierto2.glb" id="14_wrir7"]
 [ext_resource type="PackedScene" uid="uid://cwf0bxlovt2yi" path="res://Assets/Puente/puente.glb" id="15_71uor"]
 [ext_resource type="PackedScene" uid="uid://b6ywtsg5r0lxf" path="res://Assets/Estatua/Rafael Urdaneta.glb" id="16_6h83q"]
 [ext_resource type="Script" path="res://Scenes/Mapa/Trenvia.gd" id="16_eyecq"]
+<<<<<<< HEAD
 [ext_resource type="AudioStream" uid="uid://dqm73hgps8dp1" path="res://Stream Loops 2023-11-29.ogg" id="18_fc8dd"]
+=======
+>>>>>>> 66636fafee9ff6a924e63b41d5c289407ac97aa2
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -61,6 +71,7 @@ font_size = 100
 [sub_resource type="BoxShape3D" id="BoxShape3D_hw2wc"]
 size = Vector3(5.31839, 1.69922, 14.0466)
 
+<<<<<<< HEAD
 [sub_resource type="Animation" id="Animation_dsluy"]
 length = 0.001
 tracks/0/type = "value"
@@ -76,6 +87,8 @@ tracks/0/keys = {
 "values": [Vector3(-3.8498, 0, -6.99819)]
 }
 
+=======
+>>>>>>> 66636fafee9ff6a924e63b41d5c289407ac97aa2
 [sub_resource type="Animation" id="Animation_k7owd"]
 resource_name = "tranvia_move"
 loop_mode = 2
@@ -92,6 +105,24 @@ tracks/0/keys = {
 "values": [Vector3(-3.8498, 0, -6.99819), Vector3(-3.85, 0, -0.538)]
 }
 
+<<<<<<< HEAD
+=======
+[sub_resource type="Animation" id="Animation_dsluy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Trenvia:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-3.8498, 0, -6.99819)]
+}
+
+>>>>>>> 66636fafee9ff6a924e63b41d5c289407ac97aa2
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_cpvv5"]
 _data = {
 "RESET": SubResource("Animation_dsluy"),
@@ -320,7 +351,10 @@ shape = SubResource("BoxShape3D_xi7ur")
 
 [node name="Marco2" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-3.94449e-08, 1, -3.20782e-08, 0, -4.37114e-08, -0.733863, -0.902394, -4.37114e-08, 1.40218e-15, -10.3353, 3.13628, 8.80713)
+<<<<<<< HEAD
 audio = ExtResource("18_fc8dd")
+=======
+>>>>>>> 66636fafee9ff6a924e63b41d5c289407ac97aa2
 
 [node name="Marco3" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(0.902394, 0, 0, 0, -4.37114e-08, -0.58709, 0, 1, -2.56625e-08, 0, 3.63857, -24.3243)
@@ -410,9 +444,12 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Estatua"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0180664, 1.64124, 1.43393)
 shape = SubResource("BoxShape3D_b1mbg")
+<<<<<<< HEAD
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("18_fc8dd")
 
 [connection signal="body_entered" from="Marco/Area3D2" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Marco/Area3D2" to="." method="_on_area_3d_body_exited"]
+=======
+>>>>>>> 66636fafee9ff6a924e63b41d5c289407ac97aa2
