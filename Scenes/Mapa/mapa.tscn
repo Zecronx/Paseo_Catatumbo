@@ -12,13 +12,13 @@
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Assets/Marco/marco.tscn" id="10_chpvt"]
 [ext_resource type="PackedScene" uid="uid://lx6urf45rro5" path="res://Assets/Pedestal/pedestal.tscn" id="11_gl7h4"]
 [ext_resource type="PackedScene" uid="uid://cq7byw7kdekl5" path="res://Assets/TechoArco/Cerrado/techoCerrado.glb" id="12_7gn4i"]
-[ext_resource type="AudioStream" path="res://Stream Loops 2024-02-07.ogg" id="12_g8n3c"]
+[ext_resource type="AudioStream" uid="uid://brxqtbmtbjfle" path="res://Audio/Stream Loops 2024-02-07.ogg" id="12_g8n3c"]
 [ext_resource type="PackedScene" uid="uid://rn0nrswdx7vl" path="res://Assets/Tranvia/Trenvia.glb" id="14_bn6ju"]
 [ext_resource type="PackedScene" uid="uid://df8x2mtyx5u13" path="res://Assets/TechoArco/Abierto/techoAbierto2.glb" id="14_wrir7"]
 [ext_resource type="PackedScene" uid="uid://cwf0bxlovt2yi" path="res://Assets/Puente/puente.glb" id="15_71uor"]
 [ext_resource type="PackedScene" uid="uid://b6ywtsg5r0lxf" path="res://Assets/Estatua/Rafael Urdaneta.glb" id="16_6h83q"]
 [ext_resource type="Script" path="res://Scenes/Mapa/Trenvia.gd" id="16_eyecq"]
-[ext_resource type="AudioStream" path="res://Stream Loops 2023-11-29.ogg" id="18_fc8dd"]
+[ext_resource type="AudioStream" uid="uid://cysa0kn3py8jr" path="res://Audio/Stream Loops 2023-11-29.ogg" id="18_fc8dd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
