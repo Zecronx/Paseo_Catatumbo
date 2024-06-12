@@ -1,4 +1,4 @@
-[gd_scene load_steps=119 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=121 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -30,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://c6sfd0ulccsv6" path="res://Imagenes/Gastronimia/mandoca.jpg" id="29_51xfp"]
 [ext_resource type="Texture2D" uid="uid://dv1l87ehbyqjs" path="res://Imagenes/Gastronimia/mojito_en_coco.jpg" id="29_qr7q6"]
 [ext_resource type="Texture2D" uid="uid://4e44da2ayoex" path="res://Imagenes/Gastronimia/bollitos.jpg" id="30_7qm1x"]
+[ext_resource type="PackedScene" uid="uid://elaq75lfvloq" path="res://Assets/Bench/banco.glb" id="31_21af4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -2200,6 +2201,9 @@ active_edge = -1
 active_face = -1
 active_face_vertex = 0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_yah85"]
+size = Vector3(1.76764, 2.11676, 3.33551)
+
 [node name="Mapa" type="Node3D"]
 script = ExtResource("1_44um2")
 
@@ -3148,6 +3152,15 @@ block_data = SubResource("Resource_f5os7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 7, 26)
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_fpdrj")
+
+[node name="bench" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.205, 0, 5.95085)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bench"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0341845, 1.06746, 0.0706582)
+shape = SubResource("BoxShape3D_yah85")
+
+[node name="banco" parent="bench" instance=ExtResource("31_21af4")]
 
 [connection signal="body_entered" from="Marco/Area3D2" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Marco/Area3D2" to="." method="_on_area_3d_body_exited"]
