@@ -1,4 +1,4 @@
-[gd_scene load_steps=94 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=106 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -18,11 +18,19 @@
 [ext_resource type="PackedScene" uid="uid://cwf0bxlovt2yi" path="res://Assets/Puente/puente.glb" id="15_71uor"]
 [ext_resource type="PackedScene" uid="uid://b6ywtsg5r0lxf" path="res://Assets/Estatua/Rafael Urdaneta.glb" id="16_6h83q"]
 [ext_resource type="Script" path="res://Scenes/Mapa/Trenvia.gd" id="16_eyecq"]
+[ext_resource type="AudioStream" uid="uid://cysa0kn3py8jr" path="res://Audio/Stream Loops 2023-11-29.ogg" id="18_fc8dd"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="18_jdkkt"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="19_8qer4"]
 [ext_resource type="Material" uid="uid://doca53xw2m5js" path="res://Assets/Suelo/madera/madera.tres" id="20_wfqx6"]
 [ext_resource type="Material" uid="uid://cn111t8nun0hr" path="res://Assets/Pared/pared.tres" id="21_8brsi"]
-[ext_resource type="AudioStream" uid="uid://cysa0kn3py8jr" path="res://Audio/Stream Loops 2023-11-29.ogg" id="18_fc8dd"]
+[ext_resource type="PackedScene" uid="uid://bppr5aaueiphk" path="res://Assets/Sillas/SillaAfuera.glb" id="24_ujkbo"]
+[ext_resource type="PackedScene" uid="uid://ci6yg2m1vmbhh" path="res://Assets/Faro/Farol.glb" id="25_q8tja"]
+[ext_resource type="Texture2D" uid="uid://bqaj34eygajr2" path="res://Imagenes/Gastronimia/Tequeños.jpg" id="26_mbr0n"]
+[ext_resource type="Texture2D" uid="uid://cwmviykryhex7" path="res://Imagenes/Gastronimia/patacon.jpg" id="27_pmncg"]
+[ext_resource type="Texture2D" uid="uid://ctrn7ys40pp6y" path="res://Imagenes/Gastronimia/pastelitos.jpg" id="28_p02jx"]
+[ext_resource type="Texture2D" uid="uid://c6sfd0ulccsv6" path="res://Imagenes/Gastronimia/mandoca.jpg" id="29_51xfp"]
+[ext_resource type="Texture2D" uid="uid://dv1l87ehbyqjs" path="res://Imagenes/Gastronimia/mojito_en_coco.jpg" id="29_qr7q6"]
+[ext_resource type="Texture2D" uid="uid://4e44da2ayoex" path="res://Imagenes/Gastronimia/bollitos.jpg" id="30_7qm1x"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -55,10 +63,6 @@ func _process(delta):
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xi7ur"]
 size = Vector3(1.26904, 1, 1.57642)
-
-[sub_resource type="TextMesh" id="TextMesh_f4dp7"]
-text = "PONGAN EL TECHO "
-font_size = 100
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_20ic3"]
 
@@ -1785,6 +1789,12 @@ active_edge = -1
 active_face = -1
 active_face_vertex = 0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_73j0m"]
+size = Vector3(2.01416, 0.440371, 0.982544)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rcey7"]
+size = Vector3(0.653442, 4.18472, 0.621582)
+
 [node name="Mapa" type="Node3D"]
 script = ExtResource("1_44um2")
 
@@ -1800,7 +1810,7 @@ transform = Transform3D(-1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, 
 texture = ExtResource("3_gw33n")
 
 [node name="Pintura_Zuliana" type="Sprite3D" parent="."]
-transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, -10.39, 3.3, 8.772)
+transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, -10.3884, 3.3, 8.78808)
 texture = ExtResource("4_yo23r")
 
 [node name="La Noche Estrellada" type="Sprite3D" parent="."]
@@ -1982,6 +1992,16 @@ transform = Transform3D(1, 1.42109e-14, 0, 1.3965e-21, 1, 4.26326e-14, -1.27055e
 transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
 shape = SubResource("BoxShape3D_xi7ur")
 
+[node name="Marco4" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(1.3029e-15, 4.20504e-08, 0.625722, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.73512e-08, 28.5059, 2.05618, 34.1038)
+
+[node name="Area3D2" type="Area3D" parent="Marco4"]
+transform = Transform3D(1, 1.42109e-14, 0, 1.3965e-21, 1, 4.26326e-14, -1.27055e-21, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco4/Area3D2"]
+transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
+shape = SubResource("BoxShape3D_xi7ur")
+
 [node name="Marco2" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-3.94449e-08, 1, -3.20782e-08, 0, -4.37114e-08, -0.733863, -0.902394, -4.37114e-08, 1.40218e-15, -10.3353, 3.13628, 8.80713)
 audio = ExtResource("18_fc8dd")
@@ -1989,10 +2009,6 @@ audio = ExtResource("18_fc8dd")
 [node name="Marco3" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(0.902394, 0, 0, 0, -4.37114e-08, -0.58709, 0, 1, -2.56625e-08, 0, 3.63857, -24.3243)
 audio = ExtResource("12_g8n3c")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.0778327, 0, -0.996967, 0, 1, 0, 0.996967, 0, -0.0778327, 10.0378, 3.97344, 0)
-mesh = SubResource("TextMesh_f4dp7")
 
 [node name="Pedestal" parent="." instance=ExtResource("11_gl7h4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.98716, 0.284726, 19.1444)
@@ -2072,7 +2088,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21.738)
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0967929, -2.38419e-07, -3.64633)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Estatua"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0180664, 1.64124, 1.43393)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0180664, 1.64124, -2.20823)
 shape = SubResource("BoxShape3D_b1mbg")
 
 [node name="CyclopsBlock" type="Node3D" parent="."]
@@ -2666,8 +2682,62 @@ block_data = SubResource("Resource_3l73p")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 7, 74)
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_bmtjn")
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("18_fc8dd")
 
+[node name="Silla" type="StaticBody3D" parent="."]
+transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -0.8, -1.231, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Silla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00452328, 1.04268, 0.518738)
+shape = SubResource("BoxShape3D_73j0m")
+
+[node name="SillaAfuera" parent="Silla" instance=ExtResource("24_ujkbo")]
+
+[node name="Silla2" type="StaticBody3D" parent="."]
+transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -0.8, -1.231, 11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Silla2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00452328, 1.04268, 0.518738)
+shape = SubResource("BoxShape3D_73j0m")
+
+[node name="SillaAfuera" parent="Silla2" instance=ExtResource("24_ujkbo")]
+
+[node name="Faro" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -20)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Faro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00445557, 2.09544, -0.0290527)
+shape = SubResource("BoxShape3D_rcey7")
+
+[node name="Farol" parent="Faro" instance=ExtResource("25_q8tja")]
+
+[node name="Tequeños" type="Sprite3D" parent="."]
+transform = Transform3D(0.65888, 0, 0, 0, 0.701797, 0, 0, 0, 1, 28.3, 2, 34.013)
+texture = ExtResource("26_mbr0n")
+
+[node name="Patacon" type="Sprite3D" parent="."]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 35.5288, 2, 34.013)
+texture = ExtResource("27_pmncg")
+
+[node name="Pastelitos" type="Sprite3D" parent="."]
+transform = Transform3D(-1.5299e-08, 0, 0.35, 0, 0.35, 0, -0.35, 0, -1.5299e-08, 40.9692, 2, 37.4231)
+texture = ExtResource("28_p02jx")
+
+[node name="Mandoca" type="Sprite3D" parent="."]
+transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 35.5288, 2.25925, 49.9961)
+texture = ExtResource("29_51xfp")
+
+[node name="Mandoca2" type="Sprite3D" parent="."]
+transform = Transform3D(-0.55, 0, -8.30477e-08, 0, 0.55, 0, 8.30477e-08, 0, -0.55, 28.2619, 1.94204, 49.9961)
+texture = ExtResource("30_7qm1x")
+
+[node name="Mojito" type="Sprite3D" parent="."]
+transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, 40.9692, 2, 44.5416)
+texture = ExtResource("29_qr7q6")
+
 [connection signal="body_entered" from="Marco/Area3D2" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Marco/Area3D2" to="." method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Marco4/Area3D2" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Marco4/Area3D2" to="." method="_on_area_3d_body_exited"]
