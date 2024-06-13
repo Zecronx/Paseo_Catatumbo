@@ -2307,14 +2307,69 @@ transform = Transform3D(1, 1.42109e-14, 0, 1.3965e-21, 1, 4.26326e-14, -1.27055e
 transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
 shape = SubResource("BoxShape3D_xi7ur")
 
-[node name="Marco4" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco tequeños" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(1.3029e-15, 4.20504e-08, 0.625722, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.73512e-08, 28.5059, 2.05618, 34.1038)
 
-[node name="Area3D2" type="Area3D" parent="Marco4"]
+[node name="Area3D2" type="Area3D" parent="Marco tequeños"]
 process_mode = 4
 transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-14, -1.90582e-21, 0, 1, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco4/Area3D2"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco tequeños/Area3D2"]
+transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
+shape = SubResource("BoxShape3D_xi7ur")
+
+[node name="Marco patacones" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(1.3029e-15, 4.20504e-08, 0.625722, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.73512e-08, 35.6479, 2.05618, 34.1038)
+
+[node name="Area3D2" type="Area3D" parent="Marco patacones"]
+process_mode = 4
+transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-14, -1.90582e-21, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco patacones/Area3D2"]
+transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
+shape = SubResource("BoxShape3D_xi7ur")
+
+[node name="Marco pastelitos" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(-2.98069e-08, -0.962, 0, 0.681903, -4.20504e-08, 0, 0, 0, 0.509469, 40.88, 2.056, 37.5476)
+
+[node name="Area3D2" type="Area3D" parent="Marco pastelitos"]
+process_mode = 4
+transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-14, -1.90582e-21, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco pastelitos/Area3D2"]
+transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
+shape = SubResource("BoxShape3D_xi7ur")
+
+[node name="Marco mojito" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(-2.98069e-08, -0.962, 0, 0.681903, -4.20504e-08, 0, 0, 0, 0.686658, 40.88, 2.056, 44.6708)
+
+[node name="Area3D2" type="Area3D" parent="Marco mojito"]
+process_mode = 4
+transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-14, -1.90582e-21, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco mojito/Area3D2"]
+transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
+shape = SubResource("BoxShape3D_xi7ur")
+
+[node name="Marco mandocas" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(-4.77568e-16, -1.14717e-08, -0.646347, 0.916193, -4.20504e-08, 0, -4.00481e-08, -0.962, 7.70761e-09, 35.3904, 2.2517, 49.8945)
+
+[node name="Area3D2" type="Area3D" parent="Marco mandocas"]
+process_mode = 4
+transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-14, -1.90582e-21, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco mandocas/Area3D2"]
+transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
+shape = SubResource("BoxShape3D_xi7ur")
+
+[node name="Marco bollitos" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(-3.48029e-16, -1.14717e-08, -0.646347, 0.667677, -4.20504e-08, 0, -2.91851e-08, -0.962, 7.70761e-09, 24.869, 4.9072, 47.9521)
+
+[node name="Area3D2" type="Area3D" parent="Marco bollitos"]
+process_mode = 4
+transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-14, -1.90582e-21, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco bollitos/Area3D2"]
 transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
 shape = SubResource("BoxShape3D_xi7ur")
 
@@ -3164,5 +3219,15 @@ shape = SubResource("BoxShape3D_yah85")
 
 [connection signal="body_entered" from="Marco/Area3D2" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Marco/Area3D2" to="." method="_on_area_3d_body_exited"]
-[connection signal="body_entered" from="Marco4/Area3D2" to="." method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="Marco4/Area3D2" to="." method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Marco tequeños/Area3D2" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Marco tequeños/Area3D2" to="." method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Marco patacones/Area3D2" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Marco patacones/Area3D2" to="." method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Marco pastelitos/Area3D2" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Marco pastelitos/Area3D2" to="." method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Marco mojito/Area3D2" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Marco mojito/Area3D2" to="." method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Marco mandocas/Area3D2" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Marco mandocas/Area3D2" to="." method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Marco bollitos/Area3D2" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Marco bollitos/Area3D2" to="." method="_on_area_3d_body_exited"]
