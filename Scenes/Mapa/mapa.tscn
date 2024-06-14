@@ -1,4 +1,4 @@
-[gd_scene load_steps=182 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=187 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -3129,7 +3129,10 @@ active_face = -1
 active_face_vertex = 0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_yah85"]
-size = Vector3(1.76764, 2.11676, 3.33551)
+size = Vector3(1.87112, 1.05594, 3.33551)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4q1lc"]
+size = Vector3(0.731445, 1.59906, 3)
 
 [sub_resource type="Resource" id="Resource_a00yi"]
 script = ExtResource("19_8qer4")
@@ -3774,6 +3777,18 @@ active_vertex = -1
 active_edge = -1
 active_face = -1
 active_face_vertex = 0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_350w1"]
+size = Vector3(0.465759, 1.46497, 19.7062)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6n4tw"]
+size = Vector3(0.46405, 1.62683, 19.57)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_63ngf"]
+size = Vector3(0.411255, 1.89941, 5.99951)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jxtft"]
+size = Vector3(0.444092, 1.84833, 6.03748)
 
 [sub_resource type="Resource" id="Resource_6i8rt"]
 script = ExtResource("19_8qer4")
@@ -4970,10 +4985,14 @@ materials = Array[Material]([ExtResource("20_kti8v")])
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.205, 0, 5.95085)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="bench"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0341845, 1.06746, 0.0706582)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.085927, 0.537049, 0.0706582)
 shape = SubResource("BoxShape3D_yah85")
 
 [node name="banco" parent="bench" instance=ExtResource("31_21af4")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="bench"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.684082, 1.29953, 0)
+shape = SubResource("BoxShape3D_4q1lc")
 
 [node name="Block_4" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 7, 33)
@@ -5113,111 +5132,86 @@ script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_xx5fu")
 materials = Array[Material]([ExtResource("21_8brsi")])
 
-[node name="Barandilla" type="StaticBody3D" parent="."]
+[node name="Barandillas1" type="StaticBody3D" parent="."]
 
-[node name="Barandilla" parent="Barandilla" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla" parent="Barandillas1" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 26.6833)
 
-[node name="Barandilla2" type="StaticBody3D" parent="."]
-
-[node name="Barandilla" parent="Barandilla2" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla2" parent="Barandillas1" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 29.408)
 
-[node name="Barandilla3" type="StaticBody3D" parent="."]
-
-[node name="Barandilla" parent="Barandilla3" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla3" parent="Barandillas1" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 32.1434)
 
-[node name="Barandilla4" type="StaticBody3D" parent="."]
-
-[node name="Barandilla" parent="Barandilla4" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla4" parent="Barandillas1" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 34.9087)
 
-[node name="Barandilla5" type="StaticBody3D" parent="."]
-
-[node name="Barandilla" parent="Barandilla5" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla5" parent="Barandillas1" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 37.6209)
 
-[node name="Barandilla6" type="StaticBody3D" parent="."]
-
-[node name="Barandilla" parent="Barandilla6" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla6" parent="Barandillas1" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 40.3592)
 
-[node name="Barandilla7" type="StaticBody3D" parent="."]
-
-[node name="Barandilla" parent="Barandilla7" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla7" parent="Barandillas1" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, 11.188, 7.13147, 43.1087)
 
-[node name="Barandilla8" type="StaticBody3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Barandillas1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1816, 8.84974, 34.9241)
+shape = SubResource("BoxShape3D_350w1")
 
-[node name="Barandilla" parent="Barandilla8" instance=ExtResource("32_m1ad3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, 11.188, 7.13147, 43.1087)
-
-[node name="Barandilla9" type="StaticBody3D" parent="."]
+[node name="Barandillas2" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, -0.043171)
 
-[node name="Barandilla" parent="Barandilla9" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla" parent="Barandillas2" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 26.6833)
 
-[node name="Barandilla10" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.0118731)
-
-[node name="Barandilla" parent="Barandilla10" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla2" parent="Barandillas2" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 29.408)
 
-[node name="Barandilla11" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3403, 0, 0.0543307)
-
-[node name="Barandilla" parent="Barandilla11" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla3" parent="Barandillas2" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 32.1434)
 
-[node name="Barandilla12" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.0647334)
-
-[node name="Barandilla" parent="Barandilla12" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla4" parent="Barandillas2" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 34.9087)
 
-[node name="Barandilla13" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.0560454)
-
-[node name="Barandilla" parent="Barandilla13" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla5" parent="Barandillas2" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 37.6209)
 
-[node name="Barandilla14" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.147972)
-
-[node name="Barandilla" parent="Barandilla14" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla6" parent="Barandillas2" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 40.3592)
 
-[node name="Barandilla16" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.196098)
-
-[node name="Barandilla" parent="Barandilla16" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla7" parent="Barandillas2" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, 11.188, 7.13147, 43.1087)
 
-[node name="Barandilla17" type="StaticBody3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Barandillas2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1632, 8.9132, 34.897)
+shape = SubResource("BoxShape3D_6n4tw")
+
+[node name="Barandillas3" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.72936, 7.12875, 44.4161)
 
-[node name="Barandilla" parent="Barandilla17" instance=ExtResource("32_m1ad3")]
+[node name="Barandilla2" parent="Barandillas3" instance=ExtResource("32_m1ad3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, 0, 0, -2.78399)
+
+[node name="Barandilla" parent="Barandillas3" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, 0, 0, 0)
 
-[node name="Barandilla18" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.94537, 7.12875, 44.4161)
-
-[node name="Barandilla" parent="Barandilla18" instance=ExtResource("32_m1ad3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, 0, 0, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Barandillas3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00499725, 1.83814, -1.37571)
+shape = SubResource("BoxShape3D_63ngf")
 
 [node name="Barandilla19" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9.76176, 7.12875, 44.4161)
 
+[node name="Barandilla2" parent="Barandilla19" instance=ExtResource("32_m1ad3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, -0.0212021, 0.03514, 2.80396)
+
 [node name="Barandilla" parent="Barandilla19" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, 0, 0, 0)
 
-[node name="Barandilla20" type="StaticBody3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.9578, 7.16389, 44.4373)
-
-[node name="Barandilla" parent="Barandilla20" instance=ExtResource("32_m1ad3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, 0, 0, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Barandilla19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00109863, 1.63563, 1.4035)
+shape = SubResource("BoxShape3D_jxtft")
 
 [node name="Block_17" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 7, 24)
