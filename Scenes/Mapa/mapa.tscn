@@ -1,4 +1,4 @@
-[gd_scene load_steps=180 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=182 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -32,6 +32,8 @@
 [ext_resource type="Texture2D" uid="uid://4e44da2ayoex" path="res://Imagenes/Gastronimia/bollitos.jpg" id="30_7qm1x"]
 [ext_resource type="PackedScene" uid="uid://elaq75lfvloq" path="res://Assets/Bench/banco.glb" id="31_21af4"]
 [ext_resource type="PackedScene" uid="uid://b7y74m4xc8gko" path="res://Assets/Barandilla/Barandilla.glb" id="32_m1ad3"]
+[ext_resource type="PackedScene" uid="uid://dunvmx1f1tqva" path="res://Scenes/Mapa/puerta/puerta.tscn" id="33_o1un5"]
+[ext_resource type="Script" path="res://Scenes/Mapa/puerta/puerta.gd" id="34_hwxsy"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -5228,6 +5230,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 7, 24)
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_idyl3")
 materials = Array[Material]([ExtResource("21_8brsi")])
+
+[node name="Door" parent="." instance=ExtResource("33_o1un5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 24)
+script = ExtResource("34_hwxsy")
 
 [connection signal="body_entered" from="Marco/Area3D2" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Marco/Area3D2" to="." method="_on_area_3d_body_exited"]

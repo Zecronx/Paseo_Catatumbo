@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bxirrhdpsfqms"]
+[gd_scene load_steps=6 format=3 uid="uid://d3joae7ck4jhy"]
 
 [ext_resource type="Script" path="res://Scenes/Player/movement_script.gd" id="1_m45ao"]
+[ext_resource type="Script" path="res://Scenes/Player/interaction.gd" id="2_5vxfh"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5llqy"]
 
@@ -28,6 +29,11 @@ mesh = SubResource("CapsuleMesh_2vsdh")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Neck"]
+
+[node name="RayCast3D" type="RayCast3D" parent="Neck/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.481569)
+target_position = Vector3(0, -2, 0)
+script = ExtResource("2_5vxfh")
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_r3j62")

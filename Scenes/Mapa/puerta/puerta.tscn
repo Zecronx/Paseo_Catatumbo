@@ -1,0 +1,94 @@
+[gd_scene load_steps=11 format=3 uid="uid://kaq5ecb308ec"]
+
+[ext_resource type="Script" path="res://door.gd" id="1_h1afd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_16b54"]
+albedo_color = Color(0.34902, 0.231373, 0.133333, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5s4jp"]
+material = SubResource("StandardMaterial3D_16b54")
+size = Vector3(1.5, 3, 0.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_henvy"]
+albedo_color = Color(0.72, 0.61392, 0.5328, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_spn4y"]
+material = SubResource("StandardMaterial3D_henvy")
+size = Vector3(0.1, 0.5, 0.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_stmdg"]
+size = Vector3(1.5, 3, 0.2)
+
+[sub_resource type="Animation" id="Animation_3oclv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_30i0e"]
+resource_name = "abrir"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_h2bva"]
+resource_name = "cerrar"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fl8gh"]
+_data = {
+"RESET": SubResource("Animation_3oclv"),
+"abrir": SubResource("Animation_30i0e"),
+"cerrar": SubResource("Animation_h2bva")
+}
+
+[node name="Door" type="StaticBody3D"]
+script = ExtResource("1_h1afd")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 1.5, 0.1)
+mesh = SubResource("BoxMesh_5s4jp")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, 1.5, 0.1)
+mesh = SubResource("BoxMesh_spn4y")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 1.5, 0.1)
+shape = SubResource("BoxShape3D_stmdg")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fl8gh")
+}
