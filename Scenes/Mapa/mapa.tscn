@@ -4064,49 +4064,43 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, 11.188, 7.13147, 43.108
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, 11.188, 7.13147, 43.1087)
 
 [node name="Barandilla9" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.94812)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, -0.043171)
 
 [node name="Barandilla" parent="Barandilla9" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 26.6833)
 
 [node name="Barandilla10" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.94812)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.0118731)
 
 [node name="Barandilla" parent="Barandilla10" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 29.408)
 
 [node name="Barandilla11" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.94812)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3403, 0, 0.0543307)
 
 [node name="Barandilla" parent="Barandilla11" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 32.1434)
 
 [node name="Barandilla12" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.94812)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.0647334)
 
 [node name="Barandilla" parent="Barandilla12" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 34.9087)
 
 [node name="Barandilla13" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.94812)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.0560454)
 
 [node name="Barandilla" parent="Barandilla13" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 37.6209)
 
 [node name="Barandilla14" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.94812)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.147972)
 
 [node name="Barandilla" parent="Barandilla14" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.188, 7.13147, 40.3592)
 
-[node name="Barandilla15" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.94812)
-
-[node name="Barandilla" parent="Barandilla15" instance=ExtResource("32_m1ad3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, 11.188, 7.13147, 43.1087)
-
 [node name="Barandilla16" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.94812)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3293, 0, 0.196098)
 
 [node name="Barandilla" parent="Barandilla16" instance=ExtResource("32_m1ad3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.03594, 11.188, 7.13147, 43.1087)
