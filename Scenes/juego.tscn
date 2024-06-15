@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ddkpwki1v0iv" path="res://Scenes/Mapa/mapa.tscn" id="1_alcmt"]
 [ext_resource type="Script" path="res://Scenes/juego.gd" id="1_tb02s"]
-[ext_resource type="PackedScene" uid="uid://bxirrhdpsfqms" path="res://Scenes/Player/character_body_3d.tscn" id="2_mgdjp"]
+[ext_resource type="PackedScene" uid="uid://d3joae7ck4jhy" path="res://Scenes/Player/character_body_3d.tscn" id="2_mgdjp"]
 [ext_resource type="Texture2D" uid="uid://bxuf2gq7qcpi3" path="res://Assets/Pinturas/puente.jpg" id="4_5ep34"]
 [ext_resource type="Texture2D" uid="uid://cwcyjkoaljumj" path="res://Assets/iwana.png" id="4_sal04"]
 [ext_resource type="Texture2D" uid="uid://dhiqrjso8d6ug" path="res://Assets/mango.png" id="5_3e02x"]

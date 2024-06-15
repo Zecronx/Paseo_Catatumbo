@@ -1,4 +1,4 @@
-[gd_scene load_steps=187 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=183 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -6,14 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://skpwp0qagxwj" path="res://Assets/Pinturas/pintura_zuliana.webp" id="4_yo23r"]
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
 [ext_resource type="Texture2D" uid="uid://bjrj554y36ic1" path="res://Assets/Pinturas/la-noche-estrellada.jpg" id="5_w2mx8"]
-[ext_resource type="PackedScene" uid="uid://b3jmv2d1v5te7" path="res://Assets/Techo/techo.glb" id="6_mjwhd"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Assets/Marco/marco.tscn" id="10_chpvt"]
 [ext_resource type="PackedScene" uid="uid://lx6urf45rro5" path="res://Assets/Pedestal/pedestal.tscn" id="11_gl7h4"]
 [ext_resource type="PackedScene" uid="uid://cq7byw7kdekl5" path="res://Assets/TechoArco/Cerrado/techoCerrado.glb" id="12_7gn4i"]
 [ext_resource type="AudioStream" uid="uid://brxqtbmtbjfle" path="res://Audio/Stream Loops 2024-02-07.ogg" id="12_g8n3c"]
 [ext_resource type="PackedScene" uid="uid://rn0nrswdx7vl" path="res://Assets/Tranvia/Trenvia.glb" id="14_bn6ju"]
 [ext_resource type="PackedScene" uid="uid://df8x2mtyx5u13" path="res://Assets/TechoArco/Abierto/techoAbierto2.glb" id="14_wrir7"]
-[ext_resource type="PackedScene" uid="uid://cwf0bxlovt2yi" path="res://Assets/Puente/puente.glb" id="15_71uor"]
 [ext_resource type="PackedScene" uid="uid://b6ywtsg5r0lxf" path="res://Assets/Estatua/Rafael Urdaneta.glb" id="16_6h83q"]
 [ext_resource type="Script" path="res://Scenes/Mapa/Trenvia.gd" id="16_eyecq"]
 [ext_resource type="AudioStream" uid="uid://cysa0kn3py8jr" path="res://Audio/Stream Loops 2023-11-29.ogg" id="18_fc8dd"]
@@ -32,7 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://4e44da2ayoex" path="res://Imagenes/Gastronimia/bollitos.jpg" id="30_7qm1x"]
 [ext_resource type="PackedScene" uid="uid://elaq75lfvloq" path="res://Assets/Bench/banco.glb" id="31_21af4"]
 [ext_resource type="PackedScene" uid="uid://b7y74m4xc8gko" path="res://Assets/Barandilla/Barandilla.glb" id="32_m1ad3"]
-[ext_resource type="PackedScene" uid="uid://dunvmx1f1tqva" path="res://Scenes/Mapa/puerta/puerta.tscn" id="33_o1un5"]
+[ext_resource type="PackedScene" uid="uid://kaq5ecb308ec" path="res://Scenes/Mapa/puerta/puerta.tscn" id="33_o1un5"]
 [ext_resource type="Script" path="res://Scenes/Mapa/puerta/puerta.gd" id="34_hwxsy"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
@@ -47,23 +45,17 @@ background_mode = 2
 sky = SubResource("Sky_rj56e")
 ssao_enabled = true
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_v52hi"]
-size = Vector3(20.997, 0.1, 50.4242)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_xi7ur"]
 size = Vector3(1.26904, 1, 1.57642)
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_20ic3"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_hw2wc"]
-size = Vector3(5.31839, 1.69922, 14.0466)
 
 [sub_resource type="Animation" id="Animation_dsluy"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Trenvia:position")
+tracks/0/path = NodePath("Trenvia PB:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -79,7 +71,7 @@ loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Trenvia:position")
+tracks/0/path = NodePath("Trenvia PB:position")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -94,6 +86,9 @@ _data = {
 "RESET": SubResource("Animation_dsluy"),
 "tranvia_move": SubResource("Animation_k7owd")
 }
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hw2wc"]
+size = Vector3(5.31839, 1.69922, 14.0466)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_b1mbg"]
 size = Vector3(2.50684, 4.28247, 0.87439)
@@ -208,34 +203,6 @@ face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1,
 active_vertex = -1
 active_edge = -1
 active_face = 2
-active_face_vertex = 0
-
-[sub_resource type="Resource" id="Resource_vr3be"]
-script = ExtResource("19_8qer4")
-selected = false
-active = false
-collsion = true
-physics_layer = 0
-physics_mask = 0
-vertex_points = PackedVector3Array(0, 7, 0, 0, 7, 2, 0, 0, 2, 0, 0, 0, 1, 7, 0, 1, 7, 2, 1, 0, 2, 1, 0, 0)
-vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
-edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
-face_uv_transform = Array[Transform2D]([Transform2D(0.1, 0, 0, 0.1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
-face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
-face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-face_selected = PackedByteArray(1, 1, 1, 1, 1, 1)
-face_vertex_face_index = PackedInt32Array(0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5)
-face_vertex_vertex_index = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
-face_vertex_normal = PackedVector3Array(-1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1)
-face_vertex_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
-edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
-face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
-face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
-active_vertex = -1
-active_edge = -1
-active_face = 0
 active_face_vertex = 0
 
 [sub_resource type="Resource" id="Resource_bvibo"]
@@ -3868,73 +3835,51 @@ texture = ExtResource("4_yo23r")
 transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -10.37, 3.3, 2.27233)
 texture = ExtResource("5_w2mx8")
 
-[node name="Suelo" type="StaticBody3D" parent="."]
+[node name="Vallas PB" type="Node3D" parent="."]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Suelo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.774101)
-shape = SubResource("BoxShape3D_v52hi")
-
-[node name="Paredes1" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, -0.1, 0)
-
-[node name="Paredes2" type="Node3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.5, -0.1, 0)
-
-[node name="Paredes3" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24.5)
-
-[node name="Paredes4" type="Node3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -24.5)
-
-[node name="Vallas" type="Node3D" parent="."]
-
-[node name="Vallas" parent="Vallas" instance=ExtResource("5_nollw")]
+[node name="Vallas 1" parent="Vallas PB" instance=ExtResource("5_nollw")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.50999, 0, 0)
 
-[node name="Vallas2" parent="Vallas" instance=ExtResource("5_nollw")]
+[node name="Vallas 2" parent="Vallas PB" instance=ExtResource("5_nollw")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.51, 0, 0)
 
-[node name="Luces" type="Node3D" parent="."]
+[node name="Luces PB" type="Node3D" parent="."]
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Luces"]
+[node name="OmniLight3D" type="OmniLight3D" parent="Luces PB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 6, 0)
 omni_range = 80.0
 omni_attenuation = 0.4
 metadata/_edit_group_ = true
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="Luces"]
+[node name="OmniLight3D2" type="OmniLight3D" parent="Luces PB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 6, 16.086)
 omni_range = 80.0
 omni_attenuation = 0.4
 metadata/_edit_group_ = true
 
-[node name="OmniLight3D3" type="OmniLight3D" parent="Luces"]
+[node name="OmniLight3D3" type="OmniLight3D" parent="Luces PB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 6, -16.3468)
 omni_range = 80.0
 omni_attenuation = 0.4
 metadata/_edit_group_ = true
 
-[node name="OmniLight3D4" type="OmniLight3D" parent="Luces"]
+[node name="OmniLight3D4" type="OmniLight3D" parent="Luces PB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6, 0)
 omni_range = 80.0
 omni_attenuation = 0.4
 metadata/_edit_group_ = true
 
-[node name="OmniLight3D5" type="OmniLight3D" parent="Luces"]
+[node name="OmniLight3D5" type="OmniLight3D" parent="Luces PB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6, 16.086)
 omni_range = 80.0
 omni_attenuation = 0.4
 metadata/_edit_group_ = true
 
-[node name="OmniLight3D6" type="OmniLight3D" parent="Luces"]
+[node name="OmniLight3D6" type="OmniLight3D" parent="Luces PB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 6, -16.3468)
 omni_range = 80.0
 omni_attenuation = 0.4
 metadata/_edit_group_ = true
-
-[node name="techo" parent="." instance=ExtResource("6_mjwhd")]
-transform = Transform3D(3.43065, 0, 0, 0, 1, 0, 0, 0, 8.10616, -0.118598, 6.73546, 0.466257)
-visible = false
 
 [node name="Marco" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(5.8923e-08, 0.962, -2.28377e-07, 1.348, -4.20504e-08, 5.53233e-21, -8.89711e-15, -1.45258e-07, -1.51247, -10.33, 3.3, 16.9339)
@@ -4012,92 +3957,92 @@ transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-
 transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
 shape = SubResource("BoxShape3D_xi7ur")
 
-[node name="Marco2" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco PB 2" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-3.94449e-08, 1, -3.20782e-08, 0, -4.37114e-08, -0.733863, -0.902394, -4.37114e-08, 1.40218e-15, -10.3353, 3.13628, 8.80713)
 audio = ExtResource("18_fc8dd")
 
-[node name="Marco3" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco PB 3" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(0.902394, 0, 0, 0, -4.37114e-08, -0.58709, 0, 1, -2.56625e-08, 0, 3.63857, -23.8761)
 audio = ExtResource("12_g8n3c")
 
-[node name="Pedestal" parent="." instance=ExtResource("11_gl7h4")]
+[node name="Pedestal PB" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.98716, 0.284726, 19.1444)
 
-[node name="Pedestal4" parent="." instance=ExtResource("11_gl7h4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.3, -23.5)
+[node name="Pedestal 1" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="Pedestal2" parent="." instance=ExtResource("11_gl7h4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.3, 19.4852)
+[node name="Pedestal 2" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98716, 0.015274, 0.340801)
 
-[node name="Pedestal3" parent="." instance=ExtResource("11_gl7h4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.3, -23.5)
+[node name="Pedestal 3" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98716, 0.015274, -42.6444)
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
+[node name="Pedestal 4" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01284, 0.015274, -42.6444)
+
+[node name="Texto PB" type="Sprite3D" parent="."]
 transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, -0.478043, 2.86999, 0.0259175)
 modulate = Color(0, 0, 0, 0.290196)
 pixel_size = 4.8861
 billboard = 1
 texture = SubResource("CanvasTexture_20ic3")
 
-[node name="Label3D" type="Label3D" parent="Sprite3D"]
+[node name="Label3D" type="Label3D" parent="Texto PB"]
 transform = Transform3D(1.11732, 0, 0, 0, 1.18343, 0, 0, 0, 1, 0, 0, 0)
 billboard = 1
-text = "PONGAN EL TECHO COÑO
-Esto es una prueba para que
-pongan el marpario techo chamo
-otra prueba de texto que tendra
-un cuadro generico, pongan el techo coño"
+text = "LOS BLOQUES DE LA ESCALERA 
+SON MAS ÙTILES QUE SAMIR"
 font_size = 40
 
-[node name="Techos" type="Node3D" parent="."]
+[node name="Techo PB" type="Node3D" parent="."]
 
-[node name="techoCerrado2" parent="Techos" instance=ExtResource("12_7gn4i")]
+[node name="Techo Cerrado 1" parent="Techo PB" instance=ExtResource("12_7gn4i")]
 transform = Transform3D(-9.61651e-08, 0, 1.94, 0, 1, 0, -2.2, 0, -8.48001e-08, 0, 6.41, -19.6)
 
-[node name="techoAbierto3" parent="Techos" instance=ExtResource("14_wrir7")]
+[node name="Techo Abierto 1" parent="Techo PB" instance=ExtResource("14_wrir7")]
 transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, -9.7)
 
-[node name="techoAbierto5" parent="Techos" instance=ExtResource("14_wrir7")]
+[node name="Techo Abierto 2" parent="Techo PB" instance=ExtResource("14_wrir7")]
 transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, 0)
 
-[node name="techoAbierto4" parent="Techos" instance=ExtResource("14_wrir7")]
+[node name="Techo Abierto 3" parent="Techo PB" instance=ExtResource("14_wrir7")]
 transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, 9.7)
 
-[node name="techoAbierto6" parent="Techos" instance=ExtResource("14_wrir7")]
+[node name="Techo Abierto 4" parent="Techo PB" instance=ExtResource("14_wrir7")]
 transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, 19.4539)
 
-[node name="puente" parent="." instance=ExtResource("15_71uor")]
-transform = Transform3D(-2.19774e-10, 0, 0.015, 0, 0.015, 0, -0.00502785, 0, -6.55671e-10, 3.16, 0, 19.309)
-
-[node name="Trenvia" type="StaticBody3D" parent="."]
+[node name="Trenvia PB" type="StaticBody3D" parent="."]
+process_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8498, 0, -6.99819)
+visible = false
 script = ExtResource("16_eyecq")
 
-[node name="Trenvia" parent="Trenvia" instance=ExtResource("14_bn6ju")]
-transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Trenvia"]
-transform = Transform3D(0.115, 0, 0, 0, 0.345, 0, 0, 0, 0.115, -0.0292511, 0.349609, 0.0953364)
-shape = SubResource("BoxShape3D_hw2wc")
-
-[node name="RayCast3D" type="RayCast3D" parent="Trenvia"]
-transform = Transform3D(16.145, 0, 0, 0, -1.37, 0, 0, 0, 19.97, 0, 0, 0)
-collide_with_areas = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Trenvia PB"]
+root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_cpvv5")
 }
 autoplay = "tranvia_move"
 speed_scale = 0.411
 
-[node name="Estatua" type="StaticBody3D" parent="."]
+[node name="Trenvia" parent="Trenvia PB" instance=ExtResource("14_bn6ju")]
+transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Trenvia PB"]
+transform = Transform3D(0.115, 0, 0, 0, 0.345, 0, 0, 0, 0.115, -0.0292511, 0.349609, 0.0953364)
+shape = SubResource("BoxShape3D_hw2wc")
+
+[node name="RayCast3D" type="RayCast3D" parent="Trenvia PB"]
+transform = Transform3D(16.145, 0, 0, 0, -1.37, 0, 0, 0, 19.97, 0, 0, 0)
+collide_with_areas = true
+
+[node name="Estatua PB" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21.738)
 
-[node name="Rafael Urdaneta2" parent="Estatua" instance=ExtResource("16_6h83q")]
+[node name="Rafael Urdaneta2" parent="Estatua PB" instance=ExtResource("16_6h83q")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0967929, -2.38419e-07, -3.64633)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Estatua"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Estatua PB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0180664, 1.64124, -2.20823)
 shape = SubResource("BoxShape3D_b1mbg")
 
@@ -4123,12 +4068,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -1, 36.2581)
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_kak7s")
 materials = Array[Material]([ExtResource("20_kti8v")])
-
-[node name="Block_4" type="Node3D" parent="CyclopsBlock0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 2.2581)
-script = ExtResource("18_jdkkt")
-block_data = SubResource("Resource_vr3be")
-materials = Array[Material]([ExtResource("21_8brsi")])
 
 [node name="Block_5" type="Node3D" parent="CyclopsBlock0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 2.2581)
@@ -4840,32 +4779,34 @@ materials = Array[Material]([ExtResource("20_kti8v")])
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("18_fc8dd")
 
-[node name="Silla" type="StaticBody3D" parent="."]
+[node name="Silla PB2" type="Node3D" parent="."]
 transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -0.8, -1.231, -11)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Silla"]
+[node name="Silla 1" type="StaticBody3D" parent="Silla PB2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Silla PB2/Silla 1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00452328, 1.04268, 0.518738)
 shape = SubResource("BoxShape3D_73j0m")
 
-[node name="SillaAfuera" parent="Silla" instance=ExtResource("24_ujkbo")]
+[node name="SillaAfuera" parent="Silla PB2/Silla 1" instance=ExtResource("24_ujkbo")]
 
-[node name="Silla2" type="StaticBody3D" parent="."]
-transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -0.8, -1.231, 11)
+[node name="Silla 2" type="StaticBody3D" parent="Silla PB2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.6667, 0, -5.96046e-07)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Silla2"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Silla PB2/Silla 2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00452328, 1.04268, 0.518738)
 shape = SubResource("BoxShape3D_73j0m")
 
-[node name="SillaAfuera" parent="Silla2" instance=ExtResource("24_ujkbo")]
+[node name="SillaAfuera" parent="Silla PB2/Silla 2" instance=ExtResource("24_ujkbo")]
 
-[node name="Faro" type="StaticBody3D" parent="."]
+[node name="Faro PB" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -20)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Faro"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Faro PB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00445557, 2.09544, -0.0290527)
 shape = SubResource("BoxShape3D_rcey7")
 
-[node name="Farol" parent="Faro" instance=ExtResource("25_q8tja")]
+[node name="Farol" parent="Faro PB" instance=ExtResource("25_q8tja")]
 
 [node name="Tequeños" type="Sprite3D" parent="."]
 transform = Transform3D(0.65888, 0, 0, 0, 0.701797, 0, 0, 0, 1, 28.3, 2, 34.013)
