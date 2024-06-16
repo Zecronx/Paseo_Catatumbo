@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://xfp6q1scykvj"]
+
+[ext_resource type="Texture2D" uid="uid://bp7ltur567wu1" path="res://Assets/texturas_adicionales/Travertine009_1K-JPG/Travertine009_1K-JPG_Color.jpg" id="1_ag0hm"]
+[ext_resource type="Texture2D" uid="uid://ciwru0bnwss7e" path="res://Assets/texturas_adicionales/Travertine009_1K-JPG/Travertine009_1K-JPG_AmbientOcclusion.jpg" id="2_etdhu"]
+[ext_resource type="Texture2D" uid="uid://22eumjmc82fy" path="res://Assets/texturas_adicionales/Travertine009_1K-JPG/Travertine009_1K-JPG_NormalGL.jpg" id="3_vd07x"]
+[ext_resource type="Texture2D" uid="uid://csaxjm8ykvvgs" path="res://Assets/texturas_adicionales/Travertine009_1K-JPG/Travertine009_1K-JPG_Roughness.jpg" id="4_oxnqp"]
+
+[resource]
+albedo_texture = ExtResource("1_ag0hm")
+roughness_texture = ExtResource("4_oxnqp")
+normal_enabled = true
+normal_texture = ExtResource("3_vd07x")
+ao_enabled = true
+ao_texture = ExtResource("2_etdhu")
