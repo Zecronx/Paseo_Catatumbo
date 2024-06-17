@@ -19,6 +19,21 @@ size = Vector3(0.1, 0.5, 0.4)
 [sub_resource type="BoxShape3D" id="BoxShape3D_md88u"]
 size = Vector3(1.5, 3, 0.2)
 
+[sub_resource type="Animation" id="Animation_0u841"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("hinge:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_g1oek"]
 resource_name = "abrir"
 length = 0.3
@@ -33,21 +48,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(0, 1.5708, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_0u841"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("hinge:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_oiqi3"]
