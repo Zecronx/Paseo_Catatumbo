@@ -5,7 +5,5 @@ extends RayCast3D
 func _process(delta):
 	if is_colliding():
 		var collider = get_collider()
-		print("collision")
 		if Input.is_action_just_pressed("interact") && collider.has_method("interact"):
-			print("interaccion")
 			collider.interact()

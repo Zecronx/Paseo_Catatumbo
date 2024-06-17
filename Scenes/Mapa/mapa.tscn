@@ -1,4 +1,4 @@
-[gd_scene load_steps=187 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=186 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -52,9 +52,6 @@ background_mode = 2
 sky = SubResource("Sky_rj56e")
 ambient_light_color = Color(0.91664, 0.91664, 0.91664, 1)
 ssao_enabled = true
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_xi7ur"]
-size = Vector3(1.26904, 1, 1.57642)
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_20ic3"]
 
@@ -3832,15 +3829,15 @@ transform = Transform3D(0.582324, 0, 0, 0, 0.582497, 0, 0, 0, 1, 0, 3.7814, -23.
 texture = ExtResource("1_l2o5v")
 
 [node name="Guernica" type="Sprite3D" parent="."]
-transform = Transform3D(-1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, -10.37, 3.3, 17)
+transform = Transform3D(-1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, -10.8992, 3.3, 17)
 texture = ExtResource("3_gw33n")
 
 [node name="Pintura_Zuliana" type="Sprite3D" parent="."]
-transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, -10.3884, 3.3, 8.78808)
+transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, -10.8926, 3.3, 8.78808)
 texture = ExtResource("4_yo23r")
 
 [node name="La Noche Estrellada" type="Sprite3D" parent="."]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -10.37, 3.3, 2.27233)
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -10.8, 3.3, 2.27233)
 texture = ExtResource("5_w2mx8")
 
 [node name="Vallas PB" type="Node3D" parent="."]
@@ -3889,84 +3886,30 @@ omni_range = 80.0
 omni_attenuation = 0.4
 metadata/_edit_group_ = true
 
-[node name="Marco" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(5.8923e-08, 0.962, -2.28377e-07, 1.348, -4.20504e-08, 5.53233e-21, -8.89711e-15, -1.45258e-07, -1.51247, -10.33, 3.3, 16.9339)
-
-[node name="Area3D2" type="Area3D" parent="Marco"]
-transform = Transform3D(1, 1.42109e-14, 0, 1.3965e-21, 1, 4.26326e-14, -1.27055e-21, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco/Area3D2"]
-transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
-shape = SubResource("BoxShape3D_xi7ur")
+[node name="Marco PB 1" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(5.8923e-08, 0.962, -2.28377e-07, 1.348, -4.20504e-08, 5.53233e-21, -8.89711e-15, -1.45258e-07, -1.51247, -10.8, 3.3, 16.9339)
+audio = ExtResource("18_fc8dd")
 
 [node name="Marco tequeños" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(1.3029e-15, 4.20504e-08, 0.625722, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.73512e-08, 28.5059, 2.05618, 34.1038)
 
-[node name="Area3D2" type="Area3D" parent="Marco tequeños"]
-process_mode = 4
-transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-14, -1.90582e-21, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco tequeños/Area3D2"]
-transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
-shape = SubResource("BoxShape3D_xi7ur")
-
 [node name="Marco patacones" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(1.3029e-15, 4.20504e-08, 0.625722, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.73512e-08, 35.6479, 2.05618, 34.1038)
-
-[node name="Area3D2" type="Area3D" parent="Marco patacones"]
-process_mode = 4
-transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-14, -1.90582e-21, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco patacones/Area3D2"]
-transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
-shape = SubResource("BoxShape3D_xi7ur")
 
 [node name="Marco pastelitos" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-2.98069e-08, -0.962, 0, 0.681903, -4.20504e-08, 0, 0, 0, 0.509469, 40.88, 2.056, 37.5476)
 
-[node name="Area3D2" type="Area3D" parent="Marco pastelitos"]
-process_mode = 4
-transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-14, -1.90582e-21, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco pastelitos/Area3D2"]
-transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
-shape = SubResource("BoxShape3D_xi7ur")
-
 [node name="Marco mojito" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-2.98069e-08, -0.962, 0, 0.681903, -4.20504e-08, 0, 0, 0, 0.686658, 40.88, 2.056, 44.6708)
-
-[node name="Area3D2" type="Area3D" parent="Marco mojito"]
-process_mode = 4
-transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-14, -1.90582e-21, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco mojito/Area3D2"]
-transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
-shape = SubResource("BoxShape3D_xi7ur")
 
 [node name="Marco mandocas" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-4.77568e-16, -1.14717e-08, -0.646347, 0.916193, -4.20504e-08, 0, -4.00481e-08, -0.962, 7.70761e-09, 35.3904, 2.23248, 49.8945)
 
-[node name="Area3D2" type="Area3D" parent="Marco mandocas"]
-process_mode = 4
-transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-14, -1.90582e-21, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco mandocas/Area3D2"]
-transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
-shape = SubResource("BoxShape3D_xi7ur")
-
 [node name="Marco bollitos" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-3.48029e-16, -1.14717e-08, -0.646347, 0.667677, -4.20504e-08, 0, -2.91851e-08, -0.962, 7.70761e-09, 28.1358, 2.00909, 49.895)
 
-[node name="Area3D2" type="Area3D" parent="Marco bollitos"]
-process_mode = 4
-transform = Transform3D(1, 1.42109e-14, -2.11758e-22, -7.10543e-15, 1, 4.61853e-14, -1.90582e-21, 0, 1, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Marco bollitos/Area3D2"]
-transform = Transform3D(2.405, 1.27898e-13, 1.01644e-20, 5.68434e-14, 2.405, 3.35376e-12, -1.87194e-19, 2.70006e-13, 3.81085, 0.323524, 0.746237, -0.353973)
-shape = SubResource("BoxShape3D_xi7ur")
-
 [node name="Marco PB 2" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-3.94449e-08, 1, -3.20782e-08, 0, -4.37114e-08, -0.733863, -0.902394, -4.37114e-08, 1.40218e-15, -10.3353, 3.13628, 8.80713)
+transform = Transform3D(-3.94449e-08, 1, -3.20782e-08, 0, -4.37114e-08, -0.733863, -0.902394, -4.37114e-08, 1.40218e-15, -10.8, 3.13628, 8.80713)
 audio = ExtResource("18_fc8dd")
 
 [node name="Marco PB 3" parent="." instance=ExtResource("10_chpvt")]
@@ -4003,6 +3946,7 @@ SON MAS ÙTILES QUE SAMIR"
 font_size = 40
 
 [node name="Techo PB" type="Node3D" parent="."]
+transform = Transform3D(1.051, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.58, 0)
 
 [node name="Techo Cerrado 1" parent="Techo PB" instance=ExtResource("12_7gn4i")]
 transform = Transform3D(-9.61651e-08, 0, 1.94, 0, 1, 0, -2.2, 0, -8.48001e-08, 0, 6.41, -19.6)
@@ -5182,18 +5126,3 @@ materials = Array[Material]([ExtResource("21_8brsi")])
 [node name="Door" parent="." instance=ExtResource("33_o1un5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 24)
 script = ExtResource("34_hwxsy")
-
-[connection signal="body_entered" from="Marco/Area3D2" to="." method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="Marco/Area3D2" to="." method="_on_area_3d_body_exited"]
-[connection signal="body_entered" from="Marco tequeños/Area3D2" to="." method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="Marco tequeños/Area3D2" to="." method="_on_area_3d_body_exited"]
-[connection signal="body_entered" from="Marco patacones/Area3D2" to="." method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="Marco patacones/Area3D2" to="." method="_on_area_3d_body_exited"]
-[connection signal="body_entered" from="Marco pastelitos/Area3D2" to="." method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="Marco pastelitos/Area3D2" to="." method="_on_area_3d_body_exited"]
-[connection signal="body_entered" from="Marco mojito/Area3D2" to="." method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="Marco mojito/Area3D2" to="." method="_on_area_3d_body_exited"]
-[connection signal="body_entered" from="Marco mandocas/Area3D2" to="." method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="Marco mandocas/Area3D2" to="." method="_on_area_3d_body_exited"]
-[connection signal="body_entered" from="Marco bollitos/Area3D2" to="." method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="Marco bollitos/Area3D2" to="." method="_on_area_3d_body_exited"]

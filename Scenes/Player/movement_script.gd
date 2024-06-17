@@ -35,8 +35,12 @@ func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
-	if Input.is_action_pressed("menu"):
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	if Input.is_action_just_pressed("menu"):	
+		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		elif Input.mouse_mode == Input.MOUSE_MODE_VISIBLE:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
@@ -58,8 +62,9 @@ func _physics_process(delta):
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 15.0)
 
 	#head bobbing (mueve la cabeza al caminar)
-	t_bob += delta * velocity.length() * float(is_on_floor()) 
-	camera.transform.origin = _headbob(t_bob)
+	if !is_on_wall():
+		t_bob += delta * velocity.length() * float(is_on_floor()) 
+		camera.transform.origin = _headbob(t_bob)
 	
 	#FOV
 	var velocity_clamped = clamp(velocity.length(),0.5,SPRINT_SPEED*2)

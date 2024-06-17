@@ -1,6 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://kaq5ecb308ec"]
-
-[ext_resource type="Script" path="res://door.gd" id="1_h1afd"]
+[gd_scene load_steps=10 format=3 uid="uid://kaq5ecb308ec"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_16b54"]
 albedo_color = Color(0.34902, 0.231373, 0.133333, 1)
@@ -74,7 +72,6 @@ _data = {
 }
 
 [node name="Door" type="StaticBody3D"]
-script = ExtResource("1_h1afd")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 1.5, 0.1)
