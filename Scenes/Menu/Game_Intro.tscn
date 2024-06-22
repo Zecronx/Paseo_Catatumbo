@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfrp67yl2kney"]
+
+[ext_resource type="VideoStream" path="res://Scenes/Menu/Game_Intro.ogv" id="1_o0eq0"]
+
+[node name="GameIntro" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_o0eq0")
+autoplay = true
+expand = true
