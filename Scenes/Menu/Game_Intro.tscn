@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dfrp67yl2kney"]
+[gd_scene load_steps=3 format=3 uid="uid://dfrp67yl2kney"]
 
+[ext_resource type="Script" path="res://Scenes/Menu/Game_Intro.gd" id="1_hlinr"]
 [ext_resource type="VideoStream" path="res://Scenes/Menu/Game_Intro.ogv" id="1_o0eq0"]
 
 [node name="GameIntro" type="Control"]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_hlinr")
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
 layout_mode = 1
@@ -20,3 +22,5 @@ grow_vertical = 2
 stream = ExtResource("1_o0eq0")
 autoplay = true
 expand = true
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
