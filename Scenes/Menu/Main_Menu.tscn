@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://dkyuaemcia7wt"]
+[gd_scene load_steps=6 format=3 uid="uid://dkyuaemcia7wt"]
 
 [ext_resource type="Script" path="res://Scenes/Menu/Main_Menu.gd" id="1_cpdgs"]
 [ext_resource type="Texture2D" uid="uid://bholou0e5ovqb" path="res://Scenes/Menu/Menu_Background.jpg" id="1_my8cp"]
+[ext_resource type="Theme" uid="uid://dljccapwwqvna" path="res://Scenes/Menu/true.tres" id="3_knv0b"]
+[ext_resource type="FontFile" uid="uid://bj05c1neod67a" path="res://Scenes/Menu/Super-Mario-Bros--3.ttf" id="3_oimcy"]
+[ext_resource type="Theme" uid="uid://by5bmyglx014n" path="res://Scenes/Menu/false.tres" id="4_1cv73"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -29,14 +32,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -60.0
-offset_top = 3.5
-offset_right = 60.0
-offset_bottom = 80.5
+offset_left = -86.0
+offset_top = 92.5
+offset_right = 86.0
+offset_bottom = 169.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 50
-text = "Hola"
+theme = ExtResource("3_knv0b")
+theme_override_font_sizes/font_size = 35
+action_mode = 0
+text = "play"
 
 [node name="Exit" type="Button" parent="."]
 layout_mode = 1
@@ -45,14 +50,17 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -70.5
-offset_top = -204.0
-offset_right = 70.5
-offset_bottom = -127.0
+offset_left = -85.5
+offset_top = -120.0
+offset_right = 85.5
+offset_bottom = -43.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 50
-text = "Adios"
+theme = ExtResource("4_1cv73")
+theme_override_fonts/font = ExtResource("3_oimcy")
+theme_override_font_sizes/font_size = 35
+action_mode = 0
+text = "exit"
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
