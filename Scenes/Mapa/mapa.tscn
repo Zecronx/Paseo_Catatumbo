@@ -1,4 +1,4 @@
-[gd_scene load_steps=221 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=222 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -29,6 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://dv1l87ehbyqjs" path="res://Imagenes/Gastronimia/mojito_en_coco.jpg" id="29_qr7q6"]
 [ext_resource type="Texture2D" uid="uid://4e44da2ayoex" path="res://Imagenes/Gastronimia/bollitos.jpg" id="30_7qm1x"]
 [ext_resource type="PackedScene" uid="uid://elaq75lfvloq" path="res://Assets/Bench/banco.glb" id="31_21af4"]
+[ext_resource type="PackedScene" uid="uid://bu7u1gaihpodm" path="res://Assets/LamparaTecho/lampara de techo.glb" id="32_k6pt1"]
 [ext_resource type="PackedScene" uid="uid://b7y74m4xc8gko" path="res://Assets/Barandilla/Barandilla.glb" id="32_m1ad3"]
 [ext_resource type="PackedScene" uid="uid://kaq5ecb308ec" path="res://Scenes/Mapa/puerta/puerta.tscn" id="33_o1un5"]
 
@@ -6315,6 +6316,7 @@ materials = Array[Material]([ExtResource("18_q2qk8")])
 
 [node name="Block_40" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 43)
+visible = false
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_8w6g6")
 materials = Array[Material]([ExtResource("18_q2qk8")])
@@ -6378,3 +6380,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 7, 58)
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_5q2ay")
 materials = Array[Material]([ExtResource("18_q2qk8")])
+
+[node name="LamparaTecho" type="Node3D" parent="."]
+
+[node name="lampara de techo" parent="LamparaTecho" instance=ExtResource("32_k6pt1")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 33.5412, 7.04784, 42.024)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="LamparaTecho"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.6099, 5.74238, 41.9622)
+omni_range = 80.0
+omni_attenuation = 0.4
+metadata/_edit_group_ = true
