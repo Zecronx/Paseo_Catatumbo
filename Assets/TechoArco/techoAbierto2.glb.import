@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://df8x2mtyx5u13"
-path="res://.godot/imported/techoAbierto2.glb-a6525bdd474656a5b97e56d35323aca9.scn"
+path="res://.godot/imported/techoAbierto2.glb-46e95d299855a5e9e14960b547932dfe.scn"
 
 [deps]
 
-source_file="res://Assets/TechoArco/Abierto/techoAbierto2.glb"
-dest_files=["res://.godot/imported/techoAbierto2.glb-a6525bdd474656a5b97e56d35323aca9.scn"]
+source_file="res://Assets/TechoArco/techoAbierto2.glb"
+dest_files=["res://.godot/imported/techoAbierto2.glb-46e95d299855a5e9e14960b547932dfe.scn"]
 
 [params]
 

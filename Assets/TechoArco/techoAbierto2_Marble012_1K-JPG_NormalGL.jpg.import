@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7o5ks61nmclv"
-path.s3tc="res://.godot/imported/techoCerrado_Marble012_1K-JPG_NormalGL.jpg-e24316afb28e6120c39085af59d0bea8.s3tc.ctex"
+uid="uid://diukfqvqrbhil"
+path.s3tc="res://.godot/imported/techoAbierto2_Marble012_1K-JPG_NormalGL.jpg-fcf2d8beeefb4e80ea5b61044e1c45ac.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Assets/TechoArco/Cerrado/techoCerrado_Marble012_1K-JPG_NormalGL.jpg"
-dest_files=["res://.godot/imported/techoCerrado_Marble012_1K-JPG_NormalGL.jpg-e24316afb28e6120c39085af59d0bea8.s3tc.ctex"]
+source_file="res://Assets/TechoArco/techoAbierto2_Marble012_1K-JPG_NormalGL.jpg"
+dest_files=["res://.godot/imported/techoAbierto2_Marble012_1K-JPG_NormalGL.jpg-fcf2d8beeefb4e80ea5b61044e1c45ac.s3tc.ctex"]
 
 [params]
 
@@ -28,7 +28,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://Assets/TechoArco/Cerrado/techoCerrado_Marble012_1K-JPG_NormalGL.jpg"
+roughness/src_normal="res://Assets/TechoAbierto/2/techoAbierto2_Marble012_1K-JPG_NormalGL.jpg"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

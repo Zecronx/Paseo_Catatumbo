@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c25gcs7d1ew58"
-path.s3tc="res://.godot/imported/techoAbierto2_Marble012_1K-JPG_Roughness.png-9acf0887111bc62d5c8ef30e4b850926.s3tc.ctex"
+uid="uid://df2p41rjkkvjp"
+path.s3tc="res://.godot/imported/techoAbierto2_paredAlta_Plastic018A_1K-JPG_Color.jpg-07d990fc1233121b9122021d437b258e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "393f839e84144cfe6d6f13820c6fcac4"
+"md5": "563b6eb48821208b21734033878a84db"
 }
 
 [deps]
 
-source_file="res://Assets/TechoArco/Abierto/techoAbierto2_Marble012_1K-JPG_Roughness.png"
-dest_files=["res://.godot/imported/techoAbierto2_Marble012_1K-JPG_Roughness.png-9acf0887111bc62d5c8ef30e4b850926.s3tc.ctex"]
+source_file="res://Assets/TechoArco/techoAbierto2_paredAlta_Plastic018A_1K-JPG_Color.jpg"
+dest_files=["res://.godot/imported/techoAbierto2_paredAlta_Plastic018A_1K-JPG_Color.jpg-07d990fc1233121b9122021d437b258e.s3tc.ctex"]
 
 [params]
 

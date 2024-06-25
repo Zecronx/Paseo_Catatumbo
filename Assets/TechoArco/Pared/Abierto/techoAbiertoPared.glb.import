@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cq7byw7kdekl5"
-path="res://.godot/imported/techoCerrado.glb-8f3127f8d5059df22dc693374a0c2cbe.scn"
+uid="uid://utgpkgogih5v"
+path="res://.godot/imported/techoAbiertoPared.glb-1c583303b6c0ca80d66a4422827b431d.scn"
 
 [deps]
 
-source_file="res://Assets/TechoArco/Cerrado/techoCerrado.glb"
-dest_files=["res://.godot/imported/techoCerrado.glb-8f3127f8d5059df22dc693374a0c2cbe.scn"]
+source_file="res://Assets/TechoArco/Pared/Abierto/techoAbiertoPared.glb"
+dest_files=["res://.godot/imported/techoAbiertoPared.glb-1c583303b6c0ca80d66a4422827b431d.scn"]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1pb4yl0ysmi4"
-path.s3tc="res://.godot/imported/techoCerrado_paredAlta_Plastic018A_1K-JPG_Color.jpg-ab423e2bd8d2c663254761b1e59f0fd5.s3tc.ctex"
+uid="uid://b553lt2we6pgh"
+path.s3tc="res://.godot/imported/techoAbiertoPared_paredAlta_Plastic018A_1K-JPG_Color.jpg-491df6cb75308df49582fdd27c728346.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Assets/TechoArco/Cerrado/techoCerrado_paredAlta_Plastic018A_1K-JPG_Color.jpg"
-dest_files=["res://.godot/imported/techoCerrado_paredAlta_Plastic018A_1K-JPG_Color.jpg-ab423e2bd8d2c663254761b1e59f0fd5.s3tc.ctex"]
+source_file="res://Assets/TechoArco/Pared/Abierto/techoAbiertoPared_paredAlta_Plastic018A_1K-JPG_Color.jpg"
+dest_files=["res://.godot/imported/techoAbiertoPared_paredAlta_Plastic018A_1K-JPG_Color.jpg-491df6cb75308df49582fdd27c728346.s3tc.ctex"]
 
 [params]
 

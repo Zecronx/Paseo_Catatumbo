@@ -1,4 +1,4 @@
-[gd_scene load_steps=222 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=223 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="Texture2D" uid="uid://bo7swyny75gni" path="res://Assets/urbe-hd.png" id="1_l2o5v"]
@@ -7,11 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
 [ext_resource type="Texture2D" uid="uid://bjrj554y36ic1" path="res://Assets/Pinturas/la-noche-estrellada.jpg" id="5_w2mx8"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Assets/Marco/marco.tscn" id="10_chpvt"]
+[ext_resource type="PackedScene" uid="uid://df8x2mtyx5u13" path="res://Assets/TechoArco/techoAbierto2.glb" id="11_63ggk"]
 [ext_resource type="PackedScene" uid="uid://cd6hixteyjrcv" path="res://Assets/Pedestal/pedestal.tscn" id="11_gl7h4"]
-[ext_resource type="PackedScene" uid="uid://cq7byw7kdekl5" path="res://Assets/TechoArco/Cerrado/techoCerrado.glb" id="12_7gn4i"]
+[ext_resource type="PackedScene" uid="uid://n3mgeinupl5v" path="res://Assets/TechoArco/Pared/Cerrado/techoCerradoPared.glb" id="12_afcfj"]
 [ext_resource type="AudioStream" uid="uid://brxqtbmtbjfle" path="res://Audio/Stream Loops 2024-02-07.ogg" id="12_g8n3c"]
+[ext_resource type="PackedScene" uid="uid://utgpkgogih5v" path="res://Assets/TechoArco/Pared/Abierto/techoAbiertoPared.glb" id="13_ob2lk"]
 [ext_resource type="PackedScene" uid="uid://rn0nrswdx7vl" path="res://Assets/Tranvia/Trenvia.glb" id="14_bn6ju"]
-[ext_resource type="PackedScene" uid="uid://df8x2mtyx5u13" path="res://Assets/TechoArco/Abierto/techoAbierto2.glb" id="14_wrir7"]
 [ext_resource type="PackedScene" uid="uid://b6ywtsg5r0lxf" path="res://Assets/Estatua/Rafael Urdaneta.glb" id="16_6h83q"]
 [ext_resource type="Script" path="res://Scenes/Mapa/Trenvia.gd" id="16_eyecq"]
 [ext_resource type="AudioStream" uid="uid://cysa0kn3py8jr" path="res://Audio/Stream Loops 2023-11-29.ogg" id="18_fc8dd"]
@@ -5134,20 +5135,25 @@ font_size = 40
 [node name="Techo PB" type="Node3D" parent="."]
 transform = Transform3D(1.051, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.58, 0)
 
-[node name="Techo Cerrado 1" parent="Techo PB" instance=ExtResource("12_7gn4i")]
+[node name="Techo Cerrado" parent="Techo PB" instance=ExtResource("11_63ggk")]
 transform = Transform3D(-9.61651e-08, 0, 1.94, 0, 1, 0, -2.2, 0, -8.48001e-08, 0, 6.41, -19.6)
 
-[node name="Techo Abierto 1" parent="Techo PB" instance=ExtResource("14_wrir7")]
-transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, -9.7)
+[node name="techoCerradoPared" parent="Techo PB/Techo Cerrado" instance=ExtResource("12_afcfj")]
 
-[node name="Techo Abierto 2" parent="Techo PB" instance=ExtResource("14_wrir7")]
+[node name="Techo Abierto 1" parent="Techo PB" instance=ExtResource("11_63ggk")]
+transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 5.40851e-14, 6.41, -9.7)
+
+[node name="Techo Abierto 2" parent="Techo PB" instance=ExtResource("11_63ggk")]
 transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, 0)
 
-[node name="Techo Abierto 3" parent="Techo PB" instance=ExtResource("14_wrir7")]
+[node name="Techo Abierto 3" parent="Techo PB" instance=ExtResource("11_63ggk")]
 transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, 9.7)
 
-[node name="Techo Abierto 4" parent="Techo PB" instance=ExtResource("14_wrir7")]
-transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 0, 6.41, 19.4539)
+[node name="Techo Abierto 4" parent="Techo PB" instance=ExtResource("11_63ggk")]
+transform = Transform3D(-9.39795e-08, 0, 1.94, 0, 1, 0, -2.15, 0, -8.48001e-08, 0, 6.41, 19.722)
+
+[node name="techoAbiertoPared" parent="Techo PB/Techo Abierto 4" instance=ExtResource("13_ob2lk")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 
 [node name="Trenvia PB" type="StaticBody3D" parent="."]
 process_mode = 4
