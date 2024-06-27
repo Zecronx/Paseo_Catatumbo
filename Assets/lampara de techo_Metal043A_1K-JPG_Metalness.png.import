@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg8avdfk3he3e"
-path.s3tc="res://.godot/imported/neguito.jpg-3c69447e9d8d2f00fa2552f36abf9414.s3tc.ctex"
+uid="uid://dyblktp7pxm74"
+path.s3tc="res://.godot/imported/lampara de techo_Metal043A_1K-JPG_Metalness.png-fb67b6227df9caef1cd315b5f9ec67a1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "f286a14bb9b99e81a1da12513abd3a8a"
+}
 
 [deps]
 
-source_file="res://Imagenes/Gaiteros/neguito.jpg"
-dest_files=["res://.godot/imported/neguito.jpg-3c69447e9d8d2f00fa2552f36abf9414.s3tc.ctex"]
+source_file="res://Assets/lampara de techo_Metal043A_1K-JPG_Metalness.png"
+dest_files=["res://.godot/imported/lampara de techo_Metal043A_1K-JPG_Metalness.png-fb67b6227df9caef1cd315b5f9ec67a1.s3tc.ctex"]
 
 [params]
 

@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://bfdidw6ut4wk5"]
+
+[ext_resource type="Texture2D" uid="uid://dqnudj6je2l52" path="res://Assets/texturas_adicionales/textura_techo/flour_ao_1k.jpg" id="1_qdusw"]
+[ext_resource type="Texture2D" uid="uid://cestnrrecjs4v" path="res://Assets/texturas_adicionales/textura_techo/flour_diff_1k.jpg" id="2_st446"]
+[ext_resource type="Texture2D" uid="uid://c7wrnkskcsibg" path="res://Assets/texturas_adicionales/textura_techo/flour_disp_1k.png" id="3_5g7v2"]
+
+[resource]
+albedo_texture = ExtResource("1_qdusw")
+roughness_texture = ExtResource("3_5g7v2")
+normal_enabled = true
+normal_texture = ExtResource("2_st446")
