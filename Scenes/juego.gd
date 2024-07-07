@@ -8,10 +8,7 @@ var previous_scene = preload("res://Scenes/Menu/Main_Menu.tscn")
 
 func _ready():
 	peer = ENetMultiplayerPeer.new()
-	
-func _on_regresar_pressed():
-	get_tree().change_scene_to_packed(previous_scene)
-	
+
 func _on_host_pressed():
 	peer.create_server(1027, 10)
 	multiplayer.multiplayer_peer = peer

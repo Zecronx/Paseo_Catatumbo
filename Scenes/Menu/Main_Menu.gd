@@ -1,5 +1,10 @@
 extends Control
 
+@onready var anim = $Appear
+
+func _ready() -> void:
+	anim.play("Appear")
+
 var next_scene = preload("res://Scenes/juego.tscn")
 
 func _on_play_pressed():
