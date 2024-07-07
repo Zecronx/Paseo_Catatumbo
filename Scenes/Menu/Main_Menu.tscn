@@ -107,7 +107,13 @@ grow_vertical = 2
 texture = ExtResource("1_my8cp")
 expand_mode = 1
 
+[node name="Appear" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_076hf")
+}
+
 [node name="Logo" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -115,15 +121,16 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -454.0
-offset_top = -241.0
+offset_top = -484.0
 offset_right = 454.0
-offset_bottom = -69.0007
+offset_bottom = -312.001
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_125f7")
 expand_mode = 1
 
 [node name="Play" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -131,9 +138,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -86.0
-offset_top = 93.5
+offset_top = 376.0
 offset_right = 86.0
-offset_bottom = 170.5
+offset_bottom = 453.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("3_knv0b")
@@ -142,6 +149,7 @@ action_mode = 0
 text = "play"
 
 [node name="Exit" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -149,9 +157,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -85.5
-offset_top = -120.0
+offset_top = 52.0
 offset_right = 85.5
-offset_bottom = -43.0
+offset_bottom = 129.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = ExtResource("4_1cv73")
@@ -159,11 +167,6 @@ theme_override_fonts/font = ExtResource("3_oimcy")
 theme_override_font_sizes/font_size = 35
 action_mode = 0
 text = "exit"
-
-[node name="Appear" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_076hf")
-}
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

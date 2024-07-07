@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://drdaey0naroyb"]
+[gd_scene load_steps=10 format=3 uid="uid://drdaey0naroyb"]
 
 [ext_resource type="PackedScene" uid="uid://ddkpwki1v0iv" path="res://Scenes/Mapa/mapa.tscn" id="1_alcmt"]
 [ext_resource type="Script" path="res://Scenes/juego.gd" id="1_tb02s"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dtjamgex283e6" path="res://Scenes/Menu/Logo.PNG" id="5_yokey"]
 [ext_resource type="FontFile" uid="uid://bj05c1neod67a" path="res://Scenes/Menu/Super-Mario-Bros--3.ttf" id="6_xvikf"]
 [ext_resource type="Theme" uid="uid://dljccapwwqvna" path="res://Scenes/Menu/true.tres" id="7_7v2pq"]
+[ext_resource type="Theme" uid="uid://by5bmyglx014n" path="res://Scenes/Menu/false.tres" id="9_0w8fi"]
 
 [node name="Juego" type="Node3D"]
 script = ExtResource("1_tb02s")
@@ -79,9 +80,28 @@ theme_override_font_sizes/font_size = 25
 text = "host
 "
 
+[node name="Exit" type="Button" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -139.0
+offset_top = -70.0
+offset_right = -22.0
+offset_bottom = -18.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("9_0w8fi")
+theme_override_fonts/font = ExtResource("6_xvikf")
+theme_override_font_sizes/font_size = 20
+action_mode = 0
+text = "exit"
+
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
 _spawnable_scenes = PackedStringArray("res://Scenes/Player/character_body_3d.tscn")
 spawn_path = NodePath("..")
 
 [connection signal="pressed" from="CanvasLayer/Join" to="." method="_on_join_pressed"]
 [connection signal="pressed" from="CanvasLayer/Host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="CanvasLayer/Exit" to="." method="_on_exit_pressed"]
