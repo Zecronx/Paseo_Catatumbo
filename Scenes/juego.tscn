@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://drdaey0naroyb"]
+[gd_scene load_steps=10 format=3 uid="uid://drdaey0naroyb"]
 
 [ext_resource type="PackedScene" uid="uid://ddkpwki1v0iv" path="res://Scenes/Mapa/mapa.tscn" id="1_alcmt"]
 [ext_resource type="Script" path="res://Scenes/juego.gd" id="1_tb02s"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bholou0e5ovqb" path="res://Scenes/Menu/Menu_Background.jpg" id="4_hjxtg"]
 [ext_resource type="Theme" uid="uid://by5bmyglx014n" path="res://Scenes/Menu/false.tres" id="5_j5aoo"]
 [ext_resource type="Theme" uid="uid://vmwpb7fo8rq7" path="res://Scenes/Menu/true2.tres" id="5_wox52"]
+[ext_resource type="Texture2D" uid="uid://dtjamgex283e6" path="res://Scenes/Menu/Logo.PNG" id="5_yokey"]
 [ext_resource type="FontFile" uid="uid://bj05c1neod67a" path="res://Scenes/Menu/Super-Mario-Bros--3.ttf" id="6_xvikf"]
 [ext_resource type="Theme" uid="uid://dljccapwwqvna" path="res://Scenes/Menu/true.tres" id="7_7v2pq"]
 
@@ -17,13 +18,28 @@ player = ExtResource("2_mgdjp")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+[node name="Background" type="TextureRect" parent="CanvasLayer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_hjxtg")
+expand_mode = 1
+
+[node name="Logo" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -454.0
+offset_top = -241.0
+offset_right = 454.0
+offset_bottom = -69.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_yokey")
 expand_mode = 1
 
 [node name="Join" type="Button" parent="CanvasLayer"]
