@@ -1,7 +1,8 @@
-[gd_scene load_steps=223 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=225 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
+[ext_resource type="PackedScene" uid="uid://db3yrhykvlvx6" path="res://Assets/Mp5/hk-mp5.glb" id="7_5apxg"]
 [ext_resource type="PackedScene" uid="uid://bu7u1gaihpodm" path="res://Assets/LamparaTecho/lampara de techo.glb" id="7_lmtg1"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Assets/Marco/marco.tscn" id="10_chpvt"]
 [ext_resource type="PackedScene" uid="uid://df8x2mtyx5u13" path="res://Assets/TechoArco/techoAbierto2.glb" id="11_63ggk"]
@@ -33,6 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://elaq75lfvloq" path="res://Assets/Bench/banco.glb" id="31_21af4"]
 [ext_resource type="PackedScene" uid="uid://b7y74m4xc8gko" path="res://Assets/Barandilla/Barandilla.glb" id="32_m1ad3"]
 [ext_resource type="PackedScene" uid="uid://kaq5ecb308ec" path="res://Scenes/Mapa/puerta/puerta.tscn" id="33_o1un5"]
+[ext_resource type="PackedScene" uid="uid://w7ddo06yu3oy" path="res://Assets/Personaje/Perro1$.glb" id="35_2vgcb"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -5207,6 +5209,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.98716, 0.284726, 19.1444)
 [node name="Pedestal 1" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
+[node name="Pedestal 6" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.6305, 0, 23.4065)
+
+[node name="Mp5" type="Node3D" parent="Pedestal PB/Pedestal 6"]
+
+[node name="hk-mp5" parent="Pedestal PB/Pedestal 6/Mp5" instance=ExtResource("7_5apxg")]
+transform = Transform3D(0.0925791, 0.995705, 0, -0.995705, 0.0925791, 0, 0, 0, 1, 0, 1.02689, 0)
+
 [node name="Pedestal 2" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(3.285, 0, 0, 0, 4.895, 0, 0, 0, 3.285, -13.7904, 1.41038, 18.6901)
 
@@ -6558,3 +6568,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 7, 58)
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_7b5o3")
 materials = Array[Material]([ExtResource("18_q2qk8"), ExtResource("29_bpuhh")])
+
+[node name="Personaje" type="Node3D" parent="."]
+
+[node name="Perro1$" parent="Personaje" instance=ExtResource("35_2vgcb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14.5826)
