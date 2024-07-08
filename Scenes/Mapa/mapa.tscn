@@ -1,4 +1,4 @@
-[gd_scene load_steps=225 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=226 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
@@ -35,6 +35,7 @@
 [ext_resource type="PackedScene" uid="uid://b7y74m4xc8gko" path="res://Assets/Barandilla/Barandilla.glb" id="32_m1ad3"]
 [ext_resource type="PackedScene" uid="uid://kaq5ecb308ec" path="res://Scenes/Mapa/puerta/puerta.tscn" id="33_o1un5"]
 [ext_resource type="PackedScene" uid="uid://w7ddo06yu3oy" path="res://Assets/Personaje/Perro1$.glb" id="35_2vgcb"]
+[ext_resource type="PackedScene" uid="uid://c1wqpf43c1jr8" path="res://Assets/AlfombraRoja/AlfombraRoja.glb" id="36_c3rwv"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -5091,15 +5092,6 @@ metadata/_edit_group_ = true
 [node name="lampara de techo" parent="Luces PB/OmniLight3D9" instance=ExtResource("7_lmtg1")]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0.997, 0)
 
-[node name="OmniLight3D10" type="OmniLight3D" parent="Luces PB"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.9649, 6, 42.2491)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
-[node name="lampara de techo" parent="Luces PB/OmniLight3D10" instance=ExtResource("7_lmtg1")]
-transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0.99718, 0)
-
 [node name="OmniLight3D11" type="OmniLight3D" parent="Luces PB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.1311, 6, 52.07)
 omni_range = 80.0
@@ -5125,6 +5117,15 @@ omni_attenuation = 0.4
 metadata/_edit_group_ = true
 
 [node name="lampara de techo" parent="Luces PB/OmniLight3D14" instance=ExtResource("7_lmtg1")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0.997, 0)
+
+[node name="OmniLight3D14" type="OmniLight3D" parent="Luces PB/OmniLight3D14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.229573, 6, 65.043)
+omni_range = 80.0
+omni_attenuation = 0.4
+metadata/_edit_group_ = true
+
+[node name="lampara de techo" parent="Luces PB/OmniLight3D14/OmniLight3D14" instance=ExtResource("7_lmtg1")]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0.997, 0)
 
 [node name="OmniLight3D15" type="OmniLight3D" parent="Luces PB"]
@@ -5215,7 +5216,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.6305, 0, 23.4065)
 [node name="Mp5" type="Node3D" parent="Pedestal PB/Pedestal 6"]
 
 [node name="hk-mp5" parent="Pedestal PB/Pedestal 6/Mp5" instance=ExtResource("7_5apxg")]
-transform = Transform3D(0.0925791, 0.995705, 0, -0.995705, 0.0925791, 0, 0, 0, 1, 0, 1.02689, 0)
+transform = Transform3D(0.996263, 0.0863733, 0, -0.0863733, 0.996263, 0, 0, 0, 1, 0, 1.5887, 0.373245)
 
 [node name="Pedestal 2" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(3.285, 0, 0, 0, 4.895, 0, 0, 0, 3.285, -13.7904, 1.41038, 18.6901)
@@ -6572,4 +6573,15 @@ materials = Array[Material]([ExtResource("18_q2qk8"), ExtResource("29_bpuhh")])
 [node name="Personaje" type="Node3D" parent="."]
 
 [node name="Perro1$" parent="Personaje" instance=ExtResource("35_2vgcb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14.5826)
+transform = Transform3D(1, 0, 0, 0, 0.00568977, 0.999984, 0, -0.999984, 0.00568977, 0, 1.63307, 14.7965)
+
+[node name="AlfombraRoja" type="Node3D" parent="."]
+
+[node name="AlfombraRoja" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.0314, 0.292848, 40.0736)
+
+[node name="lampara de techo" parent="." instance=ExtResource("7_lmtg1")]
+transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, 33.0484, 6.97733, 42.4978)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.24572, 0)
