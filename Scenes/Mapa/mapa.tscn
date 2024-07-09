@@ -1,4 +1,4 @@
-[gd_scene load_steps=202 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=203 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
@@ -31,6 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://4e44da2ayoex" path="res://Imagenes/Gastronimia/bollitos.jpg" id="30_7qm1x"]
 [ext_resource type="Texture2D" uid="uid://dg8avdfk3he3e" path="res://Imagenes/Gaiteros/neguito.jpg" id="30_afvp0"]
 [ext_resource type="PackedScene" uid="uid://elaq75lfvloq" path="res://Assets/Bench/banco.glb" id="31_21af4"]
+[ext_resource type="Texture2D" uid="uid://m0h0e6q38iu6" path="res://Imagenes/fotos angel/lago de maracaibo.jpg" id="31_scgyy"]
 [ext_resource type="PackedScene" uid="uid://b7y74m4xc8gko" path="res://Assets/Barandilla/Barandilla.glb" id="32_m1ad3"]
 [ext_resource type="PackedScene" uid="uid://kaq5ecb308ec" path="res://Scenes/Mapa/puerta/puerta.tscn" id="33_o1un5"]
 [ext_resource type="PackedScene" uid="uid://w7ddo06yu3oy" path="res://Assets/Personaje/Perro1$.glb" id="35_2vgcb"]
@@ -4552,6 +4553,9 @@ transform = Transform3D(-1.39873, 8.41007e-08, 4.22815e-08, -6.11405e-08, 1.8380
 [node name="Marco neguito" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(1.39873, 0, 0, 0, -4.20504e-08, -0.967288, 0, 0.962, -4.22815e-08, 14.582, 11.787, 59.1)
 
+[node name="Marco neguito2" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(-1.64275e-07, 0.962, -4.41924e-08, 0, -4.20504e-08, -1.011, -3.75817, -4.20504e-08, 1.93171e-15, -7.88648, 11.5322, 68.2236)
+
 [node name="Marco Ricardo" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-7.66737e-08, -0.962, 0, -7.66737e-08, 1.83808e-15, -1.31688, 1.75409, -4.20504e-08, -5.75628e-08, 21.8948, 13.3358, 67.5655)
 
@@ -5244,6 +5248,10 @@ texture = ExtResource("29_xd3i6")
 [node name="Mojito" type="Sprite3D" parent="."]
 transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, 40.9692, 2, 44.5416)
 texture = ExtResource("29_qr7q6")
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform3D(-6.11404e-08, 2.31154e-10, 0.962, 2.04831e-22, 0.967288, 2.31161e-10, -1.39873, -1.01036e-17, -4.20504e-08, -7.88648, 11.5322, 68.2236)
+texture = ExtResource("31_scgyy")
 
 [node name="Block_1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -24)
