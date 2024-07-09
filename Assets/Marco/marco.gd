@@ -5,9 +5,13 @@ extends StaticBody3D
 @onready var timer_entered = $Timer_entered
 @onready var timer_exited = $Timer_exited
 @onready var sprite_3d = $Sprite3D
+@export var texto = TextMesh
+@onready var label_3d = %Label3D
+@onready var animation_player = $AnimationPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	label_3d.text = texto.text
 	if imagen != null:
 		sprite_3d.texture = imagen
 		
@@ -16,11 +20,13 @@ func _ready():
 	
 func _on_area_3d_body_entered(body):
 	if "player" in str(body):
+		animation_player.play("spawn_text")
 		timer_entered.start()
 
 func _on_area_3d_body_exited(body):
 	#timerend.start
 	if "player" in str(body):
+		animation_player.play("despawn_text")
 		timer_exited.start()
 		
 func _on_timer_exited_timeout():
