@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=203 format=3 uid="uid://ddkpwki1v0iv"]
-=======
 [gd_scene load_steps=204 format=3 uid="uid://ddkpwki1v0iv"]
->>>>>>> Stashed changes
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
