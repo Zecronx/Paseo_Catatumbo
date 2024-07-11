@@ -1,7 +1,7 @@
-[gd_scene load_steps=215 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=216 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
-[ext_resource type="PackedScene" uid="uid://cbfxv1tffjfyr" path="res://Assets/Marco/marco_vertical.tscn" id="5_iqygw"]
+[ext_resource type="PackedScene" path="res://Assets/Marco/marco_vertical.tscn" id="5_iqygw"]
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
 [ext_resource type="PackedScene" uid="uid://db3yrhykvlvx6" path="res://Assets/Mp5/hk-mp5.glb" id="7_5apxg"]
 [ext_resource type="PackedScene" uid="uid://bu7u1gaihpodm" path="res://Assets/LamparaTecho/lampara de techo.glb" id="7_lmtg1"]
@@ -41,6 +41,7 @@
 [ext_resource type="PackedScene" uid="uid://c7fcq00ubt1bg" path="res://Assets/Armas/piopio.glb" id="38_5vr75"]
 [ext_resource type="PackedScene" uid="uid://cqo1644mxwb3a" path="res://Assets/Armas/QBZ 97.glb" id="39_6wlh0"]
 [ext_resource type="PackedScene" uid="uid://dfhb57n8vx14t" path="res://Assets/Armas/Skorpion.glb" id="40_1tjl7"]
+[ext_resource type="PackedScene" uid="uid://utsni4j0468l" path="res://Assets/Armas/m16.glb" id="42_103li"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -5860,3 +5861,6 @@ transform = Transform3D(-0.0224256, 0, 0.999749, -0.998167, -0.0562223, -0.02239
 
 [node name="Skorpion" parent="Armas" instance=ExtResource("40_1tjl7")]
 transform = Transform3D(1, 0, 0, 0, 0.114937, -0.993373, 0, 0.993373, 0.114937, 59.5653, 13.6985, 41.3568)
+
+[node name="m16" parent="." instance=ExtResource("42_103li")]
+transform = Transform3D(1, 0, 0, 0, 0.631718, -0.775198, 0, 0.775198, 0.631718, -0.0853484, 0.785994, -17.4964)
