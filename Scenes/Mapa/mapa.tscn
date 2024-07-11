@@ -1,6 +1,7 @@
-[gd_scene load_steps=209 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=215 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
+[ext_resource type="PackedScene" uid="uid://cbfxv1tffjfyr" path="res://Assets/Marco/marco_vertical.tscn" id="5_iqygw"]
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
 [ext_resource type="PackedScene" uid="uid://db3yrhykvlvx6" path="res://Assets/Mp5/hk-mp5.glb" id="7_5apxg"]
 [ext_resource type="PackedScene" uid="uid://bu7u1gaihpodm" path="res://Assets/LamparaTecho/lampara de techo.glb" id="7_lmtg1"]
@@ -57,13 +58,42 @@ sky = SubResource("Sky_rj56e")
 ambient_light_color = Color(0.91664, 0.91664, 0.91664, 1)
 ssao_enabled = true
 
-[sub_resource type="TextMesh" id="TextMesh_m5512"]
-text = "mandoca"
+[sub_resource type="TextMesh" id="TextMesh_segdq"]
+text = "Tequeños
+
+Los tequeños son los pásapalos venezolanos más famosos y queridos, consiste en una masa de harina de trigo frita, rellena de queso blanco venezolano, entre otros rellenos. Es consumido como entremés, desayuno, comida rápida o merienda. Generalmente se sirven solos pero es posible acompañarlos de alguna salsa, por ejemplo ketchup, guasacaca, salsa rosada, salsa tártara, salsa picante o alguna salsa con sabor a ajo, cebolla, queso cheddar, tocino, entre otros."
+
+[sub_resource type="TextMesh" id="TextMesh_c8bag"]
+text = "Patacón
+
+La palabra patacón proviene de la similitud con la moneda colonial del mismo nombre. Plátano, Mantequilla y Queso o plátanos fritos en tajadas rellenos de carne, pollo, vegetales queso y salsa y a veces se puede hacer con topocho u otro tipo de plátano más dulce."
+
+[sub_resource type="TextMesh" id="TextMesh_qf5li"]
+text = "Pastelito
+
+Es un alimento preparado compuesto por una fina masa de pan y levadura, masa quebrada o de hojaldre, rellena de cualquier alimento salado o dulces."
+
+[sub_resource type="TextMesh" id="TextMesh_p8bsi"]
+text = "Chivo en coco
+
+Es un plato elaborado con Chivo, Coco y Especies. Es un plato delicioso, donde la carne de chivo se cocina en una salsa cremosa y exquisita.
+
+El chivo o cordero como animal de cría es tradicionalmente una fuente de alimento en las regiones venezolanas de clima árido y xerófito, lugar dónde estos animales tienden a habitar en Venezuela."
+
+[sub_resource type="TextMesh" id="TextMesh_p4dn8"]
+text = "Mandocas 
+
+La mandoca es un plato típico del estado Zulia, Venezuela. Es una rosca frita en forma de gota, elaborada con una mezcla de harina de maíz, papelón, plátano maduro y queso de año rallado. Se come frecuentemente caliente, con queso rallado, mantequilla o margarina. Forma parte frecuente de las cenas y los desayunos de los venezolanos acompañada con café con leche."
 
 [sub_resource type="TextMesh" id="TextMesh_3k8jj"]
 text = "Bollos pelones
 
 El bollo pelón es un plato típico de la cocina zuliana que consiste en un bollito de masa de maíz relleno de guiso de carne o pollo, que se hierve y se baña en una salsa usualmente a base de tomates."
+
+[sub_resource type="TextMesh" id="TextMesh_oprxo"]
+text = "Astolfo José Romero Chacín
+
+Nació en Maracaibo el 8 de febrero de 1950 y falleció en Maracaibo el 20 de mayo de 2000, conocido también por su apodo El Parroquiano, fue un cantante, músico, compositor y actor venezolano, que se especializaba en el género folclórico venezolano conocido como gaita zuliana."
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_20ic3"]
 
@@ -4524,27 +4554,36 @@ metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0.997, 0)
 
 [node name="Marco tequeños" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(1.3029e-15, 4.20504e-08, 0.625722, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.73512e-08, 28.5059, 2.05618, 34.1038)
+transform = Transform3D(1.21118e-15, 4.20504e-08, 0.654542, 0.633898, -4.20504e-08, 0, 2.77085e-08, 0.962, -2.8611e-08, 28.5059, 2.00229, 34.1038)
+texto = SubResource("TextMesh_segdq")
 
 [node name="Marco patacones" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(1.3029e-15, 4.20504e-08, 0.625722, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.73512e-08, 35.6479, 2.05618, 34.1038)
+transform = Transform3D(1.3029e-15, 4.20504e-08, 0.684918, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.99387e-08, 35.6479, 2.02348, 34.1038)
+texto = SubResource("TextMesh_c8bag")
 
 [node name="Marco pastelitos" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-2.98069e-08, -0.962, 0, 0.681903, -4.20504e-08, 0, 0, 0, 0.509469, 40.88, 2.056, 37.5476)
+transform = Transform3D(-2.62642e-08, -0.962, 0, 0.600855, -4.20504e-08, 0, 0, 0, 0.53792, 40.88, 1.98235, 37.5476)
+texto = SubResource("TextMesh_qf5li")
 
 [node name="Marco mojito" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-2.98069e-08, -0.962, 0, 0.681903, -4.20504e-08, 0, 0, 0, 0.686658, 40.88, 2.056, 44.6708)
+transform = Transform3D(-2.7768e-08, -0.962, 0, 0.635259, -4.20504e-08, 0, 0, 0, 0.686658, 40.88, 1.97717, 44.6708)
+texto = SubResource("TextMesh_p8bsi")
 
 [node name="Marco mandocas" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-4.77568e-16, -1.14717e-08, -0.646347, 0.916193, -4.20504e-08, 0, -4.00481e-08, -0.962, 7.70761e-09, 35.3904, 2.23248, 49.8945)
-texto = SubResource("TextMesh_m5512")
+transform = Transform3D(-4.08134e-16, -1.14717e-08, -0.713909, 0.782988, -4.20504e-08, 0, -3.42255e-08, -0.962, 8.51328e-09, 35.3904, 2.23248, 49.8945)
+texto = SubResource("TextMesh_p4dn8")
 
 [node name="Marco bollitos" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-3.48029e-16, -1.14717e-08, -0.646347, 0.667677, -4.20504e-08, 0, -2.91851e-08, -0.962, 7.70761e-09, 28.1358, 2.00909, 49.895)
+transform = Transform3D(-3.07613e-16, -1.14717e-08, -0.669886, 0.590141, -4.20504e-08, 0, -2.57959e-08, -0.962, 7.98831e-09, 28.1358, 1.95129, 49.895)
 texto = SubResource("TextMesh_3k8jj")
 
 [node name="Marco astolfo" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-1.39873, 8.41007e-08, 4.22815e-08, -6.11405e-08, 1.83808e-15, -0.967288, -1.22281e-07, -0.962, 1.84818e-15, 14.5824, 11.7866, 75.869)
+visible = false
+
+[node name="Marco Astolfo" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(-3.72026e-16, -1.19249e-08, -0.769543, 0.713715, -4.37114e-08, 0, -3.11975e-08, -1, 9.17671e-09, 14.5663, 11.9305, 75.8771)
+texto = SubResource("TextMesh_oprxo")
 
 [node name="Marco neguito" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(1.39873, 0, 0, 0, -4.20504e-08, -0.967288, 0, 0.962, -4.22815e-08, 14.582, 11.787, 59.1)
@@ -4552,7 +4591,7 @@ transform = Transform3D(1.39873, 0, 0, 0, -4.20504e-08, -0.967288, 0, 0.962, -4.
 [node name="Marco neguito2" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-1.64275e-07, 0.962, -4.41924e-08, 0, -4.20504e-08, -1.011, -3.75817, -4.20504e-08, 1.93171e-15, -7.88648, 11.5322, 68.2236)
 
-[node name="Marco Ricardo" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco ricardo" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(-7.66737e-08, -0.962, 0, -7.66737e-08, 1.83808e-15, -1.31688, 1.75409, -4.20504e-08, -5.75628e-08, 21.8948, 13.3358, 67.5655)
 
 [node name="Marco PB 3" parent="." instance=ExtResource("10_chpvt")]
