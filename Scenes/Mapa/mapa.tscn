@@ -1,4 +1,4 @@
-[gd_scene load_steps=215 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=218 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cbfxv1tffjfyr" path="res://Assets/Marco/marco_vertical.tscn" id="5_iqygw"]
@@ -94,6 +94,19 @@ El bollo pelón es un plato típico de la cocina zuliana que consiste en un boll
 text = "Astolfo José Romero Chacín
 
 Nació en Maracaibo el 8 de febrero de 1950 y falleció en Maracaibo el 20 de mayo de 2000, conocido también por su apodo El Parroquiano, fue un cantante, músico, compositor y actor venezolano, que se especializaba en el género folclórico venezolano conocido como gaita zuliana."
+
+[sub_resource type="TextMesh" id="TextMesh_nkd0b"]
+text = "Neguito Borjas
+
+Abdénago de Jesús Borjas Urdaneta, conocido Nacional e Internacionalmente como Neguito Borjas nació un 3 de Febrero de 1956 en la ciudad productora petrolera de Cabimas, estado Zulia específicamente en el sector Barrio Obrero; criándose posteriormente en la popular barriada llamada Punta Icotea.
+"
+
+[sub_resource type="TextMesh" id="TextMesh_v6rr0"]
+text = "Ricardo José Aguirre González
+
+Nació en Maracaibo el 9 de mayo de 1939 y murió en esa misma ciudad el 8 de noviembre de 1969.
+
+Fue un cantante, compositor, músico, maestro, director de orquesta, locutor y arreglista venezolano, y también conocido a nivel nacional por su apodo «El Monumental» o «El Padre de la Gaita», ya que fue el compositor del himno gaitero más popular del país «La grey zuliana»."
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_20ic3"]
 
@@ -4336,6 +4349,11 @@ active_edge = -1
 active_face = -1
 active_face_vertex = 0
 
+[sub_resource type="TextMesh" id="TextMesh_kh1m2"]
+text = "Lago de Maracaibo
+
+Ubicado en la parte más occidental de Venezuela entre los estados de Zulia, Trujillo y Mérida, es una notable masa de agua dulce costera. Este lago, que algunos autores definen como una gran bahía semicerrada y salobre, es más comúnmente conocido simplemente como un lago. Sin embargo, en la actualidad, debido a sus características geológicas, no debería considerarse como tal"
+
 [node name="Mapa" type="Node3D"]
 script = ExtResource("1_44um2")
 
@@ -4577,22 +4595,17 @@ texto = SubResource("TextMesh_p4dn8")
 transform = Transform3D(-3.07613e-16, -1.14717e-08, -0.669886, 0.590141, -4.20504e-08, 0, -2.57959e-08, -0.962, 7.98831e-09, 28.1358, 1.95129, 49.895)
 texto = SubResource("TextMesh_3k8jj")
 
-[node name="Marco astolfo" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-1.39873, 8.41007e-08, 4.22815e-08, -6.11405e-08, 1.83808e-15, -0.967288, -1.22281e-07, -0.962, 1.84818e-15, 14.5824, 11.7866, 75.869)
-visible = false
-
 [node name="Marco Astolfo" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(-3.72026e-16, -1.19249e-08, -0.769543, 0.713715, -4.37114e-08, 0, -3.11975e-08, -1, 9.17671e-09, 14.5663, 11.9305, 75.8771)
+transform = Transform3D(-3.72026e-16, -1.19249e-08, -0.769543, 0.713715, -4.37114e-08, 0, -3.11975e-08, -1, 9.17671e-09, 14.4689, 11.9305, 75.8771)
 texto = SubResource("TextMesh_oprxo")
 
-[node name="Marco neguito" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(1.39873, 0, 0, 0, -4.20504e-08, -0.967288, 0, 0.962, -4.22815e-08, 14.582, 11.787, 59.1)
+[node name="Marco Neguito" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(1.43366e-15, 4.37114e-08, 0.784244, 0.750335, -4.37114e-08, 0, 3.27982e-08, 1, -3.42804e-08, 14.8274, 11.9356, 59.1)
+texto = SubResource("TextMesh_nkd0b")
 
-[node name="Marco neguito2" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-1.64275e-07, 0.962, -4.41924e-08, 0, -4.20504e-08, -1.011, -3.75817, -4.20504e-08, 1.93171e-15, -7.88648, 11.5322, 68.2236)
-
-[node name="Marco ricardo" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-7.66737e-08, -0.962, 0, -7.66737e-08, 1.83808e-15, -1.31688, 1.75409, -4.20504e-08, -5.75628e-08, 21.8948, 13.3358, 67.5655)
+[node name="Marco Ricardo" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(-4.13928e-08, -1, 0, 0.946956, -4.37114e-08, 0, 0, 0, 0.936127, 21.895, 13.336, 67.7661)
+texto = SubResource("TextMesh_v6rr0")
 
 [node name="Marco PB 3" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(0.902394, 0, 0, 0, -4.37114e-08, -0.58709, 0, 1, -2.56625e-08, 0, 3.63857, -23.8761)
@@ -4655,26 +4668,6 @@ billboard = 1
 text = "HABITACION DE LA
 BASILICA"
 font_size = 40
-
-[node name="Texto Ricardo Aguirre" type="Sprite3D" parent="."]
-transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, 19.4178, 11.8428, 73.0122)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-billboard = 1
-texture = SubResource("CanvasTexture_20ic3")
-
-[node name="Label3D" type="Label3D" parent="Texto Ricardo Aguirre"]
-transform = Transform3D(1.11925, 0, 0, 0, 1.18547, 0, 0, 0, 1.00172, -0.00435638, -0.016016, 0.00779724)
-billboard = 1
-text = "Ricardo José Aguirre González
-
-Nació en Maracaibo el 9 de mayo de 1939 y murió en esa misma ciudad el 8 de noviembre de 1969.
-
-Fue un cantante, compositor, músico, maestro, director de orquesta, locutor y arreglista venezolano, y también conocido a nivel nacional por su apodo «El Monumental» o «El Padre de la Gaita», ya que fue el compositor del himno gaitero más popular del país «La grey zuliana»."
-font_size = 40
-autowrap_mode = 2
-justification_flags = 161
-width = 800.0
 
 [node name="Hab Castillo" type="Sprite3D" parent="."]
 transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, 59.2997, 13.7415, 41.4744)
@@ -5310,7 +5303,7 @@ transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, 
 texture = ExtResource("29_qr7q6")
 
 [node name="Sprite3D2" type="Sprite3D" parent="."]
-transform = Transform3D(-6.11404e-08, 2.31154e-10, 0.962, 2.04831e-22, 0.967288, 2.31161e-10, -1.39873, -1.01036e-17, -4.20504e-08, -7.88648, 11.5322, 68.2236)
+transform = Transform3D(-6.11404e-08, 2.31154e-10, 0.962, 2.04831e-22, 0.967288, 2.31161e-10, -1.39873, -1.01036e-17, -4.20504e-08, -7.88648, 12.2126, 68.2236)
 texture = ExtResource("31_scgyy")
 
 [node name="Block_1" type="Node3D" parent="."]
@@ -5860,3 +5853,7 @@ transform = Transform3D(-0.0224256, 0, 0.999749, -0.998167, -0.0562223, -0.02239
 
 [node name="Skorpion" parent="Armas" instance=ExtResource("40_1tjl7")]
 transform = Transform3D(1, 0, 0, 0, 0.114937, -0.993373, 0, 0.993373, 0.114937, 59.5653, 13.6985, 41.3568)
+
+[node name="Marco Lago" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(6.31613e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -7.789, 12.2009, 67.7687)
+texto = SubResource("TextMesh_kh1m2")
