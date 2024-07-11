@@ -1,4 +1,4 @@
-[gd_scene load_steps=204 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=208 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://df8x2mtyx5u13" path="res://Assets/TechoArco/techoAbierto2.glb" id="11_63ggk"]
 [ext_resource type="PackedScene" uid="uid://cd6hixteyjrcv" path="res://Assets/Pedestal/pedestal.tscn" id="11_gl7h4"]
 [ext_resource type="PackedScene" uid="uid://n3mgeinupl5v" path="res://Assets/TechoArco/Pared/Cerrado/techoCerradoPared.glb" id="12_afcfj"]
-[ext_resource type="AudioStream" uid="uid://brxqtbmtbjfle" path="res://Audio/Stream Loops 2024-02-07.ogg" id="12_g8n3c"]
 [ext_resource type="PackedScene" uid="uid://utgpkgogih5v" path="res://Assets/TechoArco/Pared/Abierto/techoAbiertoPared.glb" id="13_ob2lk"]
 [ext_resource type="PackedScene" uid="uid://rn0nrswdx7vl" path="res://Assets/Tranvia/Trenvia.glb" id="14_bn6ju"]
 [ext_resource type="PackedScene" uid="uid://b6ywtsg5r0lxf" path="res://Assets/Estatua/Rafael Urdaneta.glb" id="16_6h83q"]
@@ -31,7 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://4e44da2ayoex" path="res://Imagenes/Gastronimia/bollitos.jpg" id="30_7qm1x"]
 [ext_resource type="Texture2D" uid="uid://dg8avdfk3he3e" path="res://Imagenes/Gaiteros/neguito.jpg" id="30_afvp0"]
 [ext_resource type="PackedScene" uid="uid://elaq75lfvloq" path="res://Assets/Bench/banco.glb" id="31_21af4"]
-[ext_resource type="Texture2D" uid="uid://m0h0e6q38iu6" path="res://Imagenes/fotos angel/lago de maracaibo.jpg" id="31_scgyy"]
+[ext_resource type="Texture2D" uid="uid://5w6ommdtwxbo" path="res://Imagenes/fotos angel/lago de maracaibo.jpg" id="31_scgyy"]
 [ext_resource type="PackedScene" uid="uid://b7y74m4xc8gko" path="res://Assets/Barandilla/Barandilla.glb" id="32_m1ad3"]
 [ext_resource type="PackedScene" uid="uid://kaq5ecb308ec" path="res://Scenes/Mapa/puerta/puerta.tscn" id="33_o1un5"]
 [ext_resource type="PackedScene" uid="uid://w7ddo06yu3oy" path="res://Assets/Personaje/Perro1$.glb" id="35_2vgcb"]
@@ -53,10 +52,32 @@ sky = SubResource("Sky_rj56e")
 ambient_light_color = Color(0.91664, 0.91664, 0.91664, 1)
 ssao_enabled = true
 
-[sub_resource type="TextMesh" id="TextMesh_m5512"]
-text = "mandoca"
+[sub_resource type="TextMesh" id="TextMesh_wc6oa"]
+text = "Tequeños
 
-[sub_resource type="TextMesh" id="TextMesh_3k8jj"]
+Los tequeños son los pásapalos venezolanos más famosos y queridos, consiste en una masa de harina de trigo frita, rellena de queso blanco venezolano, entre otros rellenos. Es consumido como entremés, desayuno, comida rápida o merienda."
+
+[sub_resource type="TextMesh" id="TextMesh_jyowy"]
+text = "Patacón
+
+La palabra patacón proviene de la similitud con la moneda colonial del mismo nombre. Plátano, Mantequilla y Queso o plátanos fritos en tajadas rellenos de carne, pollo, vegetales queso y salsa y a veces se puede hacer con topocho u otro tipo de plátano más dulce."
+
+[sub_resource type="TextMesh" id="TextMesh_rlwb5"]
+text = "Pastelito
+
+Es un alimento preparado compuesto por una fina masa de pan y levadura, masa quebrada o de hojaldre, rellena de cualquier alimento salado o dulces."
+
+[sub_resource type="TextMesh" id="TextMesh_aaj2x"]
+text = "Mojito
+
+Es un plato de comida típica del Estado Zulia en Venezuela, preparado a base de pescado esmechado, leche de coco y especias."
+
+[sub_resource type="TextMesh" id="TextMesh_v1wrl"]
+text = "Mandocas 
+
+La mandoca es un plato típico del estado Zulia, Venezuela. Es una rosca frita en forma de gota, elaborada con una mezcla de harina de maíz, papelón, plátano maduro y queso de año rallado. Se come frecuentemente caliente, con queso rallado, mantequilla o margarina. Forma parte frecuente de las cenas y los desayunos de los venezolanos acompañada con café con leche."
+
+[sub_resource type="TextMesh" id="TextMesh_28si6"]
 text = "Bollos pelones
 
 El bollo pelón es un plato típico de la cocina zuliana que consiste en un bollito de masa de maíz relleno de guiso de carne o pollo, que se hierve y se baña en una salsa usualmente a base de tomates."
@@ -4538,40 +4559,31 @@ metadata/_edit_group_ = true
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0.997, 0)
 
 [node name="Marco tequeños" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(1.3029e-15, 4.20504e-08, 0.625722, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.73512e-08, 28.5059, 2.05618, 34.1038)
+transform = Transform3D(1.17372e-15, 4.20504e-08, 0.625722, 0.614295, -4.20504e-08, 0, 2.68517e-08, 0.962, -2.73512e-08, 28.5059, 2.05618, 34.1038)
+texto = SubResource("TextMesh_wc6oa")
 
 [node name="Marco patacones" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(1.3029e-15, 4.20504e-08, 0.625722, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.73512e-08, 35.6479, 2.05618, 34.1038)
+transform = Transform3D(1.2839e-15, 4.20504e-08, 0.625722, 0.671958, -4.20504e-08, 0, 2.93722e-08, 0.962, -2.73512e-08, 35.6479, 2.05618, 34.1038)
+texto = SubResource("TextMesh_jyowy")
 
 [node name="Marco pastelitos" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-2.98069e-08, -0.962, 0, 0.681903, -4.20504e-08, 0, 0, 0, 0.509469, 40.88, 2.056, 37.5476)
+transform = Transform3D(-2.65376e-08, -0.962, 0, 0.60711, -4.20504e-08, 0, 0, 0, 0.521786, 40.88, 2.00492, 37.5476)
+texto = SubResource("TextMesh_rlwb5")
 
 [node name="Marco mojito" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-2.98069e-08, -0.962, 0, 0.681903, -4.20504e-08, 0, 0, 0, 0.686658, 40.88, 2.056, 44.6708)
+transform = Transform3D(-2.72071e-08, -0.962, 0, 0.622427, -4.20504e-08, 0, 0, 0, 0.686658, 40.88, 2.056, 44.6708)
+texto = SubResource("TextMesh_aaj2x")
 
 [node name="Marco mandocas" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-4.77568e-16, -1.14717e-08, -0.646347, 0.916193, -4.20504e-08, 0, -4.00481e-08, -0.962, 7.70761e-09, 35.3904, 2.23248, 49.8945)
-texto = SubResource("TextMesh_m5512")
+transform = Transform3D(-4.00752e-16, -1.14717e-08, -0.736832, 0.768825, -4.20504e-08, 0, -3.36065e-08, -0.962, 8.78663e-09, 35.3903, 2.25467, 49.8957)
+texto = SubResource("TextMesh_v1wrl")
 
 [node name="Marco bollitos" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-3.48029e-16, -1.14717e-08, -0.646347, 0.667677, -4.20504e-08, 0, -2.91851e-08, -0.962, 7.70761e-09, 28.1358, 2.00909, 49.895)
-texto = SubResource("TextMesh_3k8jj")
-
-[node name="Marco astolfo" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-1.39873, 8.41007e-08, 4.22815e-08, -6.11405e-08, 1.83808e-15, -0.967288, -1.22281e-07, -0.962, 1.84818e-15, 14.5824, 11.7866, 75.869)
-
-[node name="Marco neguito" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(1.39873, 0, 0, 0, -4.20504e-08, -0.967288, 0, 0.962, -4.22815e-08, 14.582, 11.787, 59.1)
-
-[node name="Marco neguito2" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-1.64275e-07, 0.962, -4.41924e-08, 0, -4.20504e-08, -1.011, -3.75817, -4.20504e-08, 1.93171e-15, -7.88648, 11.5322, 68.2236)
-
-[node name="Marco Ricardo" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(-7.66737e-08, -0.962, 0, -7.66737e-08, 1.83808e-15, -1.31688, 1.75409, -4.20504e-08, -5.75628e-08, 21.8948, 13.3358, 67.5655)
+transform = Transform3D(-2.9368e-16, -1.14717e-08, -0.67785, 0.563412, -4.20504e-08, 0, -2.46275e-08, -0.962, 8.08328e-09, 28.1358, 1.9955, 49.895)
+texto = SubResource("TextMesh_28si6")
 
 [node name="Marco PB 3" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(0.902394, 0, 0, 0, -4.37114e-08, -0.58709, 0, 1, -2.56625e-08, 0, 3.63857, -23.8761)
-audio = ExtResource("12_g8n3c")
 
 [node name="Pedestal PB" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.98716, 0.284726, 19.1444)
@@ -4626,26 +4638,6 @@ billboard = 1
 text = "HABITACION DE LA
 BASILICA"
 font_size = 40
-
-[node name="Texto Ricardo Aguirre" type="Sprite3D" parent="."]
-transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, 19.4178, 11.8428, 73.0122)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-billboard = 1
-texture = SubResource("CanvasTexture_20ic3")
-
-[node name="Label3D" type="Label3D" parent="Texto Ricardo Aguirre"]
-transform = Transform3D(1.11925, 0, 0, 0, 1.18547, 0, 0, 0, 1.00172, -0.00435638, -0.016016, 0.00779724)
-billboard = 1
-text = "Ricardo José Aguirre González
-
-Nació en Maracaibo el 9 de mayo de 1939 y murió en esa misma ciudad el 8 de noviembre de 1969.
-
-Fue un cantante, compositor, músico, maestro, director de orquesta, locutor y arreglista venezolano, y también conocido a nivel nacional por su apodo «El Monumental» o «El Padre de la Gaita», ya que fue el compositor del himno gaitero más popular del país «La grey zuliana»."
-font_size = 40
-autowrap_mode = 2
-justification_flags = 161
-width = 800.0
 
 [node name="Hab Castillo" type="Sprite3D" parent="."]
 transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, 59.2997, 13.7415, 41.4744)

@@ -45,3 +45,5 @@ target_position = Vector3(0, -0.9, 0)
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_r3j62")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
