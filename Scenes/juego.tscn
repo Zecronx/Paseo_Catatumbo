@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://drdaey0naroyb"]
+[gd_scene load_steps=11 format=3 uid="uid://drdaey0naroyb"]
 
 [ext_resource type="PackedScene" uid="uid://ddkpwki1v0iv" path="res://Scenes/Mapa/mapa.tscn" id="1_alcmt"]
 [ext_resource type="Script" path="res://Scenes/juego.gd" id="1_tb02s"]
@@ -9,6 +9,7 @@
 [ext_resource type="FontFile" uid="uid://bj05c1neod67a" path="res://Scenes/Menu/Super-Mario-Bros--3.ttf" id="6_xvikf"]
 [ext_resource type="Theme" uid="uid://dljccapwwqvna" path="res://Scenes/Menu/true.tres" id="7_7v2pq"]
 [ext_resource type="Theme" uid="uid://by5bmyglx014n" path="res://Scenes/Menu/false.tres" id="9_0w8fi"]
+[ext_resource type="PackedScene" uid="uid://csxaohjlh6736" path="res://Scenes/Menu/Pause_Menu.tscn" id="10_gcgyo"]
 
 [node name="Juego" type="Node3D"]
 script = ExtResource("1_tb02s")
@@ -101,6 +102,9 @@ text = "exit"
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
 _spawnable_scenes = PackedStringArray("res://Scenes/Player/character_body_3d.tscn")
 spawn_path = NodePath("..")
+
+[node name="PauseMenu" parent="." instance=ExtResource("10_gcgyo")]
+visible = false
 
 [connection signal="pressed" from="CanvasLayer/Join" to="." method="_on_join_pressed"]
 [connection signal="pressed" from="CanvasLayer/Host" to="." method="_on_host_pressed"]

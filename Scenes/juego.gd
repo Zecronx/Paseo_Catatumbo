@@ -2,9 +2,11 @@ extends Node3D
 
 @export var player: PackedScene
 @onready var canvas_layer = $CanvasLayer
+var previous_scene = preload("res://Scenes/Menu/Main_Menu.tscn")
+@onready var Pause_Menu = $PauseMenu
+var paused = false
 var peer: ENetMultiplayerPeer
 var Direccion =  "192.168.32.90"
-var previous_scene = preload("res://Scenes/Menu/Main_Menu.tscn")
 
 func _ready():
 	peer = ENetMultiplayerPeer.new()
@@ -37,3 +39,17 @@ func delete_player(id):
 func _delete_player(id):
 	if get_node_or_null(str(id)):
 		get_node(str(id)).queue_free()
+
+func _process(delta):
+	if Input.is_action_just_pressed("menu"):
+		pauseMenu()
+		
+func pauseMenu():
+	if paused:
+		Pause_Menu.hide()
+		Engine.time_scale = 1
+	else:
+		Pause_Menu.show()
+		Engine.time_scale = 0
+	
+	paused = !paused
