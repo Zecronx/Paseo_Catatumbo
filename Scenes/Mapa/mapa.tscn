@@ -462,7 +462,7 @@ active_edge = -1
 active_face = -1
 active_face_vertex = 0
 
-[sub_resource type="Resource" id="Resource_rpyoc"]
+[sub_resource type="Resource" id="Resource_pkxbe"]
 script = ExtResource("19_8qer4")
 selected = false
 active = false
@@ -472,7 +472,7 @@ physics_mask = 0
 vertex_points = PackedVector3Array(0, 0, 0, 50, 0, -8.74228e-08, 50, 1, -8.74228e-08, 0, 1, 0, 0, 1, 24, 50, 1, 24, 50, 0, 24, 0, 0, 24)
 vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
 edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-face_material_indices = PackedInt32Array(0, 0, 0, 0, -1, 0)
+face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
 face_uv_transform = Array[Transform2D]([Transform2D(0, 0, 0, 1, 63, 4), Transform2D(0, -0.1, 0.1, 0, 7.66, 1.96), Transform2D(0, 0, 0, 1, 3, 4), Transform2D(0, 0, 0, 1, 3, 4), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(0, -1, 1, 0, 85.6, 37.6)])
 face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
 face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
@@ -2540,7 +2540,7 @@ active_edge = -1
 active_face = -1
 active_face_vertex = 0
 
-[sub_resource type="Resource" id="Resource_yf0yu"]
+[sub_resource type="Resource" id="Resource_riql5"]
 script = ExtResource("19_8qer4")
 selected = false
 active = false
@@ -4444,15 +4444,6 @@ metadata/_edit_group_ = true
 [node name="lampara de techo" parent="Luces 2doPiso/OmniLight3D26" instance=ExtResource("7_lmtg1")]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 1.5, 0)
 
-[node name="OmniLight3D32" type="OmniLight3D" parent="Luces 2doPiso"]
-transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 43.9351, 1.5, 25.0303)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
-[node name="lampara de techo" parent="Luces 2doPiso/OmniLight3D32" instance=ExtResource("7_lmtg1")]
-transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 1.5, 0)
-
 [node name="OmniLight3D27" type="OmniLight3D" parent="Luces 2doPiso"]
 transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, -47.0252, 1.5, 25.03)
 omni_range = 80.0
@@ -4480,55 +4471,24 @@ metadata/_edit_group_ = true
 [node name="lampara de techo" parent="Luces 2doPiso/OmniLight3D31" instance=ExtResource("7_lmtg1")]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 1.5, 0)
 
+[node name="lampara de techo3" parent="Luces 2doPiso" instance=ExtResource("7_lmtg1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.9351, 0, 25.0303)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Luces 2doPiso/lampara de techo3"]
+transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, 0)
+omni_range = 20.0
+omni_attenuation = 0.4
+
 [node name="Luces PB" type="Node3D" parent="."]
-
-[node name="OmniLight3D7" type="OmniLight3D" parent="Luces PB"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.8255, 6, 42.2491)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
-[node name="lampara de techo" parent="Luces PB/OmniLight3D7" instance=ExtResource("7_lmtg1")]
-transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0.997, 0)
-
-[node name="OmniLight3D8" type="OmniLight3D" parent="Luces PB"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.7862, 6, 52.07)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
-[node name="lampara de techo" parent="Luces PB/OmniLight3D8" instance=ExtResource("7_lmtg1")]
-transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0.997, 0)
-
-[node name="OmniLight3D9" type="OmniLight3D" parent="Luces PB"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.7862, 6, 30.837)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
-[node name="lampara de techo" parent="Luces PB/OmniLight3D9" instance=ExtResource("7_lmtg1")]
-transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0.997, 0)
-
-[node name="OmniLight3D11" type="OmniLight3D" parent="Luces PB"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.1311, 6, 52.07)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
-[node name="lampara de techo" parent="Luces PB/OmniLight3D11" instance=ExtResource("7_lmtg1")]
-transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0.997, 0)
-
-[node name="OmniLight3D13" type="OmniLight3D" parent="Luces PB"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.229573, 6, 52.07)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
-[node name="lampara de techo" parent="Luces PB/OmniLight3D13" instance=ExtResource("7_lmtg1")]
-transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0.997, 0)
 
 [node name="OmniLight3D15" type="OmniLight3D" parent="Luces PB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.00993, 6, 16.0887)
+omni_range = 80.0
+omni_attenuation = 0.4
+metadata/_edit_group_ = true
+
+[node name="OmniLight3D21" type="OmniLight3D" parent="Luces PB"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01, 6, -16.089)
 omni_range = 80.0
 omni_attenuation = 0.4
 metadata/_edit_group_ = true
@@ -4551,26 +4511,20 @@ omni_range = 80.0
 omni_attenuation = 0.4
 metadata/_edit_group_ = true
 
-[node name="OmniLight3D19" type="OmniLight3D" parent="Luces PB"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01, 6, -16.089)
-omni_range = 80.0
-omni_attenuation = 0.4
-metadata/_edit_group_ = true
-
 [node name="OmniLight3D20" type="OmniLight3D" parent="Luces PB"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01, 6, 0)
 omni_range = 80.0
 omni_attenuation = 0.4
 metadata/_edit_group_ = true
 
-[node name="OmniLight3D12" type="OmniLight3D" parent="Luces PB"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.1311, 6, 30.837)
-omni_range = 80.0
+[node name="lampara de techo2" parent="Luces PB" instance=ExtResource("7_lmtg1")]
+transform = Transform3D(1, 0, 0, 0, -1, 1.50996e-07, 0, -1.50996e-07, -1, 19.1311, 6.88028, 30.837)
+
+[node name="OmniLight3D12" type="OmniLight3D" parent="Luces PB/lampara de techo2"]
+transform = Transform3D(1, 0, 0, 0, -1, -1.50996e-07, 0, 1.50996e-07, -1, 0, 3.62922, -1.71661e-05)
+omni_range = 30.0
 omni_attenuation = 0.4
 metadata/_edit_group_ = true
-
-[node name="lampara de techo" parent="Luces PB/OmniLight3D12" instance=ExtResource("7_lmtg1")]
-transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0.997, 0)
 
 [node name="Marco tequeños" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(1.21118e-15, 4.20504e-08, 0.654542, 0.633898, -4.20504e-08, 0, 2.77085e-08, 0.962, -2.8611e-08, 28.5059, 2.00229, 34.1038)
@@ -4705,6 +4659,7 @@ transform = Transform3D(1.051, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.58, 0)
 transform = Transform3D(-9.61651e-08, 0, 1.94, 0, 1, 0, -2.2, 0, -8.48001e-08, 0, 6.41, -19.6)
 
 [node name="techoCerradoPared" parent="Techo PB/Techo Cerrado" instance=ExtResource("12_afcfj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.262892, -0.622927, -1.30314e-08)
 
 [node name="Techo Abierto 1" parent="Techo PB" instance=ExtResource("11_63ggk")]
 transform = Transform3D(-8.74228e-08, 0, 1.94, 0, 1, 0, -2, 0, -8.48001e-08, 5.40851e-14, 6.41, -9.7)
@@ -4824,7 +4779,7 @@ materials = Array[Material]([ExtResource("21_8brsi")])
 [node name="Block_3" type="Node3D" parent="CyclopsBlock0"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21, -1, -45.742)
 script = ExtResource("18_jdkkt")
-block_data = SubResource("Resource_rpyoc")
+block_data = SubResource("Resource_pkxbe")
 materials = Array[Material]([ExtResource("18_q2qk8")])
 
 [node name="CyclopsBlock1" type="Node3D" parent="."]
@@ -5346,7 +5301,7 @@ materials = Array[Material]([ExtResource("18_q2qk8"), ExtResource("21_8brsi"), E
 [node name="Block_14" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 7, 44)
 script = ExtResource("18_jdkkt")
-block_data = SubResource("Resource_yf0yu")
+block_data = SubResource("Resource_riql5")
 materials = Array[Material]([ExtResource("21_8brsi"), ExtResource("18_q2qk8"), ExtResource("29_bpuhh")])
 
 [node name="Block_15" type="Node3D" parent="."]
@@ -5838,8 +5793,57 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.0314, 0.292848, 40.0736)
 transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, 33.0484, 6.97733, 42.4978)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo"]
-transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 1.24572, 0)
-light_energy = 1.17
+transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, 0)
+omni_range = 30.0
+omni_attenuation = 0.4
+
+[node name="lampara de techo2" parent="." instance=ExtResource("7_lmtg1")]
+transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, 16.5635, 7, 52.07)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo2"]
+transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, 0)
+omni_range = 30.0
+omni_attenuation = 0.4
+
+[node name="lampara de techo3" parent="." instance=ExtResource("7_lmtg1")]
+transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, -16.786, 7, 52.07)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo3"]
+transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, 0)
+omni_range = 30.0
+omni_attenuation = 0.4
+
+[node name="lampara de techo4" parent="." instance=ExtResource("7_lmtg1")]
+transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, 0.23, 7, 52.07)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo4"]
+transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, 0)
+omni_range = 30.0
+omni_attenuation = 0.4
+
+[node name="lampara de techo5" parent="." instance=ExtResource("7_lmtg1")]
+transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, 0.23, 7, 65.8918)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo5"]
+transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, 0)
+omni_range = 30.0
+omni_attenuation = 0.4
+
+[node name="lampara de techo6" parent="." instance=ExtResource("7_lmtg1")]
+transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, -16.786, 7, 30.837)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo6"]
+transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, 0)
+omni_range = 30.0
+omni_attenuation = 0.4
+
+[node name="lampara de techo7" parent="." instance=ExtResource("7_lmtg1")]
+transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, -29.826, 7, 42.249)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo7"]
+transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, 0)
+omni_range = 30.0
+omni_attenuation = 0.4
 
 [node name="Armas" type="Node3D" parent="."]
 
