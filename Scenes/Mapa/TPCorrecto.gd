@@ -18,6 +18,6 @@ func _on_body_entered(body):
 		elif get_parent().name == "TP2":
 			body.global_position = area_default_3.global_position
 		else:
-			body.global_position += Vector3(0,0,-2)
+			body.global_position = Vector3(0,0,0)
 
 
