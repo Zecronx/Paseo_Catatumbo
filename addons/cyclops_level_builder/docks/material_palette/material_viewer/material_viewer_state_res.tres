@@ -4,4 +4,4 @@
 
 [resource]
 script = ExtResource("1_3sifp")
-active_material_path = "res://Assets/Suelo/piso/piso.tres"
+active_material_path = "res://Assets/texturas_adicionales/WoodFloor008_1K-JPG/Wood008.tres"

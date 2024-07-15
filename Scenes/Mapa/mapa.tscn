@@ -1,4 +1,4 @@
-[gd_scene load_steps=219 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=220 format=3 uid="uid://ddkpwki1v0iv"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cbfxv1tffjfyr" path="res://Assets/Marco/marco_vertical.tscn" id="5_iqygw"]
@@ -42,6 +42,7 @@
 [ext_resource type="PackedScene" uid="uid://cqo1644mxwb3a" path="res://Assets/Armas/QBZ 97.glb" id="39_6wlh0"]
 [ext_resource type="PackedScene" uid="uid://dfhb57n8vx14t" path="res://Assets/Armas/Skorpion.glb" id="40_1tjl7"]
 [ext_resource type="PackedScene" uid="uid://utsni4j0468l" path="res://Assets/Armas/m16.glb" id="42_103li"]
+[ext_resource type="PackedScene" uid="uid://dh7rstcg4qydr" path="res://Scenes/Mapa/inicio/inicio.tscn" id="44_l8dmy"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -462,7 +463,7 @@ active_edge = -1
 active_face = -1
 active_face_vertex = 0
 
-[sub_resource type="Resource" id="Resource_pkxbe"]
+[sub_resource type="Resource" id="Resource_8q76f"]
 script = ExtResource("19_8qer4")
 selected = false
 active = false
@@ -473,7 +474,7 @@ vertex_points = PackedVector3Array(0, 0, 0, 50, 0, -8.74228e-08, 50, 1, -8.74228
 vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
 edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
-face_uv_transform = Array[Transform2D]([Transform2D(0, 0, 0, 1, 63, 4), Transform2D(0, -0.1, 0.1, 0, 7.66, 1.96), Transform2D(0, 0, 0, 1, 3, 4), Transform2D(0, 0, 0, 1, 3, 4), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(0, -1, 1, 0, 85.6, 37.6)])
+face_uv_transform = Array[Transform2D]([Transform2D(0, 0, 0, 1, 63, 4), Transform2D(0, -0.1, 0.1, 0, 8.21, 1.99), Transform2D(0, 0, 0, 1, 3, 4), Transform2D(0, 0, 0, 1, 3, 4), Transform2D(1, 0, 0, 1, -0.3, 0), Transform2D(0, -1, 1, 0, 91.1, 37.9)])
 face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
 face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
 face_selected = PackedByteArray(0, 0, 1, 0, 0, 0)
@@ -4779,7 +4780,7 @@ materials = Array[Material]([ExtResource("21_8brsi")])
 [node name="Block_3" type="Node3D" parent="CyclopsBlock0"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21, -1, -45.742)
 script = ExtResource("18_jdkkt")
-block_data = SubResource("Resource_pkxbe")
+block_data = SubResource("Resource_8q76f")
 materials = Array[Material]([ExtResource("18_q2qk8")])
 
 [node name="CyclopsBlock1" type="Node3D" parent="."]
@@ -5184,7 +5185,9 @@ block_data = SubResource("Resource_anary")
 materials = Array[Material]([ExtResource("29_bpuhh")])
 
 [node name="Block_87" type="Node3D" parent="CyclopsBlock1"]
+process_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, -46.7419)
+visible = false
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_7oxsm")
 materials = Array[Material]([ExtResource("21_8brsi")])
@@ -5865,3 +5868,6 @@ texto = SubResource("TextMesh_kh1m2")
 
 [node name="m16" parent="." instance=ExtResource("42_103li")]
 transform = Transform3D(1, 0, 0, 0, 0.570398, -0.821368, 0, 0.821368, 0.570398, -0.207732, 0.669401, -18.0386)
+
+[node name="Node3D" parent="." instance=ExtResource("44_l8dmy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.33326, 0, -50.8332)
