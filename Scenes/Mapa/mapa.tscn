@@ -1,9 +1,11 @@
-[gd_scene load_steps=223 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=227 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cbfxv1tffjfyr" path="res://Assets/Marco/marco_vertical.tscn" id="5_iqygw"]
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
+[ext_resource type="Texture2D" uid="uid://dywn42cidm7kn" path="res://Imagenes/fotos angel/pueblo añu.jpg" id="6_wlh5f"]
 [ext_resource type="PackedScene" uid="uid://db3yrhykvlvx6" path="res://Assets/Mp5/hk-mp5.glb" id="7_5apxg"]
+[ext_resource type="Texture2D" uid="uid://cqftqit861dq4" path="res://Imagenes/fotos angel/Sierra de perija.jpg" id="7_acxnl"]
 [ext_resource type="PackedScene" uid="uid://bu7u1gaihpodm" path="res://Assets/LamparaTecho/lampara de techo.glb" id="7_lmtg1"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Assets/Marco/marco.tscn" id="10_chpvt"]
 [ext_resource type="PackedScene" uid="uid://df8x2mtyx5u13" path="res://Assets/TechoArco/techoAbierto2.glb" id="11_63ggk"]
@@ -43,8 +45,11 @@
 [ext_resource type="PackedScene" uid="uid://cqo1644mxwb3a" path="res://Assets/Armas/QBZ 97.glb" id="39_6wlh0"]
 [ext_resource type="PackedScene" uid="uid://dfhb57n8vx14t" path="res://Assets/Armas/Skorpion.glb" id="40_1tjl7"]
 [ext_resource type="PackedScene" uid="uid://utsni4j0468l" path="res://Assets/Armas/m16.glb" id="42_103li"]
+[ext_resource type="Texture2D" uid="uid://v1u5ynp2nfja" path="res://Imagenes/fotos angel/Palafitos.jpg" id="43_liubf"]
 [ext_resource type="PackedScene" uid="uid://dh7rstcg4qydr" path="res://Scenes/Mapa/inicio/inicio.tscn" id="44_l8dmy"]
+[ext_resource type="Texture2D" uid="uid://c7t8we63lsctk" path="res://Imagenes/fotos angel/laguna de sinamaica.jpg" id="44_u5isc"]
 [ext_resource type="PackedScene" uid="uid://du2tlneaqgenb" path="res://Assets/Puente/PuEnTe1.glb" id="45_fd8l4"]
+[ext_resource type="PackedScene" uid="uid://di23ejwgugiap" path="res://Assets/Decoracion/CosaExtraña.glb" id="50_idl15"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -95,9 +100,9 @@ text = "Bollos pelones
 El bollo pelón es un plato típico de la cocina zuliana que consiste en un bollito de masa de maíz relleno de guiso de carne o pollo, que se hierve y se baña en una salsa usualmente a base de tomates."
 
 [sub_resource type="TextMesh" id="TextMesh_oprxo"]
-text = "Astolfo José Romero Chacín
+text = "Sierra de perija
 
-Nació en Maracaibo el 8 de febrero de 1950 y falleció en Maracaibo el 20 de mayo de 2000, conocido también por su apodo El Parroquiano, fue un cantante, músico, compositor y actor venezolano, que se especializaba en el género folclórico venezolano conocido como gaita zuliana."
+La serranía del Perijá, también conocida como sierra de Perijá, es el ramal más septentrional de la cordillera de los Andes, situada entre Colombia y Venezuela."
 
 [sub_resource type="TextMesh" id="TextMesh_nkd0b"]
 text = "Neguito Borjas
@@ -236,34 +241,6 @@ edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 4, 3, 2, 5, 5, 4,
 edge_face_indices = PackedInt32Array(0, 5, 0, 2, 0, 1, 0, 3, 1, 3, 1, 2, 1, 4, 2, 4, 2, 5, 3, 4, 3, 5, 4, 5)
 face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
 face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 4, 3, 2, 5, 6, 5, 2, 1, 0, 3, 4, 7, 6, 7, 4, 5, 6, 1, 0, 7)
-active_vertex = -1
-active_edge = -1
-active_face = -1
-active_face_vertex = 0
-
-[sub_resource type="Resource" id="Resource_qyrh8"]
-script = ExtResource("19_8qer4")
-selected = false
-active = false
-collsion = true
-physics_layer = 0
-physics_mask = 0
-vertex_points = PackedVector3Array(50, 0, -8.74228e-08, 0, 0, 0, 0, 0, 32, 50, 0, 32, 50, 1, 32, 0, 1, 32, 0, 1, 0, 50, 1, -8.74228e-08)
-vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
-edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
-face_uv_transform = Array[Transform2D]([Transform2D(0, -1, 1, 0, 62, 39), Transform2D(0, 0, 0, 1, 63, -23), Transform2D(0, 0, 0, 1, 3, -23), Transform2D(0, 0, 0, 1, 3, -23), Transform2D(0, -0.1, 0.1, 0, 5.3, 2.1), Transform2D(0, 0, 0, 1, 63, -23)])
-face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
-face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-face_selected = PackedByteArray(0, 0, 0, 1, 0, 0)
-face_vertex_face_index = PackedInt32Array(0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5)
-face_vertex_vertex_index = PackedInt32Array(0, 1, 2, 3, 4, 3, 2, 5, 6, 5, 2, 1, 0, 3, 4, 7, 6, 7, 4, 5, 0, 7, 6, 1)
-face_vertex_normal = PackedVector3Array(0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, -1.74846e-09, 0, -1, -1.74846e-09, 0, -1, -1.74846e-09, 0, -1, -1.74846e-09, 0, -1)
-face_vertex_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 4, 3, 2, 5, 5, 4, 6, 5, 1, 6, 4, 7, 7, 0, 6, 7)
-edge_face_indices = PackedInt32Array(0, 5, 0, 2, 0, 1, 0, 3, 1, 3, 1, 2, 1, 4, 2, 4, 2, 5, 3, 4, 3, 5, 4, 5)
-face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
-face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 4, 3, 2, 5, 6, 5, 2, 1, 0, 3, 4, 7, 6, 7, 4, 5, 0, 7, 6, 1)
 active_vertex = -1
 active_edge = -1
 active_face = -1
@@ -4382,9 +4359,9 @@ active_face = -1
 active_face_vertex = 0
 
 [sub_resource type="TextMesh" id="TextMesh_kh1m2"]
-text = "Lago de Maracaibo
+text = "Laguna de sinamaica
 
-Ubicado en la parte más occidental de Venezuela entre los estados de Zulia, Trujillo y Mérida, es una notable masa de agua dulce costera. Este lago, que algunos autores definen como una gran bahía semicerrada y salobre, es más comúnmente conocido simplemente como un lago. Sin embargo, en la actualidad, debido a sus características geológicas, no debería considerarse como tal"
+La laguna de Sinamaica, habitada mayoritariamente por las etnias añú y wayú, cuyo nombre significa \"gente de agua\", es una de las joyas del estado Zulia en Venezuela. "
 
 [node name="Mapa" type="Node3D"]
 script = ExtResource("1_44um2")
@@ -4585,6 +4562,33 @@ texto = SubResource("TextMesh_3k8jj")
 transform = Transform3D(-3.72026e-16, -1.19249e-08, -0.769543, 0.713715, -4.37114e-08, 0, -3.11975e-08, -1, 9.17671e-09, 14.4689, 11.9305, 75.8771)
 texto = SubResource("TextMesh_oprxo")
 
+[node name="Marco Anu" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(-3.30111e-16, -1.19249e-08, -0.652377, 0.633303, -4.37114e-08, 0, -2.76826e-08, -1, 7.77952e-09, -25.618, 11.9305, 49.8763)
+texto = SubResource("TextMesh_oprxo")
+derecha = false
+
+[node name="Sprite3D2" type="Sprite3D" parent="Marco Anu"]
+transform = Transform3D(-3.19102e-08, 1, -4.37114e-08, -3.55271e-15, -4.37114e-08, -1, -0.730021, -4.37114e-08, 0, 0, -0.100311, -0.115734)
+texture = ExtResource("6_wlh5f")
+
+[node name="Marco Vacio 1" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(1.21004e-15, 4.37114e-08, 0.652377, 0.633303, -4.37114e-08, 0, 2.76826e-08, 1, -2.85163e-08, -34.3673, 11.9305, 34.1138)
+texto = SubResource("TextMesh_oprxo")
+derecha = false
+
+[node name="Sprite3D2" type="Sprite3D" parent="Marco Vacio 1"]
+transform = Transform3D(-2.95228e-08, 1.22752, -4.37114e-08, -2.84217e-14, -5.36568e-08, -0.999999, -0.675404, -5.36568e-08, 0, 0, -0.100311, -0.11573)
+texture = ExtResource("7_acxnl")
+
+[node name="Marco Vacio 2" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(1.21004e-15, 4.37114e-08, 0.652377, 0.633303, -4.37114e-08, 0, 2.76826e-08, 1, -2.85163e-08, -26.8698, 11.9305, 34.1138)
+texto = SubResource("TextMesh_oprxo")
+derecha = false
+
+[node name="Sprite3D2" type="Sprite3D" parent="Marco Vacio 2"]
+transform = Transform3D(-3.19102e-08, 1, -4.37114e-08, -7.10543e-15, -4.37114e-08, -0.999999, -0.730021, -4.37114e-08, 7.10543e-15, 0, -0.100311, -0.115734)
+texture = ExtResource("6_wlh5f")
+
 [node name="Marco Neguito" parent="." instance=ExtResource("5_iqygw")]
 transform = Transform3D(1.43366e-15, 4.37114e-08, 0.784244, 0.750335, -4.37114e-08, 0, 3.27982e-08, 1, -3.42804e-08, 14.8274, 11.9356, 59.1)
 texto = SubResource("TextMesh_nkd0b")
@@ -4757,12 +4761,6 @@ materials = Array[Material]([ExtResource("18_q2qk8")])
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21, -1, -45.742)
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_vviw4")
-materials = Array[Material]([ExtResource("18_q2qk8")])
-
-[node name="PC3" type="Node3D" parent="CyclopsBlock0"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -18, 13, -47.742)
-script = ExtResource("18_jdkkt")
-block_data = SubResource("Resource_qyrh8")
 materials = Array[Material]([ExtResource("18_q2qk8")])
 
 [node name="Block_0" type="Node3D" parent="CyclopsBlock0"]
@@ -5251,7 +5249,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00452328, 0.967991, 0.51873
 shape = SubResource("BoxShape3D_73j0m")
 
 [node name="SillaAfuera" parent="Silla PB2/Silla 2" instance=ExtResource("24_ujkbo")]
-transform = Transform3D(1.99655, 0, 4.9738e-14, 0, 1.5108, 0, 4.26326e-14, 0, 2.70453, -34.9158, -0.402514, -0.547903)
+transform = Transform3D(1.99655, 0, 4.26326e-14, 0, 1.5108, 0, 4.9738e-14, 0, 2.70453, -34.9158, -0.402514, -0.547903)
 
 [node name="Faro PB" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -20)
@@ -5912,6 +5910,23 @@ transform = Transform3D(1, 0, 0, 0, 0.114937, -0.993373, 0, 0.993373, 0.114937, 
 transform = Transform3D(6.31613e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -7.789, 12.2009, 67.7687)
 texto = SubResource("TextMesh_kh1m2")
 
+[node name="Marco Palafito" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(2.76086e-15, 4.37114e-08, -2.12103, 1.44496, -4.37114e-08, 0, -6.31612e-08, -1, -9.27132e-08, -15.9186, 12.8544, 57.9268)
+texto = SubResource("TextMesh_kh1m2")
+derecha = false
+
+[node name="Sprite3D2" type="Sprite3D" parent="Marco Palafito"]
+transform = Transform3D(-2.36295e-08, 0.545637, -4.27848e-08, -1.42109e-14, -2.38505e-08, -0.978802, -0.54058, -2.38505e-08, 1.77636e-15, -0.107207, -0.0670433, -0.23099)
+texture = ExtResource("43_liubf")
+
+[node name="Marco Laguna de sinamaica" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(6.31612e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -38.8721, 12.2009, 41.7696)
+texto = SubResource("TextMesh_kh1m2")
+
+[node name="Sprite3D2" type="Sprite3D" parent="Marco Laguna de sinamaica"]
+transform = Transform3D(-2.92714e-08, 0.595758, -4.27848e-08, 4.26326e-14, -2.60413e-08, -0.978802, -0.669651, -2.60414e-08, 3.55271e-15, -0.00236607, -0.0670433, -0.204445)
+texture = ExtResource("44_u5isc")
+
 [node name="m16" parent="." instance=ExtResource("42_103li")]
 transform = Transform3D(1, 0, 0, 0, 0.570398, -0.821368, 0, 0.821368, 0.570398, -0.207732, 0.669401, -18.0386)
 
@@ -5938,7 +5953,8 @@ transform = Transform3D(-0.0530402, -7.42947, 1.9825, 1.66398, -0.00907408, 0.00
 texto = SubResource("TextMesh_3k8jj")
 
 [node name="Marco6" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
-transform = Transform3D(0.0364479, 1.65196, 4.60657, 1.23497, 0.000496598, 0.00563843, 0.00399212, 0.768581, -0.104725, -33.3081, 3.18348, -4.85133)
+transform = Transform3D(0.0364479, 1.65196, 4.60657, 1.23497, 0.000496598, 0.00563843, 0.00399212, 0.768581, -0.104725, -33.308, 3.18348, -4.85133)
+derecha = false
 
 [node name="Marco7" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
 transform = Transform3D(0.0364478, 1.65196, 4.60657, 1.23497, 0.000496598, 0.00563844, 0.00399212, 0.768581, -0.104725, 0.88623, 3.22525, -5.58591)
@@ -5951,3 +5967,9 @@ transform = Transform3D(-5.42316, -0.246745, 25.3699, -0.00161304, 7.74098, 0.03
 
 [node name="Pedestal 3" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(-5.42316, -0.248456, 25.3698, -0.00161304, 7.79464, 0.0309856, -2.53236, 0.00396607, -0.541312, 62.4521, 0.822097, -6.20536)
+
+[node name="CosaExtraña2" parent="." instance=ExtResource("50_idl15")]
+transform = Transform3D(-4.37114e-08, -7.47453, 0, 1, -3.26722e-07, 0, 0, 0, 1, -7.95819, 8.42503, 58.9823)
+
+[node name="CosaExtraña3" parent="." instance=ExtResource("50_idl15")]
+transform = Transform3D(0.0243712, -0.000519117, -0.999701, 0.997207, -0.0212482, 0.0244322, -0.00522294, -4.05931, -4.36983e-08, -23.8875, 8.42503, 58.1318)

@@ -8,9 +8,16 @@ extends StaticBody3D
 @export var texto = TextMesh
 @onready var label_3d = %Label3D
 @onready var animation_player = $AnimationPlayer
+@export var derecha = true
+@onready var texto_cuadro = $Texto
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if derecha:
+		texto_cuadro.position = Vector3(-0.309,1.551,5.518)
+	else:
+		texto_cuadro.position = Vector3(-0.309,1.551,-5.518)
+		
 	label_3d.text = texto.text
 	if imagen != null:
 		sprite_3d.texture = imagen

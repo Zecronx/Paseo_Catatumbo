@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bd5l43ieex87v"
+path.s3tc="res://.godot/imported/Flores3_rocky_trail_02_rough.png-371e10e8a90518451c08f9d05d41f67d.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "6f2e5b0961c241f7568dde45caa27d81"
+}
+
+[deps]
+
+source_file="res://Assets/Decoracion/Flores3_rocky_trail_02_rough.png"
+dest_files=["res://.godot/imported/Flores3_rocky_trail_02_rough.png-371e10e8a90518451c08f9d05d41f67d.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

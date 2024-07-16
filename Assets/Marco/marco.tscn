@@ -98,7 +98,7 @@ wait_time = 2.0
 one_shot = true
 
 [node name="Texto" type="Sprite3D" parent="."]
-transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, -0.308821, 1.55146, 5.51821)
+transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, -0.308821, 1.55146, -5.326)
 modulate = Color(0, 0, 0, 0.290196)
 pixel_size = 4.8861
 billboard = 1
