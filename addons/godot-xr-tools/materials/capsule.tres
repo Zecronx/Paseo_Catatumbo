@@ -1,7 +1,6 @@
-[gd_resource type="StandardMaterial3D" format=2]
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://l5wssxfeidln"]
 
 [resource]
-flags_transparent = true
-albedo_color = Color( 0.0337219, 0.241112, 0.863281, 0.497255 )
+transparency = 1
+albedo_color = Color(0.662703, 0.924713, 1, 0.345098)
 roughness = 0.0
-
