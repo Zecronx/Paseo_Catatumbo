@@ -1,4 +1,4 @@
-[gd_scene load_steps=220 format=3 uid="uid://ddkpwki1v0iv"]
+[gd_scene load_steps=223 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cbfxv1tffjfyr" path="res://Assets/Marco/marco_vertical.tscn" id="5_iqygw"]
@@ -18,6 +18,7 @@
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="18_jdkkt"]
 [ext_resource type="Material" uid="uid://ddeqaxul80ico" path="res://Assets/texturas_adicionales/WoodFloor008_1K-JPG/Wood008.tres" id="18_q2qk8"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="19_8qer4"]
+[ext_resource type="Material" uid="uid://l5wssxfeidln" path="res://addons/godot-xr-tools/materials/capsule.tres" id="20_yeal6"]
 [ext_resource type="Material" uid="uid://cn111t8nun0hr" path="res://Assets/Pared/pared.tres" id="21_8brsi"]
 [ext_resource type="PackedScene" uid="uid://bppr5aaueiphk" path="res://Assets/Sillas/SillaAfuera.glb" id="24_ujkbo"]
 [ext_resource type="PackedScene" uid="uid://ci6yg2m1vmbhh" path="res://Assets/Faro/Farol.glb" id="25_q8tja"]
@@ -43,6 +44,7 @@
 [ext_resource type="PackedScene" uid="uid://dfhb57n8vx14t" path="res://Assets/Armas/Skorpion.glb" id="40_1tjl7"]
 [ext_resource type="PackedScene" uid="uid://utsni4j0468l" path="res://Assets/Armas/m16.glb" id="42_103li"]
 [ext_resource type="PackedScene" uid="uid://dh7rstcg4qydr" path="res://Scenes/Mapa/inicio/inicio.tscn" id="44_l8dmy"]
+[ext_resource type="PackedScene" uid="uid://du2tlneaqgenb" path="res://Assets/Puente/PuEnTe1.glb" id="45_fd8l4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -2283,7 +2285,7 @@ active_edge = -1
 active_face = 4
 active_face_vertex = 0
 
-[sub_resource type="Resource" id="Resource_s6ui8"]
+[sub_resource type="Resource" id="Resource_rb01u"]
 script = ExtResource("19_8qer4")
 selected = false
 active = false
@@ -2297,7 +2299,7 @@ face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
 face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(0.1, 0, 0, 0.1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
 face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
 face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-face_selected = PackedByteArray(0, 0, 0, 0, 1, 0)
+face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
 face_vertex_face_index = PackedInt32Array(0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5)
 face_vertex_vertex_index = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
 face_vertex_normal = PackedVector3Array(-1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1)
@@ -2308,7 +2310,7 @@ face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
 face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
 active_vertex = -1
 active_edge = -1
-active_face = 4
+active_face = -1
 active_face_vertex = 0
 
 [sub_resource type="Resource" id="Resource_anary"]
@@ -2362,6 +2364,34 @@ edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4,
 edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
 face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
 face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
+active_vertex = -1
+active_edge = -1
+active_face = -1
+active_face_vertex = 0
+
+[sub_resource type="Resource" id="Resource_a4c8a"]
+script = ExtResource("19_8qer4")
+selected = false
+active = false
+collsion = true
+physics_layer = 0
+physics_mask = 0
+vertex_points = PackedVector3Array(3, 2, 6, 3, 0, 6, 0, 0, 6, 0, 2, 6, 0, 0, 1, 0, 2, 1, 3, 0, 1, 3, 2, 1)
+vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
+face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
+face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
+face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
+face_vertex_face_index = PackedInt32Array(0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5)
+face_vertex_vertex_index = PackedInt32Array(0, 1, 2, 3, 4, 5, 3, 2, 6, 4, 2, 1, 7, 0, 3, 5, 7, 5, 4, 6, 7, 6, 1, 0)
+face_vertex_normal = PackedVector3Array(0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0)
+face_vertex_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 4, 5, 5, 3, 2, 4, 6, 4, 1, 6, 7, 0, 5, 7, 6, 7)
+edge_face_indices = PackedInt32Array(0, 5, 0, 2, 0, 1, 0, 3, 1, 4, 1, 3, 1, 2, 2, 4, 2, 5, 3, 5, 3, 4, 4, 5)
+face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
+face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 4, 5, 3, 2, 6, 4, 2, 1, 7, 0, 3, 5, 7, 5, 4, 6, 7, 6, 1, 0)
 active_vertex = -1
 active_edge = -1
 active_face = -1
@@ -4532,7 +4562,7 @@ transform = Transform3D(1.21118e-15, 4.20504e-08, 0.654542, 0.633898, -4.20504e-
 texto = SubResource("TextMesh_segdq")
 
 [node name="Marco patacones" parent="." instance=ExtResource("10_chpvt")]
-transform = Transform3D(1.3029e-15, 4.20504e-08, 0.684918, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.99387e-08, 35.6479, 2.02348, 34.1038)
+transform = Transform3D(1.3029e-15, 4.20504e-08, 0.684918, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.99387e-08, 34.9407, 2.02348, 34.0763)
 texto = SubResource("TextMesh_c8bag")
 
 [node name="Marco pastelitos" parent="." instance=ExtResource("10_chpvt")]
@@ -4598,7 +4628,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01284, 0.015274, -42.6444)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98716, 0.015274, 0.340801)
 
 [node name="Hab Puente" type="Sprite3D" parent="."]
-transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, 0.129229, 2.86999, 63.0971)
+transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, 0.129229, 3.62342, 67.7219)
 modulate = Color(0, 0, 0, 0.290196)
 pixel_size = 4.8861
 billboard = 1
@@ -5175,7 +5205,7 @@ materials = Array[Material]([ExtResource("29_bpuhh")])
 [node name="Block_85" type="Node3D" parent="CyclopsBlock1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 19, 36.2581)
 script = ExtResource("18_jdkkt")
-block_data = SubResource("Resource_s6ui8")
+block_data = SubResource("Resource_rb01u")
 materials = Array[Material]([ExtResource("29_bpuhh")])
 
 [node name="Block_86" type="Node3D" parent="CyclopsBlock1"]
@@ -5191,6 +5221,12 @@ visible = false
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_7oxsm")
 materials = Array[Material]([ExtResource("21_8brsi")])
+
+[node name="Block_22" type="Node3D" parent="CyclopsBlock1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 1, 38.2581)
+script = ExtResource("18_jdkkt")
+block_data = SubResource("Resource_a4c8a")
+materials = Array[Material]([ExtResource("20_yeal6")])
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("18_fc8dd")
@@ -5215,6 +5251,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00452328, 0.967991, 0.51873
 shape = SubResource("BoxShape3D_73j0m")
 
 [node name="SillaAfuera" parent="Silla PB2/Silla 2" instance=ExtResource("24_ujkbo")]
+transform = Transform3D(1.99655, 0, 4.9738e-14, 0, 1.5108, 0, 4.26326e-14, 0, 2.70453, -34.9158, -0.402514, -0.547903)
 
 [node name="Faro PB" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -20)
@@ -5230,7 +5267,7 @@ transform = Transform3D(0.65888, 0, 0, 0, 0.701797, 0, 0, 0, 1, 28.3, 2, 34.013)
 texture = ExtResource("26_mbr0n")
 
 [node name="Patacon" type="Sprite3D" parent="."]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 35.5288, 2, 34.013)
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 34.7828, 2, 34.013)
 texture = ExtResource("27_pmncg")
 
 [node name="Pastelitos" type="Sprite3D" parent="."]
@@ -5790,7 +5827,16 @@ transform = Transform3D(1, 0, 0, 0, 0.991347, 0.13127, 0, -0.13127, 0.991347, 0,
 [node name="AlfombraRoja" type="Node3D" parent="."]
 
 [node name="AlfombraRoja" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.0314, 0.292848, 40.0736)
+transform = Transform3D(5.58965, 0, 0, 0, 1, 0, 0, 0, 1, -0.265294, 0.0138487, 58.5138)
+
+[node name="AlfombraRoja2" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
+transform = Transform3D(5.58965, 0, 0, 0, 1, 0, 0, 0, 1, -0.265294, 0.0378891, 70.824)
+
+[node name="AlfombraRoja3" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
+transform = Transform3D(-2.74943e-07, 0, -1, 0, 1, 0, 6.28995, 0, -4.37114e-08, 6.22845, 0.0196317, 63.6705)
+
+[node name="AlfombraRoja4" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
+transform = Transform3D(-2.74943e-07, 0, -1, 0, 1, 0, 6.28995, 0, -4.37114e-08, -4.13879, 0.0245014, 63.7314)
 
 [node name="lampara de techo" parent="." instance=ExtResource("7_lmtg1")]
 transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, 33.0484, 6.97733, 42.4978)
@@ -5825,7 +5871,7 @@ omni_range = 30.0
 omni_attenuation = 0.4
 
 [node name="lampara de techo5" parent="." instance=ExtResource("7_lmtg1")]
-transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, 0.23, 7, 65.8918)
+transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, 1.21939, 7.04508, 65.8918)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo5"]
 transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, 0)
@@ -5871,3 +5917,37 @@ transform = Transform3D(1, 0, 0, 0, 0.570398, -0.821368, 0, 0.821368, 0.570398, 
 
 [node name="Node3D" parent="." instance=ExtResource("44_l8dmy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.33326, 0, -50.8332)
+
+[node name="MARCOS PUENTE" type="Node3D" parent="."]
+transform = Transform3D(-0.0264686, -0.000212489, -1.24052, -0.000776867, 0.657814, 0.00124469, 0.123821, 0.00408176, -0.265171, 1.89271, 0.988172, 63.8606)
+
+[node name="PuEnTe1" parent="MARCOS PUENTE" instance=ExtResource("45_fd8l4")]
+transform = Transform3D(1, 3.72529e-09, 0, -2.32831e-10, 1, 2.32831e-10, 0, -5.82077e-11, 1, 0, 0, 0)
+
+[node name="Marco3" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
+transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628308, -0.770887, 0.0982926, 61.5929, 3.27553, 5.73181)
+
+[node name="Marco4" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
+transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628308, -0.770887, 0.0982926, 27.3885, 3.23376, 6.46162)
+
+[node name="Marco5" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
+transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628307, -0.770887, 0.0982926, -7.82242, 3.19075, 7.21291)
+
+[node name="Marco bollitos2" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
+transform = Transform3D(-0.0530402, -7.42947, 1.9825, 1.66398, -0.00907408, 0.000589664, 0.000846676, 0.158521, 0.925734, 78.0137, 3.79564, -1.05727)
+texto = SubResource("TextMesh_3k8jj")
+
+[node name="Marco6" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
+transform = Transform3D(0.0364479, 1.65196, 4.60657, 1.23497, 0.000496598, 0.00563843, 0.00399212, 0.768581, -0.104725, -33.3081, 3.18348, -4.85133)
+
+[node name="Marco7" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
+transform = Transform3D(0.0364478, 1.65196, 4.60657, 1.23497, 0.000496598, 0.00563844, 0.00399212, 0.768581, -0.104725, 0.88623, 3.22525, -5.58591)
+
+[node name="Marco8" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
+transform = Transform3D(0.0364478, 1.65196, 4.60657, 1.23497, 0.000496599, 0.00563844, 0.00399212, 0.768581, -0.104725, 36.0863, 3.26826, -6.3421)
+
+[node name="Pedestal 2" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(-5.42316, -0.246745, 25.3699, -0.00161304, 7.74098, 0.0309856, -2.53236, 0.00393876, -0.541312, 85.3188, 0.822339, 4.47222)
+
+[node name="Pedestal 3" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(-5.42316, -0.248456, 25.3698, -0.00161304, 7.79464, 0.0309856, -2.53236, 0.00396607, -0.541312, 62.4521, 0.822097, -6.20536)
