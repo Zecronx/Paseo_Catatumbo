@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://dh7rstcg4qydr"]
+[gd_scene load_steps=95 format=3 uid="uid://dh7rstcg4qydr"]
 
 [ext_resource type="Material" uid="uid://bhxyxi3dwxpu5" path="res://Assets/texturas_adicionales/Grass004_1K-JPG/Grass004_1K-JPG_Color.tres" id="1_t0t4s"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_blocks.gd" id="2_ok265"]
@@ -14,6 +14,13 @@
 [ext_resource type="Script" path="res://Scenes/Mapa/inicio/TPIncorrecto.gd" id="11_hpf07"]
 [ext_resource type="Script" path="res://Scenes/Mapa/TPCorrecto.gd" id="12_bqw2r"]
 [ext_resource type="PackedScene" uid="uid://bu7u1gaihpodm" path="res://Assets/LamparaTecho/lampara de techo.glb" id="13_vrwc1"]
+[ext_resource type="PackedScene" uid="uid://elaq75lfvloq" path="res://Assets/Bench/banco.glb" id="15_aitlh"]
+[ext_resource type="Material" uid="uid://bjgy8667pr2df" path="res://Assets/texturas_adicionales/PavingStones138_1K-JPG/PavingStones.tres" id="16_bg16e"]
+[ext_resource type="PackedScene" uid="uid://ci6yg2m1vmbhh" path="res://Assets/Faro/Farol.glb" id="17_6qx8h"]
+[ext_resource type="PackedScene" uid="uid://dlsoi2rpikdf6" path="res://Assets/Arboles/Araguaney/Araguaney.glb" id="18_djmma"]
+[ext_resource type="PackedScene" uid="uid://cwc46ktcobum0" path="res://Assets/Arbustos/Arbusto1/bushModificado.tscn" id="19_4304e"]
+[ext_resource type="PackedScene" uid="uid://cw0looohkvmbo" path="res://Assets/Arbustos/Arbusto2/bushModificado2.tscn" id="20_xriu4"]
+[ext_resource type="Script" path="res://Scenes/Mapa/inicio/pregunta1.gd" id="21_4m2jf"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_3fkyu"]
 size = Vector3(50, 0.01, 50)
@@ -1712,6 +1719,27 @@ size = Vector3(1.56053, 7.22536, 1.66464)
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_mt2p6"]
 
+[sub_resource type="BoxMesh" id="BoxMesh_hdw8u"]
+material = ExtResource("16_bg16e")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s4sgt"]
+size = Vector3(0.653442, 4.18472, 0.621582)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6le7w"]
+size = Vector3(1.87112, 1.05594, 3.33551)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dw7ww"]
+size = Vector3(0.731445, 1.59906, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_65bav"]
+size = Vector3(1, 8.19922, 29.7573)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g3t1m"]
+size = Vector3(0.683105, 4.62097, 4.93252)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2u38x"]
+size = Vector3(3.90894, 5.21429, 1.42609)
+
 [node name="Node3D" type="Node3D"]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
@@ -2458,77 +2486,29 @@ transform = Transform3D(0.8, 0, 0, 0, 1.65, 0, 0, 0, 0.8, 0, 0, 0)
 transform = Transform3D(0.999964, 0, 0, 0, 0.999963, 0, 0, 0, 0.999964, 0.00235224, 2.12819, 0.00301957)
 shape = SubResource("BoxShape3D_1tyr7")
 
-[node name="lampara de techo7" parent="." instance=ExtResource("13_vrwc1")]
+[node name="lampara de techo1" parent="." instance=ExtResource("13_vrwc1")]
 transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, 0, 6.45809, -17.7153)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo7"]
+[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo1"]
 transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, 0)
 omni_range = 30.0
 omni_attenuation = 0.4
 
-[node name="lampara de techo9" parent="." instance=ExtResource("13_vrwc1")]
+[node name="lampara de techo2" parent="." instance=ExtResource("13_vrwc1")]
 transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, 0, 6.45809, -25.2332)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo9"]
+[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo2"]
 transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, 0)
 omni_range = 30.0
 omni_attenuation = 0.4
 
-[node name="lampara de techo8" parent="." instance=ExtResource("13_vrwc1")]
+[node name="lampara de techo3" parent="." instance=ExtResource("13_vrwc1")]
 transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, 0, 6.45809, -9.71842)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo8"]
+[node name="OmniLight3D" type="OmniLight3D" parent="lampara de techo3"]
 transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, -1.90735e-06)
 omni_range = 30.0
 omni_attenuation = 0.4
-
-[node name="Pregunta1" type="Sprite3D" parent="."]
-transform = Transform3D(2.23191, 0, 0, 0, 0.540225, 0, 0, 0, 0.639319, 0, 5.04728, -12.3987)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Pregunta1"]
-transform = Transform3D(0.814711, 0, 0, 0, 3.7022, 0, 0, 0, 1, 0, 0.145649, 0)
-pixel_size = 0.01
-text = "¿Cual es la capital del zulia?"
-font_size = 40
-
-[node name="Respuesta1" type="Sprite3D" parent="."]
-transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, -4.39722, 2.17214, -12.3987)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Respuesta1"]
-transform = Transform3D(1.64691, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
-pixel_size = 0.01
-text = "Maracaibo"
-font_size = 40
-
-[node name="Respuesta2" type="Sprite3D" parent="."]
-transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, 0.0523887, 2.17214, -12.3987)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Respuesta2"]
-transform = Transform3D(2.08114, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
-pixel_size = 0.01
-text = "Santa Rita"
-font_size = 40
-
-[node name="Respuesta3" type="Sprite3D" parent="."]
-transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, 4.50588, 2.17214, -12.3987)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Respuesta3"]
-transform = Transform3D(2.0811, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
-pixel_size = 0.01
-text = "Cabimas"
-font_size = 40
 
 [node name="Pregunta2" type="Sprite3D" parent="."]
 transform = Transform3D(2.23191, 0, 0, 0, 0.540225, 0, 0, 0, 0.639319, 0, 5.04728, -20.4054)
@@ -2626,6 +2606,466 @@ pixel_size = 0.01
 text = "Cabimas"
 font_size = 40
 
+[node name="CaminoDePiedra" type="MeshInstance3D" parent="."]
+transform = Transform3D(6.6428, 0, 0, 0, 0.120465, 0, 0, 0, 23.9966, 0, -0.0355067, 11.9479)
+mesh = SubResource("BoxMesh_hdw8u")
+
+[node name="Faros" type="Node3D" parent="."]
+
+[node name="Faro1" type="StaticBody3D" parent="Faros"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Faros/Faro1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00445557, 2.09544, -0.0290527)
+shape = SubResource("BoxShape3D_s4sgt")
+
+[node name="Farol" parent="Faros/Faro1" instance=ExtResource("17_6qx8h")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Faros/Faro1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+omni_range = 10.0
+omni_attenuation = 0.8
+
+[node name="Faro2" type="StaticBody3D" parent="Faros"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Faros/Faro2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00445557, 2.09544, -0.0290527)
+shape = SubResource("BoxShape3D_s4sgt")
+
+[node name="Farol" parent="Faros/Faro2" instance=ExtResource("17_6qx8h")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Faros/Faro2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+omni_range = 10.0
+omni_attenuation = 0.8
+
+[node name="Faro3" type="StaticBody3D" parent="Faros"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 9)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Faros/Faro3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00445557, 2.09544, -0.0290527)
+shape = SubResource("BoxShape3D_s4sgt")
+
+[node name="Farol" parent="Faros/Faro3" instance=ExtResource("17_6qx8h")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Faros/Faro3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+omni_range = 10.0
+omni_attenuation = 0.8
+
+[node name="Faro4" type="StaticBody3D" parent="Faros"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 9)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Faros/Faro4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00445557, 2.09544, -0.0290527)
+shape = SubResource("BoxShape3D_s4sgt")
+
+[node name="Farol" parent="Faros/Faro4" instance=ExtResource("17_6qx8h")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Faros/Faro4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+omni_range = 10.0
+omni_attenuation = 0.8
+
+[node name="Faro5" type="StaticBody3D" parent="Faros"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 15)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Faros/Faro5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00445557, 2.09544, -0.0290527)
+shape = SubResource("BoxShape3D_s4sgt")
+
+[node name="Farol" parent="Faros/Faro5" instance=ExtResource("17_6qx8h")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Faros/Faro5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+omni_range = 10.0
+omni_attenuation = 0.8
+
+[node name="Faro6" type="StaticBody3D" parent="Faros"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 15)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Faros/Faro6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00445557, 2.09544, -0.0290527)
+shape = SubResource("BoxShape3D_s4sgt")
+
+[node name="Farol" parent="Faros/Faro6" instance=ExtResource("17_6qx8h")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Faros/Faro6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+omni_range = 10.0
+omni_attenuation = 0.8
+
+[node name="Bancos" type="Node3D" parent="."]
+
+[node name="bench" type="StaticBody3D" parent="Bancos"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, 6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bancos/bench"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.085927, 0.537049, 0.0706582)
+shape = SubResource("BoxShape3D_6le7w")
+
+[node name="banco" parent="Bancos/bench" instance=ExtResource("15_aitlh")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Bancos/bench"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.684082, 1.29953, 0)
+shape = SubResource("BoxShape3D_dw7ww")
+
+[node name="bench2" type="StaticBody3D" parent="Bancos"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, 12)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bancos/bench2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.085927, 0.537049, 0.0706582)
+shape = SubResource("BoxShape3D_6le7w")
+
+[node name="banco" parent="Bancos/bench2" instance=ExtResource("15_aitlh")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Bancos/bench2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.684082, 1.29953, 0)
+shape = SubResource("BoxShape3D_dw7ww")
+
+[node name="bench3" type="StaticBody3D" parent="Bancos"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.5, 0, 6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bancos/bench3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.085927, 0.537049, 0.0706582)
+shape = SubResource("BoxShape3D_6le7w")
+
+[node name="banco" parent="Bancos/bench3" instance=ExtResource("15_aitlh")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Bancos/bench3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.684082, 1.29953, 0)
+shape = SubResource("BoxShape3D_dw7ww")
+
+[node name="bench4" type="StaticBody3D" parent="Bancos"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.5, 0, 12)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bancos/bench4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.085927, 0.537049, 0.0706582)
+shape = SubResource("BoxShape3D_6le7w")
+
+[node name="banco" parent="Bancos/bench4" instance=ExtResource("15_aitlh")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Bancos/bench4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.684082, 1.29953, 0)
+shape = SubResource("BoxShape3D_dw7ww")
+
+[node name="Araguaneys" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+
+[node name="MuroInvisible1" type="StaticBody3D" parent="Araguaneys"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.2155, 0.812952, 7.99745)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Araguaneys/MuroInvisible1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.59961, 1.79922)
+shape = SubResource("BoxShape3D_65bav")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Araguaneys/MuroInvisible1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.811515, 1.81049, -10.604)
+shape = SubResource("BoxShape3D_g3t1m")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Araguaneys/MuroInvisible1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4566, 1.81049, -10.619)
+shape = SubResource("BoxShape3D_g3t1m")
+
+[node name="MuroInvisible2" type="StaticBody3D" parent="Araguaneys"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.215, 0.813, 7.997)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Araguaneys/MuroInvisible2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.59961, 1.79922)
+shape = SubResource("BoxShape3D_65bav")
+
+[node name="Araguaney" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(3.10348, 0, 0, 0, 3.10348, 0, 0, 0, 3.10348, 8.88735, 0.00500011, 1.41631)
+
+[node name="Araguaney2" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-2.98921, 0, 0.834378, 0, 3.10348, 0, -0.834378, 0, -2.98921, 9.03045, 0.00500011, 6.40358)
+
+[node name="Araguaney3" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-2.98921, 0, 0.834378, 0, 3.10348, 0, -0.834378, 0, -2.98921, 9.03045, 0.00500011, 11.0149)
+
+[node name="Araguaney4" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-2.98921, 0, 0.834378, 0, 3.10348, 0, -0.834378, 0, -2.98921, 9.03045, 0.00500011, 15.956)
+
+[node name="Araguaney5" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-2.98921, 0, 0.834378, 0, 3.10348, 0, -0.834378, 0, -2.98921, 9.03045, 0.00500011, 20.9961)
+
+[node name="Araguaney11" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(3.10348, 0, 0, 0, 3.10348, 0, 0, 0, 3.10348, 10.5365, 0.00500011, -1.2409)
+
+[node name="Araguaney12" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-2.98921, 0, 0.834378, 0, 3.10348, 0, -0.834378, 0, -2.98921, 10.6796, 0.00500011, 3.74636)
+
+[node name="Araguaney13" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-2.98921, 0, 0.834378, 0, 3.10348, 0, -0.834378, 0, -2.98921, 10.6796, 0.00500011, 8.35765)
+
+[node name="Araguaney14" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-2.98921, 0, 0.834378, 0, 3.10348, 0, -0.834378, 0, -2.98921, 10.6796, 0.00500011, 13.2988)
+
+[node name="Araguaney15" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-2.98921, 0, 0.834378, 0, 3.10348, 0, -0.834378, 0, -2.98921, 10.6796, 0.00500011, 18.3389)
+
+[node name="Araguaney10" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(3.09506, 0, -0.228373, 0, 3.10348, 0, 0.228373, 0, 3.09506, 14.0845, 0.00500011, 1.33368)
+
+[node name="Araguaney9" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-2.91971, 0, 1.05208, 0, 3.10348, 0, -1.05208, 0, -2.91971, 13.8602, 0.00500011, 6.31795)
+
+[node name="Araguaney8" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-2.91971, 0, 1.05208, 0, 3.10348, 0, -1.05208, 0, -2.91971, 13.5209, 0.00500011, 10.9167)
+
+[node name="Araguaney7" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-2.91971, 0, 1.05208, 0, 3.10348, 0, -1.05208, 0, -2.91971, 13.1573, 0.00500011, 15.8445)
+
+[node name="Araguaney6" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-2.91971, 0, 1.05208, 0, 3.10348, 0, -1.05208, 0, -2.91971, 12.7864, 0.00500011, 20.8709)
+
+[node name="Araguaney16" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-3.10347, 0, 0.000974951, 0, 3.10348, 0, -0.000974951, 0, -3.10347, -9.88731, 0.00500011, 19.0606)
+
+[node name="Araguaney17" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(2.98895, 0, -0.835316, 0, 3.10348, 0, 0.835316, 0, 2.98895, -10.0288, 0.00500011, 14.0733)
+
+[node name="Araguaney18" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(2.98895, 0, -0.835316, 0, 3.10348, 0, 0.835316, 0, 2.98895, -10.0274, 0.00500011, 9.46196)
+
+[node name="Araguaney19" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(2.98895, 0, -0.835316, 0, 3.10348, 0, 0.835316, 0, 2.98895, -10.0258, 0.00500011, 4.5208)
+
+[node name="Araguaney20" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(2.98895, 0, -0.835316, 0, 3.10348, 0, 0.835316, 0, 2.98895, -10.0243, 0.00500011, -0.519275)
+
+[node name="Araguaney21" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-3.10347, 0, 0.000974951, 0, 3.10348, 0, -0.000974951, 0, -3.10347, -11.5373, 0.00500011, 21.7173)
+
+[node name="Araguaney22" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(2.98895, 0, -0.835316, 0, 3.10348, 0, 0.835316, 0, 2.98895, -11.6788, 0.00500011, 16.7299)
+
+[node name="Araguaney23" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(2.98895, 0, -0.835316, 0, 3.10348, 0, 0.835316, 0, 2.98895, -11.6774, 0.00500011, 12.1187)
+
+[node name="Araguaney24" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(2.98895, 0, -0.835316, 0, 3.10348, 0, 0.835316, 0, 2.98895, -11.6758, 0.00500011, 7.1775)
+
+[node name="Araguaney25" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(2.98895, 0, -0.835316, 0, 3.10348, 0, 0.835316, 0, 2.98895, -11.6742, 0.00500011, 2.13742)
+
+[node name="Araguaney26" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(-3.09499, 0, 0.229346, 0, 3.10348, 0, -0.229346, 0, -3.09499, -15.0845, 0.00500011, 19.1416)
+
+[node name="Araguaney27" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(2.91938, 0, -1.053, 0, 3.10347, 0, 1.053, 0, 2.91938, -14.8586, 0.00500011, 14.1574)
+
+[node name="Araguaney28" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(2.91938, 0, -1.053, 0, 3.10347, 0, 1.053, 0, 2.91938, -14.5178, 0.00500011, 9.55868)
+
+[node name="Araguaney29" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(2.91938, 0, -1.053, 0, 3.10347, 0, 1.053, 0, 2.91938, -14.1527, 0.00500011, 4.63103)
+
+[node name="Araguaney30" parent="Araguaneys" instance=ExtResource("18_djmma")]
+transform = Transform3D(2.91938, 0, -1.053, 0, 3.10347, 0, 1.053, 0, 2.91938, -13.7802, 0.00500011, -0.395265)
+
+[node name="Arbustos1" type="Node3D" parent="."]
+
+[node name="Bush_14" parent="Arbustos1" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.55673, 0, 0, 0, 3.55673, -19.234, 0.2, 16.3836)
+
+[node name="Bush_29" parent="Arbustos1" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.98355, 0, 0, 0, 3.98355, 0, 0, 0, 3.98355, -18, 0.2, 21.193)
+
+[node name="Bush_22" parent="Arbustos1" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.69213, 1.31805, -0.706824, -1.41295, 3.69118, -0.497446, 0.490354, 0.711762, 3.88865, -19.3032, 2.80505, 18.8518)
+
+[node name="Bush_23" parent="Arbustos1" instance=ExtResource("20_xriu4")]
+transform = Transform3D(-0.462743, 0.381361, 3.99965, -0.309438, 3.99864, -0.411149, -4.5304, -0.312071, -0.380449, -19.5003, 2.80505, 21.7974)
+
+[node name="Bush_12" parent="Arbustos1" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.55673, 0, 0, 0, 3.55673, -19.234, 0.2, 12.7907)
+
+[node name="Bush_19" parent="Arbustos1" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.54401, 0.300589, 0, -0.300589, 3.54401, -19.234, 2.70478, 10.7233)
+
+[node name="Bush_28" parent="Arbustos1" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.81301, 0.897968, -0.723359, -0.892826, 3.88062, 0.111029, 0.729696, 0.0558493, 3.91575, -19.3032, 2.80505, 15.259)
+
+[node name="Bush_13" parent="Arbustos1" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.55673, 0, 0, 0, 3.55673, -20.0117, 0.2, 4.29868)
+
+[node name="Bush_24" parent="Arbustos1" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.98355, 0, 0, 0, 3.98355, 0, 0, 0, 3.98355, -18.7777, 0.2, 9.10808)
+
+[node name="Bush_25" parent="Arbustos1" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.69213, 1.31805, -0.706824, -1.41295, 3.69118, -0.497446, 0.490354, 0.711762, 3.88865, -20.0809, 2.80505, 6.76691)
+
+[node name="Bush_15" parent="Arbustos1" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.55673, 0, 0, 0, 3.55673, -20.0117, 0.2, 0.705824)
+
+[node name="Bush_20" parent="Arbustos1" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.42487, 0.419726, 0, -0.290484, 4.94866, -20.0117, 2.70478, -1.7681)
+
+[node name="Bush_21" parent="Arbustos1" instance=ExtResource("19_4304e")]
+transform = Transform3D(-3.49851, -0.0541639, 0.638605, 0, 3.54401, 0.300589, -0.640898, 0.295668, -3.486, -20.0117, -0.945378, -2.71466)
+
+[node name="Bush_26" parent="Arbustos1" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.81301, 0.897968, -0.723359, -0.892826, 3.88062, 0.111029, 0.729696, 0.0558493, 3.91575, -20.0809, 2.80505, 3.17405)
+
+[node name="Arbustos2" type="Node3D" parent="."]
+
+[node name="Bush_16" parent="Arbustos2" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.55673, 0, 0, 0, 3.55673, 19.234, 0.2, 16.0682)
+
+[node name="Bush_30" parent="Arbustos2" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.98355, 0, 0, 0, 3.98355, 0, 0, 0, 3.98355, 19.234, 0.2, 20.8776)
+
+[node name="Bush_27" parent="Arbustos2" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.69213, 1.31805, -0.706824, -1.41295, 3.69118, -0.497446, 0.490354, 0.711762, 3.88865, 19.234, 2.80505, 18.5364)
+
+[node name="Bush_31" parent="Arbustos2" instance=ExtResource("20_xriu4")]
+transform = Transform3D(-0.462743, 0.381361, 3.99965, -0.309438, 3.99864, -0.411149, -4.5304, -0.312071, -0.380449, 19.234, 2.80505, 21.482)
+
+[node name="Bush_17" parent="Arbustos2" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.55673, 0, 0, 0, 3.55673, 19.234, 0.2, 12.4753)
+
+[node name="Bush_32" parent="Arbustos2" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.54401, 0.300589, 0, -0.300589, 3.54401, 19.234, 2.70478, 10.4079)
+
+[node name="Bush_33" parent="Arbustos2" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.81301, 0.897968, -0.723359, -0.892826, 3.88062, 0.111029, 0.729696, 0.0558493, 3.91575, 19.234, 2.80505, 14.9436)
+
+[node name="Bush_18" parent="Arbustos2" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.55673, 0, 0, 0, 3.55673, 19.234, 0.2, 3.98327)
+
+[node name="Bush_34" parent="Arbustos2" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.98355, 0, 0, 0, 3.98355, 0, 0, 0, 3.98355, 19.234, 0.2, 8.79267)
+
+[node name="Bush_35" parent="Arbustos2" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.69213, 1.31805, -0.706824, -1.41295, 3.69118, -0.497446, 0.490354, 0.711762, 3.88865, 19.234, 2.80505, 6.4515)
+
+[node name="Bush_36" parent="Arbustos2" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.55673, 0, 0, 0, 3.55673, 19.234, 0.2, 0.390413)
+
+[node name="Bush_37" parent="Arbustos2" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.42487, 0.419726, 0, -0.290484, 4.94866, 19.234, 2.70478, -2.08351)
+
+[node name="Bush_38" parent="Arbustos2" instance=ExtResource("19_4304e")]
+transform = Transform3D(-3.49851, -0.0541639, 0.638605, 0, 3.54401, 0.300589, -0.640898, 0.295668, -3.486, 19.234, -0.945378, -3.03007)
+
+[node name="Bush_39" parent="Arbustos2" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.81301, 0.897968, -0.723359, -0.892826, 3.88062, 0.111029, 0.729696, 0.0558493, 3.91575, 19.234, 2.80505, 2.85864)
+
+[node name="Arbustos3" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1.49064, 0, 1, 0, 1, 0, -6.51581e-08, 12.6046, 0, 5.23922)
+
+[node name="Bush_16" parent="Arbustos3" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.55673, 0, 0, 0, 3.55673, 19.234, 0.2, 16.0682)
+
+[node name="Bush_30" parent="Arbustos3" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.98355, 0, 0, 0, 3.98355, 0, 0, 0, 3.98355, 19.234, 0.2, 20.8776)
+
+[node name="Bush_27" parent="Arbustos3" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.69213, 1.31805, -0.706824, -1.41295, 3.69118, -0.497446, 0.490354, 0.711762, 3.88865, 19.234, 2.80505, 18.5364)
+
+[node name="Bush_31" parent="Arbustos3" instance=ExtResource("20_xriu4")]
+transform = Transform3D(-0.462743, 0.381361, 3.99965, -0.309438, 3.99864, -0.411149, -4.5304, -0.312071, -0.380449, 19.234, 2.80505, 21.482)
+
+[node name="Bush_17" parent="Arbustos3" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.55673, 0, 0, 0, 3.55673, 19.234, 0.2, 12.4753)
+
+[node name="Bush_32" parent="Arbustos3" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.54401, 0.300589, 0, -0.300589, 3.54401, 19.234, 2.70478, 10.4079)
+
+[node name="Bush_33" parent="Arbustos3" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.81301, 0.897968, -0.723359, -0.892826, 3.88062, 0.111029, 0.729696, 0.0558493, 3.91575, 19.234, 2.80505, 14.9436)
+
+[node name="Bush_18" parent="Arbustos3" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.55673, 0, 0, 0, 3.55673, 19.234, 0.2, 3.98327)
+
+[node name="Bush_34" parent="Arbustos3" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.98355, 0, 0, 0, 3.98355, 0, 0, 0, 3.98355, 19.234, 0.2, 8.79267)
+
+[node name="Bush_35" parent="Arbustos3" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.70549, -1.44814, -0.202197, 1.37751, 3.64211, -0.840338, 0.490354, 0.711762, 3.88865, 19.234, 2.80505, 6.4515)
+
+[node name="Bush_36" parent="Arbustos3" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.55673, 0, 0, 0, 3.55673, 19.234, 0.2, 0.390413)
+
+[node name="Bush_37" parent="Arbustos3" instance=ExtResource("19_4304e")]
+transform = Transform3D(3.55673, 0, 0, 0, 3.42487, 0.419726, 0, -0.290484, 4.94866, 19.234, 2.70478, -2.08351)
+
+[node name="Bush_38" parent="Arbustos3" instance=ExtResource("19_4304e")]
+transform = Transform3D(-3.49851, -0.0541639, 0.638605, 0, 3.54401, 0.300589, -0.640898, 0.295668, -3.486, 19.234, -0.945378, -3.03007)
+
+[node name="Bush_39" parent="Arbustos3" instance=ExtResource("20_xriu4")]
+transform = Transform3D(3.81301, 0.897968, -0.723359, -0.892826, 3.88062, 0.111029, 0.729696, 0.0558493, 3.91575, 19.234, 2.80505, 2.85864)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.270315, 0.962772, 0, -0.962772, 0.270315, 0, 4.90586, 0)
+light_energy = 0.1
+light_indirect_energy = 0.8
+shadow_enabled = true
+shadow_normal_bias = 1.0
+shadow_opacity = 0.75
+sky_mode = 1
+
+[node name="AreaPregunta1" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.60882)
+script = ExtResource("21_4m2jf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AreaPregunta1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.339722, 2.10715, 2.93471)
+shape = SubResource("BoxShape3D_2u38x")
+
+[node name="Pregunta1" type="Node3D" parent="."]
+visible = false
+
+[node name="Pregunta1" type="Sprite3D" parent="Pregunta1"]
+transform = Transform3D(2.23191, 0, 0, 0, 0.540225, 0, 0, 0, 0.639319, 0, 5.04728, -12.3987)
+modulate = Color(0, 0, 0, 0.290196)
+pixel_size = 4.8861
+texture = SubResource("CanvasTexture_mt2p6")
+
+[node name="Label3D" type="Label3D" parent="Pregunta1/Pregunta1"]
+transform = Transform3D(0.814711, 0, 0, 0, 3.7022, 0, 0, 0, 1, 0, 0.145649, 0)
+pixel_size = 0.01
+text = "¿Cual es la capital del zulia?"
+font_size = 40
+
+[node name="Respuesta1" type="Sprite3D" parent="Pregunta1"]
+transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, -4.39722, 2.17214, -12.3987)
+modulate = Color(0, 0, 0, 0.290196)
+pixel_size = 4.8861
+texture = SubResource("CanvasTexture_mt2p6")
+
+[node name="Label3D" type="Label3D" parent="Pregunta1/Respuesta1"]
+transform = Transform3D(1.64691, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
+pixel_size = 0.01
+text = "Maracaibo"
+font_size = 40
+
+[node name="Respuesta2" type="Sprite3D" parent="Pregunta1"]
+transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, 0.0523887, 2.17214, -12.3987)
+modulate = Color(0, 0, 0, 0.290196)
+pixel_size = 4.8861
+texture = SubResource("CanvasTexture_mt2p6")
+
+[node name="Label3D" type="Label3D" parent="Pregunta1/Respuesta2"]
+transform = Transform3D(2.08114, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
+pixel_size = 0.01
+text = "Santa Rita"
+font_size = 40
+
+[node name="Respuesta3" type="Sprite3D" parent="Pregunta1"]
+transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, 4.50588, 2.17214, -12.3987)
+modulate = Color(0, 0, 0, 0.290196)
+pixel_size = 4.8861
+texture = SubResource("CanvasTexture_mt2p6")
+
+[node name="Label3D" type="Label3D" parent="Pregunta1/Respuesta3"]
+transform = Transform3D(2.0811, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
+pixel_size = 0.01
+text = "Cabimas"
+font_size = 40
+
 [connection signal="body_entered" from="TPsIncorrectos1/TPIncorrecto" to="TPsIncorrectos1/TPIncorrecto" method="_on_body_entered"]
 [connection signal="body_entered" from="TPsIncorrectos1/TPIncorrecto2" to="TPsIncorrectos1/TPIncorrecto2" method="_on_body_entered"]
 [connection signal="body_entered" from="TPsIncorrectos2/TPIncorrecto" to="TPsIncorrectos2/TPIncorrecto" method="_on_body_entered"]
@@ -2638,3 +3078,4 @@ font_size = 40
 [connection signal="body_entered" from="TP1/TPCorrecto1" to="TP1/TPCorrecto1" method="_on_body_entered"]
 [connection signal="body_entered" from="TP2/TPCorrecto2" to="TP2/TPCorrecto2" method="_on_body_entered"]
 [connection signal="body_entered" from="TPCorrecto3" to="TPCorrecto3" method="_on_body_entered"]
+[connection signal="body_entered" from="AreaPregunta1" to="AreaPregunta1" method="_on_body_entered"]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwc46ktcobum0"]
+
+[ext_resource type="PackedScene" uid="uid://d1j7a0tsa45t" path="res://Assets/Arbustos/Arbusto1/Bush_1.glb" id="1_wmccw"]
+[ext_resource type="Texture2D" uid="uid://by057bi1wox3m" path="res://Assets/texturas_adicionales/Grass004_1K-JPG/Grass004_1K-JPG_Color.jpg" id="2_k8764"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_neiui"]
+albedo_texture = ExtResource("2_k8764")
+
+[node name="Bush_12" instance=ExtResource("1_wmccw")]
+
+[node name="Bush_1" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_neiui")

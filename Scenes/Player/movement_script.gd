@@ -24,7 +24,7 @@ var gravity = 9.8
 
 @onready var neck = $Neck
 @onready var camera = $Neck/Camera3D
-@onready var interaction = $Neck/Camera3D/interaction
+@onready var interaction = $Neck/Camera3D/interact
 
 
 func _ready():
