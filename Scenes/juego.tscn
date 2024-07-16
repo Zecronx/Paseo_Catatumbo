@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://drdaey0naroyb"]
+[gd_scene load_steps=15 format=3 uid="uid://drdaey0naroyb"]
 
 [ext_resource type="PackedScene" uid="uid://ddkpwki1v0iv" path="res://Scenes/Mapa/mapa.tscn" id="1_alcmt"]
 [ext_resource type="Script" path="res://Scenes/juego.gd" id="1_tb02s"]
@@ -10,6 +10,44 @@
 [ext_resource type="Theme" uid="uid://dljccapwwqvna" path="res://Scenes/Menu/true.tres" id="7_7v2pq"]
 [ext_resource type="Theme" uid="uid://by5bmyglx014n" path="res://Scenes/Menu/false.tres" id="9_0w8fi"]
 [ext_resource type="PackedScene" uid="uid://csxaohjlh6736" path="res://Scenes/Menu/Pause_Menu.tscn" id="10_gcgyo"]
+[ext_resource type="PackedScene" uid="uid://c6sv5nfe2y2jf" path="res://Assets/Cuerda/Cuerda.glb" id="11_0ndop"]
+
+[sub_resource type="Animation" id="Animation_dtj58"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/LogoNode:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_p4gxy"]
+resource_name = "move_logo"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/LogoNode:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0523599, 0.0, -0.0523599]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gghcl"]
+_data = {
+"RESET": SubResource("Animation_dtj58"),
+"move_logo": SubResource("Animation_p4gxy")
+}
 
 [node name="Juego" type="Node3D"]
 script = ExtResource("1_tb02s")
@@ -105,6 +143,16 @@ spawn_path = NodePath("..")
 
 [node name="PauseMenu" parent="." instance=ExtResource("10_gcgyo")]
 visible = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gghcl")
+}
+autoplay = "move_logo"
+speed_scale = 0.3
+
+[node name="Cuerda" parent="." instance=ExtResource("11_0ndop")]
+transform = Transform3D(-0.00302498, 0.0161277, 0, -0.0584619, -0.000834491, 0, 0, 0, 0.0214869, -8.5161, 0.810809, 1.87457)
 
 [connection signal="pressed" from="CanvasLayer/Join" to="." method="_on_join_pressed"]
 [connection signal="pressed" from="CanvasLayer/Host" to="." method="_on_host_pressed"]

@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3kes2jfahui5"
-path.s3tc="res://.godot/imported/Grass004_1K-JPG_Roughness.jpg-ddac81a00a30e4c5d9519e2af2822f91.s3tc.ctex"
+uid="uid://cyt7fmns4j5xa"
+path.s3tc="res://.godot/imported/Cuerda_Rope001_1K-JPG_Color.jpg-fd01da911773105d41b00b7deccd4635.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "53bf8541f3ca5d61c66c18fe2250b5df"
+}
 
 [deps]
 
-source_file="res://Assets/texturas_adicionales/Grass004_1K-JPG/Grass004_1K-JPG_Roughness.jpg"
-dest_files=["res://.godot/imported/Grass004_1K-JPG_Roughness.jpg-ddac81a00a30e4c5d9519e2af2822f91.s3tc.ctex"]
+source_file="res://Assets/Cuerda/Cuerda_Rope001_1K-JPG_Color.jpg"
+dest_files=["res://.godot/imported/Cuerda_Rope001_1K-JPG_Color.jpg-fd01da911773105d41b00b7deccd4635.s3tc.ctex"]
 
 [params]
 

@@ -5,7 +5,7 @@ var in_animation = false
 @onready var animation_player = $AnimationPlayer
 
 
-func interact():
+func interact(area = false):
 	if !in_animation:
 		in_animation = true
 		if !open:
@@ -16,3 +16,4 @@ func interact():
 			open = false
 		await get_tree().create_timer(0.3,false).timeout
 		in_animation = false
+		
