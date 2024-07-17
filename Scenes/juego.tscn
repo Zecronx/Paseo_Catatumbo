@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://drdaey0naroyb"]
+[gd_scene load_steps=14 format=3 uid="uid://drdaey0naroyb"]
 
 [ext_resource type="PackedScene" uid="uid://boukx545b2xc3" path="res://Scenes/Mapa/mapa.tscn" id="1_alcmt"]
 [ext_resource type="Script" path="res://Scenes/juego.gd" id="1_tb02s"]
@@ -10,7 +10,6 @@
 [ext_resource type="Theme" uid="uid://dljccapwwqvna" path="res://Scenes/Menu/true.tres" id="7_7v2pq"]
 [ext_resource type="Theme" uid="uid://by5bmyglx014n" path="res://Scenes/Menu/false.tres" id="9_0w8fi"]
 [ext_resource type="PackedScene" uid="uid://csxaohjlh6736" path="res://Scenes/Menu/Pause_Menu.tscn" id="10_gcgyo"]
-[ext_resource type="PackedScene" uid="uid://c6sv5nfe2y2jf" path="res://Assets/Cuerda/Cuerda.glb" id="11_0ndop"]
 
 [sub_resource type="Animation" id="Animation_dtj58"]
 length = 0.001
@@ -150,9 +149,6 @@ libraries = {
 }
 autoplay = "move_logo"
 speed_scale = 0.3
-
-[node name="Cuerda" parent="." instance=ExtResource("11_0ndop")]
-transform = Transform3D(-0.00302498, 0.0161277, 0, -0.0584619, -0.000834491, 0, 0, 0, 0.0214869, -8.5161, 0.810809, 1.87457)
 
 [connection signal="pressed" from="CanvasLayer/Join" to="." method="_on_join_pressed"]
 [connection signal="pressed" from="CanvasLayer/Host" to="." method="_on_host_pressed"]
