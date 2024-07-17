@@ -29,7 +29,11 @@ var gravity = 9.8
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	camera.current = is_multiplayer_authority()
 
+func _enter_tree():
+	set_multiplayer_authority(name.to_int())
+	
 func _unhandled_input(event):
 	if event is InputEventMouseMotion or event == InputEventJoypadMotion:
 		neck.rotate_y(-event.relative.x * SENSITIVITY)
