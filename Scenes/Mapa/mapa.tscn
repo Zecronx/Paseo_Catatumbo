@@ -1,4 +1,4 @@
-[gd_scene load_steps=232 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=233 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://c6sv5nfe2y2jf" path="res://Assets/Cuerda/Cuerda.glb" id="3_16ji1"]
@@ -56,6 +56,7 @@
 [ext_resource type="PackedScene" uid="uid://tpee3a1ku7if" path="res://Assets/Velas/Velas1.glb" id="53_b8gns"]
 [ext_resource type="PackedScene" uid="uid://tyw328vjfuee" path="res://Assets/Velas/Candelabro.glb" id="54_uf5hx"]
 [ext_resource type="Texture2D" uid="uid://mak1ksk3w4l" path="res://Imagenes/Fotos basilica/Basílica_de_Nuestra_Señora_de_la_Chiquinquira.jpg" id="56_825fq"]
+[ext_resource type="Texture2D" uid="uid://cb6h0ies80lnc" path="res://Imagenes/fotos angel/Maelo Ruiz.jpeg" id="57_w5cb7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -4703,6 +4704,14 @@ texto = SubResource("TextMesh_oprxo")
 transform = Transform3D(-1.93518e-08, -1.00261, -1.98547e-07, 0.442716, -4.38253e-08, 0, -3.38357e-15, -1.75301e-07, 1.13556, 6.81912, 12.3639, 81.218)
 texto = SubResource("TextMesh_oprxo")
 
+[node name="Marco Astolfo8" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(-1.93518e-08, -1.00261, -1.98547e-07, 0.442716, -4.38253e-08, 0, -3.38357e-15, -1.75301e-07, 1.13556, 6.81912, 12.3639, 81.218)
+texto = SubResource("TextMesh_oprxo")
+
+[node name="Marco Astolfo9" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(5.56881e-10, 0.0288518, -1.13509, 0.442716, -4.38253e-08, 0, -1.93438e-08, -1.00219, -0.0326777, -31.2073, 14.0378, 73.4451)
+texto = SubResource("TextMesh_oprxo")
+
 [node name="Marco Astolfo5" parent="." instance=ExtResource("5_iqygw")]
 transform = Transform3D(1.93518e-08, 1.00261, -9.92736e-08, 0.442716, -4.38253e-08, 0, -1.69178e-15, -8.76506e-08, -1.13556, -7.83884, 12.3639, 80.6194)
 texto = SubResource("TextMesh_oprxo")
@@ -4878,6 +4887,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8498, 0, -6.99819)
 visible = false
 script = ExtResource("16_eyecq")
 
+[node name="Trenvia" parent="Trenvia PB" instance=ExtResource("14_bn6ju")]
+transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, 0, 0)
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Trenvia PB"]
 root_node = NodePath("../..")
 libraries = {
@@ -4885,9 +4897,6 @@ libraries = {
 }
 autoplay = "tranvia_move"
 speed_scale = 0.411
-
-[node name="Trenvia" parent="Trenvia PB" instance=ExtResource("14_bn6ju")]
-transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Trenvia PB"]
 transform = Transform3D(0.115, 0, 0, 0, 0.345, 0, 0, 0, 0.115, -0.0292511, 0.349609, 0.0953364)
@@ -6176,3 +6185,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 8, 50)
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_tmr8e")
 materials = Array[Material]([ExtResource("21_8brsi")])
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(2.43456, 0, -0.0341843, 0, 1.65182, 0, 0.0832726, 0, 0.999416, -31.0872, 14.045, 73.4979)
+texture = ExtResource("57_w5cb7")
