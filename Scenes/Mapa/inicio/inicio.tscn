@@ -1,4 +1,4 @@
-[gd_scene load_steps=95 format=3 uid="uid://dh7rstcg4qydr"]
+[gd_scene load_steps=94 format=3 uid="uid://dh7rstcg4qydr"]
 
 [ext_resource type="Material" uid="uid://bhxyxi3dwxpu5" path="res://Assets/texturas_adicionales/Grass004_1K-JPG/Grass004_1K-JPG_Color.tres" id="1_t0t4s"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_blocks.gd" id="2_ok265"]
@@ -1717,8 +1717,6 @@ size = Vector3(2.53802, 3.05762, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_1tyr7"]
 size = Vector3(1.56053, 7.22536, 1.66464)
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_mt2p6"]
-
 [sub_resource type="BoxMesh" id="BoxMesh_hdw8u"]
 material = ExtResource("16_bg16e")
 
@@ -2510,102 +2508,6 @@ transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, -1.90735
 omni_range = 30.0
 omni_attenuation = 0.4
 
-[node name="Pregunta2" type="Sprite3D" parent="."]
-transform = Transform3D(2.23191, 0, 0, 0, 0.540225, 0, 0, 0, 0.639319, 0, 5.04728, -20.4054)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Pregunta2"]
-transform = Transform3D(0.814711, 0, 0, 0, 3.7022, 0, 0, 0, 1, 0, 0.145649, 0)
-pixel_size = 0.01
-text = "¿Cual es la capital del zulia?"
-font_size = 40
-
-[node name="Respuesta7" type="Sprite3D" parent="."]
-transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, 4.50588, 2.17214, -20.4054)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Respuesta7"]
-transform = Transform3D(1.64691, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
-pixel_size = 0.01
-text = "Maracaibo"
-font_size = 40
-
-[node name="Respuesta5" type="Sprite3D" parent="."]
-transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, 0.0523887, 2.17214, -20.4054)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Respuesta5"]
-transform = Transform3D(2.08114, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
-pixel_size = 0.01
-text = "Santa Rita"
-font_size = 40
-
-[node name="Respuesta6" type="Sprite3D" parent="."]
-transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, -4.39722, 2.17214, -20.4054)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Respuesta6"]
-transform = Transform3D(2.0811, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
-pixel_size = 0.01
-text = "Cabimas"
-font_size = 40
-
-[node name="Pregunta3" type="Sprite3D" parent="."]
-transform = Transform3D(2.23191, 0, 0, 0, 0.540225, 0, 0, 0, 0.639319, 0, 5.04728, -28.4088)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Pregunta3"]
-transform = Transform3D(0.814711, 0, 0, 0, 3.7022, 0, 0, 0, 1, 0, 0.145649, 0)
-pixel_size = 0.01
-text = "¿Cual es la capital del zulia?"
-font_size = 40
-
-[node name="Respuesta8" type="Sprite3D" parent="."]
-transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, 0.052, 2.172, -28.409)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Respuesta8"]
-transform = Transform3D(1.64691, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
-pixel_size = 0.01
-text = "Maracaibo"
-font_size = 40
-
-[node name="Respuesta9" type="Sprite3D" parent="."]
-transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, 4.506, 2.172, -28.409)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Respuesta9"]
-transform = Transform3D(2.08114, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
-pixel_size = 0.01
-text = "Santa Rita"
-font_size = 40
-
-[node name="Respuesta10" type="Sprite3D" parent="."]
-transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, -4.39722, 2.17214, -28.4088)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Respuesta10"]
-transform = Transform3D(2.0811, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
-pixel_size = 0.01
-text = "Cabimas"
-font_size = 40
-
 [node name="CaminoDePiedra" type="MeshInstance3D" parent="."]
 transform = Transform3D(6.6428, 0, 0, 0, 0.120465, 0, 0, 0, 23.9966, 0, -0.0355067, 11.9479)
 mesh = SubResource("BoxMesh_hdw8u")
@@ -3016,52 +2918,80 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.339722, 2.10715, 2.93471)
 shape = SubResource("BoxShape3D_2u38x")
 
 [node name="Pregunta1" type="Node3D" parent="."]
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.76658, 0)
 
-[node name="Pregunta1" type="Sprite3D" parent="Pregunta1"]
-transform = Transform3D(2.23191, 0, 0, 0, 0.540225, 0, 0, 0, 0.639319, 0, 5.04728, -12.3987)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Pregunta1/Pregunta1"]
-transform = Transform3D(0.814711, 0, 0, 0, 3.7022, 0, 0, 0, 1, 0, 0.145649, 0)
+[node name="Label3D" type="Label3D" parent="Pregunta1"]
+transform = Transform3D(1.81836, 0, 0, 0, 2.00002, 0, 0, 0, 0.639319, 0, 3.75375, -12.3987)
 pixel_size = 0.01
 text = "¿Cual es la capital del zulia?"
 font_size = 40
 
-[node name="Respuesta1" type="Sprite3D" parent="Pregunta1"]
-transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, -4.39722, 2.17214, -12.3987)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Pregunta1/Respuesta1"]
-transform = Transform3D(1.64691, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
+[node name="Label3D2" type="Label3D" parent="Pregunta1"]
+transform = Transform3D(0.927056, 0, 0, 0, 1.44985, 0, 0, 0, 0.639319, -4.39722, 2.25444, -12.3987)
 pixel_size = 0.01
 text = "Maracaibo"
 font_size = 40
 
-[node name="Respuesta2" type="Sprite3D" parent="Pregunta1"]
-transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, 0.0523887, 2.17214, -12.3987)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
-
-[node name="Label3D" type="Label3D" parent="Pregunta1/Respuesta2"]
-transform = Transform3D(2.08114, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
+[node name="Label3D3" type="Label3D" parent="Pregunta1"]
+transform = Transform3D(1.17149, 0, 0, 0, 1.44985, 0, 0, 0, 0.639319, 0.0523887, 2.25444, -12.3987)
 pixel_size = 0.01
 text = "Santa Rita"
 font_size = 40
 
-[node name="Respuesta3" type="Sprite3D" parent="Pregunta1"]
-transform = Transform3D(0.562906, 0, 0, 0, 0.565032, 0, 0, 0, 0.639319, 4.50588, 2.17214, -12.3987)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-texture = SubResource("CanvasTexture_mt2p6")
+[node name="Label3D4" type="Label3D" parent="Pregunta1"]
+transform = Transform3D(1.17146, 0, 0, 0, 1.44985, 0, 0, 0, 0.639319, 4.50588, 2.25444, -12.3987)
+pixel_size = 0.01
+text = "Cabimas"
+font_size = 40
 
-[node name="Label3D" type="Label3D" parent="Pregunta1/Respuesta3"]
-transform = Transform3D(2.0811, 0, 0, 0, 2.56596, 0, 0, 0, 1, 0, 0.145649, 0)
+[node name="Pregunta2" type="Node3D" parent="."]
+
+[node name="Label3D" type="Label3D" parent="Pregunta2"]
+transform = Transform3D(1.81836, 0, 0, 0, 2.00002, 0, 0, 0, 0.639319, 0, 5.52, -20.405)
+pixel_size = 0.01
+text = "¿Cual es la capital del zulia?"
+font_size = 40
+
+[node name="Label3D2" type="Label3D" parent="Pregunta2"]
+transform = Transform3D(0.927056, 0, 0, 0, 1.44985, 0, 0, 0, 0.639319, 4.50588, 4.021, -20.4054)
+pixel_size = 0.01
+text = "Maracaibo"
+font_size = 40
+
+[node name="Label3D3" type="Label3D" parent="Pregunta2"]
+transform = Transform3D(1.17149, 0, 0, 0, 1.44985, 0, 0, 0, 0.639319, 0.0523887, 4.021, -20.4054)
+pixel_size = 0.01
+text = "Santa Rita"
+font_size = 40
+
+[node name="Label3D4" type="Label3D" parent="Pregunta2"]
+transform = Transform3D(1.17146, 0, 0, 0, 1.44985, 0, 0, 0, 0.639319, -4.39722, 4.021, -20.4054)
+pixel_size = 0.01
+text = "Cabimas"
+font_size = 40
+
+[node name="Pregunta3" type="Node3D" parent="."]
+
+[node name="Label3D" type="Label3D" parent="Pregunta3"]
+transform = Transform3D(1.81836, 0, 0, 0, 2.00002, 0, 0, 0, 0.639319, 0, 5.52, -28.409)
+pixel_size = 0.01
+text = "¿Cual es la capital del zulia?"
+font_size = 40
+
+[node name="Label3D2" type="Label3D" parent="Pregunta3"]
+transform = Transform3D(0.927056, 0, 0, 0, 1.44985, 0, 0, 0, 0.639319, 0.052, 4.021, -28.409)
+pixel_size = 0.01
+text = "Maracaibo"
+font_size = 40
+
+[node name="Label3D3" type="Label3D" parent="Pregunta3"]
+transform = Transform3D(1.17149, 0, 0, 0, 1.44985, 0, 0, 0, 0.639319, 4.506, 4.021, -28.409)
+pixel_size = 0.01
+text = "Santa Rita"
+font_size = 40
+
+[node name="Label3D4" type="Label3D" parent="Pregunta3"]
+transform = Transform3D(1.17146, 0, 0, 0, 1.44985, 0, 0, 0, 0.639319, -4.39722, 4.021, -28.4088)
 pixel_size = 0.01
 text = "Cabimas"
 font_size = 40
