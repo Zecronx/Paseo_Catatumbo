@@ -1,4 +1,4 @@
-[gd_scene load_steps=231 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=235 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cbfxv1tffjfyr" path="res://Assets/Marco/marco_vertical.tscn" id="5_iqygw"]
@@ -24,7 +24,7 @@
 [ext_resource type="Material" uid="uid://cn111t8nun0hr" path="res://Assets/Pared/pared.tres" id="21_8brsi"]
 [ext_resource type="PackedScene" uid="uid://bppr5aaueiphk" path="res://Assets/Sillas/SillaAfuera.glb" id="24_ujkbo"]
 [ext_resource type="PackedScene" uid="uid://ci6yg2m1vmbhh" path="res://Assets/Faro/Farol.glb" id="25_q8tja"]
-[ext_resource type="Texture2D" uid="uid://bqaj34eygajr2" path="res://Imagenes/Gastronimia/Tequeños.jpg" id="26_mbr0n"]
+[ext_resource type="Texture2D" uid="uid://pesvudlnttsd" path="res://Imagenes/Fotos basilica/Basilica maracaibo.jpg" id="26_rv8fi"]
 [ext_resource type="Texture2D" uid="uid://cwmviykryhex7" path="res://Imagenes/Gastronimia/patacon.jpg" id="27_pmncg"]
 [ext_resource type="Texture2D" uid="uid://ctrn7ys40pp6y" path="res://Imagenes/Gastronimia/pastelitos.jpg" id="28_p02jx"]
 [ext_resource type="Texture2D" uid="uid://du8rxsng8dfu5" path="res://Imagenes/Gaiteros/astolfo.jpg" id="28_u3cj7"]
@@ -39,10 +39,13 @@
 [ext_resource type="PackedScene" uid="uid://b7y74m4xc8gko" path="res://Assets/Barandilla/Barandilla.glb" id="32_m1ad3"]
 [ext_resource type="PackedScene" uid="uid://kaq5ecb308ec" path="res://Scenes/Mapa/puerta/puerta.tscn" id="33_o1un5"]
 [ext_resource type="PackedScene" uid="uid://w7ddo06yu3oy" path="res://Assets/Personaje/Perro1$.glb" id="35_2vgcb"]
+[ext_resource type="Texture2D" uid="uid://cy5kjea70p3bc" path="res://Imagenes/Fotos basilica/basilica-nuestra-senora-del-rosario-de-chiquinquira-por-dentro.webp" id="35_bkqky"]
 [ext_resource type="PackedScene" uid="uid://c1wqpf43c1jr8" path="res://Assets/AlfombraRoja/AlfombraRoja.glb" id="36_c3rwv"]
+[ext_resource type="Texture2D" uid="uid://c18nyahygsuw1" path="res://Imagenes/Fotos basilica/Basilica_de_Nuestra_Señora_de_Chiquinquira.jpg" id="37_6gk8x"]
 [ext_resource type="PackedScene" uid="uid://bnddl7f72iot2" path="res://Assets/Armas/glock.glb" id="37_ih2kb"]
 [ext_resource type="PackedScene" uid="uid://c7fcq00ubt1bg" path="res://Assets/Armas/piopio.glb" id="38_5vr75"]
 [ext_resource type="PackedScene" uid="uid://cqo1644mxwb3a" path="res://Assets/Armas/QBZ 97.glb" id="39_6wlh0"]
+[ext_resource type="Texture2D" uid="uid://bgrp3xykjn3vw" path="res://Imagenes/Fotos basilica/foto bien.jpg" id="39_hxpp5"]
 [ext_resource type="PackedScene" uid="uid://dfhb57n8vx14t" path="res://Assets/Armas/Skorpion.glb" id="40_1tjl7"]
 [ext_resource type="PackedScene" uid="uid://utsni4j0468l" path="res://Assets/Armas/m16.glb" id="42_103li"]
 [ext_resource type="Texture2D" uid="uid://v1u5ynp2nfja" path="res://Imagenes/fotos angel/Palafitos.jpg" id="43_liubf"]
@@ -54,6 +57,7 @@
 [ext_resource type="PackedScene" uid="uid://bq26oeysfxbnl" path="res://Assets/Velas/velas3.glb" id="52_rsptk"]
 [ext_resource type="PackedScene" uid="uid://tpee3a1ku7if" path="res://Assets/Velas/Velas1.glb" id="53_b8gns"]
 [ext_resource type="PackedScene" uid="uid://tyw328vjfuee" path="res://Assets/Velas/Candelabro.glb" id="54_uf5hx"]
+[ext_resource type="Texture2D" uid="uid://mak1ksk3w4l" path="res://Imagenes/Fotos basilica/Basílica_de_Nuestra_Señora_de_la_Chiquinquira.jpg" id="56_825fq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -104,9 +108,9 @@ text = "Bollos pelones
 El bollo pelón es un plato típico de la cocina zuliana que consiste en un bollito de masa de maíz relleno de guiso de carne o pollo, que se hierve y se baña en una salsa usualmente a base de tomates."
 
 [sub_resource type="TextMesh" id="TextMesh_oprxo"]
-text = "Sierra de perija
+text = "Basílica de Nuestra Señora de Chiquinquirá - Interior 
 
-La serranía del Perijá, también conocida como sierra de Perijá, es el ramal más septentrional de la cordillera de los Andes, situada entre Colombia y Venezuela."
+El interior de la Basílica de Nuestra Señora de Chiquinquirá en Maracaibo, estado Zulia, es un espacio profundamente reverente y artísticamente adornado. Al entrar, uno se encuentra con una amplia nave central flanqueada por capillas laterales, cada una dedicada a diferentes santos y advocaciones marianas. El altar mayor, ricamente decorado, alberga la venerada imagen de la Virgen de Chiquinquirá, conocida cariñosamente como \"La Chinita\". Esta imagen es el centro de devoción y está enmarcada por un espléndido retablo dorado."
 
 [sub_resource type="TextMesh" id="TextMesh_nkd0b"]
 text = "Neguito Borjas
@@ -4566,6 +4570,30 @@ texto = SubResource("TextMesh_3k8jj")
 transform = Transform3D(-3.72026e-16, -1.19249e-08, -0.769543, 0.713715, -4.37114e-08, 0, -3.11975e-08, -1, 9.17671e-09, 14.4689, 11.9305, 75.8771)
 texto = SubResource("TextMesh_oprxo")
 
+[node name="Marco Astolfo2" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(-1.93518e-08, -1.00261, -1.98547e-07, 0.442716, -4.38253e-08, 0, -3.38357e-15, -1.75301e-07, 1.13556, 6.81912, 12.3639, 81.218)
+texto = SubResource("TextMesh_oprxo")
+
+[node name="Marco Astolfo5" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(1.93518e-08, 1.00261, -9.92736e-08, 0.442716, -4.38253e-08, 0, -1.69178e-15, -8.76506e-08, -1.13556, -7.83884, 12.3639, 80.6194)
+texto = SubResource("TextMesh_oprxo")
+
+[node name="Marco Astolfo4" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(-1.93518e-08, -1.00261, -1.98547e-07, 0.442716, -4.38253e-08, 0, -3.38357e-15, -1.75301e-07, 1.13556, 6.81912, 12.3639, 88.6069)
+texto = SubResource("TextMesh_oprxo")
+
+[node name="Marco Astolfo7" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(1.93518e-08, 1.00261, -9.92736e-08, 0.442716, -4.38253e-08, 0, -1.69178e-15, -8.76506e-08, -1.13556, -7.80702, 12.3639, 87.9183)
+texto = SubResource("TextMesh_oprxo")
+
+[node name="Marco Astolfo6" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(-1.93518e-08, -1.00261, -1.98547e-07, 0.442716, -4.38253e-08, 0, -3.38357e-15, -1.75301e-07, 1.13556, 6.81912, 12.3639, 88.6069)
+texto = SubResource("TextMesh_oprxo")
+
+[node name="Marco Astolfo3" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(1.42727e-15, 4.38253e-08, -1.61726, 0.746992, -4.38253e-08, 0, -3.2652e-08, -1.00261, -7.06928e-08, -0.722136, 12.3639, 91.7)
+texto = SubResource("TextMesh_oprxo")
+
 [node name="Marco Anu" parent="." instance=ExtResource("5_iqygw")]
 transform = Transform3D(-3.30111e-16, -1.19249e-08, -0.652377, 0.633303, -4.37114e-08, 0, -2.76826e-08, -1, 7.77952e-09, -25.618, 11.9305, 49.8763)
 texto = SubResource("TextMesh_oprxo")
@@ -5266,7 +5294,7 @@ shape = SubResource("BoxShape3D_rcey7")
 
 [node name="Tequeños" type="Sprite3D" parent="."]
 transform = Transform3D(0.65888, 0, 0, 0, 0.701797, 0, 0, 0, 1, 28.3, 2, 34.013)
-texture = ExtResource("26_mbr0n")
+texture = ExtResource("26_rv8fi")
 
 [node name="Patacon" type="Sprite3D" parent="."]
 transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 34.7828, 2, 34.013)
@@ -5279,6 +5307,10 @@ texture = ExtResource("28_p02jx")
 [node name="Mandoca" type="Sprite3D" parent="."]
 transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 35.5288, 2.25925, 49.9961)
 texture = ExtResource("29_51xfp")
+
+[node name="basilica-foto1" type="Sprite3D" parent="."]
+transform = Transform3D(1.91052e-07, 2.7541e-08, 0.993493, -2.4716e-08, 0.992995, 1.68581e-08, -1.09269, -8.38795e-08, 1.73708e-07, 6.81912, 12.3386, 81.0365)
+texture = ExtResource("26_rv8fi")
 
 [node name="Bollitos" type="Sprite3D" parent="."]
 transform = Transform3D(-0.55, 0, -8.30477e-08, 0, 0.55, 0, 8.30477e-08, 0, -0.55, 28.2619, 1.94204, 49.9961)
@@ -5300,9 +5332,27 @@ texture = ExtResource("29_xd3i6")
 transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, 40.9692, 2, 44.5416)
 texture = ExtResource("29_qr7q6")
 
+[node name="basilica-Interior" type="Sprite3D" parent="."]
+
+[node name="basilica-Interior2" type="Sprite3D" parent="."]
+transform = Transform3D(1.45989, 0, 0, 0, 1.30568, 0, 0, 0, 0.8, -0.603861, 12.3254, 91.7912)
+texture = ExtResource("35_bkqky")
+
+[node name="basilica-foto 2" type="Sprite3D" parent="."]
+transform = Transform3D(-3.25736e-08, 0, -1, 0, 0.570413, 0, 0.745198, 0, -4.37114e-08, 6.84016, 12.3775, 88.365)
+texture = ExtResource("56_825fq")
+
+[node name="basilica-foto 3" type="Sprite3D" parent="."]
+transform = Transform3D(-3.29606e-08, 0, 1, 0, 0.599676, 0, -0.75405, 0, -4.37114e-08, -7.90932, 12.1891, 80.8224)
+texture = ExtResource("37_6gk8x")
+
 [node name="Sprite3D2" type="Sprite3D" parent="."]
 transform = Transform3D(-6.11404e-08, 2.31154e-10, 0.962, 2.04831e-22, 0.967288, 2.31161e-10, -1.39873, -1.01036e-17, -4.20504e-08, -7.88648, 12.2126, 68.2236)
 texture = ExtResource("31_scgyy")
+
+[node name="basilica-foto 4" type="Sprite3D" parent="."]
+transform = Transform3D(-2.66316e-08, 0, 1, 0, 0.490462, 0, -0.60926, 0, -4.37114e-08, -7.87812, 12.2215, 88.0778)
+texture = ExtResource("39_hxpp5")
 
 [node name="Block_1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -24)
@@ -5832,7 +5882,10 @@ transform = Transform3D(1, 0, 0, 0, 0.991347, 0.13127, 0, -0.13127, 0.991347, 0,
 transform = Transform3D(5.58965, 0, 0, 0, 1, 0, 0, 0, 1, -0.265294, 0.0138487, 58.5138)
 
 [node name="AlfombraRoja2" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(5.58965, 0, 0, 0, 1, 0, 0, 0, 1, -0.265294, 0.0378891, 70.824)
+transform = Transform3D(5.58965, 0, 0, 0, 1, 0, 0, 0, 1, -0.265294, 0.016873, 70.824)
+
+[node name="AlfombraRoja5" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
+transform = Transform3D(-3.8719e-07, 0, 6.00629, 0, 6.00629, 0, -8.85788, 0, -2.62543e-07, -1.01124, 8.16348, 86.9383)
 
 [node name="AlfombraRoja3" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
 transform = Transform3D(-2.74943e-07, 0, -1, 0, 1, 0, 6.28995, 0, -4.37114e-08, 6.22845, 0.0196317, 63.6705)
@@ -5972,6 +6025,12 @@ transform = Transform3D(-5.42316, -0.246745, 25.3699, -0.00161304, 7.74098, 0.03
 [node name="Pedestal 3" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(-5.42316, -0.248456, 25.3698, -0.00161304, 7.79464, 0.0309856, -2.53236, 0.00396607, -0.541312, 62.4521, 0.822097, -6.20536)
 
+[node name="Pedestal 4" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(-5.42314, -0.0813569, 25.3697, -0.00161302, 2.55236, 0.0309855, -2.53236, 0.00129869, -0.541312, 107.102, 11.7722, -3.50419)
+
+[node name="Pedestal 5" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(-5.42314, -0.0813568, 25.3697, -0.00161302, 2.55235, 0.0309855, -2.53236, 0.00129869, -0.541312, 119.197, 11.7624, 2.61107)
+
 [node name="CosaExtraña2" parent="." instance=ExtResource("50_idl15")]
 transform = Transform3D(-4.37114e-08, -7.47453, 0, 1, -3.26722e-07, 0, 0, 0, 1, -7.95819, 8.42503, 58.9823)
 
@@ -5985,7 +6044,10 @@ transform = Transform3D(0.00709174, 0, 0, 0, 0.00391199, 0, 0, 0, 0.00535988, -2
 transform = Transform3D(0.0606523, 0, 0, 0, 0.0585597, 0, 0, 0, 0.0993993, 1.9651, 1.3555, 19.1044)
 
 [node name="Velas1" parent="." instance=ExtResource("53_b8gns")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.85384, 0.273051, 6.4081)
+transform = Transform3D(0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, 3.4118, 10.5107, 78.1823)
+
+[node name="Velas3" parent="." instance=ExtResource("53_b8gns")]
+transform = Transform3D(0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, -4.40531, 10.4922, 78.1047)
 
 [node name="Candelabro" parent="." instance=ExtResource("54_uf5hx")]
 transform = Transform3D(-0.0842336, 0, 0.736154, 0, 0.346602, 0, -0.759574, 0, -0.0816363, -1.24965, -4.76837e-07, 23.4576)
