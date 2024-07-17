@@ -46,10 +46,10 @@
 [ext_resource type="Texture2D" uid="uid://bgrp3xykjn3vw" path="res://Imagenes/Fotos basilica/foto bien.jpg" id="39_hxpp5"]
 [ext_resource type="PackedScene" uid="uid://dfhb57n8vx14t" path="res://Assets/Armas/Skorpion.glb" id="40_1tjl7"]
 [ext_resource type="PackedScene" uid="uid://utsni4j0468l" path="res://Assets/Armas/m16.glb" id="42_103li"]
-[ext_resource type="Texture2D" uid="uid://v1u5ynp2nfja" path="res://Imagenes/fotos angel/Palafitos.jpg" id="43_liubf"]
 [ext_resource type="PackedScene" uid="uid://dh7rstcg4qydr" path="res://Scenes/Mapa/inicio/inicio.tscn" id="44_l8dmy"]
 [ext_resource type="Texture2D" uid="uid://c7t8we63lsctk" path="res://Imagenes/fotos angel/laguna de sinamaica.jpg" id="44_u5isc"]
 [ext_resource type="PackedScene" uid="uid://du2tlneaqgenb" path="res://Assets/Puente/PuEnTe1.glb" id="45_fd8l4"]
+[ext_resource type="Texture2D" uid="uid://bvwn5kgso862t" path="res://Imagenes/fotos angel/Palafitos_Lago_de_Maracaibo.jpg" id="48_xvoq0"]
 [ext_resource type="PackedScene" uid="uid://di23ejwgugiap" path="res://Assets/Decoracion/CosaExtraña.glb" id="50_idl15"]
 [ext_resource type="PackedScene" uid="uid://b3nhhy8q763k5" path="res://Assets/Velas/Velas2.glb" id="51_3r2y3"]
 [ext_resource type="PackedScene" uid="uid://bq26oeysfxbnl" path="res://Assets/Velas/velas3.glb" id="52_rsptk"]
@@ -6080,8 +6080,8 @@ texto = SubResource("TextMesh_kh1m2")
 derecha = false
 
 [node name="Sprite3D2" type="Sprite3D" parent="Marco Palafito"]
-transform = Transform3D(-2.36295e-08, 0.545637, -4.27848e-08, -1.42109e-14, -2.38505e-08, -0.978802, -0.54058, -2.38505e-08, 1.77636e-15, -0.107207, -0.0670433, -0.23099)
-texture = ExtResource("43_liubf")
+transform = Transform3D(-1.23406e-08, 0.284962, -2.23446e-08, -5.32907e-15, -1.2456e-08, -0.511184, -0.282321, -1.2456e-08, 1.77636e-15, -0.107207, -0.0670433, -0.23099)
+texture = ExtResource("48_xvoq0")
 
 [node name="Marco Laguna de sinamaica" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(6.31612e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -38.8721, 12.2009, 41.7696)
