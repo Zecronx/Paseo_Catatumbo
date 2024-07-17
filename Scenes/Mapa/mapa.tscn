@@ -1,4 +1,4 @@
-[gd_scene load_steps=233 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=234 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://c6sv5nfe2y2jf" path="res://Assets/Cuerda/Cuerda.glb" id="3_16ji1"]
@@ -57,6 +57,7 @@
 [ext_resource type="PackedScene" uid="uid://tyw328vjfuee" path="res://Assets/Velas/Candelabro.glb" id="54_uf5hx"]
 [ext_resource type="Texture2D" uid="uid://mak1ksk3w4l" path="res://Imagenes/Fotos basilica/Basílica_de_Nuestra_Señora_de_la_Chiquinquira.jpg" id="56_825fq"]
 [ext_resource type="Texture2D" uid="uid://cb6h0ies80lnc" path="res://Imagenes/fotos angel/Maelo Ruiz.jpeg" id="57_w5cb7"]
+[ext_resource type="PackedScene" uid="uid://qgwyvju1phsr" path="res://Assets/Velas/fueguito.glb" id="58_8srvo"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -6175,7 +6176,7 @@ transform = Transform3D(0.0606523, 0, 0, 0, 0.0585597, 0, 0, 0, 0.0993993, 1.965
 transform = Transform3D(0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, 3.4118, 10.5107, 78.1823)
 
 [node name="Velas3" parent="." instance=ExtResource("53_b8gns")]
-transform = Transform3D(0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, -4.40531, 10.4922, 78.1047)
+transform = Transform3D(0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, -4.4148, 10.4922, 78.1047)
 
 [node name="Candelabro" parent="." instance=ExtResource("54_uf5hx")]
 transform = Transform3D(-0.0872461, 0, 0.498747, 0, 0.346602, 0, -0.786739, 0, -0.0553089, -1.24965, -4.76837e-07, 23.4576)
@@ -6189,3 +6190,6 @@ materials = Array[Material]([ExtResource("21_8brsi")])
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(2.43456, 0, -0.0341843, 0, 1.65182, 0, 0.0832726, 0, 0.999416, -31.0872, 14.045, 73.4979)
 texture = ExtResource("57_w5cb7")
+
+[node name="fueguito" parent="." instance=ExtResource("58_8srvo")]
+transform = Transform3D(0.0295894, 0, 0, 0, 0.0266309, 0, 0, 0, 0.0605275, 2.02974, 1.44479, 18.9854)
