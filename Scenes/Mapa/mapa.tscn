@@ -1,4 +1,4 @@
-[gd_scene load_steps=225 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=227 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cbfxv1tffjfyr" path="res://Assets/Marco/marco_vertical.tscn" id="5_iqygw"]
@@ -23,7 +23,6 @@
 [ext_resource type="Material" uid="uid://l5wssxfeidln" path="res://addons/godot-xr-tools/materials/capsule.tres" id="20_yeal6"]
 [ext_resource type="Material" uid="uid://cn111t8nun0hr" path="res://Assets/Pared/pared.tres" id="21_8brsi"]
 [ext_resource type="PackedScene" uid="uid://bppr5aaueiphk" path="res://Assets/Sillas/SillaAfuera.glb" id="24_ujkbo"]
-[ext_resource type="PackedScene" uid="uid://ci6yg2m1vmbhh" path="res://Assets/Faro/Farol.glb" id="25_q8tja"]
 [ext_resource type="Texture2D" uid="uid://bqaj34eygajr2" path="res://Imagenes/Gastronimia/Tequeños.jpg" id="26_mbr0n"]
 [ext_resource type="Texture2D" uid="uid://cwmviykryhex7" path="res://Imagenes/Gastronimia/patacon.jpg" id="27_pmncg"]
 [ext_resource type="Texture2D" uid="uid://ctrn7ys40pp6y" path="res://Imagenes/Gastronimia/pastelitos.jpg" id="28_p02jx"]
@@ -43,9 +42,12 @@
 [ext_resource type="PackedScene" uid="uid://cqo1644mxwb3a" path="res://Assets/Armas/QBZ 97.glb" id="39_6wlh0"]
 [ext_resource type="PackedScene" uid="uid://dfhb57n8vx14t" path="res://Assets/Armas/Skorpion.glb" id="40_1tjl7"]
 [ext_resource type="PackedScene" uid="uid://utsni4j0468l" path="res://Assets/Armas/m16.glb" id="42_103li"]
-[ext_resource type="Texture2D" uid="uid://v1u5ynp2nfja" path="res://Imagenes/fotos angel/Palafitos.jpg" id="43_liubf"]
+[ext_resource type="Texture2D" uid="uid://chh2ieqktrr7d" path="res://Imagenes/Fotos pnb/1.jpg" id="43_2q0pm"]
+[ext_resource type="Texture2D" uid="uid://bvwn5kgso862t" path="res://Imagenes/fotos angel/Palafitos_Lago_de_Maracaibo.jpg" id="43_s5gbs"]
 [ext_resource type="PackedScene" uid="uid://dh7rstcg4qydr" path="res://Scenes/Mapa/inicio/inicio.tscn" id="44_l8dmy"]
+[ext_resource type="Texture2D" uid="uid://qapf578wjghb" path="res://Imagenes/Fotos pnb/download.jpg" id="44_nfuj6"]
 [ext_resource type="Texture2D" uid="uid://c7t8we63lsctk" path="res://Imagenes/fotos angel/laguna de sinamaica.jpg" id="44_u5isc"]
+[ext_resource type="Texture2D" uid="uid://vrdxss4k354n" path="res://Imagenes/Fotos pnb/images.jpg" id="44_wpoku"]
 [ext_resource type="PackedScene" uid="uid://du2tlneaqgenb" path="res://Assets/Puente/PuEnTe1.glb" id="45_fd8l4"]
 [ext_resource type="PackedScene" uid="uid://di23ejwgugiap" path="res://Assets/Decoracion/CosaExtraña.glb" id="50_idl15"]
 
@@ -2373,10 +2375,10 @@ active_face = -1
 active_face_vertex = 0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_73j0m"]
-size = Vector3(2.01416, 0.440371, 0.982544)
+size = Vector3(4.89438, 3.06064, 3.52746)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_rcey7"]
-size = Vector3(0.653442, 4.18472, 0.621582)
+[sub_resource type="BoxShape3D" id="BoxShape3D_jvgxs"]
+size = Vector3(4.62695, 2.71484, 2.59009)
 
 [sub_resource type="Resource" id="Resource_51gen"]
 script = ExtResource("19_8qer4")
@@ -2741,12 +2743,6 @@ active_vertex = -1
 active_edge = -1
 active_face = -1
 active_face_vertex = 0
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_yah85"]
-size = Vector3(1.87112, 1.05594, 3.33551)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_4q1lc"]
-size = Vector3(0.731445, 1.59906, 3)
 
 [sub_resource type="Resource" id="Resource_fk7as"]
 script = ExtResource("19_8qer4")
@@ -4356,10 +4352,12 @@ active_edge = -1
 active_face = -1
 active_face_vertex = 0
 
-[sub_resource type="TextMesh" id="TextMesh_kh1m2"]
-text = "Laguna de sinamaica
+[sub_resource type="BoxShape3D" id="BoxShape3D_ys7i1"]
 
-La laguna de Sinamaica, habitada mayoritariamente por las etnias añú y wayú, cuyo nombre significa \"gente de agua\", es una de las joyas del estado Zulia en Venezuela. "
+[sub_resource type="TextMesh" id="TextMesh_kh1m2"]
+
+[sub_resource type="TextMesh" id="TextMesh_my4wl"]
+text = "Dios es Amor"
 
 [node name="Mapa" type="Node3D"]
 script = ExtResource("1_44um2")
@@ -4569,24 +4567,6 @@ derecha = false
 transform = Transform3D(-3.19102e-08, 1, -4.37114e-08, -3.55271e-15, -4.37114e-08, -1, -0.730021, -4.37114e-08, 0, 0, -0.100311, -0.115734)
 texture = ExtResource("6_wlh5f")
 
-[node name="Marco Vacio 1" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(1.21004e-15, 4.37114e-08, 0.652377, 0.633303, -4.37114e-08, 0, 2.76826e-08, 1, -2.85163e-08, -34.3673, 11.9305, 34.1138)
-texto = SubResource("TextMesh_oprxo")
-derecha = false
-
-[node name="Sprite3D2" type="Sprite3D" parent="Marco Vacio 1"]
-transform = Transform3D(-2.95228e-08, 1.22752, -4.37114e-08, -2.84217e-14, -5.36568e-08, -0.999999, -0.675404, -5.36568e-08, 0, 0, -0.100311, -0.11573)
-texture = ExtResource("7_acxnl")
-
-[node name="Marco Vacio 2" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(1.21004e-15, 4.37114e-08, 0.652377, 0.633303, -4.37114e-08, 0, 2.76826e-08, 1, -2.85163e-08, -26.8698, 11.9305, 34.1138)
-texto = SubResource("TextMesh_oprxo")
-derecha = false
-
-[node name="Sprite3D2" type="Sprite3D" parent="Marco Vacio 2"]
-transform = Transform3D(-3.19102e-08, 1, -4.37114e-08, -7.10543e-15, -4.37114e-08, -0.999999, -0.730021, -4.37114e-08, 7.10543e-15, 0, -0.100311, -0.115734)
-texture = ExtResource("6_wlh5f")
-
 [node name="Marco Neguito" parent="." instance=ExtResource("5_iqygw")]
 transform = Transform3D(1.43366e-15, 4.37114e-08, 0.784244, 0.750335, -4.37114e-08, 0, 3.27982e-08, 1, -3.42804e-08, 14.8274, 11.9356, 59.1)
 texto = SubResource("TextMesh_nkd0b")
@@ -4599,20 +4579,14 @@ texto = SubResource("TextMesh_v6rr0")
 transform = Transform3D(0.902394, 0, 0, 0, -4.37114e-08, -0.58709, 0, 1, -2.56625e-08, 0, 3.63857, -23.8761)
 audio = ExtResource("12_g8n3c")
 
-[node name="Marco PB 3" parent="Marco PB 3" instance=ExtResource("10_chpvt")]
-transform = Transform3D(0.902394, 0, 0, 0, 0.994882, -0.059319, 0, 0.101039, 0.584085, 67.7011, 74.7662, -19.3724)
-audio = ExtResource("12_g8n3c")
+[node name="Mp5" type="Node3D" parent="."]
+transform = Transform3D(0.997616, 0, 0.0690078, 0, 1, 0, -0.0690078, 0, 0.997616, 53.9684, 11.94, 34.7517)
+
+[node name="hk-mp5" parent="Mp5" instance=ExtResource("7_5apxg")]
+transform = Transform3D(-0.901641, 0.0236799, -0.296637, 0.272589, 0.607612, -0.261029, 0.413523, -0.348898, -0.474719, 7.49961, 0.805375, 0.128841)
 
 [node name="Pedestal PB" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.98716, 0.284726, 19.1444)
-
-[node name="Pedestal 6" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
-transform = Transform3D(0.997616, 0, 0.0690078, 0, 1, 0, -0.0690078, 0, 0.997616, 51.9812, 11.6553, 15.6073)
-
-[node name="Mp5" type="Node3D" parent="Pedestal PB/Pedestal 6"]
-
-[node name="hk-mp5" parent="Pedestal PB/Pedestal 6/Mp5" instance=ExtResource("7_5apxg")]
-transform = Transform3D(0.996263, 0.0863733, 0, -0.0863733, 0.996263, 0, 0, 0, 1, -7.62939e-06, 1.5887, 0.373253)
 
 [node name="Pedestal 2" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(3.285, 0, 0, 0, 4.895, 0, 0, 0, 3.285, -13.7904, 1.41038, 18.6901)
@@ -4676,20 +4650,6 @@ transform = Transform3D(1.11732, 0, 0, 0, 1.18343, 0, 0, 0, 1, 0.00883028, 0, 0.
 billboard = 1
 text = "HABITACION DE LA
 BASILICA"
-font_size = 40
-
-[node name="Hab Castillo" type="Sprite3D" parent="."]
-transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, 59.2997, 13.7415, 41.4744)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-billboard = 1
-texture = SubResource("CanvasTexture_20ic3")
-
-[node name="Label3D" type="Label3D" parent="Hab Castillo"]
-transform = Transform3D(1.11732, 0, 0, 0, 1.18343, 0, 0, 0, 1, 0.00882721, 0, 0.000480652)
-billboard = 1
-text = "HABITACION DEL
-CASTILLO"
 font_size = 40
 
 [node name="Hab Cuevas2" type="Sprite3D" parent="."]
@@ -5261,33 +5221,31 @@ stream = ExtResource("18_fc8dd")
 [node name="Silla PB2" type="Node3D" parent="."]
 transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -0.8, -1.231, -11)
 
-[node name="Silla 1" type="StaticBody3D" parent="Silla PB2"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Silla PB2/Silla 1"]
-transform = Transform3D(-0.0479084, 0, 0.998852, 0, 1, 0, -0.998852, 0, -0.0479084, -28.558, 8.47106, 42.6268)
-shape = SubResource("BoxShape3D_73j0m")
-
-[node name="Mostrador" parent="Silla PB2/Silla 1" instance=ExtResource("24_ujkbo")]
-transform = Transform3D(-0.0479084, 0, 0.998852, 0, 1, 0, -0.998852, 0, -0.0479084, -29.0691, 7.44457, 42.6551)
-
 [node name="Silla 2" type="StaticBody3D" parent="Silla PB2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.6667, 0, -5.96046e-07)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Silla PB2/Silla 2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00452328, 0.967991, 0.518738)
-shape = SubResource("BoxShape3D_73j0m")
 
 [node name="SillaAfuera" parent="Silla PB2/Silla 2" instance=ExtResource("24_ujkbo")]
 transform = Transform3D(1.99655, 0, 4.26326e-14, 0, 1.5108, 0, 4.9738e-14, 0, 2.70453, -34.9158, -0.402514, -0.547903)
 
-[node name="Faro PB" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -20)
+[node name="Mostrador armas 1" type="StaticBody3D" parent="."]
+transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, 62.6297, 9.60757, 34.4022)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Faro PB"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00445557, 2.09544, -0.0290527)
-shape = SubResource("BoxShape3D_rcey7")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mostrador armas 1"]
+transform = Transform3D(-0.0479084, 0, 0.998852, 0, 1, 0, -0.998852, 0, -0.0479084, -0.125755, 2.41465, -0.132767)
+shape = SubResource("BoxShape3D_73j0m")
 
-[node name="Farol" parent="Faro PB" instance=ExtResource("25_q8tja")]
+[node name="Mostrador" parent="Mostrador armas 1" instance=ExtResource("24_ujkbo")]
+transform = Transform3D(1.65754, 0, -4.26326e-14, 0, 1, 0, 9.23706e-14, 0, 5.28609, 0, 0.0877895, -2.79221)
+
+[node name="Mostrador armas 2" type="StaticBody3D" parent="."]
+transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, 62.6297, 9.60757, 50.2215)
+
+[node name="Mostrador" parent="Mostrador armas 2" instance=ExtResource("24_ujkbo")]
+transform = Transform3D(-5.27401e-08, 0, 4.34372, 0, 1, 0, -1.20655, 0, -1.8987e-07, -0.689148, 0.0778561, 0.0604095)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mostrador armas 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.81348, 2.28569, 0.0709229)
+shape = SubResource("BoxShape3D_jvgxs")
 
 [node name="Tequeños" type="Sprite3D" parent="."]
 transform = Transform3D(0.65888, 0, 0, 0, 0.701797, 0, 0, 0, 1, 28.3, 2, 34.013)
@@ -5409,14 +5367,6 @@ materials = Array[Material]([ExtResource("18_q2qk8")])
 
 [node name="bench" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.205, 0, 5.95085)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="bench"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.085927, 0.537049, 0.0706582)
-shape = SubResource("BoxShape3D_yah85")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="bench"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.684082, 1.29953, 0)
-shape = SubResource("BoxShape3D_4q1lc")
 
 [node name="Block_4" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 7, 33)
@@ -5919,19 +5869,31 @@ transform = Transform3D(1, 5.0822e-21, 0, 0, 1, 0, 0, 0, 1, 0, 3.66273, 0)
 omni_range = 30.0
 omni_attenuation = 0.4
 
+[node name="Skorpion" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.8186, 9.15823, 44.7093)
+
+[node name="Skorpion" parent="Skorpion" instance=ExtResource("40_1tjl7")]
+transform = Transform3D(0.968322, 0, 0.249704, 0, 1, 0, -0.249704, 0, 0.968322, 3.09039, -3.09217, 2.83265)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Skorpion"]
+shape = SubResource("BoxShape3D_ys7i1")
+
+[node name="Skorpion2" type="StaticBody3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 60.8186, 13.6985, 44.7093)
+
+[node name="piopio" parent="Skorpion2" instance=ExtResource("38_5vr75")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71388, -7.63136, 1.9964)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Skorpion2"]
+shape = SubResource("BoxShape3D_ys7i1")
+
 [node name="Armas" type="Node3D" parent="."]
 
 [node name="glock" parent="Armas" instance=ExtResource("37_ih2kb")]
 transform = Transform3D(-0.0620899, 0.996438, 0.0570645, -0.798729, -0.0838917, 0.595813, 0.598478, -0.0085851, 0.801093, -2.16735, 3.88528, -15.7147)
 
-[node name="piopio" parent="Armas" instance=ExtResource("38_5vr75")]
-transform = Transform3D(0.345732, 0.937627, -0.036405, -0.0380267, 0.0527661, 0.997883, 0.937563, -0.343615, 0.0538978, 59.6136, 11.2714, 44.0842)
-
 [node name="QBZ 97" parent="Armas" instance=ExtResource("39_6wlh0")]
-transform = Transform3D(-0.0224256, 0, 0.999749, -0.998167, -0.0562223, -0.0223901, 0.0562082, -0.998418, 0.00126082, 62.3054, 12.1395, 34.0257)
-
-[node name="Skorpion" parent="Armas" instance=ExtResource("40_1tjl7")]
-transform = Transform3D(1, 0, 0, 0, 0.114937, -0.993373, 0, 0.993373, 0.114937, 59.5653, 13.6985, 41.3568)
+transform = Transform3D(-0.745515, 0.378638, -0.274425, 0.264979, 0.710146, 0.241483, 0.611551, 0.153882, -0.439171, 63.8807, 10.8565, 34.9096)
 
 [node name="Marco Lago" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(6.31613e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -7.789, 12.2009, 67.7687)
@@ -5943,8 +5905,8 @@ texto = SubResource("TextMesh_kh1m2")
 derecha = false
 
 [node name="Sprite3D2" type="Sprite3D" parent="Marco Palafito"]
-transform = Transform3D(-2.36295e-08, 0.545637, -4.27848e-08, -1.42109e-14, -2.38505e-08, -0.978802, -0.54058, -2.38505e-08, 1.77636e-15, -0.107207, -0.0670433, -0.23099)
-texture = ExtResource("43_liubf")
+transform = Transform3D(-1.21062e-08, 0.274818, -4.27848e-08, -7.10543e-15, -1.20126e-08, -0.978802, -0.276958, -1.20126e-08, 1.77636e-15, -0.00220108, -0.0670433, -0.186634)
+texture = ExtResource("43_s5gbs")
 
 [node name="Marco Laguna de sinamaica" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(6.31612e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -38.8721, 12.2009, 41.7696)
@@ -5953,6 +5915,40 @@ texto = SubResource("TextMesh_kh1m2")
 [node name="Sprite3D2" type="Sprite3D" parent="Marco Laguna de sinamaica"]
 transform = Transform3D(-2.92714e-08, 0.595758, -4.27848e-08, 4.26326e-14, -2.60413e-08, -0.978802, -0.669651, -2.60414e-08, 3.55271e-15, -0.00236607, -0.0670433, -0.204445)
 texture = ExtResource("44_u5isc")
+
+[node name="Marco Ladrones" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.82325e-08, 1, -7.95036e-08, 0.874658, -4.37114e-08, 0, -3.34239e-15, -8.74228e-08, -0.909415, 52.097, 14.2, 34.701)
+texto = SubResource("TextMesh_kh1m2")
+derecha = false
+
+[node name="Sprite3D2" type="Sprite3D" parent="Marco Ladrones"]
+transform = Transform3D(-8.30659e-08, 1.88831, -4.27848e-08, 1.20982e-13, -8.25404e-08, -0.978802, -1.90033, -8.25408e-08, 3.55271e-15, -0.00236607, -0.0670471, -0.204443)
+texture = ExtResource("43_2q0pm")
+
+[node name="Marco Ladrones Mejorados" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(-3.82325e-08, -1, 0, 0.874658, -4.37114e-08, 0, 0, 0, 0.909415, 66.8487, 14.1052, 41.5329)
+texto = SubResource("TextMesh_kh1m2")
+derecha = false
+
+[node name="Sprite3D2" type="Sprite3D" parent="Marco Ladrones Mejorados"]
+transform = Transform3D(-8.30659e-08, 1.88831, -4.27848e-08, 1.20982e-13, -8.25404e-08, -0.978802, -1.90033, -8.25408e-08, 3.55271e-15, -0.00236607, -0.0670471, -0.204443)
+texture = ExtResource("44_wpoku")
+
+[node name="Marco Logo de Ladrones" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(2.25552e-08, 0.998788, -6.43332e-08, 0.516003, -4.36584e-08, 0, -1.97184e-15, -8.73168e-08, -0.735886, 52, 14.2, 47.833)
+texto = SubResource("TextMesh_my4wl")
+
+[node name="Sprite3D2" type="Sprite3D" parent="Marco Logo de Ladrones"]
+transform = Transform3D(-1.54515e-07, 3.52034, -6.75062e-08, -8.52651e-14, -9.75264e-08, -0.978801, -2.49216, -1.08487e-07, -2.13163e-14, 0.00120163, 0.0295448, -0.177589)
+texture = ExtResource("44_nfuj6")
+
+[node name="Marco Sierra de Perija" parent="." instance=ExtResource("10_chpvt")]
+transform = Transform3D(2.76086e-15, 4.37114e-08, 1.78902, 1.44496, -4.37114e-08, 0, 6.31612e-08, 1, -7.82007e-08, -30.7756, 12.201, 34.114)
+texto = SubResource("TextMesh_kh1m2")
+
+[node name="Sprite3D2" type="Sprite3D" parent="Marco Sierra de Perija"]
+transform = Transform3D(-2.92714e-08, 0.595758, -4.27848e-08, 2.84217e-14, -2.60413e-08, -0.978802, -0.669651, -2.60414e-08, 3.55271e-15, -0.00236607, -0.0670433, -0.204447)
+texture = ExtResource("7_acxnl")
 
 [node name="m16" parent="." instance=ExtResource("42_103li")]
 transform = Transform3D(1, 0, 0, 0, 0.570398, -0.821368, 0, 0.821368, 0.570398, -0.207732, 0.669401, -18.0386)
@@ -6121,3 +6117,6 @@ transform = Transform3D(-5.42316, -0.246745, 25.3699, -0.00161304, 7.74098, 0.03
 
 [node name="Pedestal 3" parent="MarcosHabitacion2" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(-5.42316, -0.248456, 25.3698, -0.00161304, 7.79464, 0.0309856, -2.53236, 0.00396607, -0.541312, 62.4521, 0.822097, -6.20536)
+
+[node name="glock" parent="." instance=ExtResource("37_ih2kb")]
+transform = Transform3D(-0.32219, 6.4518e-08, 0, -2.81667e-08, -0.738, 0, 0, 0, 0.324837, 62.0307, 11.3171, 47.0776)
