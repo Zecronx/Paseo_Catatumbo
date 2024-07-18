@@ -20,7 +20,7 @@ var _last_frame_was_on_floor = -INF
 const BASE_FOV = 75.0
 const FOV_CHANGE = 1.5
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = 9.8
+var gravity = 1
 
 @onready var neck = $Neck
 @onready var camera = $Neck/Camera3D
