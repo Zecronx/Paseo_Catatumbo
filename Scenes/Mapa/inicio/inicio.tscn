@@ -2677,6 +2677,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.215, 0.813, 7.997)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.59961, 1.79922)
 shape = SubResource("BoxShape3D_65bav")
 
+[node name="MuroInvisible3" type="StaticBody3D" parent="Araguaneys"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.706, 0, 22.0059)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Araguaneys/MuroInvisible3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.59961, 1.79922)
+shape = SubResource("BoxShape3D_65bav")
+
 [node name="Araguaney" parent="Araguaneys" instance=ExtResource("18_djmma")]
 transform = Transform3D(3.10348, 0, 0, 0, 3.10348, 0, 0, 0, 3.10348, 8.88735, 0.00500011, 1.41631)
 

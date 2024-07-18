@@ -54,6 +54,7 @@ script = ExtResource("1_tb02s")
 player = ExtResource("2_mgdjp")
 
 [node name="Mapa" parent="." instance=ExtResource("1_alcmt")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
