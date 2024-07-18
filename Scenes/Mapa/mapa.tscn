@@ -1,7 +1,6 @@
-[gd_scene load_steps=234 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=227 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
-[ext_resource type="PackedScene" uid="uid://c6sv5nfe2y2jf" path="res://Assets/Cuerda/Cuerda.glb" id="3_16ji1"]
 [ext_resource type="PackedScene" uid="uid://cbfxv1tffjfyr" path="res://Assets/Marco/marco_vertical.tscn" id="5_iqygw"]
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
 [ext_resource type="Texture2D" uid="uid://dywn42cidm7kn" path="res://Imagenes/fotos angel/pueblo añu.jpg" id="6_wlh5f"]
@@ -24,7 +23,8 @@
 [ext_resource type="Material" uid="uid://l5wssxfeidln" path="res://addons/godot-xr-tools/materials/capsule.tres" id="20_yeal6"]
 [ext_resource type="Material" uid="uid://cn111t8nun0hr" path="res://Assets/Pared/pared.tres" id="21_8brsi"]
 [ext_resource type="PackedScene" uid="uid://bppr5aaueiphk" path="res://Assets/Sillas/SillaAfuera.glb" id="24_ujkbo"]
-[ext_resource type="Texture2D" uid="uid://pesvudlnttsd" path="res://Imagenes/Fotos basilica/Basilica maracaibo.jpg" id="26_rv8fi"]
+[ext_resource type="PackedScene" uid="uid://ci6yg2m1vmbhh" path="res://Assets/Faro/Farol.glb" id="25_q8tja"]
+[ext_resource type="Texture2D" uid="uid://bqaj34eygajr2" path="res://Imagenes/Gastronimia/Tequeños.jpg" id="26_mbr0n"]
 [ext_resource type="Texture2D" uid="uid://cwmviykryhex7" path="res://Imagenes/Gastronimia/patacon.jpg" id="27_pmncg"]
 [ext_resource type="Texture2D" uid="uid://ctrn7ys40pp6y" path="res://Imagenes/Gastronimia/pastelitos.jpg" id="28_p02jx"]
 [ext_resource type="Texture2D" uid="uid://du8rxsng8dfu5" path="res://Imagenes/Gaiteros/astolfo.jpg" id="28_u3cj7"]
@@ -34,30 +34,22 @@
 [ext_resource type="Texture2D" uid="uid://b0fljj00gf0yv" path="res://Imagenes/Gaiteros/ricardo_aguirre.jpg" id="29_xd3i6"]
 [ext_resource type="Texture2D" uid="uid://4e44da2ayoex" path="res://Imagenes/Gastronimia/bollitos.jpg" id="30_7qm1x"]
 [ext_resource type="Texture2D" uid="uid://dg8avdfk3he3e" path="res://Imagenes/Gaiteros/neguito.jpg" id="30_afvp0"]
+[ext_resource type="PackedScene" uid="uid://elaq75lfvloq" path="res://Assets/Bench/banco.glb" id="31_21af4"]
 [ext_resource type="Texture2D" uid="uid://5w6ommdtwxbo" path="res://Imagenes/fotos angel/lago de maracaibo.jpg" id="31_scgyy"]
 [ext_resource type="PackedScene" uid="uid://b7y74m4xc8gko" path="res://Assets/Barandilla/Barandilla.glb" id="32_m1ad3"]
+[ext_resource type="PackedScene" uid="uid://kaq5ecb308ec" path="res://Scenes/Mapa/puerta/puerta.tscn" id="33_o1un5"]
 [ext_resource type="PackedScene" uid="uid://w7ddo06yu3oy" path="res://Assets/Personaje/Perro1$.glb" id="35_2vgcb"]
-[ext_resource type="Texture2D" uid="uid://cy5kjea70p3bc" path="res://Imagenes/Fotos basilica/basilica-nuestra-senora-del-rosario-de-chiquinquira-por-dentro.webp" id="35_bkqky"]
 [ext_resource type="PackedScene" uid="uid://c1wqpf43c1jr8" path="res://Assets/AlfombraRoja/AlfombraRoja.glb" id="36_c3rwv"]
-[ext_resource type="Texture2D" uid="uid://c18nyahygsuw1" path="res://Imagenes/Fotos basilica/Basilica_de_Nuestra_Señora_de_Chiquinquira.jpg" id="37_6gk8x"]
 [ext_resource type="PackedScene" uid="uid://bnddl7f72iot2" path="res://Assets/Armas/glock.glb" id="37_ih2kb"]
 [ext_resource type="PackedScene" uid="uid://c7fcq00ubt1bg" path="res://Assets/Armas/piopio.glb" id="38_5vr75"]
 [ext_resource type="PackedScene" uid="uid://cqo1644mxwb3a" path="res://Assets/Armas/QBZ 97.glb" id="39_6wlh0"]
-[ext_resource type="Texture2D" uid="uid://bgrp3xykjn3vw" path="res://Imagenes/Fotos basilica/foto bien.jpg" id="39_hxpp5"]
 [ext_resource type="PackedScene" uid="uid://dfhb57n8vx14t" path="res://Assets/Armas/Skorpion.glb" id="40_1tjl7"]
 [ext_resource type="PackedScene" uid="uid://utsni4j0468l" path="res://Assets/Armas/m16.glb" id="42_103li"]
+[ext_resource type="Texture2D" uid="uid://v1u5ynp2nfja" path="res://Imagenes/fotos angel/Palafitos.jpg" id="43_liubf"]
 [ext_resource type="PackedScene" uid="uid://dh7rstcg4qydr" path="res://Scenes/Mapa/inicio/inicio.tscn" id="44_l8dmy"]
 [ext_resource type="Texture2D" uid="uid://c7t8we63lsctk" path="res://Imagenes/fotos angel/laguna de sinamaica.jpg" id="44_u5isc"]
 [ext_resource type="PackedScene" uid="uid://du2tlneaqgenb" path="res://Assets/Puente/PuEnTe1.glb" id="45_fd8l4"]
-[ext_resource type="Texture2D" uid="uid://bvwn5kgso862t" path="res://Imagenes/fotos angel/Palafitos_Lago_de_Maracaibo.jpg" id="48_xvoq0"]
 [ext_resource type="PackedScene" uid="uid://di23ejwgugiap" path="res://Assets/Decoracion/CosaExtraña.glb" id="50_idl15"]
-[ext_resource type="PackedScene" uid="uid://b3nhhy8q763k5" path="res://Assets/Velas/Velas2.glb" id="51_3r2y3"]
-[ext_resource type="PackedScene" uid="uid://bq26oeysfxbnl" path="res://Assets/Velas/velas3.glb" id="52_rsptk"]
-[ext_resource type="PackedScene" uid="uid://tpee3a1ku7if" path="res://Assets/Velas/Velas1.glb" id="53_b8gns"]
-[ext_resource type="PackedScene" uid="uid://tyw328vjfuee" path="res://Assets/Velas/Candelabro.glb" id="54_uf5hx"]
-[ext_resource type="Texture2D" uid="uid://mak1ksk3w4l" path="res://Imagenes/Fotos basilica/Basílica_de_Nuestra_Señora_de_la_Chiquinquira.jpg" id="56_825fq"]
-[ext_resource type="Texture2D" uid="uid://cb6h0ies80lnc" path="res://Imagenes/fotos angel/Maelo Ruiz.jpeg" id="57_w5cb7"]
-[ext_resource type="PackedScene" uid="uid://qgwyvju1phsr" path="res://Assets/Velas/fueguito.glb" id="58_8srvo"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -108,9 +100,9 @@ text = "Bollos pelones
 El bollo pelón es un plato típico de la cocina zuliana que consiste en un bollito de masa de maíz relleno de guiso de carne o pollo, que se hierve y se baña en una salsa usualmente a base de tomates."
 
 [sub_resource type="TextMesh" id="TextMesh_oprxo"]
-text = "Basílica de Nuestra Señora de Chiquinquirá - Interior 
+text = "Sierra de perija
 
-El interior de la Basílica de Nuestra Señora de Chiquinquirá en Maracaibo, estado Zulia, es un espacio profundamente reverente y artísticamente adornado. Al entrar, uno se encuentra con una amplia nave central flanqueada por capillas laterales, cada una dedicada a diferentes santos y advocaciones marianas. El altar mayor, ricamente decorado, alberga la venerada imagen de la Virgen de Chiquinquirá, conocida cariñosamente como \"La Chinita\". Esta imagen es el centro de devoción y está enmarcada por un espléndido retablo dorado."
+La serranía del Perijá, también conocida como sierra de Perijá, es el ramal más septentrional de la cordillera de los Andes, situada entre Colombia y Venezuela."
 
 [sub_resource type="TextMesh" id="TextMesh_nkd0b"]
 text = "Neguito Borjas
@@ -450,7 +442,7 @@ active_edge = -1
 active_face = -1
 active_face_vertex = 0
 
-[sub_resource type="Resource" id="Resource_sox26"]
+[sub_resource type="Resource" id="Resource_8q76f"]
 script = ExtResource("19_8qer4")
 selected = false
 active = false
@@ -461,7 +453,7 @@ vertex_points = PackedVector3Array(0, 0, 0, 50, 0, -8.74228e-08, 50, 1, -8.74228
 vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
 edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
-face_uv_transform = Array[Transform2D]([Transform2D(0, 0, 0, 1, 63, 7), Transform2D(0, -0.1, 0.1, 0, 8.21, 1.99), Transform2D(0, 0, 0, 1, 3, 7), Transform2D(0, 0, 0, 1, 3, 7), Transform2D(1, 0, 0, 1, -0.3, 3), Transform2D(0, -1, 1, 0, 91.1, 37.9)])
+face_uv_transform = Array[Transform2D]([Transform2D(0, 0, 0, 1, 63, 4), Transform2D(0, -0.1, 0.1, 0, 8.21, 1.99), Transform2D(0, 0, 0, 1, 3, 4), Transform2D(0, 0, 0, 1, 3, 4), Transform2D(1, 0, 0, 1, -0.3, 0), Transform2D(0, -1, 1, 0, 91.1, 37.9)])
 face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
 face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
 face_selected = PackedByteArray(0, 0, 1, 0, 0, 0)
@@ -2385,6 +2377,9 @@ active_face_vertex = 0
 [sub_resource type="BoxShape3D" id="BoxShape3D_73j0m"]
 size = Vector3(2.01416, 0.440371, 0.982544)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_rcey7"]
+size = Vector3(0.653442, 4.18472, 0.621582)
+
 [sub_resource type="Resource" id="Resource_51gen"]
 script = ExtResource("19_8qer4")
 selected = false
@@ -2749,6 +2744,12 @@ active_edge = -1
 active_face = -1
 active_face_vertex = 0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_yah85"]
+size = Vector3(1.87112, 1.05594, 3.33551)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4q1lc"]
+size = Vector3(0.731445, 1.59906, 3)
+
 [sub_resource type="Resource" id="Resource_fk7as"]
 script = ExtResource("19_8qer4")
 selected = false
@@ -3085,7 +3086,7 @@ active_edge = -1
 active_face = -1
 active_face_vertex = 0
 
-[sub_resource type="Resource" id="Resource_8u7ky"]
+[sub_resource type="Resource" id="Resource_poae0"]
 script = ExtResource("19_8qer4")
 selected = false
 active = false
@@ -3181,34 +3182,6 @@ vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
 edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
 face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
-face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
-face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
-face_vertex_face_index = PackedInt32Array(0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5)
-face_vertex_vertex_index = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
-face_vertex_normal = PackedVector3Array(-1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1)
-face_vertex_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
-edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
-face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
-face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
-active_vertex = -1
-active_edge = -1
-active_face = -1
-active_face_vertex = 0
-
-[sub_resource type="Resource" id="Resource_vva7u"]
-script = ExtResource("19_8qer4")
-selected = false
-active = false
-collsion = true
-physics_layer = 0
-physics_mask = 0
-vertex_points = PackedVector3Array(0, 12, 0, 0, 12, 1, 0, 0, 1, 0, 0, 0, 4, 12, 0, 4, 12, 1, 4, 0, 1, 4, 0, 0)
-vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
-edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
-face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 4, 0), Transform2D(1, 0, 0, 1, 4, 0), Transform2D(1, 0, 0, 1, 4, 0), Transform2D(1, 0, 0, 1, 4, 0)])
 face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
 face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
 face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
@@ -4390,34 +4363,6 @@ text = "Laguna de sinamaica
 
 La laguna de Sinamaica, habitada mayoritariamente por las etnias añú y wayú, cuyo nombre significa \"gente de agua\", es una de las joyas del estado Zulia en Venezuela. "
 
-[sub_resource type="Resource" id="Resource_tmr8e"]
-script = ExtResource("19_8qer4")
-selected = false
-active = false
-collsion = true
-physics_layer = 0
-physics_mask = 0
-vertex_points = PackedVector3Array(0, 11, 0, 0, 11, 1, 0, 0, 1, 0, 0, 0, 7, 11, 0, 7, 11, 1, 7, 0, 1, 7, 0, 0)
-vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
-edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
-face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
-face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
-face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-face_selected = PackedByteArray(0, 0, 0, 0, 0, 0)
-face_vertex_face_index = PackedInt32Array(0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5)
-face_vertex_vertex_index = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
-face_vertex_normal = PackedVector3Array(-1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1)
-face_vertex_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 7, 6, 6, 5, 5, 4, 4, 7, 0, 4, 5, 1, 6, 2, 7, 3)
-edge_face_indices = PackedInt32Array(0, 2, 0, 3, 0, 4, 0, 5, 1, 4, 1, 3, 1, 2, 1, 5, 2, 5, 2, 3, 3, 4, 4, 5)
-face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
-face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 7, 6, 5, 4, 1, 0, 4, 5, 2, 1, 5, 6, 3, 2, 6, 7, 0, 3, 7, 4)
-active_vertex = -1
-active_edge = -1
-active_face = -1
-active_face_vertex = 0
-
 [node name="Mapa" type="Node3D"]
 script = ExtResource("1_44um2")
 
@@ -4429,92 +4374,8 @@ environment = SubResource("Environment_tvsch")
 [node name="Vallas 1" parent="Vallas PB" instance=ExtResource("5_nollw")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.50999, 0, 0)
 
-[node name="Cuerda" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -7.88221, 0.810809, 0.056057)
-
-[node name="Cuerda11" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -10.882, 0.811, 0.056)
-
-[node name="Cuerda12" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -13.882, 0.811, 0.056)
-
-[node name="Cuerda13" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -16.882, 0.811, 0.056)
-
-[node name="Cuerda14" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -19.882, 0.811, 0.056)
-
-[node name="Cuerda2" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -4.89112, 0.810809, 0.056057)
-
-[node name="Cuerda3" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -1.891, 0.811, 0.056)
-
-[node name="Cuerda4" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 1.11221, 0.811, 0.0559998)
-
-[node name="Cuerda5" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 4.11856, 0.811, 0.0559998)
-
-[node name="Cuerda6" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 7.09847, 0.811, 0.0559998)
-
-[node name="Cuerda7" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 10.1413, 0.811, 0.0559998)
-
-[node name="Cuerda8" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 13.1096, 0.811, 0.0560007)
-
-[node name="Cuerda9" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 16.1412, 0.811, 0.0560007)
-
-[node name="Cuerda10" parent="Vallas PB/Vallas 1" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 19.1274, 0.811, 0.0560007)
-
 [node name="Vallas 2" parent="Vallas PB" instance=ExtResource("5_nollw")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.51, 0, 0)
-
-[node name="Cuerda" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -7.88221, 0.810809, 0.056057)
-
-[node name="Cuerda11" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -10.882, 0.811, 0.056)
-
-[node name="Cuerda12" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -13.882, 0.811, 0.056)
-
-[node name="Cuerda13" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -16.882, 0.811, 0.056)
-
-[node name="Cuerda14" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -19.882, 0.811, 0.056)
-
-[node name="Cuerda2" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -4.89112, 0.810809, 0.056057)
-
-[node name="Cuerda3" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, -1.891, 0.811, 0.056)
-
-[node name="Cuerda4" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 1.11221, 0.811, 0.0559998)
-
-[node name="Cuerda5" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 4.11856, 0.811, 0.0559998)
-
-[node name="Cuerda6" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 7.09847, 0.811, 0.0559998)
-
-[node name="Cuerda7" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 10.1413, 0.811, 0.0559998)
-
-[node name="Cuerda8" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 13.1096, 0.811, 0.0560007)
-
-[node name="Cuerda9" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 16.1412, 0.811, 0.0560007)
-
-[node name="Cuerda10" parent="Vallas PB/Vallas 2" instance=ExtResource("3_16ji1")]
-transform = Transform3D(1.11852e-16, -7.05907e-10, -0.0230495, -0.0585401, -7.05907e-10, 0, -2.55887e-09, 0.0161493, -1.00753e-09, 19.1274, 0.811, 0.0560007)
 
 [node name="Luces 2doPiso" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 15.4643, 18.9605, 67.1327)
@@ -4701,38 +4562,6 @@ texto = SubResource("TextMesh_3k8jj")
 transform = Transform3D(-3.72026e-16, -1.19249e-08, -0.769543, 0.713715, -4.37114e-08, 0, -3.11975e-08, -1, 9.17671e-09, 14.4689, 11.9305, 75.8771)
 texto = SubResource("TextMesh_oprxo")
 
-[node name="Marco Astolfo2" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(-1.93518e-08, -1.00261, -1.98547e-07, 0.442716, -4.38253e-08, 0, -3.38357e-15, -1.75301e-07, 1.13556, 6.81912, 12.3639, 81.218)
-texto = SubResource("TextMesh_oprxo")
-
-[node name="Marco Astolfo8" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(-1.93518e-08, -1.00261, -1.98547e-07, 0.442716, -4.38253e-08, 0, -3.38357e-15, -1.75301e-07, 1.13556, 6.81912, 12.3639, 81.218)
-texto = SubResource("TextMesh_oprxo")
-
-[node name="Marco Astolfo9" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(5.56881e-10, 0.0288518, -1.13509, 0.442716, -4.38253e-08, 0, -1.93438e-08, -1.00219, -0.0326777, -31.2073, 14.0378, 73.4451)
-texto = SubResource("TextMesh_oprxo")
-
-[node name="Marco Astolfo5" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(1.93518e-08, 1.00261, -9.92736e-08, 0.442716, -4.38253e-08, 0, -1.69178e-15, -8.76506e-08, -1.13556, -7.83884, 12.3639, 80.6194)
-texto = SubResource("TextMesh_oprxo")
-
-[node name="Marco Astolfo4" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(-1.93518e-08, -1.00261, -1.98547e-07, 0.442716, -4.38253e-08, 0, -3.38357e-15, -1.75301e-07, 1.13556, 6.81912, 12.3639, 88.6069)
-texto = SubResource("TextMesh_oprxo")
-
-[node name="Marco Astolfo7" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(1.93518e-08, 1.00261, -9.92736e-08, 0.442716, -4.38253e-08, 0, -1.69178e-15, -8.76506e-08, -1.13556, -7.80702, 12.3639, 87.9183)
-texto = SubResource("TextMesh_oprxo")
-
-[node name="Marco Astolfo6" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(-1.93518e-08, -1.00261, -1.98547e-07, 0.442716, -4.38253e-08, 0, -3.38357e-15, -1.75301e-07, 1.13556, 6.81912, 12.3639, 88.6069)
-texto = SubResource("TextMesh_oprxo")
-
-[node name="Marco Astolfo3" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(1.42727e-15, 4.38253e-08, -1.61726, 0.746992, -4.38253e-08, 0, -3.2652e-08, -1.00261, -7.06928e-08, -0.722136, 12.3639, 91.7)
-texto = SubResource("TextMesh_oprxo")
-
 [node name="Marco Anu" parent="." instance=ExtResource("5_iqygw")]
 transform = Transform3D(-3.30111e-16, -1.19249e-08, -0.652377, 0.633303, -4.37114e-08, 0, -2.76826e-08, -1, 7.77952e-09, -25.618, 11.9305, 49.8763)
 texto = SubResource("TextMesh_oprxo")
@@ -4801,6 +4630,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01284, 0.015274, -42.6444)
 
 [node name="Pedestal 5" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98716, 0.015274, 0.340801)
+
+[node name="Pedestal 7" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, -13.1092, 1.58073, -23.9874)
+
+[node name="Pedestal 8" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, -13.1092, 1.58073, -14.316)
+
+[node name="Pedestal 9" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, -13.1092, 1.58073, 4.90955)
+
+[node name="Pedestal 10" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, 9.25015, 1.58073, -23.9874)
+
+[node name="Pedestal 11" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, 9.25015, 1.58073, -14.316)
+
+[node name="Pedestal 12" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, 9.25015, 1.58073, 4.90955)
 
 [node name="Hab Puente" type="Sprite3D" parent="."]
 transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, 0.129229, 3.62342, 67.7219)
@@ -4888,9 +4735,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8498, 0, -6.99819)
 visible = false
 script = ExtResource("16_eyecq")
 
-[node name="Trenvia" parent="Trenvia PB" instance=ExtResource("14_bn6ju")]
-transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, 0, 0)
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Trenvia PB"]
 root_node = NodePath("../..")
 libraries = {
@@ -4898,6 +4742,9 @@ libraries = {
 }
 autoplay = "tranvia_move"
 speed_scale = 0.411
+
+[node name="Trenvia" parent="Trenvia PB" instance=ExtResource("14_bn6ju")]
+transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Trenvia PB"]
 transform = Transform3D(0.115, 0, 0, 0, 0.345, 0, 0, 0, 0.115, -0.0292511, 0.349609, 0.0953364)
@@ -4979,7 +4826,7 @@ materials = Array[Material]([ExtResource("21_8brsi")])
 [node name="Block_3" type="Node3D" parent="CyclopsBlock0"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21, -1, -45.742)
 script = ExtResource("18_jdkkt")
-block_data = SubResource("Resource_sox26")
+block_data = SubResource("Resource_8q76f")
 materials = Array[Material]([ExtResource("18_q2qk8")])
 
 [node name="CyclopsBlock1" type="Node3D" parent="."]
@@ -5384,7 +5231,9 @@ block_data = SubResource("Resource_anary")
 materials = Array[Material]([ExtResource("29_bpuhh")])
 
 [node name="Block_87" type="Node3D" parent="CyclopsBlock1"]
+process_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, -46.7419)
+visible = false
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_7oxsm")
 materials = Array[Material]([ExtResource("21_8brsi")])
@@ -5413,12 +5262,25 @@ transform = Transform3D(-0.0479084, 0, 0.998852, 0, 1, 0, -0.998852, 0, -0.04790
 [node name="Silla 2" type="StaticBody3D" parent="Silla PB2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.6667, 0, -5.96046e-07)
 
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Silla PB2/Silla 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00452328, 0.967991, 0.518738)
+shape = SubResource("BoxShape3D_73j0m")
+
 [node name="SillaAfuera" parent="Silla PB2/Silla 2" instance=ExtResource("24_ujkbo")]
 transform = Transform3D(1.99655, 0, 4.26326e-14, 0, 1.5108, 0, 4.9738e-14, 0, 2.70453, -34.9158, -0.402514, -0.547903)
 
+[node name="Faro PB" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -20)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Faro PB"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00445557, 2.09544, -0.0290527)
+shape = SubResource("BoxShape3D_rcey7")
+
+[node name="Farol" parent="Faro PB" instance=ExtResource("25_q8tja")]
+
 [node name="Tequeños" type="Sprite3D" parent="."]
 transform = Transform3D(0.65888, 0, 0, 0, 0.701797, 0, 0, 0, 1, 28.3, 2, 34.013)
-texture = ExtResource("26_rv8fi")
+texture = ExtResource("26_mbr0n")
 
 [node name="Patacon" type="Sprite3D" parent="."]
 transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 34.7828, 2, 34.013)
@@ -5431,10 +5293,6 @@ texture = ExtResource("28_p02jx")
 [node name="Mandoca" type="Sprite3D" parent="."]
 transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 35.5288, 2.25925, 49.9961)
 texture = ExtResource("29_51xfp")
-
-[node name="basilica-foto1" type="Sprite3D" parent="."]
-transform = Transform3D(1.91052e-07, 2.7541e-08, 0.993493, -2.4716e-08, 0.992995, 1.68581e-08, -1.09269, -8.38795e-08, 1.73708e-07, 6.81912, 12.3386, 81.0365)
-texture = ExtResource("26_rv8fi")
 
 [node name="Bollitos" type="Sprite3D" parent="."]
 transform = Transform3D(-0.55, 0, -8.30477e-08, 0, 0.55, 0, 8.30477e-08, 0, -0.55, 28.2619, 1.94204, 49.9961)
@@ -5456,27 +5314,9 @@ texture = ExtResource("29_xd3i6")
 transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, 40.9692, 2, 44.5416)
 texture = ExtResource("29_qr7q6")
 
-[node name="basilica-Interior" type="Sprite3D" parent="."]
-
-[node name="basilica-Interior2" type="Sprite3D" parent="."]
-transform = Transform3D(1.45989, 0, 0, 0, 1.30568, 0, 0, 0, 0.8, -0.603861, 12.3254, 91.7912)
-texture = ExtResource("35_bkqky")
-
-[node name="basilica-foto 2" type="Sprite3D" parent="."]
-transform = Transform3D(-3.25736e-08, 0, -1, 0, 0.570413, 0, 0.745198, 0, -4.37114e-08, 6.84016, 12.3775, 88.365)
-texture = ExtResource("56_825fq")
-
-[node name="basilica-foto 3" type="Sprite3D" parent="."]
-transform = Transform3D(-3.29606e-08, 0, 1, 0, 0.599676, 0, -0.75405, 0, -4.37114e-08, -7.90932, 12.1891, 80.8224)
-texture = ExtResource("37_6gk8x")
-
 [node name="Sprite3D2" type="Sprite3D" parent="."]
 transform = Transform3D(-6.11404e-08, 2.31154e-10, 0.962, 2.04831e-22, 0.967288, 2.31161e-10, -1.39873, -1.01036e-17, -4.20504e-08, -7.88648, 12.2126, 68.2236)
 texture = ExtResource("31_scgyy")
-
-[node name="basilica-foto 4" type="Sprite3D" parent="."]
-transform = Transform3D(-2.66316e-08, 0, 1, 0, 0.490462, 0, -0.60926, 0, -4.37114e-08, -7.87812, 12.2215, 88.0778)
-texture = ExtResource("39_hxpp5")
 
 [node name="Block_1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -24)
@@ -5556,6 +5396,19 @@ script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_ucl1o")
 materials = Array[Material]([ExtResource("18_q2qk8")])
 
+[node name="bench" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.205, 0, 5.95085)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bench"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.085927, 0.537049, 0.0706582)
+shape = SubResource("BoxShape3D_yah85")
+
+[node name="banco" parent="bench" instance=ExtResource("31_21af4")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="bench"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.684082, 1.29953, 0)
+shape = SubResource("BoxShape3D_4q1lc")
+
 [node name="Block_4" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 7, 33)
 script = ExtResource("18_jdkkt")
@@ -5631,7 +5484,7 @@ materials = Array[Material]([ExtResource("21_8brsi")])
 [node name="Block_34" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 8, 64)
 script = ExtResource("18_jdkkt")
-block_data = SubResource("Resource_8u7ky")
+block_data = SubResource("Resource_poae0")
 materials = Array[Material]([ExtResource("21_8brsi")])
 
 [node name="Block_35" type="Node3D" parent="."]
@@ -5650,12 +5503,6 @@ materials = Array[Material]([ExtResource("21_8brsi")])
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 8, 50)
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_hcw1y")
-materials = Array[Material]([ExtResource("21_8brsi")])
-
-[node name="Block_70" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 8, 50)
-script = ExtResource("18_jdkkt")
-block_data = SubResource("Resource_vva7u")
 materials = Array[Material]([ExtResource("21_8brsi")])
 
 [node name="Block_29" type="Node3D" parent="."]
@@ -5780,6 +5627,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 7, 24)
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_w0dw4")
 materials = Array[Material]([ExtResource("21_8brsi")])
+
+[node name="Door" parent="." instance=ExtResource("33_o1un5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 24)
 
 [node name="Block_8" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 44)
@@ -5988,13 +5838,7 @@ materials = Array[Material]([ExtResource("18_q2qk8"), ExtResource("29_bpuhh")])
 [node name="Personaje" type="Node3D" parent="."]
 
 [node name="Perro1$" parent="Personaje" instance=ExtResource("35_2vgcb")]
-transform = Transform3D(-4.37114e-08, 0.13127, -0.991347, 0, 0.991347, 0.13127, 1, 5.73799e-09, -4.33332e-08, -23.2538, 8.09862, 69.5524)
-
-[node name="glock" parent="Personaje" instance=ExtResource("37_ih2kb")]
-transform = Transform3D(-0.592554, -0.0622369, -0.803123, -0.798729, -0.0838917, 0.595813, -0.104457, 0.994529, -3.51056e-08, -24.1014, 12.0372, 67.5)
-
-[node name="m16" parent="Personaje" instance=ExtResource("42_103li")]
-transform = Transform3D(-4.30987e-08, -0.821368, -0.570398, -4.25467e-10, 0.570398, -0.821368, 1, -3.51572e-08, -2.49329e-08, -21.4758, 8.82133, 69.5213)
+transform = Transform3D(1, 0, 0, 0, 0.991347, 0.13127, 0, -0.13127, 0.991347, 0, -0.0533166, -16.1978)
 
 [node name="AlfombraRoja" type="Node3D" parent="."]
 
@@ -6002,10 +5846,7 @@ transform = Transform3D(-4.30987e-08, -0.821368, -0.570398, -4.25467e-10, 0.5703
 transform = Transform3D(5.58965, 0, 0, 0, 1, 0, 0, 0, 1, -0.265294, 0.0138487, 58.5138)
 
 [node name="AlfombraRoja2" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(5.58965, 0, 0, 0, 1, 0, 0, 0, 1, -0.265294, 0.016873, 70.824)
-
-[node name="AlfombraRoja5" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-3.8719e-07, 0, 6.00629, 0, 6.00629, 0, -8.85788, 0, -2.62543e-07, -1.01124, 8.16348, 86.9383)
+transform = Transform3D(5.58965, 0, 0, 0, 1, 0, 0, 0, 1, -0.265294, 0.0378891, 70.824)
 
 [node name="AlfombraRoja3" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
 transform = Transform3D(-2.74943e-07, 0, -1, 0, 1, 0, 6.28995, 0, -4.37114e-08, 6.22845, 0.0196317, 63.6705)
@@ -6071,6 +5912,9 @@ omni_attenuation = 0.4
 
 [node name="Armas" type="Node3D" parent="."]
 
+[node name="glock" parent="Armas" instance=ExtResource("37_ih2kb")]
+transform = Transform3D(-0.0620899, 0.996438, 0.0570645, -0.798729, -0.0838917, 0.595813, 0.598478, -0.0085851, 0.801093, -2.16735, 3.88528, -15.7147)
+
 [node name="piopio" parent="Armas" instance=ExtResource("38_5vr75")]
 transform = Transform3D(0.345732, 0.937627, -0.036405, -0.0380267, 0.0527661, 0.997883, 0.937563, -0.343615, 0.0538978, 59.6136, 11.2714, 44.0842)
 
@@ -6090,8 +5934,8 @@ texto = SubResource("TextMesh_kh1m2")
 derecha = false
 
 [node name="Sprite3D2" type="Sprite3D" parent="Marco Palafito"]
-transform = Transform3D(-1.23406e-08, 0.284962, -2.23446e-08, -5.32907e-15, -1.2456e-08, -0.511184, -0.282321, -1.2456e-08, 1.77636e-15, -0.107207, -0.0670433, -0.23099)
-texture = ExtResource("48_xvoq0")
+transform = Transform3D(-2.36295e-08, 0.545637, -4.27848e-08, -1.42109e-14, -2.38505e-08, -0.978802, -0.54058, -2.38505e-08, 1.77636e-15, -0.107207, -0.0670433, -0.23099)
+texture = ExtResource("43_liubf")
 
 [node name="Marco Laguna de sinamaica" parent="." instance=ExtResource("10_chpvt")]
 transform = Transform3D(6.31612e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -38.8721, 12.2009, 41.7696)
@@ -6101,8 +5945,11 @@ texto = SubResource("TextMesh_kh1m2")
 transform = Transform3D(-2.92714e-08, 0.595758, -4.27848e-08, 4.26326e-14, -2.60413e-08, -0.978802, -0.669651, -2.60414e-08, 3.55271e-15, -0.00236607, -0.0670433, -0.204445)
 texture = ExtResource("44_u5isc")
 
+[node name="m16" parent="." instance=ExtResource("42_103li")]
+transform = Transform3D(1, 0, 0, 0, 0.570398, -0.821368, 0, 0.821368, 0.570398, -0.207732, 0.669401, -18.0386)
+
 [node name="Node3D" parent="." instance=ExtResource("44_l8dmy")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.33326, 0, -63.3061)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.33326, 0, -50.8332)
 
 [node name="MARCOS PUENTE" type="Node3D" parent="."]
 transform = Transform3D(-0.0264686, -0.000212489, -1.24052, -0.000776867, 0.657814, 0.00124469, 0.123821, 0.00408176, -0.265171, 1.89271, 0.988172, 63.8606)
@@ -6139,57 +5986,52 @@ transform = Transform3D(-5.42316, -0.246745, 25.3699, -0.00161304, 7.74098, 0.03
 [node name="Pedestal 3" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(-5.42316, -0.248456, 25.3698, -0.00161304, 7.79464, 0.0309856, -2.53236, 0.00396607, -0.541312, 62.4521, 0.822097, -6.20536)
 
-[node name="Pedestal 4" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
-transform = Transform3D(-5.42314, -0.0813569, 25.3697, -0.00161302, 2.55236, 0.0309855, -2.53236, 0.00129869, -0.541312, 107.102, 11.7722, -3.50419)
-
-[node name="Pedestal 5" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
-transform = Transform3D(-5.42314, -0.0813568, 25.3697, -0.00161302, 2.55235, 0.0309855, -2.53236, 0.00129869, -0.541312, 119.197, 11.7624, 2.61107)
-
 [node name="CosaExtraña2" parent="." instance=ExtResource("50_idl15")]
-transform = Transform3D(-2.66828e-08, -7.47453, 0, 0.610432, -3.26722e-07, 0, 0, 0, 1, -7.9437, 8.299, 58.982)
-
-[node name="CosaExtraña4" parent="." instance=ExtResource("50_idl15")]
-transform = Transform3D(-2.66828e-08, -7.98667, 0, 0.610432, -3.49109e-07, 0, 0, 0, 1, -22.9198, 8.299, 50.9598)
-
-[node name="CosaExtraña6" parent="." instance=ExtResource("50_idl15")]
-transform = Transform3D(-2.66828e-08, -7.98667, 0, 0.610432, -3.49109e-07, 0, 0, 0, 1, -22.9198, 8.299, 34.9811)
-
-[node name="CosaExtraña8" parent="." instance=ExtResource("50_idl15")]
-transform = Transform3D(-2.66828e-08, 5.93092, 0, -0.610432, -2.59249e-07, 0, 0, 0, 1, -23.1088, 8.299, 25.9965)
+transform = Transform3D(-4.37114e-08, -7.47453, 0, 1, -3.26722e-07, 0, 0, 0, 1, -7.95819, 8.42503, 58.9823)
 
 [node name="CosaExtraña3" parent="." instance=ExtResource("50_idl15")]
-transform = Transform3D(1.14641e-15, 1.77425e-07, -1, 0.6, -1.77425e-07, 0, -2.62268e-08, -4.059, -4.37114e-08, -23.9403, 8.304, 58.132)
+transform = Transform3D(0.0243712, -0.000519117, -0.999701, 0.997207, -0.0212482, 0.0244322, -0.00522294, -4.05931, -4.36983e-08, -23.8875, 8.42503, 58.1318)
 
-[node name="CosaExtraña5" parent="." instance=ExtResource("50_idl15")]
-transform = Transform3D(1.14641e-15, 3.49331e-07, -1, 0.6, -3.49331e-07, 0, -2.62268e-08, -7.99175, -4.37114e-08, -39.9282, 8.304, 50.0245)
+[node name="MarcosInicio" type="Node3D" parent="."]
 
-[node name="CosaExtraña7" parent="." instance=ExtResource("50_idl15")]
-transform = Transform3D(1.14641e-15, 1.96769e-07, -1, 0.6, -1.96769e-07, 0, -2.62268e-08, -4.50156, -4.37114e-08, -23.9516, 8.304, 34.0892)
+[node name="Marco9" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.81842e-08, 0.999998, 2.45869e-07, 0.812358, -4.62751e-08, -3.20142e-10, 2.47965e-08, 1.49012e-08, -0.596494, -10.8502, 3.48756, -9.45353)
 
-[node name="Velas2" parent="." instance=ExtResource("51_3r2y3")]
-transform = Transform3D(0.00709174, 0, 0, 0, 0.00391199, 0, 0, 0, 0.00535988, -2.00846, 1.38756, 19.4964)
+[node name="Marco10" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.81842e-08, 0.999998, 2.45869e-07, 0.812358, -4.62751e-08, -3.20142e-10, 2.47965e-08, 1.49012e-08, -0.596494, -10.8502, 3.48756, -14.7997)
 
-[node name="velas3" parent="." instance=ExtResource("52_rsptk")]
-transform = Transform3D(0.0606523, 0, 0, 0, 0.0585597, 0, 0, 0, 0.0993993, 1.9651, 1.3555, 19.1044)
+[node name="Marco11" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.9814e-08, 0.999998, 2.45869e-07, 0.812358, -4.62751e-08, -3.20142e-10, 2.51457e-08, 1.49012e-08, -0.596494, -10.8502, 3.48756, -20.2231)
 
-[node name="Velas1" parent="." instance=ExtResource("53_b8gns")]
-transform = Transform3D(0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, 3.4118, 10.5107, 78.1823)
+[node name="Marco12" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(5.30279e-08, 0.999998, 3.60141e-07, 1.12815, -4.62751e-08, -4.68934e-10, 3.44358e-08, 1.49012e-08, -0.873724, -10.8604, 3.81668, 0.0699511)
 
-[node name="Velas3" parent="." instance=ExtResource("53_b8gns")]
-transform = Transform3D(0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, -4.4148, 10.4922, 78.1047)
+[node name="Marco13" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.81842e-08, 0.999998, 2.45869e-07, 0.812358, -4.62751e-08, -3.20142e-10, 2.47965e-08, 1.49012e-08, -0.596494, -10.8502, 3.47174, 20.0373)
 
-[node name="Candelabro" parent="." instance=ExtResource("54_uf5hx")]
-transform = Transform3D(-0.0872461, 0, 0.498747, 0, 0.346602, 0, -0.786739, 0, -0.0553089, -1.24965, -4.76837e-07, 23.4576)
+[node name="Marco14" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.81842e-08, 0.999998, 2.45869e-07, 0.812358, -4.62751e-08, -3.20142e-10, 2.47965e-08, 1.49012e-08, -0.596494, -10.8502, 3.47175, 14.6911)
 
-[node name="Block_0" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 8, 50)
-script = ExtResource("18_jdkkt")
-block_data = SubResource("Resource_tmr8e")
-materials = Array[Material]([ExtResource("21_8brsi")])
+[node name="Marco15" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.9814e-08, 0.999998, 2.45869e-07, 0.812358, -4.62751e-08, -3.20142e-10, 2.51457e-08, 1.49012e-08, -0.596494, -10.8502, 3.47174, 9.26764)
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(2.43456, 0, -0.0341843, 0, 1.65182, 0, 0.0832726, 0, 0.999416, -31.0872, 14.045, 73.4979)
-texture = ExtResource("57_w5cb7")
+[node name="Marco16" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.82074e-08, -2.47965e-08, 8.74226e-08, -0.596494, 10.8444, 3.48756, -9.45353)
 
-[node name="fueguito" parent="." instance=ExtResource("58_8srvo")]
-transform = Transform3D(0.0295894, 0, 0, 0, 0.0266309, 0, 0, 0, 0.0605275, 2.02974, 1.44479, 18.9854)
+[node name="Marco17" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.82074e-08, -2.47965e-08, 8.74226e-08, -0.596494, 10.8445, 3.48756, -14.7997)
+
+[node name="Marco18" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.84639e-08, -2.51457e-08, 8.74226e-08, -0.596494, 10.8445, 3.48756, -20.2231)
+
+[node name="Marco19" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(4.93131e-08, -0.999998, -7.63834e-08, -1.12815, -4.37113e-08, 2.66696e-08, -3.44358e-08, 8.74226e-08, -0.873724, 10.8343, 3.81668, 0.0699511)
+
+[node name="Marco20" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.82074e-08, -2.47965e-08, 8.74226e-08, -0.596494, 10.8444, 3.47174, 20.0373)
+
+[node name="Marco21" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.82074e-08, -2.47965e-08, 8.74226e-08, -0.596494, 10.8445, 3.47175, 14.6911)
+
+[node name="Marco22" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.84639e-08, -2.51457e-08, 8.74226e-08, -0.596494, 10.8445, 3.47174, 9.26764)

@@ -31,6 +31,7 @@ func _on_join_pressed():
 func add_player(id = 1):
 	var jugador = player.instantiate()
 	jugador.name = "player"+str(id)
+	jugador.position = Vector3(0,0,0)
 	call_deferred("add_child",jugador)
 
 func delete_player(id):
