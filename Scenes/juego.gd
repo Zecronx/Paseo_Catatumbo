@@ -6,7 +6,7 @@ var previous_scene = preload("res://Scenes/Menu/Main_Menu.tscn")
 @onready var Pause_Menu = $PauseMenu
 var paused = false
 var peer: ENetMultiplayerPeer
-var Direccion =  "127.0.0.1"
+var Direccion =  "192.168.32.90"
 
 func _ready():
 	peer = ENetMultiplayerPeer.new()
@@ -21,7 +21,6 @@ func _on_host_pressed():
 	multiplayer.peer_disconnected.connect(delete_player)
 	add_player(multiplayer.get_unique_id())
 	canvas_layer.hide()
-	add_player()
 
 func _on_join_pressed(): 
 	peer.create_client(Direccion, 1027)
