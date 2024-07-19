@@ -1,13 +1,13 @@
-[gd_scene load_steps=231 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=244 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
+[ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Imagenes/marco.tscn" id="4_axiku"]
 [ext_resource type="PackedScene" uid="uid://cbfxv1tffjfyr" path="res://Assets/Marco/marco_vertical.tscn" id="5_iqygw"]
 [ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
 [ext_resource type="Texture2D" uid="uid://dywn42cidm7kn" path="res://Imagenes/fotos angel/pueblo añu.jpg" id="6_wlh5f"]
 [ext_resource type="PackedScene" uid="uid://db3yrhykvlvx6" path="res://Assets/Mp5/hk-mp5.glb" id="7_5apxg"]
 [ext_resource type="Texture2D" uid="uid://cqftqit861dq4" path="res://Imagenes/fotos angel/Sierra de perija.jpg" id="7_acxnl"]
 [ext_resource type="PackedScene" uid="uid://bu7u1gaihpodm" path="res://Assets/LamparaTecho/lampara de techo.glb" id="7_lmtg1"]
-[ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Assets/Marco/marco.tscn" id="10_chpvt"]
 [ext_resource type="PackedScene" uid="uid://df8x2mtyx5u13" path="res://Assets/TechoArco/techoAbierto2.glb" id="11_63ggk"]
 [ext_resource type="PackedScene" uid="uid://cd6hixteyjrcv" path="res://Assets/Pedestal/pedestal.tscn" id="11_gl7h4"]
 [ext_resource type="PackedScene" uid="uid://n3mgeinupl5v" path="res://Assets/TechoArco/Pared/Cerrado/techoCerradoPared.glb" id="12_afcfj"]
@@ -20,7 +20,6 @@
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="18_jdkkt"]
 [ext_resource type="Material" uid="uid://ddeqaxul80ico" path="res://Assets/texturas_adicionales/WoodFloor008_1K-JPG/Wood008.tres" id="18_q2qk8"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="19_8qer4"]
-[ext_resource type="Material" uid="uid://l5wssxfeidln" path="res://addons/godot-xr-tools/materials/capsule.tres" id="20_yeal6"]
 [ext_resource type="Material" uid="uid://cn111t8nun0hr" path="res://Assets/Pared/pared.tres" id="21_8brsi"]
 [ext_resource type="Material" uid="uid://dv5gwbhe5pg64" path="res://addons/cyclops_level_builder/materials/tool_edit_active_fill_material.tres" id="22_l0vtt"]
 [ext_resource type="PackedScene" uid="uid://bppr5aaueiphk" path="res://Assets/Sillas/SillaAfuera.glb" id="24_ujkbo"]
@@ -51,6 +50,12 @@
 [ext_resource type="Texture2D" uid="uid://vrdxss4k354n" path="res://Imagenes/Fotos pnb/images.jpg" id="44_wpoku"]
 [ext_resource type="PackedScene" uid="uid://du2tlneaqgenb" path="res://Assets/Puente/PuEnTe1.glb" id="45_fd8l4"]
 [ext_resource type="PackedScene" uid="uid://di23ejwgugiap" path="res://Assets/Decoracion/CosaExtraña.glb" id="50_idl15"]
+[ext_resource type="Texture2D" uid="uid://dflj7o2t6v5r2" path="res://Imagenes/Fotos Puente/puente_destruido1.webp" id="51_y0fsc"]
+[ext_resource type="Texture2D" uid="uid://dberahlmjfabn" path="res://Imagenes/Fotos Puente/rafael_urdaneta.webp" id="52_57an6"]
+[ext_resource type="Texture2D" uid="uid://baier7pmqu1gc" path="res://Imagenes/Fotos Puente/puente_destruido2.jpg" id="52_p2doc"]
+[ext_resource type="Texture2D" uid="uid://dq1xpxwwsrp0g" path="res://Imagenes/Fotos Puente/puente1.jpg" id="54_yr8wl"]
+[ext_resource type="Texture2D" uid="uid://blj5oeumr2gwm" path="res://Imagenes/Fotos Puente/puente2.jpg" id="55_dfvnm"]
+[ext_resource type="Texture2D" uid="uid://c2oges5b7dhfh" path="res://Imagenes/Fotos Puente/puente_contaminacion2.webp" id="56_pl7yc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -71,12 +76,12 @@ ssao_enabled = true
 [sub_resource type="TextMesh" id="TextMesh_segdq"]
 text = "Tequeños
 
-Los tequeños son los pásapalos venezolanos más famosos y queridos, consiste en una masa de harina de trigo frita, rellena de queso blanco venezolano, entre otros rellenos. Es consumido como entremés, desayuno, comida rápida o merienda. Generalmente se sirven solos pero es posible acompañarlos de alguna salsa, por ejemplo ketchup, guasacaca, salsa rosada, salsa tártara, salsa picante o alguna salsa con sabor a ajo, cebolla, queso cheddar, tocino, entre otros."
+Los tequeños son los pásapalos venezolanos más famosos y queridos, consiste en una masa de harina de trigo frita, rellena de queso blanco venezolano, entre otros rellenos."
 
 [sub_resource type="TextMesh" id="TextMesh_c8bag"]
 text = "Patacón
 
-La palabra patacón proviene de la similitud con la moneda colonial del mismo nombre. Plátano, Mantequilla y Queso o plátanos fritos en tajadas rellenos de carne, pollo, vegetales queso y salsa y a veces se puede hacer con topocho u otro tipo de plátano más dulce."
+Plátano, Mantequilla y Queso o plátanos fritos en tajadas rellenos de carne, pollo, vegetales queso y salsa y a veces se puede hacer con topocho u otro tipo de plátano más dulce."
 
 [sub_resource type="TextMesh" id="TextMesh_qf5li"]
 text = "Pastelito
@@ -86,14 +91,12 @@ Es un alimento preparado compuesto por una fina masa de pan y levadura, masa que
 [sub_resource type="TextMesh" id="TextMesh_p8bsi"]
 text = "Chivo en coco
 
-Es un plato elaborado con Chivo, Coco y Especies. Es un plato delicioso, donde la carne de chivo se cocina en una salsa cremosa y exquisita.
-
-El chivo o cordero como animal de cría es tradicionalmente una fuente de alimento en las regiones venezolanas de clima árido y xerófito, lugar dónde estos animales tienden a habitar en Venezuela."
+Es un plato elaborado con Chivo, Coco y Especies. Es un plato delicioso, donde la carne de chivo se cocina en una salsa cremosa y exquisita."
 
 [sub_resource type="TextMesh" id="TextMesh_p4dn8"]
 text = "Mandocas 
 
-La mandoca es un plato típico del estado Zulia, Venezuela. Es una rosca frita en forma de gota, elaborada con una mezcla de harina de maíz, papelón, plátano maduro y queso de año rallado. Se come frecuentemente caliente, con queso rallado, mantequilla o margarina. Forma parte frecuente de las cenas y los desayunos de los venezolanos acompañada con café con leche."
+La mandoca es un plato típico del estado Zulia, Venezuela. Es una rosca frita en forma de gota, elaborada con una mezcla de harina de maíz, papelón, plátano maduro y queso de año rallado."
 
 [sub_resource type="TextMesh" id="TextMesh_3k8jj"]
 text = "Bollos pelones
@@ -2347,7 +2350,7 @@ active_edge = -1
 active_face = -1
 active_face_vertex = 0
 
-[sub_resource type="Resource" id="Resource_a4c8a"]
+[sub_resource type="Resource" id="Resource_i3vqo"]
 script = ExtResource("19_8qer4")
 selected = false
 active = false
@@ -2431,11 +2434,17 @@ active_edge = -1
 active_face = -1
 active_face_vertex = 0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_wwa6m"]
+size = Vector3(3.99719, 0.582809, 2.56549)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_73j0m"]
-size = Vector3(4.89438, 3.06064, 3.52746)
+size = Vector3(4.5361, 0.466355, 3.87643)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_edb1x"]
+size = Vector3(3.58307, 2.01556, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jvgxs"]
-size = Vector3(4.62695, 2.71484, 2.59009)
+size = Vector3(4.15735, 0.418701, 2.42499)
 
 [sub_resource type="Resource" id="Resource_51gen"]
 script = ExtResource("19_8qer4")
@@ -4416,6 +4425,24 @@ active_face_vertex = 0
 [sub_resource type="TextMesh" id="TextMesh_my4wl"]
 text = "Dios es Amor"
 
+[sub_resource type="TextMesh" id="TextMesh_ul7vk"]
+text = "Destrucción
+
+Un buque petrolero de la Creole Corporation destruyó 259 metros de la estructura del Puente sobre el Lago de Maracaibo y causó 7 muertos, al caer al agua los vehículos en los que se trasladaban.
+
+El suceso ocurrió el 6 de abril de 1964, a las 11.45 de la noche."
+
+[sub_resource type="TextMesh" id="TextMesh_hfp2x"]
+text = "Destrucción
+
+En 1964, un buque petrolero destruyó el puente sobre el Lago de Maracaibo
+En ese entonces murieron 7 personas y, gracias a un camionero, el saldo letal no fue mayor."
+
+[sub_resource type="TextMesh" id="TextMesh_kgil1"]
+text = "Rafael Urdaneta
+
+Fue militar y político, cursó estudios de latín y filosofía, perteneció al ejército del Libertador de la Patria, Simón Bolívar y tuvo un significativo rol en la Campaña Admirable."
+
 [sub_resource type="Resource" id="Resource_ycjs7"]
 script = ExtResource("19_8qer4")
 selected = false
@@ -4443,6 +4470,18 @@ active_vertex = -1
 active_edge = -1
 active_face = -1
 active_face_vertex = 0
+
+[sub_resource type="TextMesh" id="TextMesh_o11wn"]
+text = "Puente General Rafael Urdaneta
+
+El puente General Rafael Urdaneta, también localmente llamado puente sobre el Lago, es un puente que cruza la parte más angosta del lago de Maracaibo, en Zulia, en el noroeste de Venezuela, y conecta la ciudad de Maracaibo con el resto del país."
+
+[sub_resource type="TextMesh" id="TextMesh_xlt7a"]
+text = "Vista del puente desde un dron en agosto de 2023. Se visualiza la contaminación del lago.
+"
+
+[sub_resource type="TextMesh" id="TextMesh_nf83x"]
+text = "Vista en sentido Cabimas-San Francisco"
 
 [node name="Mapa" type="Node3D"]
 script = ExtResource("1_44um2")
@@ -4615,27 +4654,27 @@ omni_range = 30.0
 omni_attenuation = 0.4
 metadata/_edit_group_ = true
 
-[node name="Marco tequeños" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco tequeños" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(1.21118e-15, 4.20504e-08, 0.654542, 0.633898, -4.20504e-08, 0, 2.77085e-08, 0.962, -2.8611e-08, 28.5059, 2.00229, 34.1038)
 texto = SubResource("TextMesh_segdq")
 
-[node name="Marco patacones" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco patacones" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(1.3029e-15, 4.20504e-08, 0.684918, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.99387e-08, 34.9407, 2.02348, 34.0763)
 texto = SubResource("TextMesh_c8bag")
 
-[node name="Marco pastelitos" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco pastelitos" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(-2.62642e-08, -0.962, 0, 0.600855, -4.20504e-08, 0, 0, 0, 0.53792, 40.88, 1.98235, 37.5476)
 texto = SubResource("TextMesh_qf5li")
 
-[node name="Marco mojito" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco mojito" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(-2.7768e-08, -0.962, 0, 0.635259, -4.20504e-08, 0, 0, 0, 0.686658, 40.88, 1.97717, 44.6708)
 texto = SubResource("TextMesh_p8bsi")
 
-[node name="Marco mandocas" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco mandocas" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(-4.08134e-16, -1.14717e-08, -0.713909, 0.782988, -4.20504e-08, 0, -3.42255e-08, -0.962, 8.51328e-09, 35.3904, 2.23248, 49.8945)
 texto = SubResource("TextMesh_p4dn8")
 
-[node name="Marco bollitos" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco bollitos" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(-3.07613e-16, -1.14717e-08, -0.669886, 0.590141, -4.20504e-08, 0, -2.57959e-08, -0.962, 7.98831e-09, 28.1358, 1.95129, 49.895)
 texto = SubResource("TextMesh_3k8jj")
 
@@ -4664,7 +4703,7 @@ texto = SubResource("TextMesh_nkd0b")
 transform = Transform3D(-4.13928e-08, -1, 0, 0.946956, -4.37114e-08, 0, 0, 0, 0.936127, 21.895, 13.336, 67.7661)
 texto = SubResource("TextMesh_v6rr0")
 
-[node name="Marco PB 3" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco PB 3" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(0.902394, 0, 0, 0, -4.37114e-08, -0.58709, 0, 1, -2.56625e-08, 0, 3.63857, -23.8352)
 audio = ExtResource("12_g8n3c")
 
@@ -4736,20 +4775,6 @@ transform = Transform3D(3.285, 0, 0, 0, 5.14554, 0, 0, 0, 3.285, 3.30599, 1.2206
 
 [node name="Pedestal 16" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(3.285, 0, 0, 0, 5.14554, 0, 0, 0, 3.285, -6.31794, 1.22062, 26.2616)
-
-[node name="Hab Puente" type="Sprite3D" parent="."]
-transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, 0.129229, 6.04476, 58.4481)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 1.9345
-billboard = 1
-texture = SubResource("CanvasTexture_20ic3")
-
-[node name="Label3D" type="Label3D" parent="Hab Puente"]
-transform = Transform3D(1.11732, 0, 0, 0, 1.18343, 0, 0, 0, 1, 0.0483859, 0, 0)
-billboard = 1
-text = "Puente sobre
-el lago"
-font_size = 40
 
 [node name="Hab Basilica" type="Sprite3D" parent="."]
 transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, -0.193892, 10.9085, 84.5668)
@@ -5323,8 +5348,8 @@ materials = Array[Material]([ExtResource("21_8brsi")])
 [node name="Block_22" type="Node3D" parent="CyclopsBlock1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 1, 38.2581)
 script = ExtResource("18_jdkkt")
-block_data = SubResource("Resource_a4c8a")
-materials = Array[Material]([ExtResource("20_yeal6")])
+block_data = SubResource("Resource_i3vqo")
+materials = Array[Material]([ExtResource("22_l0vtt")])
 
 [node name="Block_23" type="Node3D" parent="CyclopsBlock1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 11, 10.2581)
@@ -5342,23 +5367,31 @@ materials = Array[Material]([ExtResource("22_l0vtt")])
 stream = ExtResource("18_fc8dd")
 
 [node name="Silla PB2" type="Node3D" parent="."]
-transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -0.8, -1.231, -11)
+transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, 0, 0, 0)
 
 [node name="Silla 2" type="StaticBody3D" parent="Silla PB2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.6667, 0, -5.96046e-07)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.3625, -1.22496, -1.05828)
 
 [node name="SillaAfuera" parent="Silla PB2/Silla 2" instance=ExtResource("24_ujkbo")]
-transform = Transform3D(1.99655, 0, 4.26326e-14, 0, 1.5108, 0, 4.9738e-14, 0, 2.70453, -34.9158, -0.402514, -0.547903)
+transform = Transform3D(1.99655, 0, 4.26326e-14, 0, 1.5108, 0, 4.9738e-14, 0, 2.70453, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Silla PB2/Silla 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00786972, 1.61522, 1.42217)
+shape = SubResource("BoxShape3D_wwa6m")
 
 [node name="Mostrador armas 1" type="StaticBody3D" parent="."]
 transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, 62.6297, 9.60757, 34.4022)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Mostrador armas 1"]
-transform = Transform3D(-0.0479084, 0, 0.998852, 0, 1, 0, -0.998852, 0, -0.0479084, -0.125755, 2.41465, -0.132767)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0732498, 1.10874, 0.251221)
 shape = SubResource("BoxShape3D_73j0m")
 
 [node name="Mostrador" parent="Mostrador armas 1" instance=ExtResource("24_ujkbo")]
 transform = Transform3D(1.92833, 0, -1.42109e-14, 0, 1, 0, 1.06581e-13, 0, 4.77719, -0.0646877, 0.0877895, -2.26601)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Mostrador armas 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0513, 1.93496, 2.527)
+shape = SubResource("BoxShape3D_edb1x")
 
 [node name="Mostrador armas 2" type="StaticBody3D" parent="."]
 transform = Transform3D(-7.88304e-08, 0, 1.88395, 0, 1.5, 0, -1.80343, 0, -8.23501e-08, 62.7674, 9.60757, 50.4069)
@@ -5367,8 +5400,14 @@ transform = Transform3D(-7.88304e-08, 0, 1.88395, 0, 1.5, 0, -1.80343, 0, -8.235
 transform = Transform3D(-5.27401e-08, 0, 4.34372, 0, 1, 0, -1.20655, 0, -1.8987e-07, -0.689148, 0.0778561, 0.0604095)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Mostrador armas 2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.81348, 2.28569, 0.0709229)
+transform = Transform3D(1, 0, -7.35412e-13, 0, 1, 0, 9.45022e-13, 0, 0.999999, 1.60944, 1.13762, 0.0583115)
 shape = SubResource("BoxShape3D_jvgxs")
+
+[node name="Marco11" parent="Mostrador armas 2/CollisionShape3D" instance=ExtResource("4_axiku")]
+transform = Transform3D(2.0632e-15, 4.37114e-08, -1.24496, 1.07982, -4.37114e-08, 0, -4.72005e-08, -1, -5.44188e-08, 0.990038, 3.36742, 73.828)
+
+[node name="Marco11" parent="Mostrador armas 2/CollisionShape3D/Marco11" instance=ExtResource("4_axiku")]
+transform = Transform3D(2.0632e-15, 4.37114e-08, -1.24496, 1.07982, -4.37114e-08, 0, -4.72005e-08, -1, -5.44188e-08, 0.990039, 3.36742, 73.828)
 
 [node name="Tequeños" type="Sprite3D" parent="."]
 transform = Transform3D(0.65888, 0, 0, 0, 0.701797, 0, 0, 0, 1, 28.3, 2, 34.013)
@@ -5925,16 +5964,16 @@ transform = Transform3D(-0.597977, 0.000828441, -0.801513, -0.798729, -0.0838917
 [node name="AlfombraRoja" type="Node3D" parent="."]
 
 [node name="AlfombraRoja" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(5.58965, 0, 0, 0, 1, 0, 0, 0, 1, -0.265294, 0.0138487, 58.5138)
+transform = Transform3D(5.0153, 0, 0, 0, 0.741077, 0, 0, 0, 9.30261, -0.009, 0.015, 61.719)
 
 [node name="AlfombraRoja2" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(5.58965, 0, 0, 0, 1, 0, 0, 0, 1, -0.265294, 0.0378891, 70.824)
-
-[node name="AlfombraRoja3" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-2.74943e-07, 0, -1, 0, 1, 0, 6.28995, 0, -4.37114e-08, 6.22845, 0.0196317, 63.6705)
+transform = Transform3D(5.15537, 0, 0, 0, 1, 0, 0, 0, 6.63316, -0.265, 0.015, 68.206)
 
 [node name="AlfombraRoja4" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-2.74943e-07, 0, -1, 0, 1, 0, 6.28995, 0, -4.37114e-08, -4.13879, 0.0245014, 63.7314)
+transform = Transform3D(-2.77389e-07, 0, -1, 0, 1, 0, 6.3459, 0, -4.37114e-08, -4.139, 0.015, 63.714)
+
+[node name="AlfombraRoja6" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
+transform = Transform3D(-2.77389e-07, 0, -1, 0, 1, 0, 6.3459, 0, -4.37114e-08, 6.228, 0.015, 63.714)
 
 [node name="AlfombraRoja5" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
 transform = Transform3D(-1.06215e-06, 0, -12.4026, 0, 1, 0, 24.2992, 0, -5.42136e-07, 0.450388, 0.0196317, -4.7762)
@@ -6012,11 +6051,11 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 62.815
 [node name="QBZ 97" parent="Armas" instance=ExtResource("39_6wlh0")]
 transform = Transform3D(-0.745515, 0.378638, -0.274425, 0.264979, 0.710146, 0.241483, 0.611551, 0.153882, -0.439171, 63.8807, 10.8565, 34.9096)
 
-[node name="Marco Lago" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco Lago" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(6.31613e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -7.789, 12.2009, 67.7687)
 texto = SubResource("TextMesh_kh1m2")
 
-[node name="Marco Palafito" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco Palafito" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(2.76086e-15, 4.37114e-08, -1.52163, 1.44496, -4.37114e-08, 0, -6.31612e-08, -1, -6.65126e-08, -15.4856, 12.8544, 57.9268)
 texto = SubResource("TextMesh_kh1m2")
 derecha = false
@@ -6025,7 +6064,7 @@ derecha = false
 transform = Transform3D(-1.21062e-08, 0.274818, -4.27848e-08, -7.10543e-15, -1.20126e-08, -0.978802, -0.276958, -1.20126e-08, 1.77636e-15, -0.00220108, -0.0670433, -0.186634)
 texture = ExtResource("43_s5gbs")
 
-[node name="Marco Palafito2" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco Palafito2" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(2.76086e-15, 4.37114e-08, -1.69358, 1.44496, -4.37114e-08, 0, -6.31612e-08, -1, -7.40289e-08, 17.06, 12.8544, 57.9268)
 texto = SubResource("TextMesh_kh1m2")
 derecha = false
@@ -6034,7 +6073,7 @@ derecha = false
 transform = Transform3D(-1.21062e-08, 0.274818, -4.27848e-08, -7.10543e-15, -1.20126e-08, -0.978802, -0.276958, -1.20126e-08, 1.77636e-15, -0.00220108, -0.0670433, -0.186634)
 texture = ExtResource("43_s5gbs")
 
-[node name="Marco Laguna de sinamaica" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco Laguna de sinamaica" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(6.31612e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -38.8721, 12.2009, 41.7696)
 texto = SubResource("TextMesh_kh1m2")
 
@@ -6042,7 +6081,7 @@ texto = SubResource("TextMesh_kh1m2")
 transform = Transform3D(-2.92714e-08, 0.595758, -4.27848e-08, 4.26326e-14, -2.60413e-08, -0.978802, -0.669651, -2.60414e-08, 3.55271e-15, -0.00236607, -0.0670433, -0.204445)
 texture = ExtResource("44_u5isc")
 
-[node name="Marco Ladrones" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco Ladrones" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(3.82325e-08, 1, -7.95036e-08, 0.874658, -4.37114e-08, 0, -3.34239e-15, -8.74228e-08, -0.909415, 52.097, 14.2, 34.701)
 texto = SubResource("TextMesh_kh1m2")
 derecha = false
@@ -6051,7 +6090,7 @@ derecha = false
 transform = Transform3D(-8.30659e-08, 1.88831, -4.27848e-08, 1.20982e-13, -8.25404e-08, -0.978802, -1.90033, -8.25408e-08, 3.55271e-15, -0.00236607, -0.0670471, -0.204443)
 texture = ExtResource("43_2q0pm")
 
-[node name="Marco Ladrones Mejorados" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco Ladrones Mejorados" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(-3.82325e-08, -1, 0, 0.874658, -4.37114e-08, 0, 0, 0, 0.909415, 66.8487, 14.1052, 41.5329)
 texto = SubResource("TextMesh_kh1m2")
 derecha = false
@@ -6065,10 +6104,10 @@ transform = Transform3D(2.25552e-08, 0.998788, -6.43332e-08, 0.516003, -4.36584e
 texto = SubResource("TextMesh_my4wl")
 
 [node name="Sprite3D2" type="Sprite3D" parent="Marco Logo de Ladrones"]
-transform = Transform3D(-1.54515e-07, 3.52034, -6.75062e-08, -8.52651e-14, -9.75264e-08, -0.978801, -2.49216, -1.08487e-07, -2.13163e-14, 0.00120163, 0.0295448, -0.177589)
+transform = Transform3D(-1.08936e-07, 3.52034, 4.27848e-08, 0, -1.53879e-07, 0.978801, 2.49216, 1.53879e-07, 1.87018e-15, 0.00120163, 0.0295448, -0.177589)
 texture = ExtResource("44_nfuj6")
 
-[node name="Marco Sierra de Perija" parent="." instance=ExtResource("10_chpvt")]
+[node name="Marco Sierra de Perija" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(2.76086e-15, 4.37114e-08, 1.78902, 1.44496, -4.37114e-08, 0, 6.31612e-08, 1, -7.82007e-08, -30.7756, 12.201, 34.114)
 texto = SubResource("TextMesh_kh1m2")
 
@@ -6085,28 +6124,23 @@ transform = Transform3D(-0.0264686, -0.000212489, -1.24052, -0.000776867, 0.6578
 [node name="PuEnTe1" parent="MARCOS PUENTE" instance=ExtResource("45_fd8l4")]
 transform = Transform3D(1, 3.72529e-09, 0, -2.32831e-10, 1, 2.32831e-10, 0, -5.82077e-11, 1, 0, 0, 0)
 
-[node name="Marco3" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
-transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628308, -0.770887, 0.0982926, 61.5929, 3.27553, 5.73181)
-
-[node name="Marco4" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
-transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628308, -0.770887, 0.0982926, 27.3885, 3.23376, 6.46162)
-
-[node name="Marco5" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
-transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628307, -0.770887, 0.0982926, -7.82242, 3.19075, 7.21291)
-
-[node name="Marco bollitos2" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
-transform = Transform3D(-0.0530402, -7.42947, 1.9825, 1.66398, -0.00907408, 0.000589664, 0.000846676, 0.158521, 0.925734, 78.0138, 3.79564, -1.05727)
-texto = SubResource("TextMesh_3k8jj")
-
-[node name="Marco6" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
-transform = Transform3D(0.0364479, 1.65196, 4.60657, 1.23497, 0.000496598, 0.00563843, 0.00399212, 0.768581, -0.104725, -33.308, 3.18348, -4.85133)
+[node name="Marco8" parent="MARCOS PUENTE" instance=ExtResource("4_axiku")]
+transform = Transform3D(-0.00209043, 0.0171305, 6.70952, 1.198, -3.56231e-08, 0.0117129, 4.38393e-05, 0.817821, -0.14054, 30.0246, 3.26131, -6.20616)
+texto = SubResource("TextMesh_ul7vk")
 derecha = false
 
-[node name="Marco7" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
-transform = Transform3D(0.0364478, 1.65196, 4.60657, 1.23497, 0.000496598, 0.00563844, 0.00399212, 0.768581, -0.104725, 0.88623, 3.22525, -5.58591)
+[node name="Sprite3D2" type="Sprite3D" parent="MARCOS PUENTE/Marco8"]
+transform = Transform3D(-3.72529e-08, 0.938954, 1.74623e-10, 3.79514e-08, -3.27418e-11, 1.00049, 0.870691, 4.14439e-08, -1.78814e-07, 0.00045681, 0.000501633, -0.155586)
+texture = ExtResource("52_p2doc")
 
-[node name="Marco8" parent="MARCOS PUENTE" instance=ExtResource("10_chpvt")]
-transform = Transform3D(0.0364478, 1.65196, 4.60657, 1.23497, 0.000496599, 0.00563844, 0.00399212, 0.768581, -0.104725, 36.0863, 3.26826, -6.3421)
+[node name="Marco6" parent="MARCOS PUENTE" instance=ExtResource("4_axiku")]
+transform = Transform3D(0.0367942, 1.66202, 6.70889, 1.2467, 0.00049962, 0.00821167, 0.00403005, 0.773262, -0.152519, -26.2314, 3.19211, -5.00232)
+texto = SubResource("TextMesh_hfp2x")
+derecha = false
+
+[node name="Sprite3D2" type="Sprite3D" parent="MARCOS PUENTE/Marco6"]
+transform = Transform3D(-3.75378e-08, 0.640006, -4.47736e-14, 4.09782e-08, 8.73115e-11, 1.00087, 0.858764, 2.32831e-08, -4.4005e-08, 0.0351396, -0.0294638, -0.202614)
+texture = ExtResource("51_y0fsc")
 
 [node name="Pedestal 2" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(-5.42316, -0.246745, 25.3699, -0.00161304, 7.74098, 0.0309856, -2.53236, 0.00393876, -0.541312, 85.3188, 0.822339, 4.47222)
@@ -6116,79 +6150,79 @@ transform = Transform3D(-5.42316, -0.248456, 25.3698, -0.00161304, 7.79464, 0.03
 
 [node name="MarcosInicio" type="Node3D" parent="."]
 
-[node name="Marco9" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco9" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.81842e-08, 0.999998, 2.45869e-07, 0.812358, -4.62751e-08, -3.20142e-10, 2.47965e-08, 1.49012e-08, -0.596494, -10.8502, 3.48756, -9.45353)
 
-[node name="Marco10" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco10" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.81842e-08, 0.999998, 2.45869e-07, 0.812358, -4.62751e-08, -3.20142e-10, 2.47965e-08, 1.49012e-08, -0.596494, -10.8502, 3.48756, -14.7997)
 
-[node name="Marco11" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco11" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.9814e-08, 0.999998, 2.45869e-07, 0.812358, -4.62751e-08, -3.20142e-10, 2.51457e-08, 1.49012e-08, -0.596494, -10.8502, 3.48756, -20.2231)
 
-[node name="Marco12" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco12" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(5.30279e-08, 0.999998, 3.60141e-07, 1.12815, -4.62751e-08, -4.68934e-10, 3.44358e-08, 1.49012e-08, -0.873724, -10.8491, 3.81668, 0.0699511)
 
-[node name="Marco13" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco13" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.81842e-08, 0.999998, 2.45869e-07, 0.812358, -4.62751e-08, -3.20142e-10, 2.47965e-08, 1.49012e-08, -0.596494, -10.8502, 3.47174, 20.0373)
 
-[node name="Marco14" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco14" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.81842e-08, 0.999998, 2.45869e-07, 0.812358, -4.62751e-08, -3.20142e-10, 2.47965e-08, 1.49012e-08, -0.596494, -10.8502, 3.47175, 14.6911)
 
-[node name="Marco15" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco15" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.9814e-08, 0.999998, 2.45869e-07, 0.812358, -4.62751e-08, -3.20142e-10, 2.51457e-08, 1.49012e-08, -0.596494, -10.8502, 3.47174, 9.26764)
 
-[node name="Marco16" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco16" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.82074e-08, -2.47965e-08, 8.74226e-08, -0.596494, 10.8444, 3.48756, -9.45353)
 
-[node name="Marco17" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco17" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.82074e-08, -2.47965e-08, 8.74226e-08, -0.596494, 10.8445, 3.48756, -14.7997)
 
-[node name="Marco18" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco18" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.84639e-08, -2.51457e-08, 8.74226e-08, -0.596494, 10.8445, 3.48756, -20.2231)
 
-[node name="Marco19" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco19" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(4.93131e-08, -0.999998, -7.63834e-08, -1.12815, -4.37113e-08, 2.66696e-08, -3.44358e-08, 8.74226e-08, -0.873724, 10.8343, 3.81668, 0.0699511)
 
-[node name="Marco20" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco20" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.82074e-08, -2.47965e-08, 8.74226e-08, -0.596494, 10.8444, 3.47174, 20.0373)
 
-[node name="Marco29" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco29" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.82074e-08, -2.47965e-08, 8.74226e-08, -0.596494, 24.5319, 12.2103, 29.4951)
 
-[node name="Marco30" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco30" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(1.55216e-15, -4.37113e-08, -0.596494, -0.812358, -4.37113e-08, 0, -3.55093e-08, 0.999998, -2.60736e-08, 29.6187, 11.5732, 34.25)
 
-[node name="Marco31" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco31" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(1.55216e-15, -4.37113e-08, -0.596494, -0.812358, -4.37113e-08, 0, -3.55093e-08, 0.999998, -2.60736e-08, 36.9529, 11.5732, 34.25)
 
-[node name="Marco32" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco32" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(1.55216e-15, -4.37113e-08, 0.596494, -0.812358, -4.37113e-08, 1.05879e-22, 3.55093e-08, -0.999998, -2.60736e-08, 29.6187, 11.5732, 49.8448)
 
-[node name="Marco33" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco33" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(1.55216e-15, -4.37113e-08, 0.596494, -0.812358, -4.37113e-08, 1.05879e-22, 3.55093e-08, -0.999998, -2.60736e-08, 36.9529, 11.5732, 49.8448)
 
-[node name="Marco21" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco21" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.82074e-08, -2.47965e-08, 8.74226e-08, -0.596494, 10.8445, 3.47175, 14.6911)
 
-[node name="Marco22" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco22" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.84639e-08, -2.51457e-08, 8.74226e-08, -0.596494, 10.8445, 3.47174, 9.26764)
 
-[node name="Marco23" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco23" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.82074e-08, -2.47965e-08, 8.74226e-08, -0.596494, 10.8444, 3.47174, 28.6217)
 
-[node name="Marco24" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco24" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.82074e-08, -2.47965e-08, 8.74226e-08, -0.596494, 10.845, 3.47174, 40.3299)
 
-[node name="Marco25" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco25" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, 0.999998, 5.21472e-08, 0.812358, -4.37113e-08, 0, 3.10432e-15, 8.74226e-08, -0.596494, 12.2304, 3.47174, 29.1272)
 
-[node name="Marco28" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco28" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, -0.999998, -5.21472e-08, -0.812358, -4.37113e-08, 0, -3.10432e-15, 8.74226e-08, -0.596494, 24.7923, 3.47174, 30.1022)
 
-[node name="Marco27" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco27" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(1.81519e-15, 4.37113e-08, 0.90605, 0.950023, -4.37113e-08, 0, 4.15268e-08, 0.999998, -3.96047e-08, 18.624, 3.53025, 26.503)
 
-[node name="Marco26" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco26" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, 0.999998, 5.21472e-08, 0.812358, -4.37113e-08, 0, 3.10432e-15, 8.74226e-08, -0.596494, 12.2128, 3.47174, 40.8455)
 
 [node name="MarcoV1" parent="MarcosInicio" instance=ExtResource("5_iqygw")]
@@ -6206,48 +6240,53 @@ transform = Transform3D(1.08647e-15, -4.37114e-08, 0.733508, -0.568628, -4.37114
 [node name="MarcoV5" parent="MarcosInicio" instance=ExtResource("5_iqygw")]
 transform = Transform3D(1.08647e-15, -4.37114e-08, 0.733508, -0.568628, -4.37114e-08, 0, 2.48555e-08, -1, -3.20626e-08, -18.0706, 3.55189, 57.5764)
 
-[node name="Marco" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 0.711151, 3.63627, 45.3535)
+texto = SubResource("TextMesh_kgil1")
 
-[node name="Marco2" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/Marco"]
+transform = Transform3D(-1.89873e-08, 0.477812, -4.37114e-08, -1.77636e-15, -2.08858e-08, -1, -0.434378, -2.08858e-08, 3.55271e-15, 0, -0.0846062, -0.195128)
+texture = ExtResource("52_57an6")
+
+[node name="Marco2" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -22.8462, 3.52909, 53.8543)
 
-[node name="Marco3" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco3" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -22.8462, 3.3613, 29.8237)
 
-[node name="Marco4" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco4" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -16.7291, 3.3613, 26.1409)
 
-[node name="Marco5" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco5" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -16.7291, 12.8619, 25.1453)
 
-[node name="Marco6" parent="MarcosInicio" instance=ExtResource("10_chpvt")]
+[node name="Marco6" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 17.9141, 12.8619, 25.1453)
 
 [node name="MarcosHabitacion2" type="Node3D" parent="."]
 transform = Transform3D(-0.123377, 0, 0.285296, 0, 0.657827, 0, -0.028477, 0, -1.23605, -28.8482, 0.988172, 42.8646)
 
-[node name="Marco3" parent="MarcosHabitacion2" instance=ExtResource("10_chpvt")]
+[node name="Marco3" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628308, -0.770887, 0.0982926, 61.3339, 3.27553, 5.61982)
 
-[node name="Marco4" parent="MarcosHabitacion2" instance=ExtResource("10_chpvt")]
+[node name="Marco4" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628308, -0.770887, 0.0982926, 27.1616, 3.23376, 6.3635)
 
-[node name="Marco5" parent="MarcosHabitacion2" instance=ExtResource("10_chpvt")]
+[node name="Marco5" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628307, -0.770887, 0.0982926, -7.82242, 3.19075, 7.21291)
 
-[node name="Marco bollitos2" parent="MarcosHabitacion2" instance=ExtResource("10_chpvt")]
+[node name="Marco bollitos2" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(-0.0530402, -7.42947, 1.9825, 1.66398, -0.00907408, 0.000589664, 0.000846676, 0.158521, 0.925734, 78.0138, 3.79564, -1.05727)
 texto = SubResource("TextMesh_3k8jj")
 
-[node name="Marco6" parent="MarcosHabitacion2" instance=ExtResource("10_chpvt")]
+[node name="Marco6" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(0.0364479, 1.65196, 4.60657, 1.23497, 0.000496598, 0.00563843, 0.00399212, 0.768581, -0.104725, -33.308, 3.18348, -4.85133)
 derecha = false
 
-[node name="Marco7" parent="MarcosHabitacion2" instance=ExtResource("10_chpvt")]
+[node name="Marco7" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(0.0364478, 1.65196, 4.60657, 1.23497, 0.000496598, 0.00563844, 0.00399212, 0.768581, -0.104725, 0.88623, 3.22525, -5.58591)
 
-[node name="Marco8" parent="MarcosHabitacion2" instance=ExtResource("10_chpvt")]
+[node name="Marco8" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(0.0364478, 1.65196, 4.60657, 1.23497, 0.000496599, 0.00563844, 0.00399212, 0.768581, -0.104725, 36.0863, 3.26826, -6.3421)
 
 [node name="Pedestal 2" parent="MarcosHabitacion2" instance=ExtResource("11_gl7h4")]
@@ -6488,3 +6527,27 @@ transform = Transform3D(1.0184e-15, 3.92528e-07, -0.533, 0.533, -3.92528e-07, 2.
 
 [node name="Borde8" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
 transform = Transform3D(-2.32982e-08, -8.015, 0, 0.533, -3.50347e-07, 0, 0, 0, 0.533, 9.10173, 0.258, 74.5136)
+
+[node name="Marco11" parent="." instance=ExtResource("4_axiku")]
+transform = Transform3D(2.0632e-15, 4.37114e-08, -1.24496, 1.07982, -4.37114e-08, 0, -4.72005e-08, -1, -5.44188e-08, 0.990039, 3.36742, 73.828)
+texto = SubResource("TextMesh_o11wn")
+
+[node name="Sprite3D2" type="Sprite3D" parent="Marco11"]
+transform = Transform3D(-2.73786e-08, 0.761119, 4.29003e-08, 0, -3.32696e-08, 0.981444, 0.626349, 3.32696e-08, 0, 0, 0, -0.187784)
+texture = ExtResource("54_yr8wl")
+
+[node name="Marco2" parent="." instance=ExtResource("4_axiku")]
+transform = Transform3D(4.37114e-08, 1.07982, -8.98475e-08, 1, -4.72004e-08, 0, -3.82137e-15, -9.44009e-08, -1.02774, -6.843, 3.15856, 61.7696)
+texto = SubResource("TextMesh_xlt7a")
+
+[node name="Sprite3D3" type="Sprite3D" parent="Marco2"]
+transform = Transform3D(-2.30439e-08, 0.870285, -2.71682e-08, -8.52651e-14, -5.66812e-08, -0.92608, -0.743984, -5.36857e-08, -2.13163e-14, -6.74725e-05, -0.11098, -0.200523)
+texture = ExtResource("56_pl7yc")
+
+[node name="Marco12" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(2.71681e-08, 1, -7.88086e-08, 0.621534, -4.37114e-08, 0, -2.37511e-15, -8.74228e-08, -0.901465, -6.84318, 3.73893, 68.6283)
+texto = SubResource("TextMesh_nf83x")
+
+[node name="Sprite3D2" type="Sprite3D" parent="Marco12"]
+transform = Transform3D(-2.39245e-08, 0.938608, -4.37115e-08, -3.90799e-14, -4.10279e-08, -1, -0.547328, -4.10278e-08, 0, 0, 0, -0.200119)
+texture = ExtResource("55_dfvnm")
