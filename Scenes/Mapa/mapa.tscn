@@ -4689,7 +4689,7 @@ transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, -13.1092, 1.580
 transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, -13.1092, 1.58073, -14.316)
 
 [node name="Pedestal 9" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
-transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, -13.1092, 1.58073, 4.90955)
+transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, -13.109, 1.581, 4.86)
 
 [node name="Pedestal 10" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, 9.25015, 1.58073, -23.9874)
@@ -4698,7 +4698,7 @@ transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, 9.25015, 1.5807
 transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, 9.25015, 1.58073, -14.316)
 
 [node name="Pedestal 12" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
-transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, 9.25015, 1.58073, 4.90955)
+transform = Transform3D(3.285, 0, 0, 0, 6.50929, 0, 0, 0, 3.285, 9.25, 1.581, 4.86)
 
 [node name="Pedestal 13" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(3.285, 0, 0, 0, 4.895, 0, 0, 0, 3.285, -13.7904, 1.41038, 11.3556)
@@ -6024,7 +6024,7 @@ transform = Transform3D(-8.30659e-08, 1.88831, -4.27848e-08, 1.20982e-13, -8.254
 texture = ExtResource("44_wpoku")
 
 [node name="Marco Logo de Ladrones" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(2.25552e-08, 0.998788, -6.43332e-08, 0.516003, -4.36584e-08, 0, -1.97184e-15, -8.73168e-08, -0.735886, 52, 14.2, 47.833)
+transform = Transform3D(2.25552e-08, 0.998788, -6.43332e-08, 0.516003, -4.36584e-08, 0, -1.97184e-15, -8.73168e-08, -0.735886, 52.1259, 14.2, 47.833)
 texto = SubResource("TextMesh_my4wl")
 
 [node name="Sprite3D2" type="Sprite3D" parent="Marco Logo de Ladrones"]
@@ -6076,12 +6076,6 @@ transform = Transform3D(-5.42316, -0.246745, 25.3699, -0.00161304, 7.74098, 0.03
 
 [node name="Pedestal 3" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(-5.42316, -0.248456, 25.3698, -0.00161304, 7.79464, 0.0309856, -2.53236, 0.00396607, -0.541312, 62.4521, 0.822097, -6.20536)
-
-[node name="CosaExtraña2" parent="." instance=ExtResource("50_idl15")]
-transform = Transform3D(-4.37114e-08, -7.47453, 0, 1, -3.26722e-07, 0, 0, 0, 1, -7.95819, 8.42503, 58.9823)
-
-[node name="CosaExtraña3" parent="." instance=ExtResource("50_idl15")]
-transform = Transform3D(0.0243712, -0.000519117, -0.999701, 0.997207, -0.0212482, 0.0244322, -0.00522294, -4.05931, -4.36983e-08, -23.8875, 8.42503, 58.1318)
 
 [node name="MarcosInicio" type="Node3D" parent="."]
 
@@ -6212,3 +6206,227 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 8, 50)
 script = ExtResource("18_jdkkt")
 block_data = SubResource("Resource_ycjs7")
 materials = Array[Material]([ExtResource("21_8brsi")])
+
+[node name="MaderaParedArriba" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.95819, 8.2666, 58.5131)
+
+[node name="Borde2" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -7.49896, 0, 0.535, -3.2779e-07, 0, 0, 0, 0.535, 0.0268707, 0, 0)
+
+[node name="Borde20" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -7.49896, 0, 0.535, -3.2779e-07, 0, 0, 0, 0.535, 33.013, 0, 0)
+
+[node name="Borde24" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -7.49896, 0, 0.535, -3.2779e-07, 0, 0, 0, 0.535, 33.013, 0, 0)
+
+[node name="Borde10" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.35167e-08, -6, 0, 0.538, -2.62268e-07, 0, 0, 0, 0.538, -2.99138, 0, -32.9764)
+
+[node name="Borde30" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.35167e-08, -6.995, 0, 0.538, -3.05761e-07, 0, 0, 0, 0.538, 32.9953, 0, -32.9764)
+
+[node name="Borde3" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.85686e-07, -0.535, 0.535, -1.85686e-07, 0, -2.33856e-08, -4.24801, -2.33856e-08, -15.5518, 0.000402451, -6.10352e-05)
+
+[node name="Borde23" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.85992e-07, -0.535, 0.535, -1.85992e-07, 0, -2.33856e-08, -4.255, -2.33856e-08, 32.418, 0, 0)
+
+[node name="Borde4" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.0184e-15, 3.92965e-07, -0.533, 0.533, -3.92965e-07, 2.60773e-22, -2.32982e-08, -8.99, -2.32982e-08, -0.553994, 0.000402451, 17.5279)
+
+[node name="Borde36" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.0184e-15, 3.7111e-07, -0.533, 0.533, -3.7111e-07, 2.60773e-22, -2.32982e-08, -8.49, -2.32982e-08, 29.4008, 0.000402451, 17.539)
+
+[node name="Borde22" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.0184e-15, 2.25114e-08, -0.533, 0.533, -2.25114e-08, 2.60773e-22, -2.32982e-08, -0.515, -2.32982e-08, 17.4387, 0.000402451, 0.508785)
+
+[node name="Borde6" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.0184e-15, 3.28569e-07, -0.533, 0.533, -3.28569e-07, 2.60773e-22, -2.32982e-08, -7.51679, -2.32982e-08, -0.553994, 0.000402451, 33.5611)
+
+[node name="Borde13" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.0184e-15, 3.28569e-07, -0.533, 0.533, -3.28569e-07, 2.60773e-22, -2.32982e-08, -7.51679, -2.32982e-08, -0.553994, 0.000402451, 33.5611)
+
+[node name="Borde16" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.0184e-15, 3.28569e-07, -0.533, 0.533, -3.28569e-07, 2.60773e-22, -2.32982e-08, -7.51679, -2.32982e-08, 14.4179, 0.000402451, 33.5611)
+
+[node name="Borde9" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33818e-08, -2.54613, 0, 0.534913, -1.11295e-07, 0, 0, 0, 0.534913, 4.9925, 0.000402451, 19.0258)
+
+[node name="Borde17" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33818e-08, -2.54613, 0, 0.534913, -1.11295e-07, 0, 0, 0, 0.534913, 15.0423, 0.000402451, 19.0258)
+
+[node name="Borde15" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -7.48, 0, 0.535, -3.26961e-07, 0, 0, 0, 0.535, 14.9868, 0.000402451, 33.9932)
+
+[node name="Borde14" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02273e-15, 2.31737e-08, -0.535269, 0.535269, -2.31737e-08, 0, -2.33973e-08, -0.530154, -2.33973e-08, 4.44292, 0.000402451, 18.5241)
+
+[node name="Borde18" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02273e-15, 2.31737e-08, -0.535269, 0.535269, -2.31737e-08, 0, -2.33973e-08, -0.530154, -2.33973e-08, 9.41289, 0.000402451, 18.5241)
+
+[node name="Borde12" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33818e-08, -2.54613, 0, 0.534913, -1.11295e-07, 0, 0, 0, 0.534913, 4.9925, 0.000402451, 17.9946)
+
+[node name="Borde19" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -9.985, 0, 0.535, -4.36458e-07, 0, 0, 0, 0.535, 29.9921, 0.000402451, 17.9946)
+
+[node name="Borde21" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -5.99, 0, 0.535, -2.61831e-07, 0, 0, 0, 0.535, 29.9705, 0.000402451, 1.02956)
+
+[node name="Borde5" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 3.49611e-07, -0.535, 0.535, -3.49611e-07, 2.89405e-22, -2.33856e-08, -7.99816, -2.33856e-08, -31.543, 0.000402451, -8.49459)
+
+[node name="Borde26" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.3109e-07, -0.535, 0.535, -1.3109e-07, 3.17637e-22, -2.33856e-08, -2.999, -2.33856e-08, 49.425, 0, -8.495)
+
+[node name="Borde31" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.74452e-07, -0.535, 0.535, -1.74452e-07, 4.23516e-22, -2.33856e-08, -3.991, -2.33856e-08, 59.4558, 2.99391, -6.49535)
+
+[node name="Borde35" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 4.57483e-07, -0.535, 0.535, -4.57483e-07, 5.29396e-22, -2.33856e-08, -10.466, -2.33856e-08, 74.4178, 2.99391, -6.49535)
+
+[node name="Borde33" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -7.496, 0, 0.535, -3.27661e-07, 0, 0, 0, 0.535, 75.013, 2.994, -6.006)
+
+[node name="Borde34" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -6.756, 0, 0.535, -2.95314e-07, 0, 0, 0, 0.535, 74.9834, 2.99391, -26.9749)
+
+[node name="Borde32" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.74452e-07, -0.535, 0.535, -1.74452e-07, 4.23516e-22, -2.33856e-08, -3.991, -2.33856e-08, 59.4558, 2.99391, -19.4792)
+
+[node name="Borde27" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.09672e-07, -0.535, 0.535, -1.09672e-07, 4.23516e-22, -2.33856e-08, -2.509, -2.33856e-08, 49.425, 0, -19.487)
+
+[node name="Borde11" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.98025e-07, -0.535, 0.535, -1.98025e-07, 0, -2.33856e-08, -4.53028, -2.33856e-08, -15.5498, 0.000402451, -24.4631)
+
+[node name="Borde29" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.98025e-07, -0.535, 0.535, -1.98025e-07, 0, -2.33856e-08, -4.53028, -2.33856e-08, 32.4256, 0.000402451, -24.4631)
+
+[node name="Borde7" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -8.0215, 0, 0.535, -3.50631e-07, 0, 0, 0, 0.535, -14.9654, 0, -8.01155)
+
+[node name="Borde25" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -8.502, 0, 0.535, -3.71634e-07, 0, 0, 0, 0.535, 50.0193, 0, -8.01155)
+
+[node name="Borde28" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -8.502, 0, 0.535, -3.71634e-07, 0, 0, 0, 0.535, 50.0193, 0, -23.9849)
+
+[node name="Borde8" parent="MaderaParedArriba" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -8.0215, 0, 0.535, -3.50631e-07, 0, 0, 0, 0.535, -14.9654, 0, -23.9833)
+
+[node name="MaderaParedAbajo" type="Node3D" parent="."]
+
+[node name="Borde22" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.35167e-08, -6, 0, 0.538, -2.62268e-07, 0, 0, 0, 0.538, -10.9354, 0.258, 26.5309)
+
+[node name="Borde12" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -7.985, 0, 0.535, -3.49035e-07, 0, 0, 0, 0.535, -6.93797, 0.257548, 58.5131)
+
+[node name="Borde44" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -8.005, 0, 0.535, -3.4991e-07, 0, 0, 0, 0.535, 25.0551, 0.257548, 58.5131)
+
+[node name="Borde23" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -11.52, 0, 0.535, -5.03555e-07, 0, 0, 0, 0.505, 12.119, 0.258, 45.508)
+
+[node name="Borde35" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -11.008, 0, 0.535, -4.81175e-07, 0, 0, 0, 0.505, 11.0798, 0.258, 44.4678)
+
+[node name="Borde45" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -11.008, 0, 0.535, -4.81175e-07, 0, 0, 0, 0.505, 11.0798, 0.258, -23.4943)
+
+[node name="Borde29" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -6.51, 0, 0.535, -2.84561e-07, 0, 0, 0, 0.545, 25.0761, 0.257548, 26.5519)
+
+[node name="Borde13" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -8.0215, 0, 0.535, -3.50631e-07, 0, 0, 0, 0.535, -22.9236, 0.257548, 50.5015)
+
+[node name="Borde25" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -8.0215, 0, 0.535, -3.50631e-07, 0, 0, 0, 0.535, 41.095, 0.258, 50.502)
+
+[node name="Borde26" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -8.0215, 0, 0.535, -3.50631e-07, 0, 0, 0, 0.535, 41.095, 0.258, 34.537)
+
+[node name="Borde32" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -0.517, 0, 0.535, -2.25988e-08, 0, 0, 0, 0.535, 12.0268, 0.258, 32.5332)
+
+[node name="Borde33" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -0.507, 0, 0.535, -2.21617e-08, 0, 0, 0, 0.535, 12.0256, 0.258, 37.5103)
+
+[node name="Borde14" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -8.0215, 0, 0.535, -3.50631e-07, 0, 0, 0, 0.535, -22.9236, 0.257548, 34.5297)
+
+[node name="Borde15" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.35167e-08, -6, 0, 0.538, -2.62268e-07, 0, 0, 0, 0.538, -10.9496, 0.257548, 25.5367)
+
+[node name="Borde16" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.85686e-07, -0.535, 0.535, -1.85686e-07, 0, -2.33856e-08, -4.24801, -2.33856e-08, -23.51, 0.25795, 58.513)
+
+[node name="Borde24" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.74758e-07, -0.535, 0.535, -1.74758e-07, 0, -2.33856e-08, -3.998, -2.33856e-08, 24.463, 0.258, 58.0023)
+
+[node name="Borde28" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 3.47637e-07, -0.535, 0.535, -3.47637e-07, 0, -2.33856e-08, -7.953, -2.33856e-08, 40.4551, 0.258, 49.9858)
+
+[node name="Borde27" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.75195e-07, -0.535, 0.535, -1.75195e-07, 0, -2.33856e-08, -4.008, -2.33856e-08, 24.463, 0.258, 34.058)
+
+[node name="Borde17" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 3.49611e-07, -0.535, 0.535, -3.49611e-07, 0, -2.33856e-08, -7.99816, -2.33856e-08, -39.5012, 0.25795, 50.0185)
+
+[node name="Borde18" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.98025e-07, -0.535, 0.535, -1.98025e-07, 0, -2.33856e-08, -4.53028, -2.33856e-08, -23.508, 0.258, 34.05)
+
+[node name="Borde30" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.32227e-07, -0.535, 0.535, -1.32227e-07, 0, -2.33856e-08, -3.025, -2.33856e-08, 11.4883, 0.258, 32.0334)
+
+[node name="Borde31" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.74846e-07, -0.535, 0.535, -1.74846e-07, 0, -2.33856e-08, -4, -2.33856e-08, 11.4883, 0.258, 45.0361)
+
+[node name="Borde36" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.53208e-07, -0.535, 0.535, -1.53208e-07, 0, -2.33856e-08, -3.505, -2.33856e-08, 10.47, 0.258, 44.015)
+
+[node name="Borde37" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.53864e-07, -0.535, 0.535, -1.53864e-07, 0, -2.33856e-08, -3.52, -2.33856e-08, 10.47, 0.258, 32.043)
+
+[node name="Borde38" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 3.76136e-07, -0.535, 0.535, -3.76136e-07, -7.7647e-23, -2.33856e-08, -8.605, -2.33856e-08, 10.47, 0.258, 23.083)
+
+[node name="Borde39" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.70693e-07, -0.535, 0.535, -1.70693e-07, -7.7647e-23, -2.33856e-08, -3.905, -2.33856e-08, 10.47, 0.258, 3.92746)
+
+[node name="Borde40" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 3.98866e-07, -0.535, 0.535, -3.98866e-07, -7.7647e-23, -2.33856e-08, -9.125, -2.33856e-08, 10.47, 0.258, -5.70816)
+
+[node name="Borde41" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 1.70693e-07, -0.535, 0.535, -1.70693e-07, -7.7647e-23, -2.33856e-08, -3.905, -2.33856e-08, -11.5, 0.258, 3.92746)
+
+[node name="Borde43" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 4.42578e-07, -0.535, 0.535, -4.42578e-07, -7.7647e-23, -2.33856e-08, -10.125, -2.33856e-08, -11.51, 0.258, 26.0994)
+
+[node name="Borde42" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 3.99741e-07, -0.535, 0.535, -3.99741e-07, -7.7647e-23, -2.33856e-08, -9.145, -2.33856e-08, -11.505, 0.258, -5.676)
+
+[node name="Borde34" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 2.27299e-08, -0.535, 0.535, -2.27299e-08, 0, -2.33856e-08, -0.52, -2.33856e-08, -11.537, 0.258, 45.031)
+
+[node name="Borde19" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -8.0215, 0, 0.535, -3.50631e-07, 0, 0, 0, 0.535, -22.9236, 0.257548, 50.5015)
+
+[node name="Borde20" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.33856e-08, -8.0215, 0, 0.535, -3.50631e-07, 0, 0, 0, 0.535, -22.9236, 0.257548, 34.5297)
+
+[node name="Borde21" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.02222e-15, 3.49611e-07, -0.535, 0.535, -3.49611e-07, 0, -2.33856e-08, -7.99816, -2.33856e-08, -39.5012, 0.25795, 50.0185)
+
+[node name="Borde6" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.0184e-15, 3.92528e-07, -0.533, 0.533, -3.92528e-07, 2.60773e-22, -2.32982e-08, -8.98, -2.32982e-08, -7.51, 0.258, 76.015)
+
+[node name="Borde7" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.0184e-15, 3.92528e-07, -0.533, 0.533, -3.92528e-07, 2.60773e-22, -2.32982e-08, -8.98, -2.32982e-08, -7.51, 0.258, 76.015)
+
+[node name="Borde9" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(1.0184e-15, 3.92528e-07, -0.533, 0.533, -3.92528e-07, 2.60773e-22, -2.32982e-08, -8.98, -2.32982e-08, 8.461, 0.258, 76.015)
+
+[node name="Borde8" parent="MaderaParedAbajo" instance=ExtResource("50_idl15")]
+transform = Transform3D(-2.32982e-08, -8.015, 0, 0.533, -3.50347e-07, 0, 0, 0, 0.533, 9.10173, 0.258, 74.5136)
