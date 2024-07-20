@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://d3joae7ck4jhy"]
+[gd_scene load_steps=7 format=3 uid="uid://d3joae7ck4jhy"]
 
 [ext_resource type="Script" path="res://Scenes/Player/movement_script.gd" id="1_m45ao"]
 [ext_resource type="Script" path="res://Scenes/Player/interaction.gd" id="2_5vxfh"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5llqy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nbpta"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_2vsdh"]
 
@@ -23,6 +25,7 @@ script = ExtResource("1_m45ao")
 shape = SubResource("CapsuleShape3D_5llqy")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_nbpta")
 mesh = SubResource("CapsuleMesh_2vsdh")
 
 [node name="Neck" type="Node3D" parent="."]
