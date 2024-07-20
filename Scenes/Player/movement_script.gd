@@ -15,7 +15,6 @@ var t_bob = 0.0
 const MAX_STEP_HEIGHT = 0.5
 var _snapped_to_stairs_last_frame := false
 var _last_frame_was_on_floor = -INF
-
 #fov variables
 const BASE_FOV = 75.0
 const FOV_CHANGE = 1.5
@@ -26,10 +25,12 @@ var gravity = 9.8
 @onready var camera = $Neck/Camera3D
 @onready var interaction = $Neck/Camera3D/interact
 
+@onready var mesh_instance_3d = $MeshInstance3D
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	camera.current = is_multiplayer_authority()
+	color_random()
 
 func _enter_tree():
 	set_multiplayer_authority(name.to_int())
@@ -147,3 +148,6 @@ func _run_body_test_motion(from: Transform3D, motion:Vector3, result = null )-> 
 	return PhysicsServer3D.body_test_motion(self.get_rid(),params,result)
 	
 # Me gusta tu prima
+func color_random():
+	var rcolor = Color(randf_range(0,255),randf_range(0,255),randf_range(0,255),255)
+	mesh_instance_3d.material_override.albedo_color = rcolor
