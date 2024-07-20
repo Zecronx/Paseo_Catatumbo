@@ -1,4 +1,4 @@
-[gd_scene load_steps=246 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=249 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Imagenes/marco.tscn" id="4_axiku"]
@@ -58,6 +58,7 @@
 [ext_resource type="Texture2D" uid="uid://dq1xpxwwsrp0g" path="res://Imagenes/Fotos Puente/puente1.jpg" id="54_yr8wl"]
 [ext_resource type="Texture2D" uid="uid://blj5oeumr2gwm" path="res://Imagenes/Fotos Puente/puente2.jpg" id="55_dfvnm"]
 [ext_resource type="Texture2D" uid="uid://c2oges5b7dhfh" path="res://Imagenes/Fotos Puente/puente_contaminacion2.webp" id="56_pl7yc"]
+[ext_resource type="Texture2D" uid="uid://bn74w46pwfe5q" path="res://Imagenes/Gaiteros/Ricardo_Cepeda_Olivares.jpg" id="59_vsi6q"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -104,6 +105,11 @@ La mandoca es un plato típico del estado Zulia, Venezuela. Es una rosca frita e
 text = "Bollos pelones
 
 El bollo pelón es un plato típico de la cocina zuliana que consiste en un bollito de masa de maíz relleno de guiso de carne o pollo, que se hierve y se baña en una salsa usualmente a base de tomates."
+
+[sub_resource type="TextMesh" id="TextMesh_jc431"]
+text = "Astolfo José Romero Chacín
+
+Nació en Maracaibo el 8 de febrero de 1950, conocido también por su apodo El Parroquiano, fue un cantante, músico, compositor y actor venezolano, que se especializaba en el género folclórico venezolano conocido como gaita zuliana."
 
 [sub_resource type="TextMesh" id="TextMesh_oprxo"]
 text = "Sierra de perija
@@ -4485,6 +4491,11 @@ text = "Vista del puente desde un dron en agosto de 2023. Se visualiza la contam
 [sub_resource type="TextMesh" id="TextMesh_nf83x"]
 text = "Vista en sentido Cabimas-San Francisco"
 
+[sub_resource type="TextMesh" id="TextMesh_2leem"]
+text = "Ricardo José Cepeda Olivares
+
+Nació en Maracaibo, Zulia el 8 de noviembre de 1952,​ es un cantante, compositor, furrero y locutor venezolano, conocido como «El Colosal de la Gaita»."
+
 [node name="Mapa" type="Node3D"]
 script = ExtResource("1_44um2")
 
@@ -4682,11 +4693,7 @@ texto = SubResource("TextMesh_3k8jj")
 
 [node name="Marco Astolfo" parent="." instance=ExtResource("5_iqygw")]
 transform = Transform3D(-3.72026e-16, -1.19249e-08, -0.769543, 0.713715, -4.37114e-08, 0, -3.11975e-08, -1, 9.17671e-09, 15.0352, 12.7996, 75.8771)
-texto = SubResource("TextMesh_oprxo")
-
-[node name="Marco Astolfo2" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(-3.72026e-16, -1.19249e-08, -0.769543, 0.713715, -4.37114e-08, 0, -3.11975e-08, -1, 9.17671e-09, 7.19386, 12.8676, 75.8771)
-texto = SubResource("TextMesh_oprxo")
+texto = SubResource("TextMesh_jc431")
 
 [node name="MARCO BASILICA 1" parent="." instance=ExtResource("5_iqygw")]
 transform = Transform3D(-1.94507e-08, -1, 1.80418e-07, 0.44498, -4.37114e-08, 0, 3.40087e-15, 1.74846e-07, 1.03187, 6.75482, 11.7644, 81.1083)
@@ -6576,3 +6583,11 @@ texture = ExtResource("55_dfvnm")
 
 [node name="Sprite3D3" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.4483, 80.3622)
+
+[node name="Marco Ricardo Cepeda" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(1.29146e-15, 4.37114e-08, -0.671218, 0.675915, -4.37114e-08, 0, -2.95452e-08, -1, -2.93399e-08, 7.29317, 12.6036, 75.9071)
+texto = SubResource("TextMesh_2leem")
+
+[node name="Ricardo Cepeda" type="Sprite3D" parent="Marco Ricardo Cepeda"]
+transform = Transform3D(-5.40627e-08, 1.12227, -4.37114e-08, -3.55271e-15, -4.9056e-08, -1, -1.23681, -4.9056e-08, 0, 0, -0.0723343, -0.207287)
+texture = ExtResource("59_vsi6q")
