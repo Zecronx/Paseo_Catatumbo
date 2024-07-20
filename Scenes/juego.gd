@@ -6,7 +6,7 @@ var previous_scene = preload("res://Scenes/Menu/Main_Menu.tscn")
 @onready var Pause_Menu = $PauseMenu
 var paused = false
 var peer: ENetMultiplayerPeer
-var Direccion =  "127.0.0.1"
+var Direccion =  "192.168.98.228"
 
 func _ready():
 	peer = ENetMultiplayerPeer.new()
