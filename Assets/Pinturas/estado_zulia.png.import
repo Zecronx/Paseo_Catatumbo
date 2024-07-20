@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmthhot4amqq4"
-path.s3tc="res://.godot/imported/Escudo_Venezuela.png-9177457bc0b97631d997921cb3b5bced.s3tc.ctex"
+uid="uid://b4pxum73um2qn"
+path.s3tc="res://.godot/imported/estado_zulia.png-bbad4715b801245c367fc972177c3878.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Pinturas/Escudo_Venezuela.png"
-dest_files=["res://.godot/imported/Escudo_Venezuela.png-9177457bc0b97631d997921cb3b5bced.s3tc.ctex"]
+source_file="res://Assets/Pinturas/estado_zulia.png"
+dest_files=["res://.godot/imported/estado_zulia.png-bbad4715b801245c367fc972177c3878.s3tc.ctex"]
 
 [params]
 
