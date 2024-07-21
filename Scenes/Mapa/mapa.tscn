@@ -1,4 +1,4 @@
-[gd_scene load_steps=294 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=296 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Imagenes/marco.tscn" id="4_axiku"]
@@ -4455,8 +4455,16 @@ active_face_vertex = 0
 
 [sub_resource type="TextMesh" id="TextMesh_kh1m2"]
 
+[sub_resource type="TextMesh" id="TextMesh_qx1co"]
+text = "La Policía Nacional Bolivariana (PNB)
+
+La PNB es la principal fuerza de seguridad civil a nivel federal o nacional de Venezuela. Fue creada el 20 de diciembre de 2009 y está adscrita al Ministerio del Poder Popular para Relaciones Interiores, Justicia y Paz."
+
+[sub_resource type="TextMesh" id="TextMesh_3w77e"]
+text = "La Policía Nacional Bolivariana (PNB) a punto de llevar a cabo sus entrenamientos."
+
 [sub_resource type="TextMesh" id="TextMesh_my4wl"]
-text = "Dios es Amor"
+text = "El escudo de la Policía Nacional Bolivariana (PNB) es un símbolo que representa los valores y principios de este cuerpo de seguridad."
 
 [sub_resource type="TextMesh" id="TextMesh_ul7vk"]
 text = "Destrucción
@@ -6242,7 +6250,7 @@ texture = ExtResource("44_u5isc")
 
 [node name="Marco Ladrones" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(3.82325e-08, 1, -7.95036e-08, 0.874658, -4.37114e-08, 0, -3.34239e-15, -8.74228e-08, -0.909415, 52.097, 14.2, 34.701)
-texto = SubResource("TextMesh_kh1m2")
+texto = SubResource("TextMesh_qx1co")
 derecha = false
 
 [node name="Sprite3D2" type="Sprite3D" parent="Marco Ladrones"]
@@ -6251,8 +6259,7 @@ texture = ExtResource("43_2q0pm")
 
 [node name="Marco Ladrones Mejorados" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(-3.82325e-08, -1, 0, 0.874658, -4.37114e-08, 0, 0, 0, 0.909415, 66.8487, 14.1052, 41.5329)
-texto = SubResource("TextMesh_kh1m2")
-derecha = false
+texto = SubResource("TextMesh_3w77e")
 
 [node name="Sprite3D2" type="Sprite3D" parent="Marco Ladrones Mejorados"]
 transform = Transform3D(-8.30659e-08, 1.88831, -4.27848e-08, 1.20982e-13, -8.25404e-08, -0.978802, -1.90033, -8.25408e-08, 3.55271e-15, -0.00236607, -0.0670471, -0.204443)
