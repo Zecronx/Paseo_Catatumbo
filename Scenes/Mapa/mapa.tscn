@@ -1,9 +1,8 @@
-[gd_scene load_steps=303 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=311 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Imagenes/marco.tscn" id="4_axiku"]
 [ext_resource type="PackedScene" uid="uid://cbfxv1tffjfyr" path="res://Assets/Marco/marco_vertical.tscn" id="5_iqygw"]
-[ext_resource type="PackedScene" uid="uid://pupubv54w2kn" path="res://Assets/Vallas/vallas.tscn" id="5_nollw"]
 [ext_resource type="Texture2D" uid="uid://dywn42cidm7kn" path="res://Imagenes/fotos angel/pueblo añu.jpg" id="6_wlh5f"]
 [ext_resource type="PackedScene" uid="uid://db3yrhykvlvx6" path="res://Assets/Mp5/hk-mp5.glb" id="7_5apxg"]
 [ext_resource type="Texture2D" uid="uid://cqftqit861dq4" path="res://Imagenes/fotos angel/Sierra de perija.jpg" id="7_acxnl"]
@@ -42,7 +41,7 @@
 [ext_resource type="PackedScene" uid="uid://c7fcq00ubt1bg" path="res://Assets/Armas/piopio.glb" id="38_5vr75"]
 [ext_resource type="PackedScene" uid="uid://cqo1644mxwb3a" path="res://Assets/Armas/QBZ 97.glb" id="39_6wlh0"]
 [ext_resource type="PackedScene" uid="uid://dfhb57n8vx14t" path="res://Assets/Armas/Skorpion.glb" id="40_1tjl7"]
-[ext_resource type="PackedScene" path="res://Assets/AlfombraRoja/AlfombraRojaNueva.tscn" id="40_j7tv7"]
+[ext_resource type="PackedScene" uid="uid://pdq52x8minmh" path="res://Assets/AlfombraRoja/AlfombraRojaNueva.tscn" id="40_j7tv7"]
 [ext_resource type="PackedScene" uid="uid://utsni4j0468l" path="res://Assets/Armas/m16.glb" id="42_103li"]
 [ext_resource type="Texture2D" uid="uid://chh2ieqktrr7d" path="res://Imagenes/Fotos pnb/1.jpg" id="43_2q0pm"]
 [ext_resource type="Texture2D" uid="uid://bvwn5kgso862t" path="res://Imagenes/fotos angel/Palafitos_Lago_de_Maracaibo.jpg" id="43_s5gbs"]
@@ -86,7 +85,9 @@
 [ext_resource type="Texture2D" uid="uid://dev5ubf43g53e" path="res://Imagenes/Variedades/Provincia_Maracaibo.jpg" id="82_8xvik"]
 [ext_resource type="Texture2D" uid="uid://mak1ksk3w4l" path="res://Imagenes/Fotos basilica/Basílica_de_Nuestra_Señora_de_la_Chiquinquira.jpg" id="85_b4hag"]
 [ext_resource type="Texture2D" uid="uid://bgrp3xykjn3vw" path="res://Imagenes/Fotos basilica/foto bien.jpg" id="86_bguh2"]
+[ext_resource type="PackedScene" uid="uid://76to7o06ftmk" path="res://Assets/Vallas/tubo.glb" id="87_ebcll"]
 [ext_resource type="Texture2D" uid="uid://cqhakp7gim2iw" path="res://Imagenes/Fotos basilica/Imagen de la señora de chiquiquinra.jpg" id="88_6vwbs"]
+[ext_resource type="PackedScene" uid="uid://c6sv5nfe2y2jf" path="res://Assets/Cuerda/Cuerda.glb" id="88_x63v6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -4620,19 +4621,32 @@ text = "Palacio Legislativo del Estado Zulia. Sede del Parlamento desde 1890.
 text = "Mapa de la provincia de Maracaibo, tomado del \"Atlas físico y político de la República de Venezuela\", 1840.
 "
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_kb7v2"]
+size = Vector3(45.606, 3.47897, 1.3828)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f5lf3"]
+size = Vector3(53.9258, 3.47897, 1.91424)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g7d3v"]
+size = Vector3(6.63458, 8.25336, 1.78467)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b7r0x"]
+size = Vector3(11.5031, 3.91248, 1.39954)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wypt8"]
+size = Vector3(5.10156, 4.44189, 0.805664)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_macl0"]
+size = Vector3(3.56042, 5.48645, 0.805664)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y0u5q"]
+size = Vector3(5.74878, 4.44189, 1.12451)
+
 [node name="Mapa" type="Node3D"]
 script = ExtResource("1_44um2")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_tvsch")
-
-[node name="Vallas PB" type="Node3D" parent="."]
-
-[node name="Vallas 1" parent="Vallas PB" instance=ExtResource("5_nollw")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.50999, 0, 0)
-
-[node name="Vallas 2" parent="Vallas PB" instance=ExtResource("5_nollw")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.51, 0, 0)
 
 [node name="Luces 2doPiso" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 15.4643, 18.9605, 67.1327)
@@ -6908,3 +6922,779 @@ texture = ExtResource("88_6vwbs")
 [node name="Sprite3D4" type="Sprite3D" parent="."]
 transform = Transform3D(-2.33624e-08, 0, 1, 0, 0.45385, 0, -0.534469, 0, -4.37114e-08, -7.66417, 10.8759, 87.9374)
 texture = ExtResource("86_bguh2")
+
+[node name="Vallas PB" type="Node3D" parent="."]
+
+[node name="Vallas 2" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.54964, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.61773, 1.67242, 0.466686)
+shape = SubResource("BoxShape3D_kb7v2")
+
+[node name="tubo" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -1.5, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 1.5, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 0.387476, 0.905709, -0.056304)
+
+[node name="tubo3" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 4.5, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 3.387, 0.906, -0.056)
+
+[node name="tubo4" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 7.5, 0, 0)
+
+[node name="Cuerda3" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 6.387, 0.906, -0.056)
+
+[node name="tubo5" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 10.5, 0, 0)
+
+[node name="Cuerda4" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 9.387, 0.906, -0.056)
+
+[node name="tubo6" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 13.5, 0, 0)
+
+[node name="Cuerda5" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 12.387, 0.906, -0.0559998)
+
+[node name="tubo7" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 16.5, 0, 0)
+
+[node name="Cuerda6" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 15.387, 0.906, -0.056)
+
+[node name="tubo8" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 19.5, 0, 0)
+
+[node name="Cuerda7" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 18.387, 0.906, -0.0559998)
+
+[node name="tubo9" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 22.5, 0, 0)
+
+[node name="Cuerda8" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 21.387, 0.906, -0.056)
+
+[node name="tubo10" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -19.5013, 0, -9.53674e-07)
+
+[node name="tubo16" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -22.501, 0, 0)
+
+[node name="Cuerda9" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -20.6143, 0.906, -0.0560007)
+
+[node name="tubo11" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -16.5013, 0, -9.53674e-07)
+
+[node name="Cuerda10" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -17.6143, 0.906, -0.0560017)
+
+[node name="tubo12" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -13.5013, 0, -9.53674e-07)
+
+[node name="Cuerda11" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -14.6143, 0.906, -0.0560017)
+
+[node name="tubo13" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -10.5013, 0, -9.53674e-07)
+
+[node name="Cuerda12" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -11.6143, 0.906, -0.0560017)
+
+[node name="tubo14" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -7.50126, 0, -9.53674e-07)
+
+[node name="Cuerda13" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -8.61426, 0.906, -0.0560007)
+
+[node name="tubo15" parent="Vallas PB/Vallas 2" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -4.50126, 0, -9.53674e-07)
+
+[node name="Cuerda14" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -5.61426, 0.906, -0.0560007)
+
+[node name="Cuerda15" parent="Vallas PB/Vallas 2" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -2.61426, 0.906, -0.0560007)
+
+[node name="Vallas 1" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.55, 0, 6.168)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.88916, 1.71374, 0.760947)
+shape = SubResource("BoxShape3D_f5lf3")
+
+[node name="tubo" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo3" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.5128, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 2.3998, 0.906, -0.0559998)
+
+[node name="tubo4" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 6.5128, 0, 0)
+
+[node name="Cuerda3" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 5.3998, 0.906, -0.0559998)
+
+[node name="tubo5" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 9.5128, 0, 0)
+
+[node name="Cuerda4" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 8.3998, 0.906, -0.0559998)
+
+[node name="tubo6" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 12.5128, 0, 0)
+
+[node name="Cuerda5" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 11.3998, 0.906, -0.0559998)
+
+[node name="tubo7" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 15.5128, 0, 0)
+
+[node name="Cuerda6" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 14.3998, 0.906, -0.0560007)
+
+[node name="tubo8" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 18.5128, 0, 0)
+
+[node name="Cuerda7" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 17.3998, 0.906, -0.0559998)
+
+[node name="tubo9" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 21.5128, 0, 0)
+
+[node name="Cuerda8" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 20.3998, 0.906, -0.0559998)
+
+[node name="tubo17" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 24.5128, 0, 0)
+
+[node name="Cuerda16" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 23.3998, 0.906, -0.0559998)
+
+[node name="tubo18" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 27.5128, 0, 0)
+
+[node name="Cuerda17" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 26.3998, 0.906, -0.0559998)
+
+[node name="tubo10" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -20.4885, 0, -9.53674e-07)
+
+[node name="tubo16" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -23.4882, 0, 0)
+
+[node name="Cuerda9" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -21.6015, 0.906, -0.0560007)
+
+[node name="tubo11" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -17.4885, 0, -9.53674e-07)
+
+[node name="Cuerda10" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -18.6015, 0.906, -0.0560017)
+
+[node name="tubo12" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -14.4885, 0, -9.53674e-07)
+
+[node name="Cuerda11" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -15.6015, 0.906, -0.0560017)
+
+[node name="tubo13" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -11.4885, 0, 0)
+
+[node name="Cuerda12" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -12.6015, 0.906, -0.0560017)
+
+[node name="tubo14" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.48846, 0, -9.53674e-07)
+
+[node name="Cuerda13" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -9.60146, 0.906, -0.0560007)
+
+[node name="tubo15" parent="Vallas PB/Vallas 1" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.48846, 0, -9.53674e-07)
+
+[node name="Cuerda14" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.60147, 0.906, -0.0560007)
+
+[node name="Cuerda15" parent="Vallas PB/Vallas 1" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.60147, 0.906, -0.0560007)
+
+[node name="Vallas 3" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.65011, 0, 37.8893)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.54249, 3.61922, 0.609244)
+shape = SubResource("BoxShape3D_g7d3v")
+
+[node name="tubo" parent="Vallas PB/Vallas 3" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 3" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 3" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo3" parent="Vallas PB/Vallas 3" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 3" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="Vallas 4" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15.7831, 0, 27.4752)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.12914, 2.1261, 0.199768)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 4" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 4" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 4" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo3" parent="Vallas PB/Vallas 4" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 4" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="Vallas 10" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.96641, 2.38419e-07, 46.045)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.12914, 2.1261, 0.358505)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 10" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 10" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 10" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo3" parent="Vallas PB/Vallas 10" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 10" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="Vallas 11" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.8444, 2.38419e-07, 57.1513)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 11"]
+transform = Transform3D(1.21854, 0, 0, 0, 1, 0, 0, 0, 1, -3.72202, 2.1261, 0.358505)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 11" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 11" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 11" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo3" parent="Vallas PB/Vallas 11" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 11" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="Vallas 20" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -19.5312, 2.38419e-07, 27.1026)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 20"]
+transform = Transform3D(0.999877, 0, 0, 0, 1, 0, 0, 0, 1, -2.57712, 2.1261, 0.358505)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 20" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 20" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 20" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo3" parent="Vallas PB/Vallas 20" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 20" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="Vallas 21" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -22.2682, 2.38419e-07, 32.419)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 21"]
+transform = Transform3D(0.673135, 0, 0, 0, 1, 0, -1.77636e-15, 0, 1, -2.33213, 2.1261, 0.358505)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 21" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 21" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 21" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo3" parent="Vallas PB/Vallas 21" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 21" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="Vallas 9" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9245, 0, 56.6808)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.12914, 2.1261, 0.199768)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 9" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 9" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 9" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo3" parent="Vallas PB/Vallas 9" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 9" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="tubo4" parent="Vallas PB/Vallas 9" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
+
+[node name="Cuerda3" parent="Vallas PB/Vallas 9" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
+
+[node name="Vallas 13" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.8846, 0, 48.5309)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 13"]
+transform = Transform3D(1.27202, 0, 0, 0, 1, 0, 0, 0, 1, -2.15138, 1.95005, 0.441795)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 13" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 13" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 13" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo5" parent="Vallas PB/Vallas 13" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.513, 0, 0)
+
+[node name="Cuerda4" parent="Vallas PB/Vallas 13" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 2.4, 0.906, -0.056)
+
+[node name="tubo3" parent="Vallas PB/Vallas 13" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 13" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="tubo4" parent="Vallas PB/Vallas 13" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
+
+[node name="Cuerda3" parent="Vallas PB/Vallas 13" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
+
+[node name="Vallas 14" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 29.2824, 0, 34.8778)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 14"]
+transform = Transform3D(1.27202, 0, 0, 0, 1, 0, 0, 0, 1, -3.22503, 1.95005, 0.441795)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 14" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 14" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 14" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo5" parent="Vallas PB/Vallas 14" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.513, 0, 0)
+
+[node name="Cuerda4" parent="Vallas PB/Vallas 14" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 2.4, 0.906, -0.056)
+
+[node name="tubo3" parent="Vallas PB/Vallas 14" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 14" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="tubo4" parent="Vallas PB/Vallas 14" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
+
+[node name="Cuerda3" parent="Vallas PB/Vallas 14" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
+
+[node name="Vallas 15" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 40.029, 0, 39.0754)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 15"]
+transform = Transform3D(1.27202, 0, 0, 0, 1, 0, 0, 0, 1, -2.54465, 1.96346, 0.441795)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 15" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 15" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 15" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo5" parent="Vallas PB/Vallas 15" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.513, 0, 0)
+
+[node name="Cuerda4" parent="Vallas PB/Vallas 15" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 2.4, 0.906, -0.056)
+
+[node name="tubo3" parent="Vallas PB/Vallas 15" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 15" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="tubo4" parent="Vallas PB/Vallas 15" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
+
+[node name="Cuerda3" parent="Vallas PB/Vallas 15" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
+
+[node name="Vallas 16" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.90246, 0, 62.7477)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 16"]
+transform = Transform3D(1.27202, 0, 0, 0, 1, 0, 0, 0, 1, -2.54465, 1.96346, 0.441795)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 16" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 16" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 16" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo5" parent="Vallas PB/Vallas 16" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.513, 0, 0)
+
+[node name="Cuerda4" parent="Vallas PB/Vallas 16" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 2.4, 0.906, -0.056)
+
+[node name="tubo3" parent="Vallas PB/Vallas 16" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 16" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="tubo4" parent="Vallas PB/Vallas 16" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
+
+[node name="Cuerda3" parent="Vallas PB/Vallas 16" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
+
+[node name="Vallas 17" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.05, 0, 67.872)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 17"]
+transform = Transform3D(1.27202, 0, 0, 0, 1, 0, 0, 0, 1, -2.54465, 1.96346, 0.441795)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 17" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 17" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 17" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo5" parent="Vallas PB/Vallas 17" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.513, 0, 0)
+
+[node name="Cuerda4" parent="Vallas PB/Vallas 17" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 2.4, 0.906, -0.056)
+
+[node name="tubo3" parent="Vallas PB/Vallas 17" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 17" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="tubo4" parent="Vallas PB/Vallas 17" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
+
+[node name="Cuerda3" parent="Vallas PB/Vallas 17" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
+
+[node name="Vallas 22" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.9061, 0, 49.0218)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 22"]
+transform = Transform3D(1.27202, 0, 0, 0, 1, 0, 0, 0, 1, -2.54465, 1.96346, 0.441795)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 22" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 22" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 22" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo5" parent="Vallas PB/Vallas 22" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.513, 0, 0)
+
+[node name="Cuerda4" parent="Vallas PB/Vallas 22" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 2.4, 0.906, -0.056)
+
+[node name="tubo3" parent="Vallas PB/Vallas 22" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 22" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="tubo4" parent="Vallas PB/Vallas 22" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
+
+[node name="Cuerda3" parent="Vallas PB/Vallas 22" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
+
+[node name="Vallas 23" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -32.9074, 2.38419e-07, 35.0982)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 23"]
+transform = Transform3D(1.27202, 0, 0, 0, 1, 0, 0, 0, 1, -2.54465, 1.96346, 0.441795)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 23" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 23" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 23" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo5" parent="Vallas PB/Vallas 23" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.513, 0, 0)
+
+[node name="Cuerda4" parent="Vallas PB/Vallas 23" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 2.4, 0.906, -0.056)
+
+[node name="tubo3" parent="Vallas PB/Vallas 23" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 23" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="tubo4" parent="Vallas PB/Vallas 23" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
+
+[node name="Cuerda3" parent="Vallas PB/Vallas 23" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
+
+[node name="Vallas 18" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(0.893318, 0, 0, 0, 1, 0, 0, 0, 1, 3.21009, 0, 73.3135)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 18"]
+transform = Transform3D(1.27202, 0, 0, 0, 1, 0, 0, 0, 1, -2.54465, 1.96346, 0.441795)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 18" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 18" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 18" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo5" parent="Vallas PB/Vallas 18" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.513, 0, 0)
+
+[node name="Cuerda4" parent="Vallas PB/Vallas 18" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 2.4, 0.906, -0.056)
+
+[node name="tubo3" parent="Vallas PB/Vallas 18" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 18" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="tubo4" parent="Vallas PB/Vallas 18" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
+
+[node name="Cuerda3" parent="Vallas PB/Vallas 18" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
+
+[node name="Vallas 24" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-3.90482e-08, 0, -1, 0, 1, 0, 0.893318, 0, -4.37114e-08, -37.8191, 0, 44.0114)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 24"]
+transform = Transform3D(1.27202, 0, 0, 0, 1, 0, 0, 0, 1, -2.54465, 1.96346, 0.441795)
+shape = SubResource("BoxShape3D_b7r0x")
+
+[node name="tubo" parent="Vallas PB/Vallas 24" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 24" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 24" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="tubo5" parent="Vallas PB/Vallas 24" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.513, 0, 0)
+
+[node name="Cuerda4" parent="Vallas PB/Vallas 24" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, 2.4, 0.906, -0.056)
+
+[node name="tubo3" parent="Vallas PB/Vallas 24" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
+
+[node name="Cuerda2" parent="Vallas PB/Vallas 24" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
+
+[node name="tubo4" parent="Vallas PB/Vallas 24" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
+
+[node name="Cuerda3" parent="Vallas PB/Vallas 24" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
+
+[node name="Vallas 5" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12.6482, 0, 30.2876)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.61017, 2.24774, 0.097168)
+shape = SubResource("BoxShape3D_wypt8")
+
+[node name="tubo" parent="Vallas PB/Vallas 5" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 5" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 5" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="Vallas 7" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12.6482, 0, 41.9411)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00964, 2.77002, 0.097168)
+shape = SubResource("BoxShape3D_macl0")
+
+[node name="tubo" parent="Vallas PB/Vallas 7" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 7" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 7" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="Vallas 8" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 24.1476, 0, 52.5508)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 8"]
+transform = Transform3D(1.42349, 0, 0, 0, 1, 0, 0, 0, 1, -1.00964, 2.77002, 0.097168)
+shape = SubResource("BoxShape3D_macl0")
+
+[node name="tubo" parent="Vallas PB/Vallas 8" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 8" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 8" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="Vallas 12" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -22.229, 0, 54.8618)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 12"]
+transform = Transform3D(1.84069, 0, 0, 0, 1, 0, 0, 0, 1, -1.00964, 2.77002, 0.097168)
+shape = SubResource("BoxShape3D_macl0")
+
+[node name="tubo" parent="Vallas PB/Vallas 12" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 12" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 12" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="Vallas 19" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -22.229, 0, 54.8618)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 19"]
+transform = Transform3D(1.84069, 0, 0, 0, 1, 0, 0, 0, 1, -1.00964, 2.77002, 0.097168)
+shape = SubResource("BoxShape3D_macl0")
+
+[node name="tubo" parent="Vallas PB/Vallas 19" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
+
+[node name="tubo2" parent="Vallas PB/Vallas 19" instance=ExtResource("87_ebcll")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 19" instance=ExtResource("88_x63v6")]
+transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
+
+[node name="Vallas 6" type="StaticBody3D" parent="Vallas PB"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24.1701, 0, 30.84)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas PB/Vallas 6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05642, 2.24774, -0.249802)
+shape = SubResource("BoxShape3D_y0u5q")
+
+[node name="tubo" parent="Vallas PB/Vallas 6" instance=ExtResource("87_ebcll")]
+transform = Transform3D(-0.239986, 0, 0.00261793, 0, 0.24, 0, -0.00261793, 0, -0.239986, 0.59112, 0, -0.0197639)
+
+[node name="tubo2" parent="Vallas PB/Vallas 6" instance=ExtResource("87_ebcll")]
+transform = Transform3D(-0.239986, 0, 0.00261793, 0, 0.24, 0, -0.00261793, 0, -0.239986, -2.4087, 0, -0.0524883)
+
+[node name="Cuerda" parent="Vallas PB/Vallas 6" instance=ExtResource("88_x63v6")]
+transform = Transform3D(2.06305e-11, -0.000176157, -0.0233848, -0.0432683, -7.05907e-10, 0, -1.89121e-09, 0.0161483, -0.000255097, -1.29686, 0.905709, 0.0159492)
