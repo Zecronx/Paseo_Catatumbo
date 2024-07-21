@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb6h0ies80lnc"
-path.s3tc="res://.godot/imported/Maelo Ruiz.jpeg-ad6ecde9f32260fbfe9d4788e1f310a6.s3tc.ctex"
+uid="uid://bu1bf1ulwr8sn"
+path.s3tc="res://.godot/imported/Flag_of_Slovenia.png-c8cafe4c37daaf653cec53d0320e3d92.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Imagenes/fotos angel/Maelo Ruiz.jpeg"
-dest_files=["res://.godot/imported/Maelo Ruiz.jpeg-ad6ecde9f32260fbfe9d4788e1f310a6.s3tc.ctex"]
+source_file="res://Imagenes/Simbolos/Flag_of_Slovenia.png"
+dest_files=["res://.godot/imported/Flag_of_Slovenia.png-c8cafe4c37daaf653cec53d0320e3d92.s3tc.ctex"]
 
 [params]
 
