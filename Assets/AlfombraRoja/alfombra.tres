@@ -1,0 +1,21 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://b57262dpo6j57"]
+
+[ext_resource type="Texture2D" uid="uid://cym4j1kiaksmc" path="res://Assets/AlfombraRoja/Carpet016_1K-JPG_Color.jpg" id="1_p1lpn"]
+[ext_resource type="Texture2D" uid="uid://ei1unnblnj5b" path="res://Assets/AlfombraRoja/Carpet016_1K-JPG_AmbientOcclusion.jpg" id="2_6y8vh"]
+[ext_resource type="Texture2D" uid="uid://j75nx6ssilq5" path="res://Assets/AlfombraRoja/Carpet016_1K-JPG_Displacement.jpg" id="3_8reje"]
+[ext_resource type="Texture2D" uid="uid://dyhjallt8sgxk" path="res://Assets/AlfombraRoja/Carpet016_1K-JPG_NormalDX.jpg" id="4_1kerq"]
+[ext_resource type="Texture2D" uid="uid://ca86kuck603vb" path="res://Assets/AlfombraRoja/Carpet016_1K-JPG_Roughness.jpg" id="5_0kevr"]
+
+[resource]
+albedo_color = Color(0.942874, 0.186343, 0.176693, 1)
+albedo_texture = ExtResource("1_p1lpn")
+roughness_texture = ExtResource("5_0kevr")
+normal_enabled = true
+normal_texture = ExtResource("4_1kerq")
+ao_enabled = true
+ao_texture = ExtResource("2_6y8vh")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_8reje")
+refraction_texture = ExtResource("3_8reje")
+uv1_scale = Vector3(20, 20, 20)
+uv1_offset = Vector3(-0.015, 0, 0)

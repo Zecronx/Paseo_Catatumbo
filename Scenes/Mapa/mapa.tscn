@@ -38,11 +38,11 @@
 [ext_resource type="Texture2D" uid="uid://pesvudlnttsd" path="res://Imagenes/Fotos basilica/Basilica maracaibo.jpg" id="33_sxit6"]
 [ext_resource type="Texture2D" uid="uid://c18nyahygsuw1" path="res://Imagenes/Fotos basilica/Basilica_de_Nuestra_Señora_de_Chiquinquira.jpg" id="34_mov2w"]
 [ext_resource type="PackedScene" uid="uid://w7ddo06yu3oy" path="res://Assets/Personaje/Perro1$.glb" id="35_2vgcb"]
-[ext_resource type="PackedScene" uid="uid://c1wqpf43c1jr8" path="res://Assets/AlfombraRoja/AlfombraRoja.glb" id="36_c3rwv"]
 [ext_resource type="PackedScene" uid="uid://bnddl7f72iot2" path="res://Assets/Armas/glock.glb" id="37_ih2kb"]
 [ext_resource type="PackedScene" uid="uid://c7fcq00ubt1bg" path="res://Assets/Armas/piopio.glb" id="38_5vr75"]
 [ext_resource type="PackedScene" uid="uid://cqo1644mxwb3a" path="res://Assets/Armas/QBZ 97.glb" id="39_6wlh0"]
 [ext_resource type="PackedScene" uid="uid://dfhb57n8vx14t" path="res://Assets/Armas/Skorpion.glb" id="40_1tjl7"]
+[ext_resource type="PackedScene" uid="uid://pdq52x8minmh" path="res://Assets/AlfombraRoja/AlfombraRojaNueva.tscn" id="40_j7tv7"]
 [ext_resource type="PackedScene" uid="uid://utsni4j0468l" path="res://Assets/Armas/m16.glb" id="42_103li"]
 [ext_resource type="Texture2D" uid="uid://chh2ieqktrr7d" path="res://Imagenes/Fotos pnb/1.jpg" id="43_2q0pm"]
 [ext_resource type="Texture2D" uid="uid://bvwn5kgso862t" path="res://Imagenes/fotos angel/Palafitos_Lago_de_Maracaibo.jpg" id="43_s5gbs"]
@@ -6097,52 +6097,52 @@ transform = Transform3D(-0.597977, 0.000828441, -0.801513, -0.798729, -0.0838917
 
 [node name="AlfombraRoja" type="Node3D" parent="."]
 
-[node name="AlfombraRoja" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(5.0153, 0, 0, 0, 0.741077, 0, 0, 0, 9.30261, -0.009, 0.015, 61.719)
+[node name="AlfombraRojaNueva16" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(5.0153, 0, 0, 0, 0.741077, 0, 0, 0, 9.30261, -0.009, 0.017, 61.719)
 
-[node name="AlfombraRoja2" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(5.15537, 0, 0, 0, 1, 0, 0, 0, 6.63316, -0.265, 0.015, 68.206)
+[node name="AlfombraRojaNueva15" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(5.15537, 0, 0, 0, 1, 0, 0, 0, 6.63316, -0.265, 0.017, 68.206)
 
-[node name="AlfombraRoja4" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-2.77389e-07, 0, -1, 0, 1, 0, 6.3459, 0, -4.37114e-08, -4.139, 0.015, 63.714)
+[node name="AlfombraRojaNueva14" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-2.77389e-07, 0, -1, 0, 1, 0, 6.3459, 0, -4.37114e-08, -4.139, 0.017, 63.714)
 
-[node name="AlfombraRoja6" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-2.77389e-07, 0, -1, 0, 1, 0, 6.3459, 0, -4.37114e-08, 6.228, 0.015, 63.714)
+[node name="AlfombraRojaNueva13" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-2.77389e-07, 0, -1, 0, 1, 0, 6.3459, 0, -4.37114e-08, 6.228, 0.017, 63.714)
 
-[node name="AlfombraRoja7" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-2.77389e-07, 0, -1.53986, 0, 1, 0, 6.3459, 0, -6.73096e-08, 0.288392, 0.015, 54.1134)
+[node name="AlfombraRojaNueva12" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-2.77389e-07, 0, -1.53986, 0, 1, 0, 6.3459, 0, -6.73096e-08, 0.288392, 0.017, 54.1134)
 
-[node name="AlfombraRoja8" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-6.3459, 0, -1.68345e-07, 0, 1, 0, 5.54776e-07, 0, -1.92565, -4.45845, 0.015, 50.086)
+[node name="AlfombraRojaNueva10" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-6.3459, 0, -1.68345e-07, 0, 1, 0, 5.54776e-07, 0, -1.92565, -4.45845, 0.017, 50.086)
 
-[node name="AlfombraRoja9" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-6.3459, 0, -1.68345e-07, 0, 1, 0, 5.54776e-07, 0, -1.92565, -10.9296, 0.015, 50.086)
+[node name="AlfombraRojaNueva11" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-6.3459, 0, -1.68345e-07, 0, 1, 0, 5.54776e-07, 0, -1.92565, -10.9296, 0.017, 50.086)
 
-[node name="AlfombraRoja13" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-6.3459, 0, -1.68345e-07, 0, 1, 0, 5.54776e-07, 0, -1.92565, 8.46382, 0.015, 50.086)
+[node name="AlfombraRojaNueva9" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-6.3459, 0, -1.68345e-07, 0, 1, 0, 5.54776e-07, 0, -1.92565, 8.46382, 0.017, 50.086)
 
-[node name="AlfombraRoja14" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-6.3459, 0, -1.68345e-07, 0, 1, 0, 5.54776e-07, 0, -1.92565, 13.1886, 0.015, 50.086)
+[node name="AlfombraRojaNueva8" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-6.3459, 0, -1.68345e-07, 0, 1, 0, 5.54776e-07, 0, -1.92565, 13.1886, 0.017, 50.086)
 
-[node name="AlfombraRoja15" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-2.77388e-07, 0, 1.92565, 0, 1, 0, -6.3459, 0, -8.41727e-08, 17.2083, 0.015, 45.7204)
+[node name="AlfombraRojaNueva7" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-2.77388e-07, 0, 1.92565, 0, 1, 0, -6.3459, 0, -8.41727e-08, 17.208, 0.017, 45.72)
 
-[node name="AlfombraRoja16" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-2.77388e-07, 0, 1.92565, 0, 1, 0, -6.3459, 0, -8.41727e-08, 17.2083, 0.015, 41.792)
+[node name="AlfombraRojaNueva6" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-2.77388e-07, 0, 1.92565, 0, 1, 0, -6.3459, 0, -8.41727e-08, 17.208, 0.017, 41.792)
 
-[node name="AlfombraRoja17" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(6.3459, 0, 0, 0, 1, 0, 0, 0, 1.92565, 21.6413, 0.015, 41.792)
+[node name="AlfombraRojaNueva5" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(6.3459, 0, 0, 0, 1, 0, 0, 0, 1.92565, 21.641, 0.017, 41.792)
 
-[node name="AlfombraRoja12" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-6.3459, 0, -1.68345e-07, 0, 1, 0, 5.54776e-07, 0, -1.92565, -23.0763, 0.015, 42.0987)
+[node name="AlfombraRojaNueva4" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-6.3459, 0, -1.68345e-07, 0, 1, 0, 5.54776e-07, 0, -1.92565, -23.076, 0.017, 42.099)
 
-[node name="AlfombraRoja10" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-2.77388e-07, 0, -1.92565, 0, 1, 0, 6.3459, 0, -8.41727e-08, -17.761, 0.015, 42.9204)
+[node name="AlfombraRojaNueva3" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-2.77388e-07, 0, -1.92565, 0, 1, 0, 6.3459, 0, -8.41727e-08, -17.761, 0.017, 42.92)
 
-[node name="AlfombraRoja11" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
-transform = Transform3D(-2.77388e-07, 0, -1.92565, 0, 1, 0, 6.3459, 0, -8.41727e-08, -17.761, 0.015, 37.3946)
+[node name="AlfombraRojaNueva2" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-2.77388e-07, 0, -1.92565, 0, 1, 0, 6.3459, 0, -8.41727e-08, -17.761, 0.017, 37.395)
 
-[node name="AlfombraRoja5" parent="AlfombraRoja" instance=ExtResource("36_c3rwv")]
+[node name="AlfombraRojaNueva" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
 transform = Transform3D(-1.06215e-06, 0, -12.4026, 0, 1, 0, 24.2992, 0, -5.42136e-07, 0.450388, 0.0196317, -4.7762)
 
 [node name="lampara de techo" parent="." instance=ExtResource("7_lmtg1")]
