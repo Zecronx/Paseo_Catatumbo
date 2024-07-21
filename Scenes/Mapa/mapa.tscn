@@ -1,4 +1,4 @@
-[gd_scene load_steps=296 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=303 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Imagenes/marco.tscn" id="4_axiku"]
@@ -84,6 +84,9 @@
 [ext_resource type="Texture2D" uid="uid://bxymw3y0nw2al" path="res://Imagenes/Variedades/Relampago_del_catatumbo_observado_desde_bachaquero-3.jpg" id="73_jv4cl"]
 [ext_resource type="Texture2D" uid="uid://cnb4lej1trayc" path="res://Imagenes/Variedades/Palacio_Legislativo_de_Maracaibo.jpg" id="81_1j8rc"]
 [ext_resource type="Texture2D" uid="uid://dev5ubf43g53e" path="res://Imagenes/Variedades/Provincia_Maracaibo.jpg" id="82_8xvik"]
+[ext_resource type="Texture2D" uid="uid://mak1ksk3w4l" path="res://Imagenes/Fotos basilica/Basílica_de_Nuestra_Señora_de_la_Chiquinquira.jpg" id="85_b4hag"]
+[ext_resource type="Texture2D" uid="uid://bgrp3xykjn3vw" path="res://Imagenes/Fotos basilica/foto bien.jpg" id="86_bguh2"]
+[ext_resource type="Texture2D" uid="uid://cqhakp7gim2iw" path="res://Imagenes/Fotos basilica/Imagen de la señora de chiquiquinra.jpg" id="88_6vwbs"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -137,9 +140,22 @@ text = "Astolfo José Romero Chacín
 Nació en Maracaibo el 8 de febrero de 1950, conocido también por su apodo El Parroquiano, fue un cantante, músico, compositor y actor venezolano, que se especializaba en el género folclórico venezolano conocido como gaita zuliana."
 
 [sub_resource type="TextMesh" id="TextMesh_oprxo"]
-text = "Sierra de perija
+text = "La Basílica de Nuestra Señora de Chiquinquirá
+ 
+Es el templo católico más concurrido del estado Zulia en Venezuela, ubicada en el centro de la ciudad de Maracaibo. Una construcción dedicada a la Virgen de Chiquinquirá, patrona del estado Zulia. La basílica cuenta con 3 naves y 2 torres, un altar mayor, un presbiterio y numerosos nichos dedicados a diversos santos."
 
-La serranía del Perijá, también conocida como sierra de Perijá, es el ramal más septentrional de la cordillera de los Andes, situada entre Colombia y Venezuela."
+[sub_resource type="TextMesh" id="TextMesh_3pkru"]
+text = "Construccion de la Basílica de Nuestra Señora de Chiquinquirá
+
+En Maracaibo, estado Zulia, Venezuela, se comenzó a construir en 1858 y se culminó en 1894. El templo fue erigido para honrar a la Virgen de Chiquinquirá, cuya imagen es profundamente venerada en la región. La construcción de la Basílica se convirtió en un importante proyecto religioso y cultural, y su finalización representó un hito significativo para la comunidad de Maracaibo. "
+
+[sub_resource type="TextMesh" id="TextMesh_h7ddu"]
+
+[sub_resource type="TextMesh" id="TextMesh_wpd54"]
+
+[sub_resource type="TextMesh" id="TextMesh_s0ipc"]
+text = "Historia de la Virgen de la Chiquinquirá 
+una sencilla mujer acababa de lavar su ropa en las orillas del lago de Maracaibo, cuando repentinamente vio flotando una tablita de madera fina, la cual recogió pensando en que le podría ser útil para tapar la tinaja de agua que tenía en el corredor de su casa. A la mañana siguiente, la mujer escuchó unos golpes como si alguien estuviera llamando. Fue a ver lo que sucedía y quedó sobrecogida de asombro al ver que la tablita brillaba y que aparecía en ella, la imagen de Nuestra Señora de Chiquinquirá."
 
 [sub_resource type="TextMesh" id="TextMesh_nkd0b"]
 text = "Neguito Borjas
@@ -4801,17 +4817,26 @@ texto = SubResource("TextMesh_3k8jj")
 transform = Transform3D(-3.72026e-16, -1.19249e-08, -0.769543, 0.713715, -4.37114e-08, 0, -3.11975e-08, -1, 9.17671e-09, 15.0352, 12.7996, 75.8771)
 texto = SubResource("TextMesh_jc431")
 
-[node name="MARCO BASILICA 1" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(-1.94507e-08, -1, 1.80418e-07, 0.44498, -4.37114e-08, 0, 3.40087e-15, 1.74846e-07, 1.03187, 6.75482, 11.7644, 81.1083)
+[node name="Marco basilica 1" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(-1.94507e-08, -1, 1.80418e-07, 0.44498, -4.37114e-08, 0, 3.40087e-15, 1.74846e-07, 1.03187, 6.75482, 11.0184, 81.1083)
 texto = SubResource("TextMesh_oprxo")
+
+[node name="MARCO BASILICA 4" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(1.94507e-08, 1, 9.02089e-08, 0.44498, -4.37114e-08, 0, 1.70043e-15, 8.74228e-08, -1.03187, -7.61928, 10.9266, 81.1083)
+texto = SubResource("TextMesh_3pkru")
+derecha = false
+
+[node name="MARCO BASILICA 5" parent="." instance=ExtResource("5_iqygw")]
+transform = Transform3D(1.94507e-08, 1, 9.02089e-08, 0.44498, -4.37114e-08, 0, 1.70043e-15, 8.74228e-08, -1.03187, -7.61928, 10.9174, 87.7321)
+texto = SubResource("TextMesh_h7ddu")
 
 [node name="MARCO BASILICA 2" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(-1.94507e-08, -1, 1.80418e-07, 0.44498, -4.37114e-08, 0, 3.40087e-15, 1.74846e-07, 1.03187, 6.75482, 11.7771, 88.0317)
-texto = SubResource("TextMesh_oprxo")
+transform = Transform3D(-1.94507e-08, -1, 1.80418e-07, 0.44498, -4.37114e-08, 0, 3.40087e-15, 1.74846e-07, 1.03187, 6.75482, 11.0184, 88.0317)
+texto = SubResource("TextMesh_wpd54")
 
 [node name="MARCO BASILICA 3" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(1.13512e-15, 4.37114e-08, -1.39527, 0.594089, -4.37114e-08, 0, -2.59685e-08, -1, -6.09891e-08, -0.828734, 12.2852, 90.6868)
-texto = SubResource("TextMesh_oprxo")
+transform = Transform3D(1.13512e-15, 4.37114e-08, -1.39527, 0.594089, -4.37114e-08, 0, -2.59685e-08, -1, -6.09891e-08, 1.08579, 11.7309, 91.8293)
+texto = SubResource("TextMesh_s0ipc")
 
 [node name="Marco Anu" parent="." instance=ExtResource("5_iqygw")]
 transform = Transform3D(-3.30111e-16, -1.19249e-08, -0.652377, 0.633303, -4.37114e-08, 0, -2.76826e-08, -1, 7.77952e-09, -25.618, 11.9305, 49.8763)
@@ -4879,6 +4904,9 @@ transform = Transform3D(3.285, 0, 0, 0, 7.83101, 0, 0, 0, 3.285, 18.9287, 10.213
 [node name="Pedestal 22" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(3.285, 0, 0, 0, 7.83101, 0, 0, 0, 3.285, 18.9287, 10.2131, 56.0011)
 
+[node name="Pedestal 24" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(3.285, 0, 0, 0, 7.83101, 0, 0, 0, 3.285, -8.74756, 10.2131, 56.0011)
+
 [node name="Pedestal 14" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(3.285, 0, 0, 0, 7.78795, 0, 0, 0, 3.285, -24.9352, 10.0344, 5.98699)
 
@@ -4902,20 +4930,6 @@ transform = Transform3D(3.285, 0, 0, 0, 5.14554, 0, 0, 0, 3.285, 3.30599, 1.2206
 
 [node name="Pedestal 16" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(3.285, 0, 0, 0, 5.14554, 0, 0, 0, 3.285, -6.31794, 1.22062, 26.0701)
-
-[node name="Hab Basilica" type="Sprite3D" parent="."]
-transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, -0.193892, 10.9085, 84.5668)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-billboard = 1
-texture = SubResource("CanvasTexture_20ic3")
-
-[node name="Label3D" type="Label3D" parent="Hab Basilica"]
-transform = Transform3D(1.11732, 0, 0, 0, 1.18343, 0, 0, 0, 1, 0.00883028, 0, 0.000480652)
-billboard = 1
-text = "HABITACION DE LA
-BASILICA"
-font_size = 40
 
 [node name="Hab Cuevas2" type="Sprite3D" parent="."]
 transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, -29.2761, 2.86999, 41.8728)
@@ -5572,15 +5586,15 @@ transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, 
 texture = ExtResource("29_qr7q6")
 
 [node name="Foto basilica - 1" type="Sprite3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.79077, 11.8125, 80.8874)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.79077, 11.0134, 80.8874)
 texture = ExtResource("33_sxit6")
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(-2.92365e-08, 0, 1, 0, 0.593915, 0, -0.668853, 0, -4.37114e-08, 6.72584, 11.809, 87.844)
+[node name="Foto basilica - 2" type="Sprite3D" parent="."]
+transform = Transform3D(-2.92365e-08, 0, 1, 0, 0.593915, 0, -0.668853, 0, -4.37114e-08, 6.84511, 11.0273, 87.8122)
 texture = ExtResource("34_mov2w")
 
 [node name="Sprite3D2" type="Sprite3D" parent="."]
-transform = Transform3D(-6.11404e-08, 2.31154e-10, 0.962, 2.04831e-22, 0.967288, 2.31161e-10, -1.39873, -1.01036e-17, -4.20504e-08, -7.88648, 12.2126, 68.2236)
+transform = Transform3D(-6.11404e-08, 2.31154e-10, 0.962, 2.04831e-22, 0.967288, 2.31161e-10, -1.39873, -1.01036e-17, -4.20504e-08, -7.88648, 12.2126, 66.7575)
 texture = ExtResource("31_scgyy")
 
 [node name="Block_1" type="Node3D" parent="."]
@@ -6145,6 +6159,9 @@ transform = Transform3D(-2.77388e-07, 0, -1.92565, 0, 1, 0, 6.3459, 0, -8.41727e
 [node name="AlfombraRojaNueva" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
 transform = Transform3D(-1.06215e-06, 0, -12.4026, 0, 1, 0, 24.2992, 0, -5.42136e-07, 0.450388, 0.0196317, -4.7762)
 
+[node name="AlfombraRojaNueva17" parent="AlfombraRoja" instance=ExtResource("40_j7tv7")]
+transform = Transform3D(-3.67903e-07, 0, -6.06193, 0, 1, 0, 8.41665, 0, -2.64976e-07, -0.0276384, 8.04092, 82.6361)
+
 [node name="lampara de techo" parent="." instance=ExtResource("7_lmtg1")]
 transform = Transform3D(-1, -7.64274e-15, -8.74228e-08, 0, -1, 8.74228e-08, -8.74228e-08, 8.74228e-08, 1, 33.0484, 6.97733, 42.4978)
 
@@ -6219,7 +6236,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 62.815
 transform = Transform3D(-0.745515, 0.378638, -0.274425, 0.264979, 0.710146, 0.241483, 0.611551, 0.153882, -0.439171, 63.8807, 10.8565, 34.9096)
 
 [node name="Marco Lago" parent="." instance=ExtResource("4_axiku")]
-transform = Transform3D(6.31613e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -7.789, 12.2009, 67.7687)
+transform = Transform3D(6.31613e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -7.789, 12.2009, 66.4396)
 texto = SubResource("TextMesh_kh1m2")
 
 [node name="Marco Palafito" parent="." instance=ExtResource("4_axiku")]
@@ -6313,6 +6330,12 @@ transform = Transform3D(-5.42316, -0.246745, 25.3699, -0.00161304, 7.74098, 0.03
 
 [node name="Pedestal 3" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(-5.42316, -0.248456, 25.3698, -0.00161304, 7.79464, 0.0309856, -2.53236, 0.00396607, -0.541312, 62.4521, 0.822097, -6.20536)
+
+[node name="Pedestal 8" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(-5.42314, -0.049567, 25.3697, -0.00161302, 1.55503, 0.0309855, -2.53236, 0.000791233, -0.541312, 107.221, 11.1637, -3.44366)
+
+[node name="Pedestal 9" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
+transform = Transform3D(-5.42314, -0.0513057, 25.3697, -0.00161302, 1.60958, 0.0309855, -2.53236, 0.000818988, -0.541312, 119.31, 11.2182, 2.46005)
 
 [node name="Pedestal 4" parent="MARCOS PUENTE" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(-5.42315, -0.246744, 25.3699, -0.00161303, 7.74096, 0.0309855, -2.53236, 0.00393875, -0.541312, -63.2892, 0.665596, -5.44456)
@@ -6872,3 +6895,15 @@ texto = SubResource("TextMesh_c67ru")
 [node name="Sprite3D2" type="Sprite3D" parent="Marco4"]
 transform = Transform3D(-1.99538e-08, 0.431404, 2.18557e-08, 2.84217e-14, -1.88573e-08, 0.5, 0.456489, 1.88573e-08, -2.13163e-14, 0, -0.131927, -0.21801)
 texture = ExtResource("82_8xvik")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-2.97946e-08, 0, -1, 0, 0.634322, 0, 0.681622, 0, -4.37114e-08, -7.70379, 10.8777, 81.3537)
+texture = ExtResource("85_b4hag")
+
+[node name="chiquinquira" type="Sprite3D" parent="."]
+transform = Transform3D(0.412645, 0, 0, 0, 0.390357, 0, 0, 0, 1, 1.25455, 11.7888, 91.8677)
+texture = ExtResource("88_6vwbs")
+
+[node name="Sprite3D4" type="Sprite3D" parent="."]
+transform = Transform3D(-2.33624e-08, 0, 1, 0, 0.45385, 0, -0.534469, 0, -4.37114e-08, -7.66417, 10.8759, 87.9374)
+texture = ExtResource("86_bguh2")
