@@ -1,4 +1,4 @@
-[gd_scene load_steps=311 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=310 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Imagenes/marco.tscn" id="4_axiku"]
@@ -10,7 +10,6 @@
 [ext_resource type="PackedScene" uid="uid://df8x2mtyx5u13" path="res://Assets/TechoArco/techoAbierto2.glb" id="11_63ggk"]
 [ext_resource type="PackedScene" uid="uid://cd6hixteyjrcv" path="res://Assets/Pedestal/pedestal.tscn" id="11_gl7h4"]
 [ext_resource type="PackedScene" uid="uid://n3mgeinupl5v" path="res://Assets/TechoArco/Pared/Cerrado/techoCerradoPared.glb" id="12_afcfj"]
-[ext_resource type="AudioStream" uid="uid://brxqtbmtbjfle" path="res://Audio/Stream Loops 2024-02-07.ogg" id="12_g8n3c"]
 [ext_resource type="PackedScene" uid="uid://utgpkgogih5v" path="res://Assets/TechoArco/Pared/Abierto/techoAbiertoPared.glb" id="13_ob2lk"]
 [ext_resource type="PackedScene" uid="uid://rn0nrswdx7vl" path="res://Assets/Tranvia/Trenvia.glb" id="14_bn6ju"]
 [ext_resource type="PackedScene" uid="uid://b6ywtsg5r0lxf" path="res://Assets/Estatua/Rafael Urdaneta.glb" id="16_6h83q"]
@@ -4523,11 +4522,11 @@ text = "Antigua sede de la Mene Grande Oil Company, Actualmente sede de Carbozul
 
 [sub_resource type="TextMesh" id="TextMesh_wdebr"]
 text = "Vista de un tren del Metro de Maracaibo.
+
 "
 
 [sub_resource type="TextMesh" id="TextMesh_cdtpt"]
-text = "Centro de Maracaibo, al fondo, el Palacio de los Cóndores. Sede del Poder Ejecutivo desde 1868.
-"
+text = "Centro de Maracaibo, al fondo, el Palacio de los Cóndores. Sede del Poder Ejecutivo desde 1868."
 
 [sub_resource type="TextMesh" id="TextMesh_e38bb"]
 text = "La Iglesia Santa Bárbara, llamada como \"Parroquia Eclesiástica de Santa Bárbara y Santuario de la Inmaculada Concepción\", es un templo parroquial católico ubicado en el Casco Histórico de la ciudad de Maracaibo, enmarcado en el Paseo Los Libertadores, en el estado Zulia de Venezuela.
@@ -4806,27 +4805,27 @@ omni_attenuation = 0.4
 metadata/_edit_group_ = true
 
 [node name="Marco tequeños" parent="." instance=ExtResource("4_axiku")]
-transform = Transform3D(1.21118e-15, 4.20504e-08, 0.654542, 0.633898, -4.20504e-08, 0, 2.77085e-08, 0.962, -2.8611e-08, 28.5059, 2.00229, 34.1038)
+transform = Transform3D(1.21118e-15, 4.20504e-08, 0.654542, 0.633898, -4.20504e-08, 0, 2.77085e-08, 0.962, -2.8611e-08, 28.506, 2.502, 34.104)
 texto = SubResource("TextMesh_segdq")
 
 [node name="Marco patacones" parent="." instance=ExtResource("4_axiku")]
-transform = Transform3D(1.3029e-15, 4.20504e-08, 0.684918, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.99387e-08, 34.9407, 2.02348, 34.0763)
+transform = Transform3D(1.3029e-15, 4.20504e-08, 0.684918, 0.681903, -4.20504e-08, 0, 2.98069e-08, 0.962, -2.99387e-08, 34.941, 2.523, 34.076)
 texto = SubResource("TextMesh_c8bag")
 
 [node name="Marco pastelitos" parent="." instance=ExtResource("4_axiku")]
-transform = Transform3D(-2.62642e-08, -0.962, 0, 0.600855, -4.20504e-08, 0, 0, 0, 0.53792, 40.88, 1.98235, 37.5476)
+transform = Transform3D(-2.62642e-08, -0.962, 0, 0.600855, -4.20504e-08, 0, 0, 0, 0.53792, 40.88, 2.482, 37.548)
 texto = SubResource("TextMesh_qf5li")
 
 [node name="Marco mojito" parent="." instance=ExtResource("4_axiku")]
-transform = Transform3D(-2.7768e-08, -0.962, 0, 0.635259, -4.20504e-08, 0, 0, 0, 0.686658, 40.88, 1.97717, 44.6708)
+transform = Transform3D(-2.7768e-08, -0.962, 0, 0.635259, -4.20504e-08, 0, 0, 0, 0.686658, 40.88, 2.477, 44.671)
 texto = SubResource("TextMesh_p8bsi")
 
 [node name="Marco mandocas" parent="." instance=ExtResource("4_axiku")]
-transform = Transform3D(-4.08134e-16, -1.14717e-08, -0.713909, 0.782988, -4.20504e-08, 0, -3.42255e-08, -0.962, 8.51328e-09, 35.3904, 2.23248, 49.8945)
+transform = Transform3D(-4.08134e-16, -1.14717e-08, -0.713909, 0.782988, -4.20504e-08, 0, -3.42255e-08, -0.962, 8.51328e-09, 35.39, 2.732, 49.895)
 texto = SubResource("TextMesh_p4dn8")
 
 [node name="Marco bollitos" parent="." instance=ExtResource("4_axiku")]
-transform = Transform3D(-3.07613e-16, -1.14717e-08, -0.669886, 0.590141, -4.20504e-08, 0, -2.57959e-08, -0.962, 7.98831e-09, 28.1358, 1.95129, 49.895)
+transform = Transform3D(-3.07613e-16, -1.14717e-08, -0.669886, 0.590141, -4.20504e-08, 0, -2.57959e-08, -0.962, 7.98831e-09, 28.136, 2.451, 49.895)
 texto = SubResource("TextMesh_3k8jj")
 
 [node name="Marco Astolfo" parent="." instance=ExtResource("5_iqygw")]
@@ -4873,7 +4872,6 @@ texto = SubResource("TextMesh_v6rr0")
 
 [node name="Marco PB 3" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(0.902394, 0, 0, 0, -4.37114e-08, -0.58709, 0, 1, -2.56625e-08, 0, 3.63857, -23.8352)
-audio = ExtResource("12_g8n3c")
 
 [node name="Mp5" type="Node3D" parent="."]
 transform = Transform3D(0.997616, 0, 0.0690078, 0, 1, 0, -0.0690078, 0, 0.997616, 53.9684, 11.94, 34.7517)
@@ -5560,23 +5558,23 @@ transform = Transform3D(1, 0, -7.4607e-13, 0, 1, 0, 9.52127e-13, 0, 0.999999, 1.
 shape = SubResource("BoxShape3D_jvgxs")
 
 [node name="Tequeños" type="Sprite3D" parent="."]
-transform = Transform3D(0.65888, 0, 0, 0, 0.701797, 0, 0, 0, 1, 28.3, 2, 34.013)
+transform = Transform3D(0.65888, 0, 0, 0, 0.701797, 0, 0, 0, 1, 28.3, 2.5, 34.013)
 texture = ExtResource("26_mbr0n")
 
 [node name="Patacon" type="Sprite3D" parent="."]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 34.7828, 2, 34.013)
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 34.783, 2.5, 34.013)
 texture = ExtResource("27_pmncg")
 
 [node name="Pastelitos" type="Sprite3D" parent="."]
-transform = Transform3D(-1.5299e-08, 0, 0.35, 0, 0.35, 0, -0.35, 0, -1.5299e-08, 40.9692, 2, 37.4231)
+transform = Transform3D(-1.5299e-08, 0, 0.35, 0, 0.35, 0, -0.35, 0, -1.5299e-08, 40.969, 2.5, 37.423)
 texture = ExtResource("28_p02jx")
 
 [node name="Mandoca" type="Sprite3D" parent="."]
-transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 35.5288, 2.25925, 49.9961)
+transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 35.529, 2.759, 49.996)
 texture = ExtResource("29_51xfp")
 
 [node name="Bollitos" type="Sprite3D" parent="."]
-transform = Transform3D(-0.55, 0, -8.30477e-08, 0, 0.55, 0, 8.30477e-08, 0, -0.55, 28.2619, 1.94204, 49.9961)
+transform = Transform3D(-0.55, 0, -8.30477e-08, 0, 0.55, 0, 8.30477e-08, 0, -0.55, 28.262, 2.442, 49.996)
 texture = ExtResource("30_7qm1x")
 
 [node name="Astolfo" type="Sprite3D" parent="."]
@@ -5592,7 +5590,7 @@ transform = Transform3D(-2.75854e-08, 0, 0.55, 0, 0.594141, 0, -0.63108, 0, -2.4
 texture = ExtResource("29_xd3i6")
 
 [node name="Mojito" type="Sprite3D" parent="."]
-transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, 40.9692, 2, 44.5416)
+transform = Transform3D(-2.62268e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.62268e-08, 40.969, 2.5, 44.542)
 texture = ExtResource("29_qr7q6")
 
 [node name="Foto basilica - 1" type="Sprite3D" parent="."]
@@ -6428,24 +6426,20 @@ texto = SubResource("TextMesh_mbkbj")
 transform = Transform3D(0.000587689, 0.0970727, -3.05961e-09, 0, -4.24345e-09, -0.07, -0.0523646, 0.00108945, -3.4338e-11, -1.66893e-06, -0.11662, -0.202476)
 texture = ExtResource("55_g3dcv")
 
-[node name="Marco18" parent="MarcosInicio" instance=ExtResource("4_axiku")]
-transform = Transform3D(-3.55093e-08, -0.999998, 0, 0.812358, -4.37113e-08, 0, 0, 0, 1.6681, 10.8445, 2.70224, -17.3383)
-texto = SubResource("TextMesh_mbkbj")
+[node name="Marco20" parent="MarcosInicio" instance=ExtResource("4_axiku")]
+transform = Transform3D(4.93131e-08, -0.999998, -8.8447e-08, -1.12815, -4.37113e-08, 3.08817e-08, -3.44358e-08, 8.74226e-08, -1.01172, 10.8343, 3.81668, -0.0274398)
 
-[node name="Marco19" parent="MarcosInicio" instance=ExtResource("4_axiku")]
-transform = Transform3D(4.93131e-08, -0.999998, -7.63834e-08, -1.12815, -4.37113e-08, 2.66696e-08, -3.44358e-08, 8.74226e-08, -0.873724, 10.8343, 3.81668, 0.0699511)
-
-[node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/Marco19"]
-transform = Transform3D(0.00309165, -0.202997, -0.000141912, -0.00138705, 8.86614e-05, -0.264444, 0.206808, 0.00303522, -0.00177142, 0, -0.10114, -0.194967)
+[node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/Marco20"]
+transform = Transform3D(-6.39207e-09, -0.209411, -9.15364e-09, 3.09801e-08, -1.03267e-08, 0.236247, -0.233511, 7.12773e-09, 3.06213e-08, 0.0394552, -0.11134, -0.122884)
 texture = ExtResource("55_vy3su")
 
-[node name="Marco20" parent="MarcosInicio" instance=ExtResource("4_axiku")]
+[node name="Marco21" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(-3.55093e-08, -0.999998, 0, 0.812358, -4.37113e-08, 0, 0, 0, 0.596494, 10.8444, 2.68642, 20.4954)
 texto = SubResource("TextMesh_wdebr")
 derecha = false
 
-[node name="Sprite3D3" type="Sprite3D" parent="MarcosInicio/Marco20"]
-transform = Transform3D(1.5787e-08, 0.645326, 3.32207e-08, -3.8653e-08, -2.82081e-08, 0.76, 0.741229, -1.38164e-09, 1.11386e-07, 0, -0.132895, -0.151546)
+[node name="Sprite3D3" type="Sprite3D" parent="MarcosInicio/Marco21"]
+transform = Transform3D(1.42506e-08, 0.618138, 3.1821e-08, -3.90516e-08, -1.94563e-08, 0.524204, 0.748872, -2.80267e-09, 7.68277e-08, -0.00488758, -0.131051, -0.215069)
 texture = ExtResource("63_1b3v0")
 
 [node name="Marco29" parent="MarcosInicio" instance=ExtResource("4_axiku")]
@@ -6463,45 +6457,45 @@ transform = Transform3D(1.55216e-15, -4.37113e-08, 0.596494, -0.812358, -4.37113
 [node name="Marco33" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(1.55216e-15, -4.37113e-08, 0.596494, -0.812358, -4.37113e-08, 1.05879e-22, 3.55093e-08, -0.999998, -2.60736e-08, 36.9529, 11.5732, 49.8448)
 
-[node name="Marco21" parent="MarcosInicio" instance=ExtResource("4_axiku")]
+[node name="Marco22" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(-3.55093e-08, -0.999998, 0, 0.812358, -4.37113e-08, 0, 0, 0, 0.922783, 10.8445, 2.68643, 15.0206)
 texto = SubResource("TextMesh_cdtpt")
 
-[node name="Sprite3D3" type="Sprite3D" parent="MarcosInicio/Marco21"]
-transform = Transform3D(2.36426e-09, 0.283349, 1.22392e-08, -2.11025e-08, -1.23856e-08, 0.28, 0.261583, -4.77161e-09, 2.65266e-08, 0, -0.113091, -0.134995)
+[node name="Sprite3D3" type="Sprite3D" parent="MarcosInicio/Marco22"]
+transform = Transform3D(-1.73019e-08, 0.279751, 1.19273e-08, -1.58819e-22, -1.22283e-08, 0.272866, 0.255862, 7.90446e-09, 3.37012e-16, -1.23978e-05, -0.118285, -0.203787)
 texture = ExtResource("63_n5tae")
 
-[node name="Marco22" parent="MarcosInicio" instance=ExtResource("4_axiku")]
+[node name="Marco23" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(-3.55093e-08, -0.999998, 0, 0.812358, -4.37113e-08, 0, 0, 0, 0.596494, 10.8445, 2.68642, 9.46788)
 
-[node name="Sprite3D3" type="Sprite3D" parent="MarcosInicio/Marco22"]
-transform = Transform3D(4.16239e-08, 1.51752, 3.55271e-15, -1.90157e-07, 2.4869e-14, 1, 1.98372, -2.36069e-09, 1.90272e-07, 0, -0.125561, -0.183929)
+[node name="Sprite3D3" type="Sprite3D" parent="MarcosInicio/Marco23"]
+transform = Transform3D(1.07009e-07, 1.54831, 6.19555e-08, -8.47033e-22, -6.76787e-08, 1.41738, 2.1927, -1.80836e-07, -7.23616e-15, 1.23978e-05, -0.125561, -0.198978)
 texture = ExtResource("56_tli7w")
 
-[node name="Marco23" parent="MarcosInicio" instance=ExtResource("4_axiku")]
+[node name="Marco24" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(-3.55093e-08, -0.999998, 0, 0.812358, -4.37113e-08, 0, 0, 0, 0.865432, 10.8444, 2.68642, 28.15)
 texto = SubResource("TextMesh_e38bb")
 
-[node name="Sprite3D3" type="Sprite3D" parent="MarcosInicio/Marco23"]
-transform = Transform3D(1.49763e-09, 0.120345, 5.90104e-09, -1.01231e-08, -5.26045e-09, 0.135, 0.1338, -1.81231e-09, 1.36372e-08, 0, -0.0908146, -0.115448)
+[node name="Sprite3D3" type="Sprite3D" parent="MarcosInicio/Marco24"]
+transform = Transform3D(2.12735e-09, 0.120345, 5.90104e-09, -1.43797e-08, -5.26045e-09, 0.135, 0.130998, -1.24912e-09, 9.39936e-09, 0, -0.119754, -0.2047)
 texture = ExtResource("65_4plbk")
 
-[node name="Marco24" parent="MarcosInicio" instance=ExtResource("4_axiku")]
+[node name="Marco25" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(-3.55093e-08, -0.999998, 0, 0.812358, -4.37113e-08, 0, 0, 0, 0.873833, 10.845, 2.68642, 40.6691)
 texto = SubResource("TextMesh_gvgwm")
 derecha = false
 
-[node name="Sprite3D3" type="Sprite3D" parent="MarcosInicio/Marco24"]
-transform = Transform3D(1.82439e-09, 0.189369, 7.86806e-09, -1.28127e-08, -8.27758e-09, 0.18, 0.167721, -2.9039e-09, 1.80081e-08, 0, -0.131203, -0.109772)
+[node name="Sprite3D3" type="Sprite3D" parent="MarcosInicio/Marco25"]
+transform = Transform3D(1.82439e-09, 0.189369, 7.86806e-09, -1.28127e-08, -8.27758e-09, 0.18, 0.166109, -2.87598e-09, 1.7835e-08, 0, -0.130603, -0.196095)
 texture = ExtResource("67_kr1ah")
 
-[node name="Marco25" parent="MarcosInicio" instance=ExtResource("4_axiku")]
+[node name="Marco26" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.55093e-08, 0.999998, 5.21472e-08, 0.812358, -4.37113e-08, 0, 3.10432e-15, 8.74226e-08, -0.596494, 12.2304, 2.74358, 29.1272)
 texto = SubResource("TextMesh_20ii7")
 derecha = false
 
-[node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/Marco25"]
-transform = Transform3D(-4.00525e-08, 0.767872, 4.37114e-08, 2.13163e-14, -3.35648e-08, 1, 0.916293, 3.35647e-08, 0, 0, -0.133887, -0.155617)
+[node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/Marco26"]
+transform = Transform3D(-2.60406e-08, 0.767872, -6.39045e-08, 4.55103e-08, -2.09685e-08, -1, -0.872727, -4.91705e-08, -1.46561e-07, 0, -0.129913, -0.222565)
 texture = ExtResource("68_6j3f8")
 
 [node name="Marco27" parent="MarcosInicio" instance=ExtResource("4_axiku")]
@@ -6517,7 +6511,7 @@ transform = Transform3D(2.48555e-08, -1, 6.41253e-08, -0.568628, -4.37114e-08, 0
 derecha = false
 
 [node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/MarcoV1"]
-transform = Transform3D(-6.09193e-08, -1.7553, -4.37115e-08, -2.84217e-14, -7.67265e-08, 1, -1.39367, 7.67267e-08, 9.9476e-14, 0, 0, -0.197083)
+transform = Transform3D(-6.26809e-08, -1.80606, -4.49755e-08, -5.68434e-14, -7.89452e-08, 1.02892, -1.43397, 7.89454e-08, 1.13687e-13, 0, -0.131626, -0.197083)
 texture = ExtResource("57_4vpwh")
 
 [node name="Marco" parent="MarcosInicio" instance=ExtResource("4_axiku")]
