@@ -154,8 +154,9 @@ En Maracaibo, estado Zulia, Venezuela, se comenzó a construir en 1858 y se culm
 [sub_resource type="TextMesh" id="TextMesh_wpd54"]
 
 [sub_resource type="TextMesh" id="TextMesh_s0ipc"]
-text = "Historia de la Virgen de la Chiquinquirá 
-una sencilla mujer acababa de lavar su ropa en las orillas del lago de Maracaibo, cuando repentinamente vio flotando una tablita de madera fina, la cual recogió pensando en que le podría ser útil para tapar la tinaja de agua que tenía en el corredor de su casa. A la mañana siguiente, la mujer escuchó unos golpes como si alguien estuviera llamando. Fue a ver lo que sucedía y quedó sobrecogida de asombro al ver que la tablita brillaba y que aparecía en ella, la imagen de Nuestra Señora de Chiquinquirá."
+text = "Una  mujer acababa de lavar su ropa en las orillas del lago de Maracaibo, cuando repentinamente vio flotando una tablita de madera fina, la cual recogió pensando en que le podría ser útil para tapar la tinaja de agua que tenía en el corredor de su casa. A la mañana siguiente, la mujer escuchó unos golpes como si alguien estuviera llamando. Fue a ver lo que sucedía y quedó sobrecogida de asombro al ver que la tablita brillaba y que aparecía en ella, la imagen de Nuestra Señora de Chiquinquirá."
+font_size = 25
+horizontal_alignment = 0
 
 [sub_resource type="TextMesh" id="TextMesh_ffhdu"]
 
@@ -4883,8 +4884,9 @@ transform = Transform3D(-1.94507e-08, -1, 1.80418e-07, 0.44498, -4.37114e-08, 0,
 texto = SubResource("TextMesh_wpd54")
 
 [node name="MARCO BASILICA 3" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(1.13512e-15, 4.37114e-08, -1.39527, 0.594089, -4.37114e-08, 0, -2.59685e-08, -1, -6.09891e-08, -0.585441, 11.7309, 91.8293)
+transform = Transform3D(7.65536e-16, 4.37114e-08, -1.10304, 0.40066, -4.37114e-08, 0, -1.75134e-08, -1, -4.82154e-08, -0.685689, 10.9803, 91.8293)
 texto = SubResource("TextMesh_s0ipc")
+derecha = false
 
 [node name="Marco Anu" parent="." instance=ExtResource("5_iqygw")]
 transform = Transform3D(-3.30111e-16, -1.19249e-08, -0.652377, 0.633303, -4.37114e-08, 0, -2.76826e-08, -1, 7.77952e-09, -28.1696, 11.9305, 49.8763)
@@ -6937,7 +6939,7 @@ transform = Transform3D(-2.97946e-08, 0, -1, 0, 0.634322, 0, 0.681622, 0, -4.371
 texture = ExtResource("85_b4hag")
 
 [node name="chiquinquira" type="Sprite3D" parent="."]
-transform = Transform3D(0.412645, 0, 0, 0, 0.390357, 0, 0, 0, 1, -0.265221, 11.7888, 91.8677)
+transform = Transform3D(0.29794, 0, 0, 0, 0.267948, 0, 0, 0, 1, -0.470796, 10.9495, 91.9208)
 texture = ExtResource("88_6vwbs")
 
 [node name="Sprite3D4" type="Sprite3D" parent="."]
