@@ -1,4 +1,4 @@
-[gd_scene load_steps=323 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=331 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Imagenes/marco.tscn" id="4_axiku"]
@@ -43,6 +43,7 @@
 [ext_resource type="PackedScene" uid="uid://pdq52x8minmh" path="res://Assets/AlfombraRoja/AlfombraRojaNueva.tscn" id="40_j7tv7"]
 [ext_resource type="PackedScene" uid="uid://utsni4j0468l" path="res://Assets/Armas/m16.glb" id="42_103li"]
 [ext_resource type="Texture2D" uid="uid://chh2ieqktrr7d" path="res://Imagenes/Fotos pnb/1.jpg" id="43_2q0pm"]
+[ext_resource type="Texture2D" uid="uid://c1ykshkiwkjb5" path="res://Imagenes/OrquestaCoro/ovjp2.jpeg" id="43_dp7ms"]
 [ext_resource type="Texture2D" uid="uid://bvwn5kgso862t" path="res://Imagenes/fotos angel/Palafitos_Lago_de_Maracaibo.jpg" id="43_s5gbs"]
 [ext_resource type="PackedScene" uid="uid://dh7rstcg4qydr" path="res://Scenes/Mapa/inicio/inicio.tscn" id="44_l8dmy"]
 [ext_resource type="Texture2D" uid="uid://qapf578wjghb" path="res://Imagenes/Fotos pnb/download.jpg" id="44_nfuj6"]
@@ -72,7 +73,9 @@
 [ext_resource type="Texture2D" uid="uid://bn74w46pwfe5q" path="res://Imagenes/Gaiteros/Ricardo_Cepeda_Olivares.jpg" id="59_vsi6q"]
 [ext_resource type="Texture2D" uid="uid://k26bb4bolvdt" path="res://Assets/Pinturas/rurdaneta1.png" id="60_t5y5v"]
 [ext_resource type="Texture2D" uid="uid://dnepfurw7dupr" path="res://Assets/Pinturas/rurdaneta2.png" id="61_7r0a2"]
+[ext_resource type="Texture2D" uid="uid://cg73dlxg2bfmr" path="res://Imagenes/OrquestaCoro/Coro3.jpeg" id="62_sau1a"]
 [ext_resource type="Texture2D" uid="uid://ba3o1x356vf7h" path="res://Imagenes/Variedades/Metro_de_Maracaibo.jpg" id="63_1b3v0"]
+[ext_resource type="Texture2D" uid="uid://cplv6tuvim44g" path="res://Imagenes/OrquestaCoro/orquesta1.jpg" id="63_1jcrd"]
 [ext_resource type="Texture2D" uid="uid://cel8da4y1merd" path="res://Imagenes/Variedades/Centro_de_Maracaibo_en_Venezuela.jpg" id="63_n5tae"]
 [ext_resource type="Texture2D" uid="uid://cgiccixoen481" path="res://Imagenes/Variedades/Iglesia_de_Santa_Barbara_Maracaibo_Edo._Zulia.jpg" id="65_4plbk"]
 [ext_resource type="Texture2D" uid="uid://dp0pebbnnxpek" path="res://Imagenes/Variedades/Medanos_de_Zapara.jpg" id="67_kr1ah"]
@@ -81,6 +84,7 @@
 [ext_resource type="Texture2D" uid="uid://dpera1kd2yip4" path="res://Imagenes/Variedades/Cepillado.jpeg" id="70_islwi"]
 [ext_resource type="Texture2D" uid="uid://dxnqtkgk8jrjl" path="res://Imagenes/Variedades/Laguna_artificial._Distribuidor_vial_La_Chinita_III.jpg" id="70_xc0pe"]
 [ext_resource type="Texture2D" uid="uid://bxymw3y0nw2al" path="res://Imagenes/Variedades/Relampago_del_catatumbo_observado_desde_bachaquero-3.jpg" id="73_jv4cl"]
+[ext_resource type="Texture2D" uid="uid://bpbhx1818ksk5" path="res://Imagenes/OrquestaCoro/Coro2.jpeg" id="73_ru1fr"]
 [ext_resource type="Texture2D" uid="uid://cnb4lej1trayc" path="res://Imagenes/Variedades/Palacio_Legislativo_de_Maracaibo.jpg" id="81_1j8rc"]
 [ext_resource type="Texture2D" uid="uid://dev5ubf43g53e" path="res://Imagenes/Variedades/Provincia_Maracaibo.jpg" id="82_8xvik"]
 [ext_resource type="Texture2D" uid="uid://mak1ksk3w4l" path="res://Imagenes/Fotos basilica/Basílica_de_Nuestra_Señora_de_la_Chiquinquira.jpg" id="85_b4hag"]
@@ -159,7 +163,10 @@ text = "Una  mujer acababa de lavar su ropa en las orillas del lago de Maracaibo
 font_size = 25
 horizontal_alignment = 0
 
-[sub_resource type="TextMesh" id="TextMesh_ffhdu"]
+[sub_resource type="TextMesh" id="TextMesh_sqbdo"]
+text = "Pueblo Añu
+
+La palabra \"añu\" significa \"gente de agua\" o \"gente del mar\". También son conocidos como paraujanos, un término que significa \"habitantes de la costa del mar\". "
 
 [sub_resource type="TextMesh" id="TextMesh_nkd0b"]
 text = "Neguito Borjas
@@ -4479,13 +4486,20 @@ active_face_vertex = 0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ys7i1"]
 
-[sub_resource type="TextMesh" id="TextMesh_kh1m2"]
-text = "Laguna de Sinamaica"
+[sub_resource type="TextMesh" id="TextMesh_84p06"]
+text = "Lago de Maracaibo
+
+ Ubicado en la parte más occidental de Venezuela entre los estados de Zulia, Trujillo y Mérida, es una notable masa de agua dulce costera."
 
 [sub_resource type="TextMesh" id="TextMesh_yl2if"]
-text = "Palafitos en el Lago de Maracaibo"
+text = "Palafitos en el Lago de Maracaibo
 
-[sub_resource type="TextMesh" id="TextMesh_f0qmn"]
+El palafito es una construcción que se caracteriza por asentarse sobre pilares o estacas de madera, o mediante sistemas de canales. "
+
+[sub_resource type="TextMesh" id="TextMesh_mlovx"]
+text = "Laguna de sinamaica
+
+La laguna de Sinamaica, habitada mayoritariamente por las etnias añú y wayú, cuyo nombre significa \"gente de agua\", es una de las joyas del estado Zulia en Venezuela. "
 
 [sub_resource type="TextMesh" id="TextMesh_qx1co"]
 text = "La Policía Nacional Bolivariana (PNB)
@@ -4498,8 +4512,10 @@ text = "La Policía Nacional Bolivariana (PNB) a punto de llevar a cabo sus entr
 [sub_resource type="TextMesh" id="TextMesh_my4wl"]
 text = "El escudo de la Policía Nacional Bolivariana (PNB) es un símbolo que representa los valores y principios de este cuerpo de seguridad."
 
-[sub_resource type="TextMesh" id="TextMesh_j4iow"]
-text = "Sierra de Perijá"
+[sub_resource type="TextMesh" id="TextMesh_jdauq"]
+text = "Sierra de perija
+
+La serranía del Perijá, también conocida como sierra de Perijá, es el ramal más septentrional de la cordillera de los Andes, situada entre Colombia y Venezuela."
 
 [sub_resource type="TextMesh" id="TextMesh_ul7vk"]
 text = "Destrucción
@@ -4539,6 +4555,11 @@ text = "Aguas del lago de Maracaibo contaminadas por variados desechos humanos.
 text = "Antigua sede de la Mene Grande Oil Company, Actualmente sede de Carbozulia, en Maracaibo.
 "
 
+[sub_resource type="TextMesh" id="TextMesh_d5d5o"]
+text = "Orquesta Sinfónica de Maracaibo
+
+Interpretando La Traviata."
+
 [sub_resource type="TextMesh" id="TextMesh_rinmn"]
 text = "Bandera del Estado Zulia"
 
@@ -4546,6 +4567,16 @@ text = "Bandera del Estado Zulia"
 text = "Vista de un tren del Metro de Maracaibo.
 
 "
+
+[sub_resource type="TextMesh" id="TextMesh_qdxbu"]
+text = "Orquesta Sinfónica de Maracaibo
+
+Sus antecedentes se remontan a 1933, pero no fue creada formalmente hasta el año 1958 por un grupo de amantes de la música."
+
+[sub_resource type="TextMesh" id="TextMesh_hys2h"]
+text = "Orquesta Sinfónica de Maracaibo
+
+La Orquesta Sinfónica de Maracaibo (OSM) es una orquesta venezolana de la ciudad de Maracaibo con más de cincuenta años de presencia en el ámbito musical."
 
 [sub_resource type="TextMesh" id="TextMesh_cdtpt"]
 text = "Centro de Maracaibo, al fondo, el Palacio de los Cóndores. Sede del Poder Ejecutivo desde 1868."
@@ -4586,6 +4617,11 @@ text = "Relámpago del Catatumbo"
 [sub_resource type="TextMesh" id="TextMesh_ms72k"]
 text = "Laguna en el distribuidor Vial La Chinita.
 "
+
+[sub_resource type="TextMesh" id="TextMesh_bghfy"]
+text = "Orquesta Sinfónica de Maracaibo
+
+La Orquesta Sinfónica de Maracaibo es una orquesta venezolana de la ciudad de Maracaibo con más de cincuenta años de presencia en el ámbito musical. "
 
 [sub_resource type="Resource" id="Resource_ycjs7"]
 script = ExtResource("19_8qer4")
@@ -4890,8 +4926,8 @@ texto = SubResource("TextMesh_s0ipc")
 derecha = false
 
 [node name="Marco Anu" parent="." instance=ExtResource("5_iqygw")]
-transform = Transform3D(-3.30111e-16, -1.19249e-08, -0.652377, 0.633303, -4.37114e-08, 0, -2.76826e-08, -1, 7.77952e-09, -28.1696, 11.9305, 49.8763)
-texto = SubResource("TextMesh_ffhdu")
+transform = Transform3D(-3.30111e-16, -1.19249e-08, -0.652377, 0.633303, -4.37114e-08, 0, -2.76826e-08, -1, 7.77952e-09, -31.1009, 11.9305, 49.8763)
+texto = SubResource("TextMesh_sqbdo")
 derecha = false
 
 [node name="Sprite3D2" type="Sprite3D" parent="Marco Anu"]
@@ -5646,7 +5682,7 @@ transform = Transform3D(-2.92365e-08, 0, 1, 0, 0.593915, 0, -0.668853, 0, -4.371
 texture = ExtResource("34_mov2w")
 
 [node name="Sprite3D2" type="Sprite3D" parent="."]
-transform = Transform3D(-6.11404e-08, 2.31154e-10, 0.962, 2.04831e-22, 0.967288, 2.31161e-10, -1.39873, -1.01036e-17, -4.20504e-08, -7.88648, 12.2126, 66.7575)
+transform = Transform3D(-6.11404e-08, 2.31154e-10, 0.962, 2.04831e-22, 0.967288, 2.31161e-10, -1.39873, -1.01036e-17, -4.20504e-08, -7.88648, 12.2126, 66.8438)
 texture = ExtResource("31_scgyy")
 
 [node name="Block_1" type="Node3D" parent="."]
@@ -6274,7 +6310,7 @@ transform = Transform3D(-0.745515, 0.378638, -0.274425, 0.264979, 0.710146, 0.24
 
 [node name="Marco Lago" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(6.31613e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -7.789, 12.2009, 66.4396)
-texto = SubResource("TextMesh_kh1m2")
+texto = SubResource("TextMesh_84p06")
 
 [node name="Marco Palafito" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(2.76086e-15, 4.37114e-08, -1.52163, 1.44496, -4.37114e-08, 0, -6.31612e-08, -1, -6.65126e-08, -15.4856, 12.8544, 57.9268)
@@ -6285,17 +6321,9 @@ derecha = false
 transform = Transform3D(-1.21062e-08, 0.274818, -4.27848e-08, -7.10543e-15, -1.20126e-08, -0.978802, -0.276958, -1.20126e-08, 1.77636e-15, -0.00220108, -0.0670433, -0.186634)
 texture = ExtResource("43_s5gbs")
 
-[node name="Marco Palafito2" parent="." instance=ExtResource("4_axiku")]
-transform = Transform3D(2.76086e-15, 4.37114e-08, -1.69358, 1.44496, -4.37114e-08, 0, -6.31612e-08, -1, -7.40289e-08, 17.06, 12.8544, 57.9268)
-texto = SubResource("TextMesh_f0qmn")
-derecha = false
-
-[node name="Sprite3D2" type="Sprite3D" parent="Marco Palafito2"]
-transform = Transform3D(-1.21062e-08, 0.274818, -4.27848e-08, -7.10543e-15, -1.20126e-08, -0.978802, -0.276958, -1.20126e-08, 1.77636e-15, -0.00220108, -0.0670433, -0.186634)
-
 [node name="Marco Laguna de sinamaica" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(6.31612e-08, 1, -1.85426e-07, 1.44496, -4.37114e-08, 0, -5.52173e-15, -8.74228e-08, -2.12103, -38.8721, 12.2009, 41.7696)
-texto = SubResource("TextMesh_kh1m2")
+texto = SubResource("TextMesh_mlovx")
 
 [node name="Sprite3D2" type="Sprite3D" parent="Marco Laguna de sinamaica"]
 transform = Transform3D(-2.92714e-08, 0.595758, -4.27848e-08, 4.26326e-14, -2.60413e-08, -0.978802, -0.669651, -2.60414e-08, 3.55271e-15, -0.00236607, -0.0670433, -0.204445)
@@ -6328,7 +6356,7 @@ texture = ExtResource("44_nfuj6")
 
 [node name="Marco Sierra de Perija" parent="." instance=ExtResource("4_axiku")]
 transform = Transform3D(2.76086e-15, 4.37114e-08, 1.78902, 1.44496, -4.37114e-08, 0, 6.31612e-08, 1, -7.82007e-08, -30.7756, 12.201, 34.114)
-texto = SubResource("TextMesh_j4iow")
+texto = SubResource("TextMesh_jdauq")
 
 [node name="Sprite3D2" type="Sprite3D" parent="Marco Sierra de Perija"]
 transform = Transform3D(-2.92714e-08, 0.595758, -4.27848e-08, 2.84217e-14, -2.60413e-08, -0.978802, -0.669651, -2.60414e-08, 3.55271e-15, -0.00236607, -0.0670433, -0.204447)
@@ -6454,6 +6482,14 @@ texto = SubResource("TextMesh_mbkbj")
 transform = Transform3D(0.000587689, 0.0970727, -3.05961e-09, 0, -4.24345e-09, -0.07, -0.0523646, 0.00108945, -3.4338e-11, -1.66893e-06, -0.11662, -0.202476)
 texture = ExtResource("55_g3dcv")
 
+[node name="Marco7" parent="MarcosInicio" instance=ExtResource("5_iqygw")]
+transform = Transform3D(1.44342e-15, 4.37114e-08, -1, 0.755444, -4.37114e-08, 0, -3.30215e-08, -1, -4.37114e-08, 17.06, 12.181, 57.927)
+texto = SubResource("TextMesh_d5d5o")
+
+[node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/Marco7"]
+transform = Transform3D(-2.20702e-08, 0.670369, 2.62268e-08, 1.77636e-14, -2.93028e-08, 0.6, 0.504908, 2.93028e-08, -1.95399e-14, 0, -0.0603905, -0.201229)
+texture = ExtResource("43_dp7ms")
+
 [node name="Marco20" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(4.93131e-08, -1.7218, -8.8447e-08, -1.12815, -7.52623e-08, 3.08817e-08, -3.44358e-08, 1.50525e-07, -1.01172, 10.674, 3.81668, -0.0274398)
 texto = SubResource("TextMesh_rinmn")
@@ -6472,19 +6508,21 @@ transform = Transform3D(1.42506e-08, 0.618138, 3.1821e-08, -3.90516e-08, -1.9456
 texture = ExtResource("63_1b3v0")
 
 [node name="Marco29" parent="MarcosInicio" instance=ExtResource("4_axiku")]
-transform = Transform3D(3.55093e-08, -0.999998, -5.21471e-08, -0.812358, -4.37113e-08, 1.82074e-08, -2.47965e-08, 8.74226e-08, -0.596494, 24.5319, 12.2103, 29.4951)
+transform = Transform3D(2.30241e-15, 4.37113e-08, 1.28672, 1.20502, -4.37113e-08, 0, 5.2673e-08, 0.999998, -5.62441e-08, 33.7391, 11.8893, 34.1152)
+texto = SubResource("TextMesh_qdxbu")
+derecha = false
+
+[node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/Marco29"]
+transform = Transform3D(2.14466e-08, 0.484344, 2.18557e-08, 5.51915e-08, -2.11714e-08, 0.5, 0.490641, -2.11714e-08, -3.39711e-08, 0, -0.0986748, -0.176886)
+texture = ExtResource("62_sau1a")
 
 [node name="Marco30" parent="MarcosInicio" instance=ExtResource("4_axiku")]
-transform = Transform3D(1.55216e-15, -4.37113e-08, -0.596494, -0.812358, -4.37113e-08, 0, -3.55093e-08, 0.999998, -2.60736e-08, 29.6187, 11.5732, 34.25)
+transform = Transform3D(2.3989e-15, 4.37113e-08, -1.34074, 1.25552, -4.37113e-08, 0, -5.48804e-08, -0.999998, -5.86057e-08, 32.6534, 11.8637, 49.9627)
+texto = SubResource("TextMesh_hys2h")
 
-[node name="Marco31" parent="MarcosInicio" instance=ExtResource("4_axiku")]
-transform = Transform3D(1.55216e-15, -4.37113e-08, -0.596494, -0.812358, -4.37113e-08, 0, -3.55093e-08, 0.999998, -2.60736e-08, 36.9529, 11.5732, 34.25)
-
-[node name="Marco32" parent="MarcosInicio" instance=ExtResource("4_axiku")]
-transform = Transform3D(1.55216e-15, -4.37113e-08, 0.596494, -0.812358, -4.37113e-08, 1.05879e-22, 3.55093e-08, -0.999998, -2.60736e-08, 29.6187, 11.5732, 49.8448)
-
-[node name="Marco33" parent="MarcosInicio" instance=ExtResource("4_axiku")]
-transform = Transform3D(1.55216e-15, -4.37113e-08, 0.596494, -0.812358, -4.37113e-08, 1.05879e-22, 3.55093e-08, -0.999998, -2.60736e-08, 36.9529, 11.5732, 49.8448)
+[node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/Marco30"]
+transform = Transform3D(3.29644e-08, 0.662626, 3.49691e-08, -8.83936e-08, -2.89643e-08, 0.8, 0.754137, -2.89643e-08, 5.21637e-08, 0.017767, -0.0324097, -0.20236)
+texture = ExtResource("63_1jcrd")
 
 [node name="Marco22" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(-3.55093e-08, -0.999998, 0, 0.812358, -4.37113e-08, 0, 0, 0, 0.922783, 10.8445, 2.68643, 15.0206)
@@ -6581,7 +6619,13 @@ transform = Transform3D(-4.86207e-09, 0.15, 6.55671e-09, 3.10862e-15, -6.55671e-
 texture = ExtResource("70_xc0pe")
 
 [node name="Marco6" parent="MarcosInicio" instance=ExtResource("4_axiku")]
-transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 17.9141, 12.8619, 25.1453)
+transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 17.9141, 11.4434, 25.1453)
+texto = SubResource("TextMesh_bghfy")
+derecha = false
+
+[node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/Marco6"]
+transform = Transform3D(-2.1215e-08, 0.389474, 4.37114e-08, 0, -1.70244e-08, 1, 0.485342, 1.70244e-08, 3.55271e-15, 0, -0.126423, -0.200863)
+texture = ExtResource("73_ru1fr")
 
 [node name="MarcosHabitacion2" type="Node3D" parent="."]
 transform = Transform3D(-0.123377, 0, 0.285296, 0, 0.657827, 0, -0.028477, 0, -1.23605, -28.8482, 0.988172, 42.8646)
@@ -7747,28 +7791,6 @@ transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
 [node name="Cuerda2" parent="Vallas P1/Vallas 20" instance=ExtResource("88_x63v6")]
 transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
 
-[node name="Vallas 30" type="StaticBody3D" parent="Vallas P1"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 24.1824, 8.021, 27.2319)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas P1/Vallas 30"]
-transform = Transform3D(0.65299, 0, 0, 0, 1, 0, 1.77636e-15, 0, 1, -1.95565, 2.1261, 0.358505)
-shape = SubResource("BoxShape3D_b7r0x")
-
-[node name="tubo" parent="Vallas P1/Vallas 30" instance=ExtResource("87_ebcll")]
-transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -2.4872, 0, 0)
-
-[node name="tubo2" parent="Vallas P1/Vallas 30" instance=ExtResource("87_ebcll")]
-transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.512796, 0, 0)
-
-[node name="Cuerda" parent="Vallas P1/Vallas 30" instance=ExtResource("88_x63v6")]
-transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -0.599728, 0.905709, -0.056304)
-
-[node name="tubo3" parent="Vallas P1/Vallas 30" instance=ExtResource("87_ebcll")]
-transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
-
-[node name="Cuerda2" parent="Vallas P1/Vallas 30" instance=ExtResource("88_x63v6")]
-transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
-
 [node name="Vallas 31" type="StaticBody3D" parent="Vallas P1"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 52.9028, 11.0062, 37.4906)
 
@@ -7836,7 +7858,7 @@ transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -5.487, 0, 0)
 transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -3.6, 0.906, -0.056)
 
 [node name="Vallas 21" type="StaticBody3D" parent="Vallas P1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.4177, 8.021, 57.0519)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.4177, 8.021, 55.8767)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas P1/Vallas 21"]
 transform = Transform3D(1.27732, 0, 0, 0, 1, 0, 0, 0, 1, -4.13594, 1.98469, 0.358505)
@@ -8066,7 +8088,7 @@ transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
 transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
 
 [node name="Vallas 29" type="StaticBody3D" parent="Vallas P1"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 13.8476, 8.021, 26.1593)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 13.8476, 8.021, 28.1812)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas P1/Vallas 29"]
 transform = Transform3D(1.20899, 0, 0, 0, 1, 0, 7.10543e-15, 0, 1, -4.46113, 1.98469, 0.358505)
@@ -8128,7 +8150,7 @@ transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
 transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
 
 [node name="Vallas 17" type="StaticBody3D" parent="Vallas P1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.0458, 8.021, 48.8824)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.0458, 8.021, 47.5223)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas P1/Vallas 17"]
 transform = Transform3D(1.47894, 0, 0, 0, 1, 0, 0, 0, 1, -2.54465, 1.96346, 0.441795)
@@ -8162,7 +8184,7 @@ transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
 transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
 
 [node name="Vallas 18" type="StaticBody3D" parent="Vallas P1"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 30.9417, 8.021, 35.2892)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 30.9417, 8.021, 36.6288)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Vallas P1/Vallas 18"]
 transform = Transform3D(1.47894, 0, 0, 0, 1, 0, 0, 0, 1, -2.54465, 1.96346, 0.441795)
