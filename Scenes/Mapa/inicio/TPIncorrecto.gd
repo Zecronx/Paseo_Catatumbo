@@ -17,7 +17,6 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if "player" in str(body):
-		print("entro en el incorrecto")
 		#barreras.process_mode = Node.PROCESS_MODE_INHERIT
 		if get_parent().name == "TPsIncorrectos1":
 			body.global_position = area_default.global_position
