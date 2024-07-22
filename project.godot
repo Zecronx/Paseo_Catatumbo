@@ -37,10 +37,10 @@ enabled=PackedStringArray("res://addons/cyclops_level_builder/plugin.cfg")
 
 folder_colors={
 "res://Assets/": "purple",
-"res://Audio/": "green",
 "res://Imagenes/": "yellow",
 "res://Scenes/": "red",
-"res://Scripts/": "blue"
+"res://Scripts/": "blue",
+"res://Scripts/Audio/": "green"
 }
 
 [filesystem]

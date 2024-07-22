@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://rn0nrswdx7vl" path="res://Assets/Tranvia/Trenvia.glb" id="14_bn6ju"]
 [ext_resource type="PackedScene" uid="uid://b6ywtsg5r0lxf" path="res://Assets/Estatua/Rafael Urdaneta.glb" id="16_6h83q"]
 [ext_resource type="Script" path="res://Scenes/Mapa/Trenvia.gd" id="16_eyecq"]
-[ext_resource type="AudioStream" uid="uid://cysa0kn3py8jr" path="res://Audio/Stream Loops 2023-11-29.ogg" id="18_fc8dd"]
+[ext_resource type="AudioStream" uid="uid://cysa0kn3py8jr" path="res://Scripts/Audio/Stream Loops 2023-11-29.ogg" id="18_fc8dd"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="18_jdkkt"]
 [ext_resource type="Material" uid="uid://ddeqaxul80ico" path="res://Assets/texturas_adicionales/WoodFloor008_1K-JPG/Wood008.tres" id="18_q2qk8"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="19_8qer4"]
@@ -85,7 +85,6 @@
 [ext_resource type="Texture2D" uid="uid://dxnqtkgk8jrjl" path="res://Imagenes/Variedades/Laguna_artificial._Distribuidor_vial_La_Chinita_III.jpg" id="70_xc0pe"]
 [ext_resource type="Texture2D" uid="uid://bxymw3y0nw2al" path="res://Imagenes/Variedades/Relampago_del_catatumbo_observado_desde_bachaquero-3.jpg" id="73_jv4cl"]
 [ext_resource type="Texture2D" uid="uid://bpbhx1818ksk5" path="res://Imagenes/OrquestaCoro/Coro2.jpeg" id="73_ru1fr"]
-[ext_resource type="Texture2D" uid="uid://crqkj45pl0huf" path="res://Imagenes/Variedades/relampagodelcatatumbo.jpg" id="74_ft10i"]
 [ext_resource type="Texture2D" uid="uid://cnb4lej1trayc" path="res://Imagenes/Variedades/Palacio_Legislativo_de_Maracaibo.jpg" id="81_1j8rc"]
 [ext_resource type="Texture2D" uid="uid://dev5ubf43g53e" path="res://Imagenes/Variedades/Provincia_Maracaibo.jpg" id="82_8xvik"]
 [ext_resource type="Texture2D" uid="uid://mak1ksk3w4l" path="res://Imagenes/Fotos basilica/Basílica_de_Nuestra_Señora_de_la_Chiquinquira.jpg" id="85_b4hag"]
@@ -100,6 +99,8 @@
 [ext_resource type="Texture2D" uid="uid://d08rpjfx33kwe" path="res://Imagenes/Proceres/Urbaneja Achelpohl.jpg" id="97_4pml1"]
 [ext_resource type="Texture2D" uid="uid://dc7yftawxxygn" path="res://Imagenes/Proceres/Venacio Pulgar.jpg" id="98_agpf3"]
 [ext_resource type="Texture2D" uid="uid://dhakfucgfs0ep" path="res://Imagenes/Proceres/Rafael Urdaneta.webp" id="99_7ib7m"]
+[ext_resource type="AudioStream" uid="uid://dvbedg2c4l65p" path="res://Music/ambientemuseo.mp3" id="100_7ornu"]
+[ext_resource type="Script" path="res://Scenes/Mapa/Musica.gd" id="101_quoph"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -4620,9 +4621,6 @@ Apodado como el \"Brillante\" nacio en maracaibo el 24 de octubre de 1788, Fue m
 [sub_resource type="TextMesh" id="TextMesh_0vd60"]
 text = "Rafael Urdaneta"
 
-[sub_resource type="TextMesh" id="TextMesh_gmhic"]
-text = "Relampago del Catacumbo"
-
 [sub_resource type="TextMesh" id="TextMesh_jekkp"]
 text = "Relámpago del Catatumbo
 
@@ -6396,7 +6394,7 @@ texto = SubResource("TextMesh_jdauq")
 transform = Transform3D(-2.92714e-08, 0.595758, -4.27848e-08, 2.84217e-14, -2.60413e-08, -0.978802, -0.669651, -2.60414e-08, 3.55271e-15, -0.00236607, -0.0670433, -0.204447)
 texture = ExtResource("7_acxnl")
 
-[node name="Inicio" parent="." instance=ExtResource("44_l8dmy")]
+[node name="Node3D" parent="." instance=ExtResource("44_l8dmy")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -62.597)
 
 [node name="MARCOS PUENTE" type="Node3D" parent="."]
@@ -6637,13 +6635,7 @@ texture = ExtResource("59_i1gca")
 
 [node name="Marco3" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -22.8462, 3.3613, 29.8237)
-texto = SubResource("TextMesh_gmhic")
 derecha = false
-
-[node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/Marco3"]
-transform = Transform3D(-1.75025e-08, 0.413882, -1.80914e-08, 0, -1.80914e-08, -0.413882, -0.400411, -1.80914e-08, 0, 0.00927877, -0.114822, -0.29961)
-flip_h = true
-texture = ExtResource("74_ft10i")
 
 [node name="Marco4" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(2.12448e-15, 6.51586e-08, 1.11823, 1.11189, -6.51586e-08, 0, 4.86024e-08, 1.49065, -4.88794e-08, -16.7291, 3.3613, 26.1409)
@@ -8421,13 +8413,19 @@ transform = Transform3D(0.444428, 0, 0, 0, 0.333666, 0, 0, 0, 1, -25.959, 3.0930
 texture = ExtResource("96_cqxii")
 
 [node name="Urbaneja Achelpohl" type="Sprite3D" parent="."]
-transform = Transform3D(1.26386, 0, -0.0160944, 0, 1.45856, 0, 0.020428, 0, 0.995744, -30.4822, 3.14109, 34.1662)
+transform = Transform3D(1.26386, 0, -0.0160944, 0, 1.39278, 0, 0.020428, 0, 0.995744, -30.4822, 3.1594, 34.1662)
 texture = ExtResource("97_4pml1")
 
 [node name="Venacio Pulgar" type="Sprite3D" parent="."]
-transform = Transform3D(1.63082, 0, 0, 0, 1.06134, 0, 0, 0, 1, -34.9231, 3.15026, 34.0951)
+transform = Transform3D(1.63082, 0, 0, 0, 1.05342, 0, 0, 0, 1, -34.9231, 3.17363, 34.0951)
 texture = ExtResource("98_agpf3")
 
 [node name="Sprite3D5" type="Sprite3D" parent="."]
 transform = Transform3D(-2.11939e-08, 0, 1, 0, 0.536436, 0, -0.48486, 0, -4.37114e-08, -38.7065, 3.48626, 41.5727)
 texture = ExtResource("99_7ib7m")
+
+[node name="Musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("100_7ornu")
+volume_db = -12.0
+autoplay = true
+script = ExtResource("101_quoph")
