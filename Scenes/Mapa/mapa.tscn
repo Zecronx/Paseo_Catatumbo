@@ -97,7 +97,7 @@
 [ext_resource type="Texture2D" uid="uid://cwq1yi3xhkt3e" path="res://Imagenes/Proceres/Joaquín Esteva Parra.jpg" id="95_xdyo7"]
 [ext_resource type="Texture2D" uid="uid://cm1t0eivbk5qd" path="res://Imagenes/Proceres/José Trinidad Moran.webp" id="96_cqxii"]
 [ext_resource type="Texture2D" uid="uid://d08rpjfx33kwe" path="res://Imagenes/Proceres/Urbaneja Achelpohl.jpg" id="97_4pml1"]
-[ext_resource type="Texture2D" uid="uid://cngbpfjksq7bs" path="res://Imagenes/Proceres/Venancio Pulgar.jpg" id="98_usvj0"]
+[ext_resource type="Texture2D" uid="uid://dc7yftawxxygn" path="res://Imagenes/Proceres/Venacio Pulgar.jpg" id="98_agpf3"]
 [ext_resource type="Texture2D" uid="uid://dhakfucgfs0ep" path="res://Imagenes/Proceres/Rafael Urdaneta.webp" id="99_7ib7m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
@@ -4633,7 +4633,12 @@ text = "Orquesta Sinfónica de Maracaibo
 
 La Orquesta Sinfónica de Maracaibo es una orquesta venezolana de la ciudad de Maracaibo con más de cincuenta años de presencia en el ámbito musical. "
 
-[sub_resource type="TextMesh" id="TextMesh_iwuot"]
+[sub_resource type="TextMesh" id="TextMesh_1hh6n"]
+text = "Venancio Pulgar (1828-1896)
+
+Militar y político que desempeñó un papel importante en la historia de Zulia durante el siglo XIX. Participó en varias batallas y fue gobernador de la provincia de Maracaibo. Su liderazgo y dedicación contribuyeron al desarrollo y estabilidad de la región.
+
+"
 
 [sub_resource type="TextMesh" id="TextMesh_ar5is"]
 text = "Urbaneja Achelpohl (1815-1882)
@@ -6660,7 +6665,7 @@ transform = Transform3D(-0.123377, 0, 0.285296, 0, 0.657827, 0, -0.028477, 0, -1
 
 [node name="Marco3" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628308, -0.770887, 0.0982926, 61.3339, 3.27553, 5.61982)
-texto = SubResource("TextMesh_iwuot")
+texto = SubResource("TextMesh_1hh6n")
 
 [node name="Marco4" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628308, -0.770887, 0.0982926, 27.1616, 3.23376, 6.3635)
@@ -8410,8 +8415,8 @@ transform = Transform3D(1.26386, 0, -0.0160944, 0, 1.39278, 0, 0.020428, 0, 0.99
 texture = ExtResource("97_4pml1")
 
 [node name="Venacio Pulgar" type="Sprite3D" parent="."]
-transform = Transform3D(0.734421, 0, 0, 0, 0.518974, 0, 0, 0, 1, -34.9231, 3.00435, 34.1378)
-texture = ExtResource("98_usvj0")
+transform = Transform3D(1.63082, 0, 0, 0, 1.05342, 0, 0, 0, 1, -34.9231, 3.17363, 34.0951)
+texture = ExtResource("98_agpf3")
 
 [node name="Sprite3D5" type="Sprite3D" parent="."]
 transform = Transform3D(-2.11939e-08, 0, 1, 0, 0.536436, 0, -0.48486, 0, -4.37114e-08, -38.7065, 3.48626, 41.5727)
