@@ -1,4 +1,4 @@
-[gd_scene load_steps=333 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=345 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Imagenes/marco.tscn" id="4_axiku"]
@@ -92,6 +92,13 @@
 [ext_resource type="PackedScene" uid="uid://76to7o06ftmk" path="res://Assets/Vallas/tubo.glb" id="87_ebcll"]
 [ext_resource type="Texture2D" uid="uid://cqhakp7gim2iw" path="res://Imagenes/Fotos basilica/Imagen de la señora de chiquiquinra.jpg" id="88_6vwbs"]
 [ext_resource type="PackedScene" uid="uid://c6sv5nfe2y2jf" path="res://Assets/Cuerda/Cuerda.glb" id="88_x63v6"]
+[ext_resource type="Texture2D" uid="uid://hprsl687hqj6" path="res://Imagenes/Proceres/Francisco Ochoa.jpg" id="93_vy4n8"]
+[ext_resource type="Texture2D" uid="uid://dtpjqmrclk8bj" path="res://Imagenes/Proceres/Francisco_javier_pulgar.jpg" id="94_h3dh8"]
+[ext_resource type="Texture2D" uid="uid://cwq1yi3xhkt3e" path="res://Imagenes/Proceres/Joaquín Esteva Parra.jpg" id="95_xdyo7"]
+[ext_resource type="Texture2D" uid="uid://cm1t0eivbk5qd" path="res://Imagenes/Proceres/José Trinidad Moran.webp" id="96_cqxii"]
+[ext_resource type="Texture2D" uid="uid://d08rpjfx33kwe" path="res://Imagenes/Proceres/Urbaneja Achelpohl.jpg" id="97_4pml1"]
+[ext_resource type="Texture2D" uid="uid://cngbpfjksq7bs" path="res://Imagenes/Proceres/Venancio Pulgar.jpg" id="98_usvj0"]
+[ext_resource type="Texture2D" uid="uid://dhakfucgfs0ep" path="res://Imagenes/Proceres/Rafael Urdaneta.webp" id="99_7ib7m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ucfuj"]
 sky_top_color = Color(0.384314, 0.454902, 0.8, 1)
@@ -180,8 +187,6 @@ text = "Ricardo José Aguirre González
 Nació en Maracaibo el 9 de mayo de 1939 y murió en esa misma ciudad el 8 de noviembre de 1969.
 
 Fue un cantante, compositor, músico, maestro, director de orquesta, locutor y arreglista venezolano, y también conocido a nivel nacional por su apodo «El Monumental» o «El Padre de la Gaita», ya que fue el compositor del himno gaitero más popular del país «La grey zuliana»."
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_20ic3"]
 
 [sub_resource type="Animation" id="Animation_dsluy"]
 length = 0.001
@@ -4628,7 +4633,39 @@ text = "Orquesta Sinfónica de Maracaibo
 
 La Orquesta Sinfónica de Maracaibo es una orquesta venezolana de la ciudad de Maracaibo con más de cincuenta años de presencia en el ámbito musical. "
 
-[sub_resource type="TextMesh" id="TextMesh_u6qov"]
+[sub_resource type="TextMesh" id="TextMesh_iwuot"]
+
+[sub_resource type="TextMesh" id="TextMesh_ar5is"]
+text = "Urbaneja Achelpohl (1815-1882)
+
+Destacado por su participación en la defensa de la región zuliana durante las guerras civiles que siguieron a la independencia. Urbaneja Achelpohl fue un líder militar que ayudó a mantener la estabilidad en Zulia en tiempos de conflicto."
+
+[sub_resource type="TextMesh" id="TextMesh_svh72"]
+text = "José Trinidad Moran (1796-1854)
+
+Fue un militar venezolano, nacido en Maracaibo, que luchó en la independencia de Venezuela y Perú. Es recordado por su participación en la Batalla de Ayacucho, que consolidó la independencia del Perú."
+
+[sub_resource type="TextMesh" id="TextMesh_2s2fv"]
+text = "Rafael Urdaneta (1788-1845)
+
+Rafael Urdaneta es uno de los más destacados próceres de la independencia de Venezuela. Fue un militar y político que apoyó firmemente a Simón Bolívar. Desempeñó roles cruciales en varias batallas importantes y llegó a ser presidente de la Gran Colombia. Es conocido por su lealtad y dedicación a la causa independentista."
+
+[sub_resource type="TextMesh" id="TextMesh_ijlwb"]
+text = "Joaquín Esteva Parra (1802-1875)
+
+Participó en la Guerra de Independencia y posteriormente en la Guerra Federal. Fue un destacado militar y político zuliano que contribuyó significativamente a la estabilidad y desarrollo de la región durante el siglo XIX.
+
+"
+
+[sub_resource type="TextMesh" id="TextMesh_rkvgw"]
+text = "Francisco Javier Pulgar (1784-1857)
+
+Militar y político zuliano que también luchó en las guerras de independencia de Venezuela. Participó en numerosas batallas y se destacó por su valentía y liderazgo. Pulgar contribuyó significativamente a la consolidación de la independencia venezolana en la región zuliana."
+
+[sub_resource type="TextMesh" id="TextMesh_alino"]
+text = "Francisco Ochoa (1811-1884)
+
+Militar y político que jugó un papel relevante en la historia de Zulia. Participó en la Guerra Federal y se destacó por su habilidad táctica y su liderazgo en tiempos de conflicto."
 
 [sub_resource type="Resource" id="Resource_ycjs7"]
 script = ExtResource("19_8qer4")
@@ -5017,19 +5054,6 @@ transform = Transform3D(3.285, 0, 0, 0, 5.14554, 0, 0, 0, 3.285, 3.30599, 1.2206
 
 [node name="Pedestal 16" parent="Pedestal PB" instance=ExtResource("11_gl7h4")]
 transform = Transform3D(3.285, 0, 0, 0, 5.14554, 0, 0, 0, 3.285, -6.31794, 1.22062, 26.0701)
-
-[node name="Hab Cuevas2" type="Sprite3D" parent="."]
-transform = Transform3D(0.895, 0, 0, 0, 0.845, 0, 0, 0, 1, -29.2761, 2.86999, 41.8728)
-modulate = Color(0, 0, 0, 0.290196)
-pixel_size = 4.8861
-billboard = 1
-texture = SubResource("CanvasTexture_20ic3")
-
-[node name="Label3D" type="Label3D" parent="Hab Cuevas2"]
-transform = Transform3D(1.11732, 0, 0, 0, 1.18343, 0, 0, 0, 1, -0.00185394, 0, 0.0153847)
-billboard = 1
-text = "Sala de los proceseres"
-font_size = 40
 
 [node name="Techo PB" type="Node3D" parent="."]
 transform = Transform3D(1.051, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.58, 0)
@@ -6636,26 +6660,33 @@ transform = Transform3D(-0.123377, 0, 0.285296, 0, 0.657827, 0, -0.028477, 0, -1
 
 [node name="Marco3" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628308, -0.770887, 0.0982926, 61.3339, 3.27553, 5.61982)
+texto = SubResource("TextMesh_iwuot")
 
 [node name="Marco4" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628308, -0.770887, 0.0982926, 27.1616, 3.23376, 6.3635)
+texto = SubResource("TextMesh_ar5is")
 
 [node name="Marco5" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(-0.0393624, -1.65089, -4.60671, 1.23489, -0.000491098, -0.00562643, 0.000628307, -0.770887, 0.0982926, -7.82242, 3.19075, 7.21291)
+texto = SubResource("TextMesh_svh72")
 
 [node name="Marco bollitos2" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(-0.0532824, -14.3535, 1.79645, 1.67158, -0.0175308, 0.000534326, 0.000850544, 0.306257, 0.838857, 78.0139, 3.796, -0.622005)
-texto = SubResource("TextMesh_u6qov")
+texto = SubResource("TextMesh_2s2fv")
 
 [node name="Marco6" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(0.0364479, 1.65196, 4.60657, 1.23497, 0.000496598, 0.00563843, 0.00399212, 0.768581, -0.104725, -33.308, 3.18348, -4.85133)
+texto = SubResource("TextMesh_ijlwb")
 derecha = false
 
 [node name="Marco7" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(0.0364478, 1.65196, 4.60657, 1.23497, 0.000496598, 0.00563844, 0.00399212, 0.768581, -0.104725, 0.88623, 3.22525, -5.58591)
+texto = SubResource("TextMesh_rkvgw")
+derecha = false
 
 [node name="Marco8" parent="MarcosHabitacion2" instance=ExtResource("4_axiku")]
 transform = Transform3D(0.0364478, 1.65196, 4.60657, 1.23497, 0.000496599, 0.00563844, 0.00399212, 0.768581, -0.104725, 36.0863, 3.26826, -6.3421)
+texto = SubResource("TextMesh_alino")
 derecha = false
 
 [node name="Pedestal 2" parent="MarcosHabitacion2" instance=ExtResource("11_gl7h4")]
@@ -8357,3 +8388,31 @@ transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -8.487, 0, 0)
 
 [node name="Cuerda3" parent="Vallas P1/Vallas 27" instance=ExtResource("88_x63v6")]
 transform = Transform3D(8.26722e-17, -7.05907e-10, 0.0233862, -0.0432683, -7.05907e-10, 0, 1.89132e-09, -0.0161493, -1.02224e-09, -6.6, 0.906, -0.056)
+
+[node name="Francisco Ochoa" type="Sprite3D" parent="."]
+transform = Transform3D(-1.62313, 0, -8.74228e-08, 0, 1.05478, 0, 1.41899e-07, 0, -1, -35.0188, 3.12712, 49.7721)
+texture = ExtResource("93_vy4n8")
+
+[node name="Francisco javier" type="Sprite3D" parent="."]
+transform = Transform3D(0.640057, 0, 0, 0, 0.436171, 0, 0, 0, 1, -30.4391, 3.05761, 49.845)
+texture = ExtResource("94_h3dh8")
+
+[node name="Joaquin Esteva Parra" type="Sprite3D" parent="."]
+transform = Transform3D(0.524733, 0, 0, 0, 0.346092, 0, 0, 0, 1, -26.0016, 3.02214, 49.859)
+texture = ExtResource("95_xdyo7")
+
+[node name="Jose Trinidad Moran" type="Sprite3D" parent="."]
+transform = Transform3D(0.444428, 0, 0, 0, 0.333666, 0, 0, 0, 1, -25.959, 3.09302, 34.0687)
+texture = ExtResource("96_cqxii")
+
+[node name="Urbaneja Achelpohl" type="Sprite3D" parent="."]
+transform = Transform3D(1.26386, 0, -0.0160944, 0, 1.39278, 0, 0.020428, 0, 0.995744, -30.4822, 3.1594, 34.1662)
+texture = ExtResource("97_4pml1")
+
+[node name="Venacio Pulgar" type="Sprite3D" parent="."]
+transform = Transform3D(0.734421, 0, 0, 0, 0.518974, 0, 0, 0, 1, -34.9231, 3.00435, 34.1378)
+texture = ExtResource("98_usvj0")
+
+[node name="Sprite3D5" type="Sprite3D" parent="."]
+transform = Transform3D(-2.11939e-08, 0, 1, 0, 0.536436, 0, -0.48486, 0, -4.37114e-08, -38.7065, 3.48626, 41.5727)
+texture = ExtResource("99_7ib7m")
