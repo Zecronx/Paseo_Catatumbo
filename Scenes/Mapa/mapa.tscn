@@ -1,4 +1,4 @@
-[gd_scene load_steps=322 format=3 uid="uid://boukx545b2xc3"]
+[gd_scene load_steps=323 format=3 uid="uid://boukx545b2xc3"]
 
 [ext_resource type="Script" path="res://Scenes/Mapa/mapa.gd" id="1_44um2"]
 [ext_resource type="PackedScene" uid="uid://cqidk8cm4kot6" path="res://Imagenes/marco.tscn" id="4_axiku"]
@@ -54,6 +54,7 @@
 [ext_resource type="Texture2D" uid="uid://dberahlmjfabn" path="res://Imagenes/Fotos Puente/rafael_urdaneta.webp" id="52_57an6"]
 [ext_resource type="Texture2D" uid="uid://baier7pmqu1gc" path="res://Imagenes/Fotos Puente/puente_destruido2.jpg" id="52_p2doc"]
 [ext_resource type="Texture2D" uid="uid://deunbw6g12uvv" path="res://Assets/Pinturas/Escudo_zulia.png" id="54_4xhrw"]
+[ext_resource type="Texture2D" uid="uid://c6dedmdgrnkfv" path="res://Imagenes/Simbolos/Escudo_del_Zulia.jpg" id="54_7v55o"]
 [ext_resource type="Texture2D" uid="uid://t0ilq6cl1aer" path="res://Imagenes/Variedades/Basilica_of_Our_Lady_of_the_Rosary_of_Chiquinquirá_(Venezuela)_Exterior.jpg" id="54_spspa"]
 [ext_resource type="Texture2D" uid="uid://dq1xpxwwsrp0g" path="res://Imagenes/Fotos Puente/puente1.jpg" id="54_yr8wl"]
 [ext_resource type="Texture2D" uid="uid://v6dwqqeawtew" path="res://Imagenes/Variedades/Brazil_vs._Uruguay_Semifinals_Copa_America_2007.jpg" id="55_d8jhi"]
@@ -6407,8 +6408,8 @@ texture = ExtResource("55_d8jhi")
 transform = Transform3D(5.30279e-08, 0.999998, 3.60141e-07, 1.12815, -4.62751e-08, -4.68934e-10, 3.44358e-08, 1.49012e-08, -0.873724, -10.8491, 3.81668, 0.0699511)
 
 [node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/Marco12"]
-transform = Transform3D(-0.00524206, 0.363048, 1.68289e-08, -2.29278e-10, 1.58694e-08, -0.385, -0.500565, -0.00380196, 7.10543e-15, 0, 0, -0.150393)
-texture = ExtResource("54_4xhrw")
+transform = Transform3D(-0.00281062, 0.168261, -8.74179e-09, -8.52651e-14, -7.35533e-09, -0.2, -0.268388, -0.00176207, 9.15463e-11, 0, -0.108274, -0.193653)
+texture = ExtResource("54_7v55o")
 
 [node name="Marco13" parent="MarcosInicio" instance=ExtResource("4_axiku")]
 transform = Transform3D(3.81842e-08, 0.999998, 3.73288e-07, 0.812358, -4.62751e-08, -4.86052e-10, 2.47965e-08, 1.49012e-08, -0.90562, -10.8502, 2.68642, 19.7243)
