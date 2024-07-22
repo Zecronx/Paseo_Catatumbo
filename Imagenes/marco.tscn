@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Assets/Marco/marco.gd" id="1_w5jxc"]
 
 [sub_resource type="TextMesh" id="TextMesh_m35px"]
-text = "culo"
+text = "Texto de cuadro"
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_be27m"]
 size = Vector3(3.5221, 1, 5.89429)

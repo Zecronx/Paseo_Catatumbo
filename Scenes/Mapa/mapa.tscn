@@ -6420,8 +6420,12 @@ derecha = false
 transform = Transform3D(7.05921e-09, 0.0891383, 6.39044e-09, 3.76588e-09, -5.69632e-09, 0.1, 0.106757, -4.18656e-09, 5.9138e-09, 0, -0.130996, -0.199921)
 texture = ExtResource("55_rp8i6")
 
-[node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio"]
-transform = Transform3D(-7.6368e-09, 7.96232e-10, 0.0699999, 4.56354e-09, 0.0788627, 5.74146e-10, -0.0873549, 9.51961e-09, -6.11958e-09, 10.9611, 2.70224, -17.6583)
+[node name="Marco18" parent="MarcosInicio" instance=ExtResource("4_axiku")]
+transform = Transform3D(-3.55093e-08, -0.999998, 0, 0.812358, -4.37113e-08, 0, 0, 0, 1.6681, 10.8445, 2.70224, -17.9961)
+texto = SubResource("TextMesh_mbkbj")
+
+[node name="Sprite3D2" type="Sprite3D" parent="MarcosInicio/Marco18"]
+transform = Transform3D(0.000587689, 0.0970727, -3.05961e-09, 0, -4.24345e-09, -0.07, -0.0523646, 0.00108945, -3.4338e-11, -1.66893e-06, -0.11662, -0.202476)
 texture = ExtResource("55_g3dcv")
 
 [node name="Marco18" parent="MarcosInicio" instance=ExtResource("4_axiku")]
