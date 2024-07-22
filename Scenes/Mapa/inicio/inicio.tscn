@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=3 uid="uid://dh7rstcg4qydr"]
+[gd_scene load_steps=101 format=3 uid="uid://dh7rstcg4qydr"]
 
 [ext_resource type="Material" uid="uid://bhxyxi3dwxpu5" path="res://Assets/texturas_adicionales/Grass004_1K-JPG/Grass004_1K-JPG_Color.tres" id="1_t0t4s"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_blocks.gd" id="2_ok265"]
@@ -1798,6 +1798,8 @@ size = Vector3(0.683105, 4.62097, 4.93252)
 [sub_resource type="BoxShape3D" id="BoxShape3D_2u38x"]
 size = Vector3(3.90894, 5.21429, 1.42609)
 
+[sub_resource type="CanvasTexture" id="CanvasTexture_h60av"]
+
 [node name="Node3D" type="Node3D"]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
@@ -3086,6 +3088,31 @@ texture = ExtResource("24_gqxs7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0188642, 4.34814, -28.4504)
 pixel_size = 0.0012
 texture = ExtResource("25_6p5a2")
+
+[node name="Texto" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.154132, 2.79406, 15.1394)
+modulate = Color(0, 0, 0, 0.290196)
+pixel_size = 4.8861
+texture = SubResource("CanvasTexture_h60av")
+
+[node name="Label3D" type="Label3D" parent="Texto"]
+unique_name_in_owner = true
+transform = Transform3D(1.11925, 3.96036e-22, -3.38813e-21, 3.73913e-22, 1.18547, 0, -8.47033e-22, 0, 1.00172, 0, 0.0599513, 0)
+text = "Controles
+
+W = Mover Adelante
+S = Mover Hacia Atras
+D = Mover Derecha
+A = Mover Izquierda
+Shift Izquierdo = Mantener para correr
+
+E = Abrir Puerta
+Barra Espaciadora = Saltar
+Escape = Pausa"
+font_size = 40
+autowrap_mode = 2
+justification_flags = 161
+width = 800.0
 
 [connection signal="body_entered" from="TPsIncorrectos1/TPIncorrecto" to="TPsIncorrectos1/TPIncorrecto" method="_on_body_entered"]
 [connection signal="body_entered" from="TPsIncorrectos1/TPIncorrecto2" to="TPsIncorrectos1/TPIncorrecto2" method="_on_body_entered"]
