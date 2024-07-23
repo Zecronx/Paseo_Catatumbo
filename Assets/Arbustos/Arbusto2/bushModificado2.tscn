@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://cw0looohkvmbo"]
-
-[ext_resource type="PackedScene" uid="uid://dn1jbd44vqko3" path="res://Assets/Arbustos/Arbusto2/Bush_2.glb" id="1_7omub"]
-[ext_resource type="Material" uid="uid://bhxyxi3dwxpu5" path="res://Assets/texturas_adicionales/Grass004_1K-JPG/Grass004_1K-JPG_Color.tres" id="2_7n5ad"]
-
-[node name="Bush_22" instance=ExtResource("1_7omub")]
-
-[node name="Bush_2" parent="." index="0"]
-material_override = ExtResource("2_7n5ad")
